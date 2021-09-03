@@ -13,11 +13,7 @@ public class Form extends LiveData<Form> {
 
     private final String projectName = "SES";
     // Form Variables
-    public String section_B = "";
-    public String section_C = "";
-    public String section_D = "";
-    public String section_E = "";
-    public String section_F = "";
+    public String H1 = "";
     private String endingdatetime = "";
     private String synced = "";
     private String synced_date = "";
@@ -27,7 +23,7 @@ public class Form extends LiveData<Form> {
     private String gpsdate = "";
     private String gpsacc = "";
     private String deviceid = "";
-    private String tagid = "";
+    private String devicetagid = "";
     // Other Variables
     private String id = "id";
     private String uid = "uid";
@@ -161,51 +157,19 @@ public class Form extends LiveData<Form> {
     }
 
     public String getTagid() {
-        return tagid;
+        return devicetagid;
     }
 
     public void setTagid(String tagid) {
-        this.tagid = tagid;
+        this.devicetagid = tagid;
     }
 
-    public String getSection_B() {
-        return section_B;
+    public String getH1() {
+        return H1;
     }
 
     public void setSection_B(String section_B) {
-        this.section_B = section_B;
-    }
-
-    public String getSection_C() {
-        return section_C;
-    }
-
-    public void setSection_C(String section_C) {
-        this.section_C = section_C;
-    }
-
-    public String getSection_D() {
-        return section_D;
-    }
-
-    public void setSection_D(String section_D) {
-        this.section_D = section_D;
-    }
-
-    public String getSection_E() {
-        return section_E;
-    }
-
-    public void setSection_E(String section_E) {
-        this.section_E = section_E;
-    }
-
-    public String getSection_F() {
-        return section_F;
-    }
-
-    public void setSection_F(String section_F) {
-        this.section_F = section_F;
+        this.H1 = H1;
     }
 
     public Form Sync(JSONObject jsonObject) throws JSONException {
@@ -218,19 +182,11 @@ public class Form extends LiveData<Form> {
         this.synced = jsonObject.getString(FormsTable.COLUMN_SYNCED);
         this.synced_date = jsonObject.getString(FormsTable.COLUMN_SYNCED_DATE);
         this.appversion = jsonObject.getString(FormsTable.COLUMN_APPVERSION);
-        this.gpslat = jsonObject.getString(FormsTable.COLUMN_GPSLAT);
-        this.gpslng = jsonObject.getString(FormsTable.COLUMN_GPSLNG);
-        this.gpsdate = jsonObject.getString(FormsTable.COLUMN_GPSDATE);
-        this.gpsacc = jsonObject.getString(FormsTable.COLUMN_GPSACC);
         this.deviceid = jsonObject.getString(FormsTable.COLUMN_DEVICEID);
-        this.tagid = jsonObject.getString(FormsTable.COLUMN_DEVICETAGID);
+        this.devicetagid = jsonObject.getString(FormsTable.COLUMN_DEVICETAGID);
         this.sysdate = jsonObject.getString(FormsTable.COLUMN_SYSDATE);
         this.username = jsonObject.getString(FormsTable.COLUMN_USERNAME);
-        this.section_B = jsonObject.getString(FormsTable.COLUMN_SECTION_B);
-        this.section_C = jsonObject.getString(FormsTable.COLUMN_SECTION_C);
-        this.section_D = jsonObject.getString(FormsTable.COLUMN_SECTION_D);
-        this.section_E = jsonObject.getString(FormsTable.COLUMN_SECTION_E);
-        this.section_F = jsonObject.getString(FormsTable.COLUMN_SECTION_F);
+        this.H1 = jsonObject.getString(FormsTable.COLUMN_H1);
 
         return this;
 
@@ -245,19 +201,11 @@ public class Form extends LiveData<Form> {
         this.istatus96x = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_ISTATUS96x));
         this.endingdatetime = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_ENDINGDATETIME));
         this.appversion = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_APPVERSION));
-        this.gpslat = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_GPSLAT));
-        this.gpslng = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_GPSLNG));
-        this.gpsdate = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_GPSDATE));
-        this.gpsacc = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_GPSACC));
         this.deviceid = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_DEVICEID));
-        this.tagid = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_DEVICETAGID));
+        this.devicetagid = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_DEVICETAGID));
         this.sysdate = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SYSDATE));
         this.username = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_USERNAME));
-        this.section_B = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SECTION_B));
-        this.section_C = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SECTION_C));
-        this.section_D = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SECTION_D));
-        this.section_E = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SECTION_E));
-        this.section_F = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SECTION_F));
+        this.H1 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_H1));
 
         return this;
     }
@@ -275,33 +223,13 @@ public class Form extends LiveData<Form> {
         json.put(FormsTable.COLUMN_SYNCED, this.synced == null ? JSONObject.NULL : this.synced);
         json.put(FormsTable.COLUMN_SYNCED_DATE, this.synced_date == null ? JSONObject.NULL : this.synced_date);
         json.put(FormsTable.COLUMN_APPVERSION, this.appversion == null ? JSONObject.NULL : this.appversion);
-        json.put(FormsTable.COLUMN_GPSLAT, this.gpslat == null ? JSONObject.NULL : this.gpslat);
-        json.put(FormsTable.COLUMN_GPSLNG, this.gpslng == null ? JSONObject.NULL : this.gpslng);
-        json.put(FormsTable.COLUMN_GPSDATE, this.gpsdate == null ? JSONObject.NULL : this.gpsdate);
-        json.put(FormsTable.COLUMN_GPSACC, this.gpsacc == null ? JSONObject.NULL : this.gpsacc);
         json.put(FormsTable.COLUMN_DEVICEID, this.deviceid == null ? JSONObject.NULL : this.deviceid);
-        json.put(FormsTable.COLUMN_DEVICETAGID, this.tagid == null ? JSONObject.NULL : this.tagid);
+        json.put(FormsTable.COLUMN_DEVICETAGID, this.devicetagid == null ? JSONObject.NULL : this.devicetagid);
         json.put(FormsTable.COLUMN_SYSDATE, this.sysdate == null ? JSONObject.NULL : this.sysdate);
         json.put(FormsTable.COLUMN_USERNAME, this.username == null ? JSONObject.NULL : this.username);
 
-        if (!this.section_B.equals("")) {
-            json.put(FormsTable.COLUMN_SECTION_B, this.section_B.equals("") ? JSONObject.NULL : new JSONObject(this.section_B));
-        }
-
-        if (!this.section_C.equals("")) {
-            json.put(FormsTable.COLUMN_SECTION_C, this.section_C.equals("") ? JSONObject.NULL : new JSONObject(this.section_C));
-        }
-
-        if (!this.section_D.equals("")) {
-            json.put(FormsTable.COLUMN_SECTION_D, this.section_D.equals("") ? JSONObject.NULL : new JSONObject(this.section_D));
-        }
-
-        if (!this.section_E.equals("")) {
-            json.put(FormsTable.COLUMN_SECTION_E, this.section_E.equals("") ? JSONObject.NULL : new JSONObject(this.section_E));
-        }
-
-        if (!this.section_F.equals("")) {
-            json.put(FormsTable.COLUMN_SECTION_F, this.section_F.equals("") ? JSONObject.NULL : new JSONObject(this.section_F));
+        if (!this.H1.equals("")) {
+            json.put(FormsTable.COLUMN_H1, this.H1.equals("") ? JSONObject.NULL : new JSONObject(this.H1));
         }
 
         return json;

@@ -7,9 +7,9 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.VersionAppContract;
 
 public final class CreateTable {
 
-    public static final String DATABASE_NAME = "ses.db";
-    public static final String DB_NAME = "ses_copy.db";
-    public static final String PROJECT_NAME = "ses";
+    public static final String DATABASE_NAME = "enp.db";
+    public static final String DB_NAME = "enp_copy.db";
+    public static final String PROJECT_NAME = "enp";
     public static final int DATABASE_VERSION = 1;
 
     public static final String SQL_CREATE_FORMS = "CREATE TABLE "
@@ -19,18 +19,10 @@ public final class CreateTable {
             + FormsTable.COLUMN_DEVICEID + " TEXT,"
             + FormsTable.COLUMN_USERNAME + " TEXT,"
             + FormsTable.COLUMN_SYSDATE + " TEXT,"
-            + FormsTable.COLUMN_GPSLAT + " TEXT,"
-            + FormsTable.COLUMN_GPSLNG + " TEXT,"
-            + FormsTable.COLUMN_GPSDATE + " TEXT,"
-            + FormsTable.COLUMN_GPSACC + " TEXT,"
             + FormsTable.COLUMN_DEVICETAGID + " TEXT,"
             + FormsTable.COLUMN_APPVERSION + " TEXT,"
             + FormsTable.COLUMN_ENDINGDATETIME + " TEXT,"
-            + FormsTable.COLUMN_SECTION_B + " TEXT,"
-            + FormsTable.COLUMN_SECTION_C + " TEXT,"
-            + FormsTable.COLUMN_SECTION_D + " TEXT,"
-            + FormsTable.COLUMN_SECTION_E + " TEXT,"
-            + FormsTable.COLUMN_SECTION_F + " TEXT,"
+            + FormsTable.COLUMN_H1 + " TEXT,"
             + FormsTable.COLUMN_ISTATUS + " TEXT,"
             + FormsTable.COLUMN_ISTATUS96x + " TEXT,"
             + FormsTable.COLUMN_SYNCED + " TEXT,"

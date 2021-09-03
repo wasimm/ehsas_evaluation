@@ -39,7 +39,7 @@ import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityMainBinding;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Form;
 import edu.aku.wasimabbas.ehsas_evaluation.models.VersionApp;
 import edu.aku.wasimabbas.ehsas_evaluation.ui.list_activity.FormsReportDate;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.sections.SectionBActivity;
+import edu.aku.wasimabbas.ehsas_evaluation.ui.sections.H1;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.AndroidUtilityKt;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.AppUtilsKt;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.CreateTable;
@@ -292,7 +292,7 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
         Intent oF = null;
         switch (v.getId()) {
             case R.id.formB:
-                oF = new Intent(this, SectionBActivity.class);
+                oF = new Intent(this, H1.class);
                 break;
             /*case R.id.formC:
                 oF = new Intent(this, SectionCActivity.class);

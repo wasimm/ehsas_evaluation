@@ -221,18 +221,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_DEVICETAGID, form.getDeviceid());
         values.put(FormsTable.COLUMN_USERNAME, form.getUsername());
         values.put(FormsTable.COLUMN_SYSDATE, form.getSysdate());
-        values.put(FormsTable.COLUMN_GPSLAT, form.getGpslat());
-        values.put(FormsTable.COLUMN_GPSLNG, form.getGpslng());
-        values.put(FormsTable.COLUMN_GPSDATE, form.getGpsdate());
-        values.put(FormsTable.COLUMN_GPSACC, form.getGpsacc());
         values.put(FormsTable.COLUMN_APPVERSION, form.getAppversion());
         values.put(FormsTable.COLUMN_ISTATUS, form.getIstatus());
         values.put(FormsTable.COLUMN_ISTATUS96x, form.getIstatus96x());
-        values.put(FormsTable.COLUMN_SECTION_B, form.getSection_B());
-        values.put(FormsTable.COLUMN_SECTION_C, form.getSection_C());
-        values.put(FormsTable.COLUMN_SECTION_D, form.getSection_D());
-        values.put(FormsTable.COLUMN_SECTION_E, form.getSection_E());
-        values.put(FormsTable.COLUMN_SECTION_F, form.getSection_F());
+        values.put(FormsTable.COLUMN_H1, form.getH1());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -372,18 +364,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_DEVICETAGID,
                 FormsTable.COLUMN_USERNAME,
                 FormsTable.COLUMN_SYSDATE,
-                FormsTable.COLUMN_GPSLAT,
-                FormsTable.COLUMN_GPSLNG,
-                FormsTable.COLUMN_GPSDATE,
-                FormsTable.COLUMN_GPSACC,
                 FormsTable.COLUMN_APPVERSION,
                 FormsTable.COLUMN_ISTATUS,
                 FormsTable.COLUMN_ISTATUS96x,
-                FormsTable.COLUMN_SECTION_B,
-                FormsTable.COLUMN_SECTION_C,
-                FormsTable.COLUMN_SECTION_D,
-                FormsTable.COLUMN_SECTION_E,
-                FormsTable.COLUMN_SECTION_F,
+                FormsTable.COLUMN_H1,
 
         };
         String whereClause = FormsTable.COLUMN_SYSDATE + " Like ? ";
@@ -569,18 +553,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_DEVICETAGID,
                 FormsTable.COLUMN_USERNAME,
                 FormsTable.COLUMN_SYSDATE,
-                FormsTable.COLUMN_GPSLAT,
-                FormsTable.COLUMN_GPSLNG,
-                FormsTable.COLUMN_GPSDATE,
-                FormsTable.COLUMN_GPSACC,
                 FormsTable.COLUMN_APPVERSION,
                 FormsTable.COLUMN_ISTATUS,
                 FormsTable.COLUMN_ISTATUS96x,
-                FormsTable.COLUMN_SECTION_B,
-                FormsTable.COLUMN_SECTION_C,
-                FormsTable.COLUMN_SECTION_D,
-                FormsTable.COLUMN_SECTION_E,
-                FormsTable.COLUMN_SECTION_F,
+                FormsTable.COLUMN_H1,
                 FormsTable.COLUMN_ENDINGDATETIME,
         };
 

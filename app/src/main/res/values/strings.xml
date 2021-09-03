@@ -1,7 +1,5 @@
 <resources>
 
-    <!-- App Variables Start -->
-    <string name="app_name"> Ehsas Nashonuma Programme </string>
 
     <string name="form"> Start Interview </string>
 
@@ -18,7 +16,6 @@
     <string name="openPretest"> Pre Test Knowlegde </string>
     <string name="sectionagisidentification_mainheading">Section A: GIS identification: Section A: GIS identification</string>
     <string name="btnSync">Download Data</string>
-    <string name="btnUpload">Upload Data</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Login</string>
@@ -29,8 +26,6 @@
     <string name="open_new_form">OPEN NEW FORM</string>
     <string name="records_summary">Records Summary</string>
     <string name="main_menu">Main Menu</string>
-    <string name="only_for_testing">ONLY FOR TESTING</string>
-    <string name="database">Database</string>
     <string name="no"> No </string>
     <string name="dkn"> Don’t Know </string>
     <string name="none"> No one </string>
@@ -931,5 +926,72 @@
     <string name="istatusb">Incomplete</string>
     <string name="istatus96"> Other </string>
     <string name="istatus96x"> Specify </string>
+
+
+    <!-- Ehsas Nashonuma Programme -->
+    <string name="app_name"> Ehsas Nashonuma Programme </string>
+    <string name="action_database">Database Manager</string>
+    <string name="action_data_sync">Sync Data</string>
+    <string name="btnDownload">Download Data</string>
+    <string name="btnUpload">Upload Data</string>
+
+    <!--SECTION HEADINGS-->
+    <string name="householdinformationform_heading"> Household Information Form </string>
+    <!-- Replace with correct text-->
+
+    <string name="H1Heading">Household Information</string>
+    <string name="H101">Cluster Number</string>
+
+    <string name="H102">Province</string>
+    <string name="H103">District</string>
+    <string name="H104">Tehsil/Taluka</string>
+    <string name="H105">Union Council</string>
+    <string name="H106">City/Village</string>
+    <string name="H107">Household Number</string>
+    <string name="H108">BISP Beneficiary ID</string>
+    <string name="H109">Number of BISP Beneficiaries in HH</string>
+    <string name="H110">Interviewer\'s Name</string>
+    <string name="H111">Date of Interview</string>
+    <string name="H112">Time of Interview</string>
+    <string name="H113">Name of the Respondent</string>
+    <string name="H114">Age of Respondent in completed years</string>
+
+    <string name="H115">Is Respondent Head of Household?</string>
+    <string name="H11501">Yes</string>
+    <string name="H11502">No</string>
+
+    <string name="H116">Was Consent Taken?</string>
+    <string name="H11601">Verbal Consent</string>
+    <string name="H11602">Written Consent</string>
+
+    <string name='Q_H117'>HH0117</string>
+    <string name="only_for_testing">ONLY FOR TESTING</string>
+    <string name="database" translatable="false">Database</string>
+    <string name='Q_H101'>H101</string>
+    <string name='Q_H102'>H102</string>
+    <string name='Q_H103'>H103</string>
+    <string name='Q_H104'>H104</string>
+    <string name='Q_H105'>H105</string>
+    <string name='Q_H106'>H106</string>
+    <string name='Q_H107'>H107</string>
+    <string name='Q_H108'>H108</string>
+    <string name='Q_H109'>H109</string>
+    <string name='Q_H110'>H110</string>
+    <string name='Q_H111'>H111</string>
+    <string name='Q_H112'>H112</string>
+    <string name='Q_H113'>H113</string>
+    <string name='Q_H114'>H114</string>
+    <string name='Q_H115'>H115</string>
+    <string name='Q_H116'>H116</string>
+
+    <string name="H117hint">Result of Interview</string>
+    <string name="H11701">Completed</string>
+    <string name="H11702">No household member at home or no competent respondent at the time of visit</string>
+    <string name="H11703">Entire household absent for extended period of time</string>
+    <string name="H11704">Refused</string>
+    <string name="H11705">Dwelling vacant or address not a dwelling</string>
+    <string name="H11706">Dwelling not found</string>
+    <string name="H11796">Others, (Specify)</string>
+
 
 </resources>

@@ -228,11 +228,11 @@ public class GetAllData extends AsyncTask<String, String, String> {
                             position = 0;
                             break;
 
-                        case "Schools":
+                        /*case "Schools":
                             jsonArray = new JSONArray(result);
                             insertCount = db.syncSchools(jsonArray);
                             position = 1;
-                            break;
+                            break;*/
                     }
 
                     pd.setMessage("Received: " + jsonArray.length());

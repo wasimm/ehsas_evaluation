@@ -19,7 +19,6 @@ import org.json.JSONObject;
 import java.util.List;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
-import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivitySectionCBinding;
@@ -113,13 +112,15 @@ public class SectionCActivity extends AppCompatActivity {
 
     private boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SECTION_C, MainApp.form.getSection_C());
+        /*int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SECTION_C, MainApp.form.getSection_C());
         if (updcount == 1) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
+
+        return false;
     }
 
     private void SaveDraft() throws JSONException {
@@ -206,7 +207,7 @@ public class SectionCActivity extends AppCompatActivity {
                 : "-1");
 
 //        MainApp.setGPS(this, SectionCActivity);
-        MainApp.form.setSection_C(String.valueOf(json));
+        //MainApp.form.setSection_C(String.valueOf(json));
     }
 
     private boolean formValidation() {
