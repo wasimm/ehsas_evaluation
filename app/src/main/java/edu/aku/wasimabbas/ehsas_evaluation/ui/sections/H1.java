@@ -26,7 +26,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityH1Binding;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Form;
 import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.MainActivity;
 
 
 public class H1 extends AppCompatActivity {
@@ -137,7 +136,7 @@ public class H1 extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, H301.class));
         } else {
             Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
         }
@@ -205,7 +204,7 @@ public class H1 extends AppCompatActivity {
                 : bi.H11602.isChecked() ? "2"
                 : "-1");
 
-        MainApp.form.setSection_B(String.valueOf(json));
+        MainApp.form.setJSON(String.valueOf(json));
     }
 
     private boolean formValidation() {

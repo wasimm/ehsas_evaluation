@@ -224,7 +224,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_APPVERSION, form.getAppversion());
         values.put(FormsTable.COLUMN_ISTATUS, form.getIstatus());
         values.put(FormsTable.COLUMN_ISTATUS96x, form.getIstatus96x());
-        values.put(FormsTable.COLUMN_H1, form.getH1());
+        values.put(FormsTable.COLUMN_JSON, form.getJSON());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -253,11 +253,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public int updateFormID() {
         SQLiteDatabase db = this.getReadableDatabase();
 
-// New value for one column
+        // New value for one column
         ContentValues values = new ContentValues();
         values.put(FormsTable.COLUMN_UID, MainApp.form.getId());
 
-// Which row to update, based on the ID
+        // Which row to update, based on the ID
         String selection = FormsTable.COLUMN_ID + " = ?";
         String[] selectionArgs = {String.valueOf(MainApp.form.getId())};
 
@@ -367,7 +367,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_APPVERSION,
                 FormsTable.COLUMN_ISTATUS,
                 FormsTable.COLUMN_ISTATUS96x,
-                FormsTable.COLUMN_H1,
+                FormsTable.COLUMN_JSON,
 
         };
         String whereClause = FormsTable.COLUMN_SYSDATE + " Like ? ";
@@ -556,7 +556,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_APPVERSION,
                 FormsTable.COLUMN_ISTATUS,
                 FormsTable.COLUMN_ISTATUS96x,
-                FormsTable.COLUMN_H1,
+                FormsTable.COLUMN_JSON,
                 FormsTable.COLUMN_ENDINGDATETIME,
         };
 

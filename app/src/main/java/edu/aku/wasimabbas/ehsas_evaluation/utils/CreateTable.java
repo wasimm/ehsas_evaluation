@@ -22,7 +22,7 @@ public final class CreateTable {
             + FormsTable.COLUMN_DEVICETAGID + " TEXT,"
             + FormsTable.COLUMN_APPVERSION + " TEXT,"
             + FormsTable.COLUMN_ENDINGDATETIME + " TEXT,"
-            + FormsTable.COLUMN_H1 + " TEXT,"
+            + FormsTable.COLUMN_JSON + " TEXT,"
             + FormsTable.COLUMN_ISTATUS + " TEXT,"
             + FormsTable.COLUMN_ISTATUS96x + " TEXT,"
             + FormsTable.COLUMN_SYNCED + " TEXT,"

@@ -15,7 +15,7 @@ public class FormsContract {
         public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
         public static final String COLUMN_PROJECT_NAME = "EHSAS_NASHONUMA";
 
-        public static final String COLUMN_H1 = "H1";
+        public static final String COLUMN_JSON = "form_json";
 
         public static final String COLUMN_ID = "_id";
         public static final String COLUMN_UID = "uid";
