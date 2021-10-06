@@ -20,16 +20,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+            <!--Heading  Radio-->
+            <androidx.cardview.widget.CardView style="@style/cardView">
 
-                <TextView
-                    style="@style/i_textview"
-                    android:text="@string/C1Heading" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            </LinearLayout>
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/E1Heading" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <!--E101  Input-Numeric -->
             <androidx.cardview.widget.CardView

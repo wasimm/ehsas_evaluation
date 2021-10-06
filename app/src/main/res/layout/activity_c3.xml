@@ -21,7 +21,7 @@
             android:orientation="vertical">
 
 
-            <!--C300  Radio-->
+            <!--Heading  Radio-->
             <androidx.cardview.widget.CardView style="@style/cardView">
 
                 <LinearLayout
