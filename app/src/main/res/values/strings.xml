@@ -1,4 +1,4 @@
-<resources>
+<resources>f
 
 
     <string name="form"> Start Interview </string>
@@ -27,7 +27,7 @@
     <string name="records_summary">Records Summary</string>
     <string name="main_menu">Main Menu</string>
     <string name="no"> No </string>
-    <string name="dkn"> Don’t Know </string>
+    <string name="dkn">Don\'t Know</string>
     <string name="none"> No one </string>
     <string name="never"> Never</string>
     <string name="na"> Applicable /Not Available  </string>
@@ -74,7 +74,7 @@
     <string name="householdinformationform_heading"> Household Information Form </string>
     <!-- Replace with correct text-->
 
-    <!-- Section H1 -->
+    <!-- H1 -->
     <string name="H1Heading">SECTION H1: HOUSEHOLD INFORMATION</string>
     <string name="H101">Cluster Number</string>
 
@@ -84,23 +84,30 @@
     <string name="H105">Union Council</string>
     <string name="H106">City/Village</string>
     <string name="H107">Household Number</string>
-    <string name="H108">BISP Beneficiary ID</string>
-    <string name="H109">Number of BISP Beneficiaries in HH</string>
-    <string name="H110">Interviewer\'s Name</string>
-    <string name="H111">Date of Interview</string>
-    <string name="H112">Time of Interview</string>
-    <string name="H113">Name of the Respondent</string>
-    <string name="H114">Age of Respondent in completed years</string>
 
-    <string name="H115">Is Respondent Head of Household?</string>
-    <string name="H11501">Yes</string>
-    <string name="H11502">No</string>
+    <string name="H108">Is this household a BISP beneficiary?</string>
+    <string name="H10801">Yes</string>
+    <string name="H10802">No</string>
 
-    <string name="H116">Was Consent Taken?</string>
-    <string name="H11601">Verbal Consent</string>
-    <string name="H11602">Written Consent</string>
+    <string name="H109">Number of BISP Beneficiaries in  household</string>
+    <string name="H110">Does this household have anyone enrolled in the Esass Nasu-o-Numa Program?</string>
+    <string name="H11001">Yes</string>
+    <string name="H11002">No</string>
 
-    <string name='Q_H117'>HH0117</string>
+    <string name="H111">Interviewer\'s Name</string>
+    <string name="H112">Date of Interview</string>
+    <string name="H113">Time of Interview</string>
+    <string name="H114">Name of the Respondent</string>
+    <string name="H115">Age of Respondent in completed years</string>
+
+    <string name="H116">Is Respondent Head of Household?</string>
+    <string name="H11601">Yes</string>
+    <string name="H11602">No</string>
+
+    <string name="H117">Was Consent Taken?</string>
+    <string name="H11701">Verbal Consent</string>
+    <string name="H11702">Written Consent</string>
+
     <string name="only_for_testing">ONLY FOR TESTING</string>
     <string name="database" translatable="false">Database</string>
     <string name='Q_H101'>H101</string>
@@ -119,18 +126,123 @@
     <string name='Q_H114'>H114</string>
     <string name='Q_H115'>H115</string>
     <string name='Q_H116'>H116</string>
+    <string name='Q_H117'>H117</string>
+    <string name='Q_H118'>H118</string>
 
-    <string name="H117hint">Result of Interview</string>
-    <string name="H11701">Completed</string>
-    <string name="H11702">No household member at home or no competent respondent at the time of visit</string>
-    <string name="H11703">Entire household absent for extended period of time</string>
-    <string name="H11704">Refused</string>
-    <string name="H11705">Dwelling vacant or address not a dwelling</string>
-    <string name="H11706">Dwelling not found</string>
-    <string name="H11796">Others, (Specify)</string>
+    <string name="H118">Result of Household Questionnaire interview</string>
+    <string name="H11801">Completed</string>
+    <string name="H11802">No household member at home or no competent respondent at the time of visit</string>
+    <string name="H11803">Entire household absent for extended period of time</string>
+    <string name="H11804">Refused</string>
+    <string name="H11805">Dwelling vacant or address not a dwelling</string>
+    <string name="H11806">Dwelling not found</string>
+    <string name="H11896">Others, (Specify)</string>
+
+    <!-- H2 -->
+    <string name="H2Heading">SECTION H2: LIST OF HOUSEHOLD MEMBER</string>
+
+    <string name="H2Heading2">SECTION H2: FAMILY MEMBERS</string>
+
+    <string name="H201">Line number</string>
+
+    <string name="H202">First, please tell me the name of each person who usually lives here, starting with the head of the household.</string>
+
+    <string name="H203">Relationship with Head of household)?</string>
+    <string name="H20301">Head</string>
+    <string name="H20302">Spouse</string>
+    <string name="H20303">Son, Daughter</string>
+    <string name="H20304">Son-In-Law, Daughter-In-Law</string>
+    <string name="H20305">Grandchild</string>
+    <string name="H20306">Parent</string>
+    <string name="H20307">Parent-In-Law</string>
+    <string name="H20308">Brother, Sister</string>
+    <string name="H20309">Brother-In-Law, Sister-In-Law</string>
+    <string name="H20310">Uncle, Aunt</string>
+    <string name="H20311">Niece, Nephew</string>
+    <string name="H20312">Other Relatives</string>
+    <string name="H20313">Adopted ,Foster, Stepchild</string>
+    <string name="H20314">Servant (Live-In)</string>
+    <string name="H20315">Orphan</string>
+    <string name="H20396">Other (Not Related)</string>
+    <string name="H20398">Don\'t Know</string>
+
+    <string name="H204">Sex</string>
+    <string name="H20401">Male</string>
+    <string name="H20402">Female</string>
+    <string name="H20403">Transgender</string>
+
+    <string name="H205">What is (name)’s date of birth?</string>
+    <string name="H20501">Day</string>
+    <string name="H20502">Month</string>
+    <string name="H20503">Year</string>
+
+    <string name="H206">How old is (name)?</string>
+    <string name="H20601">Days</string>
+    <string name="H20602">Months</string>
+    <string name="H20603">Years</string>
+
+    <string name="H207">Can you please identify whether you have availed any of these programs?</string>
+    <string name="H20701">Ehsaas Kafaalt Program</string>
+    <string name="H20702">Ehsaas Waseela-e-Taleem</string>
+    <string name="H20703">Ehsaas Be-Rozgar Program</string>
+    <string name="H20704">None-BISP Beneficiary</string>
+    <string name="H20796">Other (specify)</string>
+
+    <string name="H208">CNIC number of BISP beneficiary</string>
+
+    <string name="H209">Marital Status (10 years or above)</string>
+    <string name="H20901">Married</string>
+    <string name="H20902">Widowed</string>
+    <string name="H20903">Divorced</string>
+    <string name="H20904">Separated</string>
+    <string name="H20905">Un-Married</string>
+
+    <string name="H210">Current status of married woman</string>
+    <string name="H21001">Pregnant Woman</string>
+    <string name="H21002">Lactating woman with child under 2</string>
+    <string name="H21003">Women with 06-23 months of child</string>
+    <string name="H21004">Non-Pregnant</string>
+
+    <string name="H211">EDUCATION (3 years and above)</string>
+    <string name="H21101">None</string>
+    <string name="H21102">Pre-Primary</string>
+    <string name="H21103">Primary (1–5)</string>
+    <string name="H21104">Middle (6–8)</string>
+    <string name="H21105">Secondary (9–10)</string>
+    <string name="H21106">Intermediate</string>
+    <string name="H21107">Graduation</string>
+    <string name="H21108">Masters</string>
+    <string name="H21109">Ph.D</string>
+    <string name="H21198">Don\'t know</string>
+
+    <string name="H212">Occupation (3 years and above)</string>
+    <string name="H21201">None</string>
+    <string name="H21202">Unskilled Manual Labour</string>
+    <string name="H21203">Skilled Manual Labour</string>
+    <string name="H21204">Agriculture</string>
+    <string name="H21205">Sales And Services</string>
+    <string name="H21206">Professional</string>
+    <string name="H21207">Student</string>
+    <string name="H21208">Unemployed</string>
+    <string name="H21209">Housewife</string>
+    <string name="H21210">Retired</string>
+    <string name="H21296">Others (Specify)</string>
+
+    <string name='Q_H201'>H201</string>
+    <string name='Q_H202'>H202</string>
+    <string name='Q_H203'>H203</string>
+    <string name='Q_H204'>H204</string>
+    <string name='Q_H205'>H205</string>
+    <string name='Q_H206'>H206</string>
+    <string name='Q_H207'>H207</string>
+    <string name='Q_H208'>H208</string>
+    <string name='Q_H209'>H209</string>
+    <string name='Q_H210'>H210</string>
+    <string name='Q_H211'>H211</string>
+    <string name='Q_H212'>H212</string>
 
 
-    <!-- Section H301 -->
+    <!-- H3 -->
     <string name="H3Heading">SECTION H3: SOCIO-ECONOMIC STATUS</string>
     <string name="H301">What is the mother tongue of the head of the household?</string>
     <string name="H30101">Urdu</string>
@@ -208,7 +320,6 @@
     <string name="H30802">No</string>
 
     <string name="H309">If yes, how many other households use this toilet facility?</string>
-
 
     <string name="H310">What is usually done to dispose the stools of the youngest child?</string>
     <string name="H31001">Child uses toilet/latrine</string>
@@ -493,8 +604,7 @@
     <string name='Q_H32307'>H32307</string>
 
     <!-- H4 -->
-
-    <string name="H4Heading">SECTION H4: HAND WASHING </string>
+    <string name="H4Heading">SECTION H4: HAND WASHING</string>
     <string name="H401">Please show us where you and members of your household most often wash their hands. OBSERVATION ONLY:</string>
     <string name="H40101">Observed</string>
     <string name="H40102">Not in dwelling/plot/yard</string>
@@ -544,5 +654,2398 @@ After the respondent stops listing times, ask “Are there any other situations 
     <string name='Q_H404'>H404</string>
     <string name='Q_H405'>H405</string>
     <string name='Q_H406'>H406</string>
+
+
+    <!-- H5 -->
+    <string name="H5Heading">SECTION H5: FOOD INSECURITY EXPERIENCE SCALE HOUSEHOLD REFERENCED</string>
+
+    <string name="H501">During the last 12 months, was there a time when you or others in your household were worried you would not have enough food to eat because of a lack of money or other resources? (if "yes", go to question Q1a, otherwise go to question Q2)</string>
+    <string name="H50101">Yes</string>
+    <string name="H50102">No</string>
+    <string name="H50103">Don\'t know</string>
+    <string name="H50104">Refused</string>
+
+    <string name="H501a">Was this specifically due to the COVID-19 crisis? (go to question Q1b)</string>
+    <string name="H501a01">Yes</string>
+    <string name="H501a02">No</string>
+    <string name="H501a03">Don\'t know</string>
+    <string name="H501a04">Refused</string>
+
+    <string name="H501b">Did this happen in the past 4 weeks (30 days)? (go to question Q2)</string>
+    <string name="H501b01">Yes</string>
+    <string name="H501b02">No</string>
+    <string name="H501b03">Don\'t know</string>
+    <string name="H501b04">Refused</string>
+
+    <string name="H502">During the last 12 months, was there a time when you or others in your household were unable to eat healthy and nutritious food because of a lack of money or other resources? (if "yes", go to question Q2a, otherwise go to question Q3)</string>
+    <string name="H50201">Yes</string>
+    <string name="H50202">No</string>
+    <string name="H50203">Don\'t know</string>
+    <string name="H50204">Refused</string>
+
+    <string name="H502a">Was this specifically due to the COVID-19 crisis? (go to question Q2b)</string>
+    <string name="H502a01">Yes</string>
+    <string name="H502a02">No</string>
+    <string name="H502a03">Don\'t know</string>
+    <string name="H502a04">Refused</string>
+
+    <string name="H502b">Did this happen in the past 4 weeks (30 days)? (go to question Q3)</string>
+    <string name="H502b01">Yes</string>
+    <string name="H502b02">No</string>
+    <string name="H502b03">Don\'t know</string>
+    <string name="H502b04">Refused</string>
+
+    <string name="H503">During the last 12 months, was there a time when you or others in your household ate only a few kinds of foods
+because of a lack of money or other resources? (if "yes", go
+to question Q3a, otherwise go to question Q4)</string>
+    <string name="H50301">Yes</string>
+    <string name="H50302">No</string>
+    <string name="H50303">Don\'t know</string>
+    <string name="H50304">Refused</string>
+
+    <string name="H503a">Was this specifically due to the COVID-19 crisis? (go to question Q3b)</string>
+    <string name="H503a01">Yes</string>
+    <string name="H503a02">No</string>
+    <string name="H503a03">Don\'t know</string>
+    <string name="H503a04">Refused</string>
+
+    <string name="H503b">Did this happen in the past 4 weeks (30 days)? (go to question Q4)</string>
+    <string name="H503b01">Yes</string>
+    <string name="H503b02">No</string>
+    <string name="H503b03">Don\'t know</string>
+    <string name="H503b04">Refused</string>
+
+    <string name="H504">During the last 12 months, was there a time when you or others in your household had to skip a meal because there
+was not enough money or other resources to get food? (if
+"yes", go to question Q4a, otherwise go to question Q5)</string>
+    <string name="H50401">Yes</string>
+    <string name="H50402">No</string>
+    <string name="H50403">Don\'t know</string>
+    <string name="H50404">Refused</string>
+
+    <string name="H504a">Did this happen in the past 4 weeks (30 days)? (go to question Q5)</string>
+    <string name="H504a01">Yes</string>
+    <string name="H504a02">No</string>
+    <string name="H504a03">Don\'t know</string>
+    <string name="H504a04">Refused</string>
+
+    <string name="H504b">Did this happen in the past 4 weeks (30 days)? (go to question Q5)</string>
+    <string name="H504b01">Yes</string>
+    <string name="H504b02">No</string>
+    <string name="H504b03">Don\'t know</string>
+    <string name="H504b04">Refused</string>
+
+    <string name="H505">During the last 12 months, was there a time when you or others in your household ate less than you thought you
+should because of a lack of money or other resources? (if
+"yes", go to question Q5a, otherwise go to question Q6)</string>
+    <string name="H50501">Yes</string>
+    <string name="H50502">No</string>
+    <string name="H50503">Don\'t know</string>
+    <string name="H50504">Refused</string>
+
+    <string name="H505a">Was this specifically due to the COVID-19 crisis? (go to question Q5b)</string>
+    <string name="H505a01">Yes</string>
+    <string name="H505a02">No</string>
+    <string name="H505a03">Don\'t know</string>
+    <string name="H505a04">Refused</string>
+
+    <string name="H505b">Did this happen in the past 4 weeks (30 days)? (go to question Q6)</string>
+    <string name="H505b01">Yes</string>
+    <string name="H505b02">No</string>
+    <string name="H505b03">Don\'t know</string>
+    <string name="H505b04">Refused</string>
+
+    <string name="H506">During the last 12 months, was there a time when your household ran out of food because of a lack of money or
+other resources? (if "yes", go to question Q6a, otherwise go
+to question Q7)</string>
+    <string name="H50601">Yes</string>
+    <string name="H50602">No</string>
+    <string name="H50603">Don\'t know</string>
+    <string name="H50604">Refused</string>
+
+    <string name="H506a">Was this specifically due to the COVID-19 crisis? (go to question Q6b)</string>
+    <string name="H506a01">Yes</string>
+    <string name="H506a02">No</string>
+    <string name="H506a03">Don\'t know</string>
+    <string name="H506a04">Refused</string>
+
+    <string name="H506b">Did this happen in the past 4 weeks (30 days)? (if "yes", go to question Q6c, otherwise go to question Q7)</string>
+    <string name="H506b01">Yes</string>
+    <string name="H506b02">No</string>
+    <string name="H506b03">Don\'t know</string>
+    <string name="H506b04">Refused</string>
+
+    <string name="H506c">How often did this happen? (go to question Q7)</string>
+    <string name="H506c01">Rarely</string>
+    <string name="H506c02">Sometimes</string>
+    <string name="H506c03">Often</string>
+    <string name="H506c04">Don\'t know</string>
+    <string name="H506c05">Refused</string>
+
+    <string name="H507">During the last 12 months, was there a time when you or others in your household were hungry but did not eat
+because there was not enough money or other resources for
+food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
+    <string name="H50701">Yes</string>
+    <string name="H50702">No</string>
+    <string name="H50703">Don\'t know</string>
+    <string name="H50704">Refused</string>
+
+    <string name="H507a">Was this specifically due to the COVID-19 crisis? (go to question Q7b)</string>
+    <string name="H507a01">Yes</string>
+    <string name="H507a02">No</string>
+    <string name="H507a03">Don\'t know</string>
+    <string name="H507a04">Refused</string>
+
+    <string name="H507b">Did this happen in the past 4 weeks (30 days)? (if "yes", go to question Q7c, otherwise go to question Q8)</string>
+    <string name="H507b01">Yes</string>
+    <string name="H507b02">No</string>
+    <string name="H507b03">Don\'t know</string>
+    <string name="H507b04">Refused</string>
+
+    <string name="H507c">How often did this happen? (go to question Q8)</string>
+    <string name="H507c01">Rarely</string>
+    <string name="H507c02">Sometimes</string>
+    <string name="H507c03">Often</string>
+    <string name="H507c04">Don\'t know</string>
+    <string name="H507c05">Refused</string>
+
+    <string name="H508">During the last 12 months, was there a time when you or others in your household went without eating for a whole day because of a lack of money or other resources? (if "yes", go to question Q8a, otherwise END)</string>
+    <string name="H50801">Yes</string>
+    <string name="H50802">No</string>
+    <string name="H50803">Don\'t know</string>
+    <string name="H50804">Refused</string>
+
+    <string name="H508a">Was this specifically due to the COVID-19 crisis? (go to question Q8b)</string>
+    <string name="H508a01">Yes</string>
+    <string name="H508a02">No</string>
+    <string name="H508a03">Don\'t know</string>
+    <string name="H508a04">Refused</string>
+
+    <string name="H508b">Did this happen in the past 4 weeks (30 days)? (if "yes", go to question Q8c, otherwise END)</string>
+    <string name="H508b01">Yes</string>
+    <string name="H508b02">No</string>
+    <string name="H508b03">Don\'t know</string>
+    <string name="H508b04">Refused</string>
+
+    <string name="H508c">How often did this happen? (END)</string>
+    <string name="H508c01">Rarely</string>
+    <string name="H508c02">Sometimes</string>
+    <string name="H508c03">Often</string>
+    <string name="H508c04">Don\'t know</string>
+    <string name="H508c05">Refused</string>
+
+    <string name='Q_H501'>H501</string>
+    <string name='Q_H501a'>H501a</string>
+    <string name='Q_H501b'>H501b</string>
+    <string name='Q_H502'>H502</string>
+    <string name='Q_H502a'>H502a</string>
+    <string name='Q_H502b'>H502b</string>
+    <string name='Q_H503'>H503</string>
+    <string name='Q_H503a'>H503a</string>
+    <string name='Q_H503b'>H503b</string>
+    <string name='Q_H504'>H504</string>
+    <string name='Q_H504a'>H504a</string>
+    <string name='Q_H504b'>H504b</string>
+    <string name='Q_H505'>H505</string>
+    <string name='Q_H505a'>H505a</string>
+    <string name='Q_H505b'>H505b</string>
+    <string name='Q_H506'>H506</string>
+    <string name='Q_H506a'>H506a</string>
+    <string name='Q_H506b'>H506b</string>
+    <string name='Q_H506c'>H506c</string>
+    <string name='Q_H507'>H507</string>
+    <string name='Q_H507a'>H507a</string>
+    <string name='Q_H507b'>H507b</string>
+    <string name='Q_H507c'>H507c</string>
+    <string name='Q_H508'>H508</string>
+    <string name='Q_H508a'>H508a</string>
+    <string name='Q_H508b'>H508b</string>
+    <string name='Q_H508c'>H508c</string>
+
+    <!-- H6 -->
+    <string name="H6Heading">SECTION H6: SOCIAL SAFETY NET(SN) ASSISTANCE RECIPIENTS\' INFORMATION</string>
+
+    <string name="H601">How many HH members received the assistance?</string>
+
+    <string name="H602">How often do you receive the financial assistance from BISP?</string>
+
+    <string name="H603">What is the mode of receiving of the amount?</string>
+    <string name="H60301">Through ATM</string>
+    <string name="H60302">Through Bio Metric</string>
+    <string name="H60303">From POS Agent</string>
+    <string name="H60304">From Shop</string>
+    <string name="H60396">Others(Specify)</string>
+
+    <string name="H604">If received from the POS agent or shop, what was the received amount?</string>
+
+    <string name="H605">Who received the amount?</string>
+    <string name="H60501">My self</string>
+    <string name="H60502">Husband</string>
+    <string name="H60596">Others(Specify)</string>
+
+    <string name="H606">Did you receive the complete amount?</string>
+    <string name="H60601">Yes</string>
+    <string name="H60602">No</string>
+
+    <string name="H607">Amount received in Last 12 months from BISP?</string>
+
+    <string name="H608">How far the payment facility from your house?</string>
+
+    <string name="H609">Who accompanied you to the facility?</string>
+    <string name="H60901">No one</string>
+    <string name="H60902">Husband</string>
+    <string name="H60903">Mother-in-law</string>
+    <string name="H60904">Father in law</string>
+    <string name="H60996">Others(Specify)</string>
+
+    <string name="H610">Who usually take decision regarding use of amount?</string>
+    <string name="H61001">My self</string>
+    <string name="H61002">Husband</string>
+    <string name="H61003">Mother-in-law</string>
+    <string name="H61004">Father in law</string>
+    <string name="H61096">Others(Specify)</string>
+
+    <string name="H611">Who used the received amount?</string>
+    <string name="H61101">My self</string>
+    <string name="H61102">Husband</string>
+    <string name="H61103">Mother-in-law</string>
+    <string name="H61104">Father in law</string>
+    <string name="H61196">Others(Specify)</string>
+
+    <string name="H612">Where did you spend the amount received from BISP?</string>
+    <string name="H61201">To buy food</string>
+    <string name="H61202">To buy medicines</string>
+    <string name="H61203">Spent on other household items</string>
+
+    <string name="H613">How much amount from the last assistance provided used for purchasing of food?</string>
+
+    <string name="H614">How much amount was spent on travelling to the beneficiary center?</string>
+
+    <string name="H615">Do you face any difficulty in reaching the designated point?</string>
+    <string name="H61501">By walk</string>
+    <string name="H61502">Rikshaw</string>
+    <string name="H61503">Bus</string>
+    <string name="H61504">By own conveyance</string>
+    <string name="H61596">Other (specify)</string>
+
+    <string name="H616">Do you face any difficulty in reaching the designated point?</string>
+    <string name="H61601">Yes</string>
+    <string name="H61602">No</string>
+
+    <string name="H617">If yes, please explain</string>
+
+    <string name='Q_H601'>H601</string>
+    <string name='Q_H602'>H602</string>
+    <string name='Q_H603'>H603</string>
+    <string name='Q_H604'>H604</string>
+    <string name='Q_H605'>H605</string>
+    <string name='Q_H606'>H606</string>
+    <string name='Q_H607'>H607</string>
+    <string name='Q_H608'>H608</string>
+    <string name='Q_H609'>H609</string>
+    <string name='Q_H610'>H610</string>
+    <string name='Q_H611'>H611</string>
+    <string name='Q_H612'>H612</string>
+    <string name='Q_H613'>H613</string>
+    <string name='Q_H614'>H614</string>
+    <string name='Q_H615'>H615</string>
+    <string name='Q_H616'>H616</string>
+    <string name='Q_H617'>H617</string>
+
+    <!-- W6 -->
+    <string name="W6Heading">SECTION W6. ASSISTANCE/EXPOSURE TO INTERVENTIONS</string>
+
+    <string name="W60101">Have you ever received any food supplements? (Show Sachet of supplements)</string>
+    <string name="W6010101">Yes</string>
+    <string name="W6010102">No</string>
+
+    <string name="W60102">Number of Beneficiaries?</string>
+
+    <string name="W60103">Source?</string>
+    <string name="W6010301">Government</string>
+    <string name="W6010302">NGO</string>
+    <string name="W6010303">Private/Individual</string>
+
+    <string name="W602">If yes, please explain</string>
+
+    <string name="W60301">RUSF for children/Wawamum</string>
+    <string name="W6030101">Yes</string>
+    <string name="W6030102">No</string>
+
+    <string name="W60302">Number of Beneficiaries?</string>
+
+    <string name="W60303">Source?</string>
+    <string name="W6030301">Government</string>
+    <string name="W6030302">NGO</string>
+    <string name="W6030303">Private/Individual</string>
+
+
+    <string name="W60401">RUTF for children</string>
+    <string name="W6040101">Yes</string>
+    <string name="W6040102">No</string>
+
+    <string name="W60402">Number of Beneficiaries?</string>
+
+    <string name="W60403">Source?</string>
+    <string name="W6040301">Government</string>
+    <string name="W6040302">NGO</string>
+    <string name="W6040303">Private/Individual</string>
+
+    <string name="W60501">Supplementary Nutritional Food - SNF (Mamta)</string>
+    <string name="W6050101">Yes</string>
+    <string name="W6050102">No</string>
+
+    <string name="W60502">Number of Beneficiaries?</string>
+
+    <string name="W60503">Source?</string>
+    <string name="W6050301">Government</string>
+    <string name="W6050302">NGO</string>
+    <string name="W6050303">Private/Individual</string>
+
+    <string name="W60601">Nutritional Counseling and Education</string>
+    <string name="W6060101">Yes</string>
+    <string name="W6060102">No</string>
+
+    <string name="W60602">Number of Beneficiaries?</string>
+
+    <string name="W60603">Source?</string>
+    <string name="W6060301">Government</string>
+    <string name="W6060302">NGO</string>
+    <string name="W6060303">Private/Individual</string>
+
+    <string name="W60701">Other (Specify)</string>
+    <string name="W6070101">Yes</string>
+    <string name="W6070102">No</string>
+
+    <string name="W60702">Number of Beneficiaries?</string>
+
+    <string name="W60703">Source?</string>
+    <string name="W6070301">Government</string>
+    <string name="W6070302">NGO</string>
+    <string name="W6070303">Private/Individual</string>
+
+    <string name="W608">How many sachets you have received till date?</string>
+
+    <string name="W609">Where and how do you keep the received supplements?</string>
+
+    <string name="W610">Who provided these supplments to you?</string>
+
+    <string name='Q_W60101'>W60101</string>
+    <string name='Q_W60102'>W60102</string>
+    <string name='Q_W60103'>W60103</string>
+    <string name='Q_W602'>W602</string>
+    <string name='Q_W60301'>W60301</string>
+    <string name='Q_W60302'>W60302</string>
+    <string name='Q_W60303'>W60303</string>
+    <string name='Q_W60401'>W60401</string>
+    <string name='Q_W60402'>W60402</string>
+    <string name='Q_W60403'>W60403</string>
+    <string name='Q_W60501'>W60501</string>
+    <string name='Q_W60502'>W60502</string>
+    <string name='Q_W60503'>W60503</string>
+    <string name='Q_W60601'>W60601</string>
+    <string name='Q_W60602'>W60602</string>
+    <string name='Q_W60603'>W60603</string>
+    <string name='Q_W60701'>W60701</string>
+    <string name='Q_W60702'>W60702</string>
+    <string name='Q_W60703'>W60703</string>
+    <string name='Q_W608'>W608</string>
+    <string name='Q_W609'>W609</string>
+    <string name='Q_W610'>W610</string>
+
+    <!-- W1 -->
+    <string name="W1Heading">SECTION W1: REPRODUCTIVE HISTORY</string>
+
+    <string name="W101">BISP Beneficary ID:</string>
+
+    <string name="W102">Name of the Woman</string>
+
+    <string name="W103">Line number of the Woman</string>
+
+    <string name="W104">Results of Woman\'s interview</string>
+    <string name="W10401">Completed</string>
+    <string name="W10402">Not at home</string>
+    <string name="W10403">Refused</string>
+    <string name="W10404">Partially completed</string>
+    <string name="W10405">Incapacitated</string>
+    <string name="W10496">Other (specify)</string>
+
+    <string name="W105">What is your date of birth?</string>
+    <string name="W10501">Day</string>
+    <string name="W10502">Month</string>
+    <string name="W10503">Year</string>
+
+    <string name="W106">Please tell me how old you are. What was your age at your last birthday? RECORD AGE IN COMPLETED YEARS</string>
+
+    <string name="W107">What was your age, at the time of your marriage?</string>
+
+    <string name="W108">What was your age of menarche?</string>
+
+    <string name="W109">Are you currently pregnant?</string>
+    <string name="W10901">Yes</string>
+    <string name="W10902">No</string>
+
+    <string name="W110">How many times you have been pregnant in your life? (Including current Pregnancy)</string>
+
+    <string name="W111">How many times have you delivered in your life?</string>
+
+    <string name="W112">What was age at the time of first birth?</string>
+
+    <string name="W113">How many times you have been Pregnant during last five years? (Including current Pregnancy)</string>
+
+    <string name="W114">How many times have you delivered during last five years?</string>
+
+    <string name="W115">Was there a live birth in last five years?</string>
+    <string name="W11501">Yes</string>
+    <string name="W11502">No</string>
+
+    <string name="W116">Pregnancy history number</string>
+
+    <string name="W117">Date of outcome of Pregnancy</string>
+    <string name="W11701">Day</string>
+    <string name="W11702">Month</string>
+    <string name="W11703">Year</string>
+
+    <string name="W118">Was the baby born alive, born dead or lost before birth?</string>
+    <string name="W11801">Born alive (Live birth)</string>
+    <string name="W11802">Born dead (Still birth</string>
+    <string name="W11803">Twin Birth (Live birth)</string>
+    <string name="W11804">One Alive One Dead (still birth)</string>
+    <string name="W11805">Both Dead (still birth)</string>
+    <string name="W11806">Lost before full Term (Miscarriage)</string>
+
+    <string name="W119">Is child Still alive?</string>
+    <string name="W11901">Yes</string>
+    <string name="W11902">No</string>
+
+    <string name="W120">Age of Child?</string>
+    <string name="W12001">Years</string>
+    <string name="W12002">Months</string>
+    <string name="W12003">Days</string>
+
+    <string name="W121">How old was the child when he/she died?</string>
+    <string name="W12101">Years</string>
+    <string name="W12102">Months</string>
+    <string name="W12103">Days</string>
+
+    <string name='Q_W101'>W101</string>
+    <string name='Q_W102'>W102</string>
+    <string name='Q_W103'>W103</string>
+    <string name='Q_W104'>W104</string>
+    <string name='Q_W105'>W105</string>
+    <string name='Q_W106'>W106</string>
+    <string name='Q_W107'>W107</string>
+    <string name='Q_W108'>W108</string>
+    <string name='Q_W109'>W109</string>
+    <string name='Q_W110'>W110</string>
+    <string name='Q_W111'>W111</string>
+    <string name='Q_W112'>W112</string>
+    <string name='Q_W113'>W113</string>
+    <string name='Q_W114'>W114</string>
+    <string name='Q_W115'>W115</string>
+    <string name='Q_W116'>W116</string>
+    <string name='Q_W117'>W117</string>
+    <string name='Q_W118'>W118</string>
+    <string name='Q_W119'>W119</string>
+    <string name='Q_W120'>W120</string>
+    <string name='Q_W121'>W121</string>
+
+    <!-- W2 -->
+    <string name="W2Heading">SECTION W2: ANTE-NATAL CARE</string>
+
+    <string name="W201">Did you see anyone for antenatal care during your last pregnancy with (name)?</string>
+    <string name="W20101">Yes</string>
+    <string name="W20102">No</string>
+
+    <string name="W202">Whom did you see? Probe: Anyone else? Probe for the type of person seen and record all answers given.</string>
+    <string name="W20201">Gynaecologist</string>
+    <string name="W20202">Other doctor</string>
+    <string name="W20203">Nurse</string>
+    <string name="W20204">Obstetrician</string>
+    <string name="W20205">Feldsher</string>
+    <string name="W20206">Relative/friend/neighbor</string>
+    <string name="W20207">TBA</string>
+    <string name="W20208">CHP</string>
+    <string name="W20296">Other (specify)</string>
+
+    <string name="W203">Where did you seek antenatal care?</string>
+    <string name="W20301">Respondent\'s home</string>
+    <string name="W20302">Other home</string>
+    <string name="W203961">Name of Public Health Facility</string>
+    <string name="W203962">Name of Private Health Facility</string>
+    <string name="W203963">Any Other Source (specify)</string>
+
+    <string name="W204">How many weeks or months pregnant were you when you first received antenatal care during last pregnancy? Record the answer as stated by respondent. If “9 months” or later, record 9.</string>
+    <string name="W20401">Weeks</string>
+    <string name="W20402">Months</string>
+    <string name="W20498">Don\'t know</string>
+
+    <string name="W205">How many times did you receive antenatal care during last pregnancy? Probe to identify the number of times antenatal care was received. If a range is given, record the minimum number of times antenatal care received.</string>
+    <string name="W20501">Number of times</string>
+    <string name="W20598">Don\'t know</string>
+
+    <string name="W206">As part of your antenatal care during your pregnancy, were any of the following done at least once: (Ask about each option and circle all positive responses)</string>
+
+    <string name="W20601">Were you weighed?</string>
+    <string name="W2060101">Yes</string>
+    <string name="W2060102">No</string>
+
+    <string name="W20602">Was your BP measured?</string>
+    <string name="W2060201">Yes</string>
+    <string name="W2060202">No</string>
+
+    <string name="W20603">Did you give urine sample?</string>
+    <string name="W2060301">Yes</string>
+    <string name="W2060302">No</string>
+
+    <string name="W20604">Did you give blood sample?</string>
+    <string name="W2060401">Yes</string>
+    <string name="W2060402">No</string>
+
+    <string name="W20605">Ultrasound?</string>
+    <string name="W2060501">Yes</string>
+    <string name="W2060502">No</string>
+
+    <string name="W20606">Received counselling on nutrition?</string>
+    <string name="W2060601">Yes</string>
+    <string name="W2060602">No</string>
+
+    <string name="W20607">Received counselling on breastfeeding?</string>
+    <string name="W2060701">Yes</string>
+    <string name="W2060702">No</string>
+
+    <string name="W20608">Received counselling on family planning?</string>
+    <string name="W2060801">Yes</string>
+    <string name="W2060802">No</string>
+
+    <string name="W20609">None of the above?</string>
+    <string name="W2060901">Yes</string>
+    <string name="W2060902">No</string>
+
+    <string name="W20696">Other specify</string>
+    <string name="W2069601">Yes</string>
+    <string name="W2069602">No</string>
+
+    <string name="W207">Have you ever taken any iron folic acid (IFA) while you were pregnant?</string>
+    <string name="W20701">Yes</string>
+    <string name="W20702">No</string>
+    <string name="W20798">Don\'t know</string>
+
+    <string name="W208">At what time of pregnancy did you start taking IFA?</string>
+    <string name="W20801">1st trimester</string>
+    <string name="W20802">2nd trimester</string>
+    <string name="W20803">3rd trimester</string>
+
+    <string name="W209">Who advised to take any iron folic acid (IFA) while you were pregnant?</string>
+    <string name="W20901">Gynaecologist</string>
+    <string name="W20902">Other doctor</string>
+    <string name="W20903">Nurse</string>
+    <string name="W20904">Obstetrician</string>
+    <string name="W20905">Feldsher</string>
+    <string name="W20906">Relative/friend/neighbor</string>
+    <string name="W20907">TBA</string>
+    <string name="W20908">CHP</string>
+    <string name="W20996">Other (specify)</string>
+
+    <string name="W210">From Where did you get iron folic acid (IFA) while you were pregnant?</string>
+    <string name="W210961">Name of Public Health Facility</string>
+    <string name="W210962">Name of Private Health Facility</string>
+    <string name="W210963">Any Other Source (specify)</string>
+
+    <string name="W211">How often did you take IFA during pregnancy?</string>
+    <string name="W21101">Daily</string>
+    <string name="W21102">Once a week</string>
+    <string name="W21103">Biweekly</string>
+    <string name="W21104">Monthly</string>
+    <string name="W21105">Rarely</string>
+
+    <string name="W212">How many months or days did you take IFA?</string>
+    <string name="W21201">Months</string>
+    <string name="W21202">Days</string>
+
+    <string name="W213">Have you ever taken calcium tablets while you were pregnant?</string>
+    <string name="W21301">Yes</string>
+    <string name="W21302">No</string>
+    <string name="W21398">Don\'t know</string>
+
+    <string name="W214">Who advised to take calcium tables while you were pregnant?</string>
+    <string name="W21401">Gynaecologist</string>
+    <string name="W21402">Other doctor</string>
+    <string name="W21403">Nurse</string>
+    <string name="W21404">Obstetrician</string>
+    <string name="W21405">Feldsher</string>
+    <string name="W21406">Relative/friend/neighbor</string>
+    <string name="W21407">TBA</string>
+    <string name="W21408">CHP</string>
+    <string name="W21496">Other (specify)</string>
+
+    <string name="W215">From Where did you get calcium tables while you were pregnant?</string>
+    <string name="W215961">Name of Public Health Facility</string>
+    <string name="W215962">Name of Private Health Facility</string>
+    <string name="W215963">Any Other Source (specify)</string>
+
+    <string name="W216">How often did you take calcium tablets during pregnancy?</string>
+    <string name="W21601">Daily</string>
+    <string name="W21602">Once a week</string>
+    <string name="W21603">Biweekly</string>
+    <string name="W21604">Monthly</string>
+    <string name="W21605">Rarely</string>
+
+    <string name="W217">How many months or days did you take calcium tablets?</string>
+    <string name="W21701">Months</string>
+    <string name="W21702">Days</string>
+
+    <string name="W218">Was deworming tablet were given to you during pregnancy?</string>
+    <string name="W21801">Yes</string>
+    <string name="W21802">No</string>
+    <string name="W21898">Don\'t know</string>
+
+    <string name="W219">Did you use the deworming tablets?</string>
+    <string name="W21901">Yes</string>
+    <string name="W21902">No</string>
+    <string name="W21998">Don\'t know</string>
+
+    <string name="W220">Did you feel you had night blindness (difficulty in seeing clearly in dusk) during your last pregnancy?</string>
+    <string name="W22001">Yes</string>
+    <string name="W22002">No</string>
+    <string name="W22098">Don\'t know</string>
+
+    <string name="W221">How long ago did PHC OR CHP’S health professional last visited your household?</string>
+    <string name="W22101">Months</string>
+    <string name="W22102">Days</string>
+    <string name="W22198">Never</string>
+
+    <string name="W222">How often does your PHC staff or CHP’s health professional visit your household?</string>
+    <string name="W22201">Weekly</string>
+    <string name="W22202">Fortnightly</string>
+    <string name="W22203">Monthly</string>
+    <string name="W22204">Occasionally</string>
+    <string name="W22205">Only for polio</string>
+    <string name="W22296">Other specify</string>
+
+    <string name="W223">What was the purpose of PHC staff or CHP’s health professional’s last visit?</string>
+    <string name="W22301">Health and nutrition sessions</string>
+    <string name="W22302">Contraceptive supplies</string>
+    <string name="W22303">Referral to HFC</string>
+    <string name="W22304">Vaccination</string>
+    <string name="W22305">Polio drops</string>
+    <string name="W22306">Treatment for mother</string>
+    <string name="W22307">Treatment for child</string>
+    <string name="W22308">Nutrition supplies</string>
+    <string name="W22396">Other specify</string>
+
+    <string name="W224">When did PHC staff or CHP’s health professional last conduct a health and nutrition session?</string>
+    <string name="W22401">Last month</string>
+    <string name="W22402">Last quarter</string>
+    <string name="W22403">In the last 6 months</string>
+    <string name="W22404">Never</string>
+
+    <string name="W225">Have you ever attended one of her health and nutrition sessions?</string>
+    <string name="W22501">Yes</string>
+    <string name="W22502">No</string>
+
+    <string name="W226">How often do you attend these sessions?</string>
+    <string name="W22601">Every month</string>
+    <string name="W22602">Once a quarter</string>
+    <string name="W22603">In 6 months</string>
+    <string name="W22604">Once a year</string>
+
+    <string name="W227">When you were pregnant with, did you receive any injection in the arm or shoulder to prevent the baby from getting tetanus, that is, convulsions after birth?</string>
+    <string name="W22701">Yes</string>
+    <string name="W22702">No</string>
+    <string name="W22798">Don\'t know</string>
+
+    <string name="W228">How many times did you receive tetanus injection during the pregnancy?</string>
+    <string name="W22801">Number of times</string>
+    <string name="W22898">Don\'t know</string>
+
+    <string name='Q_W201'>W201</string>
+    <string name='Q_W202'>W202</string>
+    <string name='Q_W203'>W203</string>
+    <string name='Q_W204'>W204</string>
+    <string name='Q_W205'>W205</string>
+
+    <string name='Q_W20601'>W20601</string>
+    <string name='Q_W20602'>W20602</string>
+    <string name='Q_W20603'>W20603</string>
+    <string name='Q_W20604'>W20604</string>
+    <string name='Q_W20605'>W20605</string>
+    <string name='Q_W20606'>W20606</string>
+    <string name='Q_W20607'>W20607</string>
+    <string name='Q_W20608'>W20608</string>
+    <string name='Q_W20609'>W20609</string>
+    <string name='Q_W20696'>W20696</string>
+
+    <string name='Q_W207'>W207</string>
+    <string name='Q_W208'>W208</string>
+    <string name='Q_W209'>W209</string>
+    <string name='Q_W210'>W210</string>
+    <string name='Q_W211'>W211</string>
+    <string name='Q_W212'>W212</string>
+    <string name='Q_W213'>W213</string>
+    <string name='Q_W214'>W214</string>
+    <string name='Q_W215'>W215</string>
+    <string name='Q_W216'>W216</string>
+    <string name='Q_W217'>W217</string>
+    <string name='Q_W218'>W218</string>
+    <string name='Q_W219'>W219</string>
+    <string name='Q_W220'>W220</string>
+    <string name='Q_W221'>W221</string>
+    <string name='Q_W222'>W222</string>
+    <string name='Q_W223'>W223</string>
+    <string name='Q_W224'>W224</string>
+    <string name='Q_W225'>W225</string>
+    <string name='Q_W226'>W226</string>
+    <string name='Q_W227'>W227</string>
+    <string name='Q_W228'>W228</string>
+
+
+    <!-- W3 -->
+    <string name="W3Heading">SECTION W3: DELIVERY AND POST-NATAL CARE</string>
+
+    <string name="W301">Who conducted the delivery of (name)?</string>
+    <string name="W30101">Doctor</string>
+    <string name="W30102">Midwife</string>
+    <string name="W30103">Nurse</string>
+    <string name="W30104">Obstetrician</string>
+    <string name="W30105">Traditional Birth Attendant</string>
+    <string name="W30106">Relative/friend/neighbour</string>
+    <string name="W30107">CHP</string>
+    <string name="W30196">Other (specify)</string>
+
+    <string name="W302">Who assisted with the delivery of (name)? Probe: Anyone else? Probe for the type of person assisting and record all answers given.</string>
+    <string name="W30201">Doctor</string>
+    <string name="W30202">Midwife</string>
+    <string name="W30203">Nurse</string>
+    <string name="W30204">Obstetrician</string>
+    <string name="W30205">Traditional Birth Attendant</string>
+    <string name="W30206">Relative/friend/neighbour</string>
+    <string name="W30207">CHP</string>
+    <string name="W30296">Other (specify)</string>
+    <string name="W30299">No one</string>
+
+    <string name="W303">Where did you give birth to (name)? Probe to identify the type of place.</string>
+    <string name="W30301">Respondent\'s home</string>
+    <string name="W30302">Other home</string>
+    <string name="W303961">Name of Public Health Facility</string>
+    <string name="W303962">Name of Private Health Facility</string>
+    <string name="W303963">Any Other Source (specify)</string>
+
+    <string name="W304">What was the type of delivery?</string>
+    <string name="W30401">Normal Vaginal Delivery</string>
+    <string name="W30402">Caesarean Section</string>
+    <string name="W30403">Vacuum Assisted Delivery</string>
+
+    <string name="W305">What was the gestational age at the time of delivery? (in Weeks)</string>
+
+    <string name="W306">Was (name) weighed at birth?</string>
+    <string name="W30601">Yes</string>
+    <string name="W30602">No</string>
+    <string name="W30698">Don\'t know</string>
+
+    <string name="W307">How much did (name) weigh? If a card is available, record weight from card.</string>
+    <string name="W30701">From card</string>
+    <string name="W30702">From recall</string>
+    <string name="W30798">Don\'t know</string>
+
+    <string name="W308">When (name) was born, was s/he very large, larger than average, average, smaller than average or very small?</string>
+    <string name="W30801">Very Large</string>
+    <string name="W30802">Larger than average</string>
+    <string name="W30803">Average</string>
+    <string name="W30804">Smaller than average</string>
+    <string name="W30805">Very small</string>
+    <string name="W30898">Don\'t know</string>
+
+
+    <string name="W309">Within one hour after birth, was (name) put directly on the bare skin of your chest?</string>
+    <string name="W30901">Yes</string>
+    <string name="W30902">No</string>
+    <string name="W30998">Don\'t know/don\'t remember</string>
+
+    <string name="W310">Was (name) dried or wiped soon after birth?</string>
+    <string name="W31001">Yes</string>
+    <string name="W31002">No</string>
+    <string name="W31098">Don\'t know/don\'t remember</string>
+
+    <string name="W311">Before being placed on the bare skin of your chest, was the baby wrapped up?</string>
+    <string name="W31101">Yes</string>
+    <string name="W31102">No</string>
+    <string name="W31198">Don\'t know/don\'t remember</string>
+
+    <string name="W312">How long after the birth was (name) bathed for the first time?
+	If “immediately” or less than 1 hour, record ‘000’.
+	If less than 24 hours, record hours.
+	If “1 day” or “next day”, probe: About how many hours after the delivery?
+	If “24 hours”, probe to ensure best estimate of less than 24 hours or 1 day.
+         If 24 hours or more, record days.</string>
+    <string name="W31201">Immediately/less than 1 hour</string>
+    <string name="W31202">Hours</string>
+    <string name="W31203">Days</string>
+    <string name="W31297">Never bathed</string>
+    <string name="W31298">Don\'t know/don\'t remember</string>
+
+    <string name="W313">After the cord was cut and until it fell off, was anything applied to the cord?</string>
+    <string name="W31301">Yes</string>
+    <string name="W31302">No</string>
+    <string name="W31398">Don\'t know/don\'t remember</string>
+
+    <string name="W314">What was applied to the cord?</string>
+    <string name="W31401">Nothing (CLEAN, OPEN, DRY)</string>
+    <string name="W31402">Chlorhexidine</string>
+    <string name="W31403">Other antiseptic (alcohol, spirit)</string>
+    <string name="W31404">Ash</string>
+    <string name="W31405">Animal dung</string>
+    <string name="W31496">Other (specify)</string>
+    <string name="W31498">Don’t know / don’t remember</string>
+
+    <string name="W315">If Chlorhexidine was used ask the respondent about the source of provision?</string>
+    <string name="W315961">Name of Public Health Facility</string>
+    <string name="W315962">Name of Private Health Facility</string>
+    <string name="W315963">Any Other Source (specify)</string>
+
+    <string name="W316">Did anyone check on your health after delivery? (During the postnatal period 42 days)</string>
+    <string name="W31601">Yes</string>
+    <string name="W31602">No</string>
+
+    <string name="W317">Who checked your health after delivery?</string>
+    <string name="W31701">Gynaecologist</string>
+    <string name="W31702">Other doctor</string>
+    <string name="W31703">Nurse</string>
+    <string name="W31704">Obstetrician</string>
+    <string name="W31705">Feldsher</string>
+    <string name="W31706">Relative/friend/neighbor</string>
+    <string name="W31707">TBA</string>
+    <string name="W31708">CHP</string>
+    <string name="W31796">Other (specify)</string>
+
+    <string name="W318">How long after delivery did the first of these checks happen?
+	If less than one day, record hours.
+	If less than one week, record days.
+	Otherwise, record weeks.</string>
+    <string name="W31801">Hours</string>
+    <string name="W31802">Days</string>
+    <string name="W31803">Weeks</string>
+    <string name="W31898">Don\'t know/Don\'t remember</string>
+
+    <string name="W319">How many times such check happen?</string>
+
+    <string name="W320">Purpose of this check?</string>
+    <string name="W32001">Counselling on nutrition</string>
+    <string name="W32002">Counselling on IYCF and breast feeding</string>
+    <string name="W32003">Counselling on family planning</string>
+    <string name="W32004">Assessment for complications</string>
+    <string name="W32005">Referral to Health Facility</string>
+    <string name="W32006">Treatment for mother</string>
+    <string name="W32007">Nutrition supplies</string>
+    <string name="W32008">Contraceptive supplies</string>
+    <string name="W32096">Other (specify)</string>
+
+    <string name="W321">Did anyone check on (name of child) health?</string>
+    <string name="W32101">Yes</string>
+    <string name="W32102">No</string>
+
+    <string name="W322">Who checked the child\'s health after delivery?</string>
+    <string name="W32201">Paediatrician</string>
+    <string name="W32202">Other doctor</string>
+    <string name="W32203">Nurse</string>
+    <string name="W32204">Midwife</string>
+    <string name="W32205">Obstetrician</string>
+    <string name="W32206">TBA</string>
+    <string name="W32207">Relative/friend/neighbor</string>
+    <string name="W32208">CHP</string>
+    <string name="W32296">Other (specify)</string>
+
+    <string name="W323">How long after delivery did the first of these checks happen?
+	If less than one day, record hours.
+	If less than one week, record days.
+    Otherwise, record weeks.</string>
+    <string name="W32301">Hours</string>
+    <string name="W32302">Days</string>
+    <string name="W32303">Weeks</string>
+    <string name="W32398">Don\'t know/Don\'t remember</string>
+
+    <string name="W324">How many times such check happen?</string>
+
+    <string name="W325">Purpose of this check?</string>
+    <string name="W32501">Vaccination</string>
+    <string name="W32502">Polio drops</string>
+    <string name="W32503">Assessment for complications</string>
+    <string name="W32504">Treatment for child</string>
+    <string name="W32596">Other (specify)</string>
+
+    <string name="W326">Have you ever used contraception methods to avoid pregnancy?</string>
+    <string name="W32601">Yes</string>
+    <string name="W32602">No</string>
+
+    <string name="W327">Are you currently using any contraception method to avoid pregnancy?</string>
+    <string name="W32701">Yes</string>
+    <string name="W32702">No</string>
+
+    <string name="W328">If Yes What contraception methods, you are using?</string>
+    <string name="W32801">Oral contraceptive pill</string>
+    <string name="W32802">Intrauterine device (IUD)</string>
+    <string name="W32803">Injectables</string>
+    <string name="W32804">Implant</string>
+    <string name="W32805">Condoms (male or female)</string>
+    <string name="W32806">Diaphragm</string>
+    <string name="W32807">Foam/jelly</string>
+    <string name="W32808">Sterilization (male or female)</string>
+    <string name="W32809">Patch</string>
+    <string name="W32810">Vaginal ring</string>
+    <string name="W32811">Sponge</string>
+    <string name="W32812">Lactational amenorrhea method (LAM)</string>
+    <string name="W32813">Standard Days Method (SDM)</string>
+    <string name="W32814">Herbal Medicine</string>
+    <string name="W32815">Calendar method</string>
+    <string name="W32816">Withdrawal method</string>
+    <string name="W32896">Other (Specify)</string>
+
+    <string name='Q_W301'>W301</string>
+    <string name='Q_W302'>W302</string>
+    <string name='Q_W303'>W303</string>
+    <string name='Q_W304'>W304</string>
+    <string name='Q_W305'>W305</string>
+    <string name='Q_W306'>W306</string>
+    <string name='Q_W307'>W307</string>
+    <string name='Q_W308'>W308</string>
+    <string name='Q_W309'>W309</string>
+    <string name='Q_W310'>W310</string>
+    <string name='Q_W311'>W311</string>
+    <string name='Q_W312'>W312</string>
+    <string name='Q_W313'>W313</string>
+    <string name='Q_W314'>W314</string>
+    <string name='Q_W315'>W315</string>
+    <string name='Q_W316'>W316</string>
+    <string name='Q_W317'>W317</string>
+    <string name='Q_W318'>W318</string>
+    <string name='Q_W319'>W319</string>
+    <string name='Q_W320'>W320</string>
+    <string name='Q_W321'>W321</string>
+    <string name='Q_W322'>W322</string>
+    <string name='Q_W323'>W323</string>
+    <string name='Q_W324'>W324</string>
+    <string name='Q_W325'>W325</string>
+    <string name='Q_W326'>W326</string>
+    <string name='Q_W327'>W327</string>
+    <string name='Q_W328'>W328</string>
+
+    <!-- W4 -->
+    <string name="W4Heading">SECTION W4: MINIMUM DIETARY DIVERSITY FOR WOMEN (15-49 YEARS)</string>
+
+    <string name="W401">Grains, White Roots and Tubers, and Plantains Barley, Millet, Oats, Rice, Sorghum, Wheat, Arracacha, Bananas, Cassava, Lotus Root, Potatoes (all skin colors), Rutabaga, Sweet Potato (White, pale yellow fleshed), arbi/arvi</string>
+    <string name="W40101">Pre-Breakfast</string>
+    <string name="W40102">Breakfast</string>
+    <string name="W40103">Between Breakfast and Lunch</string>
+    <string name="W40104">Lunch</string>
+    <string name="W40105">Between Lunch and Dinner</string>
+    <string name="W40106">Dinner</string>
+    <string name="W40107">Between Dinner and sleep</string>
+
+    <string name="W402">Pulses (Beans, Peas, and Lentils) Adzuki Bean, Broad Bean, Chickpeas, Cluster Bean, Common Bean, Lentil, Mung Bean, Pea, Pigeon Pea, Rice bean, Soybean (Soya Bean), Urad Bean</string>
+    <string name="W40201">Pre-Breakfast</string>
+    <string name="W40202">Breakfast</string>
+    <string name="W40203">Between Breakfast and Lunch</string>
+    <string name="W40204">Lunch</string>
+    <string name="W40205">Between Lunch and Dinner</string>
+    <string name="W40206">Dinner</string>
+    <string name="W40207">Between Dinner and sleep</string>
+
+    <string name="W403">Nuts and Seeds Peanut/Groundnut, Almond, Cashew, Pistachio, Walnut, Wild Mango (Bush Mango), Locust Bean Seeds, Melon Seeds, Pine Nuts, Pumpkin Seeds, Sesame Seeds, Sunflower Seeds</string>
+    <string name="W40301">Pre-Breakfast</string>
+    <string name="W40302">Breakfast</string>
+    <string name="W40303">Between Breakfast and Lunch</string>
+    <string name="W40304">Lunch</string>
+    <string name="W40305">Between Lunch and Dinner</string>
+    <string name="W40306">Dinner</string>
+    <string name="W40307">Between Dinner and sleep</string>
+
+    <string name="W404">Dairy Fresh Whole, Low Fat, Skim milk, reconstituted powdered or evaporated or ultra-high temperature (UHT) boxed milk, Hard cheese, Soft cheese, Kefir, Yoghurt/Curd</string>
+    <string name="W40401">Pre-Breakfast</string>
+    <string name="W40402">Breakfast</string>
+    <string name="W40403">Between Breakfast and Lunch</string>
+    <string name="W40404">Lunch</string>
+    <string name="W40405">Between Lunch and Dinner</string>
+    <string name="W40406">Dinner</string>
+    <string name="W40407">Between Dinner and sleep</string>
+
+    <string name="W405">Meat, Poultry, and Fish Beef, Goat, Mutton, Lamb, Rabbit, Yak, Deer, Antelope, Buffalo or other large wild or domesticated mammals, Tripe or other pale organ meats, Chicken, Duck, Goose, Guinea Fowl, Pigeon, Turkey, Other wild or domesticated birds, Gizzard, Heart, Kidney, Liver, Fresh/Frozen/Dried Fish (all species), Canned Fish (Tuna and Sardines), Shrimp, Lobster, Carbs</string>
+    <string name="W40501">Pre-Breakfast</string>
+    <string name="W40502">Breakfast</string>
+    <string name="W40503">Between Breakfast and Lunch</string>
+    <string name="W40504">Lunch</string>
+    <string name="W40505">Between Lunch and Dinner</string>
+    <string name="W40506">Dinner</string>
+    <string name="W40507">Between Dinner and sleep</string>
+
+    <string name="W406">Eggs Chicken Eggs and Duck Eggs, Egg powder</string>
+    <string name="W40601">Pre-Breakfast</string>
+    <string name="W40602">Breakfast</string>
+    <string name="W40603">Between Breakfast and Lunch</string>
+    <string name="W40604">Lunch</string>
+    <string name="W40605">Between Lunch and Dinner</string>
+    <string name="W40606">Dinner</string>
+    <string name="W40607">Between Dinner and sleep</string>
+
+    <string name="W407">Dark Green Leafy Vegetables Bean Greens, Beet Greens, Bitter Melon Greens, Broccoli, Carrots Green, Chicory Greens, Chilli Greens, Chinese cabbage, Fenugreek Greens (Methi), Lettuce, Mustard Green, Okra Greens (Lady Fingers), Pumpkin Green, Spinach, Turnip Greens</string>
+    <string name="W40701">Pre-Breakfast</string>
+    <string name="W40702">Breakfast</string>
+    <string name="W40703">Between Breakfast and Lunch</string>
+    <string name="W40704">Lunch</string>
+    <string name="W40705">Between Lunch and Dinner</string>
+    <string name="W40706">Dinner</string>
+    <string name="W40707">Between Dinner and sleep</string>
+
+    <string name="W408">Other Vitamin A-rich Fruits and Vegetables Apricot (Fresh or Dried), Cantaloupe Melon (Ripe), Locust Bean Fruit/Pulp, Mango (Ripe, Fresh and Dried), Musk Melon, Papaya (Ripe, fresh and dried), Peaches (dried or raw), Persimmon (ripe), Carrot, Pumpkin, Red Pepper (sweet), Squash (Orange or dark yellow fleshed only), Sweet Potato (Orange or Dark yellow fleshed only)</string>
+    <string name="W40801">Pre-Breakfast</string>
+    <string name="W40802">Breakfast</string>
+    <string name="W40803">Between Breakfast and Lunch</string>
+    <string name="W40804">Lunch</string>
+    <string name="W40805">Between Lunch and Dinner</string>
+    <string name="W40806">Dinner</string>
+    <string name="W40807">Between Dinner and sleep</string>
+
+    <string name="W409">Other Vegetables Asparagus, Beans (various) when eaten as fresh pod, Beets, Bitter melon, Cabbage (Common and Red varieties), Cauliflower, Celery, Corn (fresh, not dried /flour/meal - Green Maize), Cucumbers, Eggplant (Brinjal), Green Pepper, Leek, Lettuce (Light Green), Mushroom, Okra, Onion, Pea’s green, Radish, Tomato, Zucchini</string>
+    <string name="W40901">Pre-Breakfast</string>
+    <string name="W40902">Breakfast</string>
+    <string name="W40903">Between Breakfast and Lunch</string>
+    <string name="W40904">Lunch</string>
+    <string name="W40905">Between Lunch and Dinner</string>
+    <string name="W40906">Dinner</string>
+    <string name="W40907">Between Dinner and sleep</string>
+
+    <string name="W410">Other Fruits Apple, Avocado, Banana, Blackberry, Blueberry, Cherries, Coconut Flesh, Dates (Fresh and dried), Grapefruit, Grapes, Guava, Honeydew Melon, Indian Gooseberry (Amla), Jujube, Kiwi, Lemon, Lime, Litchi, Mandarin Orange, Mulberry, Orange, Peach, Pear, Pineapple, Plum, Pomegranate, Pomelo, Rambutan, Raspberry, Sapodella (naseberry), Star Fruit, Strawberry, Sweetsop, Tamarind, Tangerine, Watermelon</string>
+    <string name="W41001">Pre-Breakfast</string>
+    <string name="W41002">Breakfast</string>
+    <string name="W41003">Between Breakfast and Lunch</string>
+    <string name="W41004">Lunch</string>
+    <string name="W41005">Between Lunch and Dinner</string>
+    <string name="W41006">Dinner</string>
+    <string name="W41007">Between Dinner and sleep</string>
+
+    <string name='Q_W401'>W401</string>
+    <string name='Q_W402'>W402</string>
+    <string name='Q_W403'>W403</string>
+    <string name='Q_W404'>W404</string>
+    <string name='Q_W405'>W405</string>
+    <string name='Q_W406'>W406</string>
+    <string name='Q_W407'>W407</string>
+    <string name='Q_W408'>W408</string>
+    <string name='Q_W409'>W409</string>
+    <string name='Q_W410'>W410</string>
+
+    <!-- W5 -->
+    <string name="W5Heading">SECTION W5: 24-HOUR RECALL</string>
+
+    <string name="W501">24-Hour Recall</string>
+
+    <string name="W502">Time (24-hour clock)</string>
+
+    <string name="W503">Description of Item</string>
+
+    <string name="W504">Ingredients</string>
+
+    <string name="W50501">Quantity (Scale)</string>
+
+    <string name="W50502">Quantity (Amount)</string>
+
+    <string name="W506">Place prepared</string>
+    <string name="W50601">Home grown</string>
+    <string name="W50602">Market</string>
+
+    <string name="W507">Place consumed</string>
+    <string name="W50701">Home</string>
+    <string name="W50702">Market</string>
+    <string name="W50796">Others (specify)</string>
+
+    <string name='Q_W501'>W501</string>
+    <string name='Q_W502'>W502</string>
+    <string name='Q_W503'>W503</string>
+    <string name='Q_W504'>W504</string>
+    <string name='Q_W50501'>W50501</string>
+    <string name='Q_W50502'>W50502</string>
+    <string name='Q_W506'>W506</string>
+    <string name='Q_W507'>W507</string>
+
+    <!-- C1 -->
+    <string name="C1Heading">SECTION C1: CHILD NUTRITION UNDER 2 YEARS</string>
+
+    <string name="C101">Name of the Child</string>
+    <string name="C102">Line number of the Child</string>
+    <string name="C103">Name of the Primary Caretaker</string>
+    <string name="C104">Line number of the respondent</string>
+
+    <string name='Q_C101'>C101</string>
+    <string name='Q_C102'>C102</string>
+    <string name='Q_C103'>C103</string>
+    <string name='Q_C104'>C104</string>
+
+
+    <!-- C2 -->
+    <string name="C2Heading">SECTION C2: IYCF AND FOOD DIVERSITY</string>
+
+    <string name="C201">Was [name] ever breastfed?</string>
+    <string name="C20101">Yes</string>
+    <string name="C20102">No</string>
+
+    <string name="C202">How long after birth was [NAME] first put to the breast? If immediately, circle "000" If less than one hour, record “00” hours If less than 24 hours, record hours Otherwise, record days</string>
+    <string name="C20200">Immediately</string>
+    <string name="C20201">Hours</string>
+    <string name="C20202">Days</string>
+
+    <string name="C203">In the first two days after delivery, was [NAME] given anything other than breast milk to eat or drink –[ MASKA/BUTTER IS TRADITIONAL,  common drinks and foods, including ritual feeds(Ghutti, Honey), that may be given to newborn infants]?</string>
+    <string name="C20301">Yes</string>
+    <string name="C20302">No</string>
+
+    <string name="C204">Was [NAME] breastfed yesterday during the day or at night?</string>
+    <string name="C20401">Yes</string>
+    <string name="C20402">No</string>
+    <string name="C20498">Don\'t know</string>
+
+    <string name="C205">Did [NAME] drink anything from a bottle with a nipple yesterday during the day or at night?</string>
+    <string name="C20501">Yes</string>
+    <string name="C20502">No</string>
+    <string name="C20598">Don\'t know</string>
+
+    <string name="C206">Now I would like to ask you about liquids that [NAME] had yesterday during the day or at night. Please tell me about all drinks, whether [NAME] had them at home, or somewhere else. Yesterday during the day or at night, did [NAME] have?</string>
+    <string name="C206A">Plain water?</string>
+    <string name="C206A01">Yes</string>
+    <string name="C206A02">No</string>
+    <string name="C206A98">Don\'t know</string>
+
+    <string name="C206B">Infant formula, such as [insert local names of common formula] NAN, NUTRILAK, NESTLE, NESTOGEN, SIMILAK</string>
+    <string name="C206B01">Yes</string>
+    <string name="C206B02">No</string>
+    <string name="C206B98">Don\'t know</string>
+
+    <string name="C206C">If "yes": How many times did [NAME] drink formula? If 7 or more, record "7" If number of times not known, record "99"</string>
+
+    <string name="C206D">Milk from animals, such as fresh, tinned, or powdered milk?</string>
+    <string name="C206D01">Yes</string>
+    <string name="C206D02">No</string>
+    <string name="C206D98">Don\'t know</string>
+
+    <string name="C206E">If "yes": How many times did [NAME] drink milk? If 7 or more, record "7" If number of times not known, record "99"</string>
+
+    <string name="C206F">If "yes": Was the milk or were any of the milk drinks a sweet or flavored type of milk?</string>
+    <string name="C206F01">Yes</string>
+    <string name="C206F02">No</string>
+    <string name="C206F98">Don\'t know</string>
+
+    <string name="C206G">Yogurt drinks such as [insert local names of common types of yogurt drinks</string>
+    <string name="C206G01">Yes</string>
+    <string name="C206G02">No</string>
+    <string name="C206G98">Don\'t know</string>
+
+    <string name="C206H">If "yes": How many times did [NAME] drink yogurt? If 7 or more, record "7" If number of times not known, record "99"</string>
+
+    <string name="C206I">If "yes": Was the yogurt or were any of the yogurt drinks a sweet or flavored type of yogurt drink?</string>
+    <string name="C206I01">Yes</string>
+    <string name="C206I02">No</string>
+    <string name="C206I98">Don\'t know</string>
+
+    <string name="C206J">Chocolate-flavored drinks including those made from syrups or powders?</string>
+    <string name="C206J01">Yes</string>
+    <string name="C206J02">No</string>
+    <string name="C206J98">Don\'t know</string>
+
+    <string name="C206K">Fruit juice or fruit-flavored drinks including those made from syrups or powders?</string>
+    <string name="C206K01">Yes</string>
+    <string name="C206K02">No</string>
+    <string name="C206K98">Don\'t know</string>
+
+    <string name="C206L">Sodas, malt drinks, sports drinks, or energy drinks?</string>
+    <string name="C206L01">Yes</string>
+    <string name="C206L02">No</string>
+    <string name="C206L98">Don\'t know</string>
+
+    <string name="C206M">Tea, coffee, or herbal drinks?</string>
+    <string name="C206M01">Yes</string>
+    <string name="C206M02">No</string>
+    <string name="C206M98">Don\'t know</string>
+
+    <string name="C206N">If "yes": Was the drink/ Were any of these drinks sweetened?</string>
+    <string name="C206N01">Yes</string>
+    <string name="C206N02">No</string>
+    <string name="C206N98">Don\'t know</string>
+
+    <string name="C206O">Clear broth or clear soup?</string>
+    <string name="C206O01">Yes</string>
+    <string name="C206O02">No</string>
+    <string name="C206O98">Don\'t know</string>
+
+    <string name="C206P">Any other liquids?</string>
+    <string name="C206P01">Yes</string>
+    <string name="C206P02">No</string>
+    <string name="C206P98">Don\'t know</string>
+
+    <string name="C206Q">If "yes": Was the drink or were any of these drinks sweetened?</string>
+    <string name="C206Q01">Yes</string>
+    <string name="C206Q02">No</string>
+    <string name="C206Q98">Don\'t know</string>
+
+    <string name="C207">Now I would like to ask you about foods that [NAME] had yesterday during the day or at night. I am interested in foods your child ate whether at home or somewhere else. Please think about snacks and small meals as well as main meals.
+    I will ask you about different types of foods, and I would like to know whether your child ate the food even if it was combined with other foods in a mixed dish like [list common local examples of mixed dishes]
+    Please do not answer "yes" for any food or ingredient used in a small amount to add flavor to a dish.
+    Yesterday during the day or at night, did [NAME] eat:</string>
+    <string name="C20701">Yes</string>
+    <string name="C20702">No</string>
+    <string name="C20798">Don\'t know</string>
+
+    <string name="C207A">Yogurt, other than yogurt drinks?</string>
+    <string name="C207A01">Yes</string>
+    <string name="C207A02">No</string>
+    <string name="C207A98">Don\'t know</string>
+
+    <string name="C207B">If "yes": How many times did [NAME] eat yogurt?</string>
+
+    <string name="C207C">Porridge, bread, rice, noodles, pasta</string>
+    <string name="C207C01">Yes</string>
+    <string name="C207C02">No</string>
+    <string name="C207C98">Don\'t know</string>
+
+    <string name="C207D">Pumpkin, carrots, sweet red peppers</string>
+    <string name="C207D01">Yes</string>
+    <string name="C207D02">No</string>
+    <string name="C207D98">Don\'t know</string>
+
+    <string name="C207E">Plantains, white potatoes, white yams</string>
+    <string name="C207E01">Yes</string>
+    <string name="C207E02">No</string>
+    <string name="C207E98">Don\'t know</string>
+
+    <string name="C207F">Dark green leafy vegetables</string>
+    <string name="C207F01">Yes</string>
+    <string name="C207F02">No</string>
+    <string name="C207F98">Don\'t know</string>
+
+    <string name="C207G">Any other vegetables</string>
+    <string name="C207G01">Yes</string>
+    <string name="C207G02">No</string>
+    <string name="C207G98">Don\'t know</string>
+
+    <string name="C207H">Ripe mangoes or ripe papayas </string>
+    <string name="C207H01">Yes</string>
+    <string name="C207H02">No</string>
+    <string name="C207H98">Don\'t know</string>
+
+    <string name="C207I">Any other fruits</string>
+    <string name="C207I01">Yes</string>
+    <string name="C207I02">No</string>
+    <string name="C207I98">Don\'t know</string>
+
+    <string name="C207J">Liver, kidney, heart</string>
+    <string name="C207J01">Yes</string>
+    <string name="C207J02">No</string>
+    <string name="C207J98">Don\'t know</string>
+
+    <string name="C207K">Hot dogs/frankfurters, , bacon, salami, canned meat</string>
+    <string name="C207K01">Yes</string>
+    <string name="C207K02">No</string>
+    <string name="C207K98">Don\'t know</string>
+
+    <string name="C207L">Any other meat, such as beef, lamb, goat, chicken, duck</string>
+    <string name="C207L01">Yes</string>
+    <string name="C207L02">No</string>
+    <string name="C207L98">Don\'t know</string>
+
+    <string name="C207M">Eggs</string>
+    <string name="C207M01">Yes</string>
+    <string name="C207M02">No</string>
+    <string name="C207M98">Don\'t know</string>
+
+    <string name="C207N">Fresh or dried fish?</string>
+    <string name="C207N01">Yes</string>
+    <string name="C207N02">No</string>
+    <string name="C207N98">Don\'t know</string>
+
+    <string name="C207O">Beans, peas, lentils, nuts, seeds or [insert commonly consumed foods made from beans, peas, lentils, nuts, or seeds]?</string>
+    <string name="C207O01">Yes</string>
+    <string name="C207O02">No</string>
+    <string name="C207O98">Don\'t know</string>
+
+    <string name="C207P">Hard or soft cheese </string>
+    <string name="C207P01">Yes</string>
+    <string name="C207P02">No</string>
+    <string name="C207P98">Don\'t know</string>
+
+    <string name="C207Q">Sweet foods such as chocolates, candies, pastries, cakes, biscuits, or frozen treats like ice cream and popsicles</string>
+    <string name="C207Q01">Yes</string>
+    <string name="C207Q02">No</string>
+    <string name="C207Q98">Don\'t know</string>
+
+    <string name="C207R">Chips, crisps, puffs, French fries, fried dough, instant noodles</string>
+    <string name="C207R01">Yes</string>
+    <string name="C207R02">No</string>
+    <string name="C207R98">Don\'t know</string>
+
+    <string name="C207S">Any other solid, semi-solid or soft food?</string>
+    <string name="C207S01">Yes</string>
+    <string name="C207S02">No</string>
+    <string name="C207S98">Don\'t know</string>
+
+    <string name="C207OTHER">If "yes": What was the food? [mark food group if it is not yet coded "yes"]</string>
+
+    <string name="C208">Did [NAME] eat any solid, semi-solid or soft food yesterday during the day or at night? If "yes" probe: What kind of solid, semi-solid or soft foods did [NAME] eat?</string>
+    <string name="C20801">Yes</string>
+    <string name="C20802">No</string>
+
+    <string name="C209">Did [NAME] eat any solid, semi-solid or soft food yesterday during the day or at night? If "yes" probe: What kind of solid, semi-solid or soft foods did [NAME] eat?</string>
+
+    <string name='Q_C201'>C201</string>
+    <string name='Q_C202'>C202</string>
+    <string name='Q_C203'>C203</string>
+    <string name='Q_C204'>C204</string>
+    <string name='Q_C205'>C205</string>
+
+    <string name='Q_C206A'>C206A</string>
+    <string name='Q_C206B'>C206B</string>
+    <string name='Q_C206C'>C206C</string>
+    <string name='Q_C206D'>C206D</string>
+    <string name='Q_C206E'>C206E</string>
+    <string name='Q_C206F'>C206F</string>
+    <string name='Q_C206G'>C206G</string>
+    <string name='Q_C206H'>C206H</string>
+    <string name='Q_C206I'>C206I</string>
+    <string name='Q_C206J'>C206J</string>
+    <string name='Q_C206K'>C206K</string>
+    <string name='Q_C206L'>C206L</string>
+    <string name='Q_C206M'>C206M</string>
+    <string name='Q_C206N'>C206N</string>
+    <string name='Q_C206O'>C206O</string>
+    <string name='Q_C206P'>C206P</string>
+    <string name='Q_C206Q'>C206Q</string>
+
+    <string name='Q_C207A'>C207A</string>
+    <string name='Q_C207B'>C207B</string>
+    <string name='Q_C207C'>C207C</string>
+    <string name='Q_C207D'>C207D</string>
+    <string name='Q_C207E'>C207E</string>
+    <string name='Q_C207F'>C207F</string>
+    <string name='Q_C207G'>C207G</string>
+    <string name='Q_C207H'>C207H</string>
+    <string name='Q_C207I'>C207I</string>
+    <string name='Q_C207J'>C207J</string>
+    <string name='Q_C207K'>C207K</string>
+    <string name='Q_C207L'>C207L</string>
+    <string name='Q_C207M'>C207M</string>
+    <string name='Q_C207N'>C207N</string>
+    <string name='Q_C207O'>C207O</string>
+    <string name='Q_C207P'>C207P</string>
+    <string name='Q_C207Q'>C207Q</string>
+    <string name='Q_C207R'>C207R</string>
+    <string name='Q_C207S'>C207S</string>
+    <string name='Q_C207OTHER'>C207OTHER</string>
+    <string name='Q_C208'>C208</string>
+    <string name='Q_C209'>C209</string>
+
+    <!-- C3 -->
+    <string name="C3Heading">SECTION C3: BIRTH REGISTRATION AND IMMUNIZATION STATUS</string>
+
+    <string name="C300">Did you get (NAME)’s birth registration done from NADRA/ B-form made?</string>
+    <string name="C30001">Yes</string>
+    <string name="C30002">No</string>
+    <string name="C30098">Don\'t know</string>
+
+    <string name="C301">Did you ever have a vaccination card from a government or private health provider where (NAME)’s vaccinations are written down? For (NAME)?</string>
+    <string name="C30101">Yes</string>
+    <string name="C30102">No</string>
+
+    <string name="C302">If yes: may I see it please? The respondent should already have brought the card when you got permission to begin the interview</string>
+    <string name="C30201">Seen</string>
+    <string name="C30202">Not Seen</string>
+
+    <string name="C302A">If not seen: Reason</string>
+    <string name="C302A01">Card not found at this time </string>
+    <string name="C302A02">Card Misplaced</string>
+    <string name="C302A03">Card is at vaccination center/with vaccinator</string>
+    <string name="C302A96">Other specify</string>
+
+    <string name="C303">If not, why you didn’t receive any vaccination card?</string>
+    <string name="C30301">Don’t think it’s important</string>
+    <string name="C30302">Never visited a facility</string>
+    <string name="C30303">Card was not available with the health</string>
+    <string name="C30304">The vaccinator/ facility didn’t provide the card</string>
+    <string name="C30305">Not aware of such cards</string>
+    <string name="C30396">Other specify</string>
+
+    <string name="C304">Check and copy Date of Birth recorded on card</string>
+
+    <string name="C305D">Day</string>
+    <string name="C305M">Month</string>
+    <string name="C305Y">Year</string>
+
+    <string name="C30501">BCG (Vaccination for TB)</string>
+
+    <string name="C30502">OPV-0 (Polio drops at birth)</string>>
+
+    <string name="C30503">OPV-1 (Polio drops at 6 weeks) </string>
+
+    <string name="C30504">Penta-1 (Pentavalent 1 at 6 weeks)</string>
+
+    <string name="C30505">PCV-1 (Pneumococcal Conjugate at 6 weeks)</string>
+
+    <string name="C30506">RV-1 (Rotavirus vaccine at 6 weeks) </string>
+
+    <string name="C30507">OPV-2 (Polio drops at 10 weeks)</string>
+
+    <string name="C30508">Penta-2 (Pentavalent 2 at 10 weeks)</string>
+
+    <string name="C30509">PCV-2</string>
+
+    <string name="C30510">RV-2 (Rotavirus vaccine 2)</string>
+
+    <string name="C30511">OPV-3 (Polio drops)</string>
+
+    <string name="C30512">Penta-3</string>
+
+    <string name="C30513">PCV-3</string>
+
+    <string name="C30514">IPV</string>
+
+    <string name="C30515">Measles-1</string>
+
+    <string name="C30516">Measles-2</string>
+
+    <string name="C306">Check IM05: Are all vaccines (BCG to Measles-2) recorded?</string>
+    <string name="C30601">Yes</string>
+    <string name="C30602">No</string>
+
+    <string name="C307">Has (name) ever received any vaccinations to prevent (him/her) from getting diseases, including vaccinations received in a campaign, immunization day or Child Health Day?</string>
+    <string name="C30701">Yes</string>
+    <string name="C30702">No</string>
+    <string name="C30798">Don\'t know</string>
+
+    <string name="C308">Has (name) ever received a BCG vaccination against tuberculosis – that is, an injection in the arm or shoulder that usually causes a scar?</string>
+    <string name="C30801">Yes</string>
+    <string name="C30802">No</string>
+    <string name="C30898">Don\'t know</string>
+
+    <string name="C309">Has (name) ever received any vaccination drops in the mouth to protect (him/her) from polio?Probe by indicating that the first drop is usually given at birth and later at the same time as injections to prevent other diseases</string>
+    <string name="C30901">Yes</string>
+    <string name="C30902">No</string>
+    <string name="C30998">Don\'t know</string>
+
+    <string name="C310">Were the first polio drops received in the first two weeks after birth?</string>
+    <string name="C31001">Yes</string>
+    <string name="C31002">No</string>
+    <string name="C31098">Don\'t know</string>
+
+    <string name="C311">How many times was the polio vaccine received at Govt/Public health facility or from outreach facility?</string>
+    <string name="C31101">Number of times</string>
+    <string name="C31198">Don\'t know</string>
+
+    <string name="C312">Has (name) ever received a Pentavalent vaccination – that is, an injection in the thigh to prevent (him/her) from getting tetanus, whooping cough, diphtheria, Hepatitis B disease, and Haemophilus influenza type B?
+    Probe by indicating that Pentavalent vaccination is sometimes given at the same time as the Polio drops</string>
+    <string name="C31201">Yes</string>
+    <string name="C31202">No</string>
+    <string name="C31298">Don\'t know</string>
+
+    <string name="C313">How many times was the Pentavalent vaccine received?</string>
+    <string name="C31301">Number of times</string>
+    <string name="C31398">Don\'t know</string>
+
+    <string name="C314">Has (name) ever received a Pneumococcal Conjugate vaccination – that is, an injection to prevent (him/her) from getting pneumococcal disease, including ear infections and meningitis caused by pneumococcus?
+    Probe by indicating that Pneumococcal Conjugate vaccination is sometimes given at the same time as the Pentavalent vaccination</string>
+    <string name="C31401">Yes</string>
+    <string name="C31402">No</string>
+    <string name="C31498">Don\'t know</string>
+
+    <string name="C315">How many times was the pneumococcal vaccine received?</string>
+    <string name="C31501">Number of times</string>
+    <string name="C31598">Don\'t know</string>
+
+    <string name="C316">Has (name) ever received drops for Rotavirus vaccine (RV) vaccination- A vaccine given orally soon after 6 weeks birth to protect against rotavirus infections, which are the leading cause of severe diarrhoea among young children?</string>
+    <string name="C31601">Yes</string>
+    <string name="C31602">No</string>
+    <string name="C31698">Don\'t know</string>
+
+    <string name="C317">How many times were the drops received?</string>
+    <string name="C31701">Number of times</string>
+    <string name="C31798">Don\'t know</string>
+
+    <string name="C318">Has (name) ever received an inactivated polio vaccine (IPV) – that is, a shot in the thigh at the age of 14 weeks or older - to prevent (him/her) from getting polio?</string>
+    <string name="C31801">Yes</string>
+    <string name="C31802">No</string>
+    <string name="C31898">Don\'t know</string>
+
+    <string name="C319">Has (name) ever received a Measles Injection – that is, a shot in the arm at the age of 9 months or older - to prevent (him/her) from getting measles?</string>
+    <string name="C31901">Yes</string>
+    <string name="C31902">No</string>
+    <string name="C31998">Don\'t know</string>
+
+    <string name="C320">How many times was a Measles Injection vaccine received?</string>
+    <string name="C32001">Number of times</string>
+    <string name="C32098">Don\'t know</string>
+
+    <string name="C321">Where from (name) is usually vaccinated? If the child is vaccinated from multiple sources, mention the usual source with higher frequency of vaccine doses</string>
+    <string name="C32101">Govt. Health facility</string>
+    <string name="C32102">Private health facility</string>
+    <string name="C32103">Government outreach service</string>
+    <string name="C32196">Other (specify)</string>
+
+    <string name="C321A">Can you please specify where is this facility located?</string>
+    <string name="C321A01">Within Catchment area 10 Km</string>
+    <string name="C321A02">Within District</string>
+    <string name="C321A03">Out of District/city</string>
+    <string name="C321A96">Other (specify)</string>
+
+    <string name="C322">Why (name) is not vaccinated? If the child has not received all their vaccinations, ask the mother/caretaker. Record all the reasons mentioned but do not prompt by asking specific. Encourage the mother to provide all reasons</string>
+    <string name="C32201">Place of immunization too far</string>
+    <string name="C32202">Time of immunization not convenient</string>
+    <string name="C32203">Mother too busy</string>
+    <string name="C32204">Family problem including mother ill</string>
+    <string name="C32205">Child ill, not brought</string>
+    <string name="C32206">Child ill, brought but not vaccinated</string>
+    <string name="C32207">Long wait</string>
+    <string name="C32208">Rumors</string>
+    <string name="C32209">No faith in immunization</string>
+    <string name="C32210">Fear of side reaction</string>
+    <string name="C32211">Time or Place of immunization not Known</string>
+    <string name="C32212">Took child but no vaccine available</string>
+    <string name="C32213">Took child but no vaccinator</string>
+    <string name="C32214">Took child facility closed</string>
+    <string name="C32215">Child was sick</string>
+    <string name="C32216">Took child but not vaccination day</string>
+    <string name="C32298">Don\'t Know</string>
+    <string name="C32296">Other (specify)</string>
+
+    <string name="C322A">Has the child ever received polio drops during a national polo campaign?</string>
+    <string name="C322A01">Yes</string>
+    <string name="C322A02">No</string>
+    <string name="C322A98">Don\'t Know</string>
+
+    <string name="C322B">How many times has the child received Polio vaccine drops during national polio campaign?</string>
+    <string name="C322B01">Number of times</string>
+    <string name="C322B98">Don\'t know</string>
+
+    <string name="C322C">Did the child receive polio drops during the last national polio campaign?</string>
+    <string name="C322C01">Yes</string>
+    <string name="C322C02">No</string>
+    <string name="C322C98">Don\'t Know</string>
+
+    <string name="C322D">The last time (name) received the polio drops, did (he/she) also get an injection to protect against polio?Probe to ensure that both were given, drops and injection</string>
+    <string name="C322D01">Yes</string>
+    <string name="C322D02">No</string>
+    <string name="C322D98">Don\'t Know</string>
+
+    <string name="C323">Observe BCG Scar</string>
+    <string name="C32301">Scar Present</string>
+    <string name="C32302">Scar Absent</string>
+    <string name="C32303">Child Not Available</string>
+    <string name="C32304">Not Observed</string>
+
+    <string name='Q_C300'>C300</string>
+    <string name='Q_C301'>C301</string>
+    <string name='Q_C302'>C302</string>
+    <string name='Q_C302A'>C302A</string>
+    <string name='Q_C303'>C303</string>
+    <string name='Q_C304'>C304</string>
+    <string name='Q_C30501'>C30501</string>
+    <string name='Q_C30502'>C30502</string>
+    <string name='Q_C30503'>C30503</string>
+    <string name='Q_C30504'>C30504</string>
+    <string name='Q_C30505'>C30505</string>
+    <string name='Q_C30506'>C30506</string>
+    <string name='Q_C30507'>C30507</string>
+    <string name='Q_C30508'>C30508</string>
+    <string name='Q_C30509'>C30509</string>
+    <string name='Q_C30510'>C30510</string>
+    <string name='Q_C30511'>C30511</string>
+    <string name='Q_C30512'>C30512</string>
+    <string name='Q_C30513'>C30513</string>
+    <string name='Q_C30514'>C30514</string>
+    <string name='Q_C30515'>C30515</string>
+    <string name='Q_C30516'>C30516</string>
+    <string name='Q_C306'>C306</string>
+    <string name='Q_C307'>C307</string>
+    <string name='Q_C308'>C308</string>
+    <string name='Q_C309'>C309</string>
+    <string name='Q_C310'>C310</string>
+    <string name='Q_C311'>C311</string>
+    <string name='Q_C312'>C312</string>
+    <string name='Q_C313'>C313</string>
+    <string name='Q_C314'>C314</string>
+    <string name='Q_C315'>C315</string>
+    <string name='Q_C316'>C316</string>
+    <string name='Q_C317'>C317</string>
+    <string name='Q_C318'>C318</string>
+    <string name='Q_C319'>C319</string>
+    <string name='Q_C320'>C320</string>
+    <string name='Q_C321'>C321</string>
+    <string name='Q_C321A'>C321A</string>
+    <string name='Q_C322'>C322</string>
+    <string name='Q_C322A'>C322A</string>
+    <string name='Q_C322B'>C322B</string>
+    <string name='Q_C322C'>C322C</string>
+    <string name='Q_C322D'>C322D</string>
+    <string name='Q_C323'>C323</string>
+
+    <!-- C4 -->
+    <string name="C4Heading">SECTION C4: MORBIDITY AND CARE SEEKING BEHAVIOUR</string>
+
+    <string name="C401">Did the child (NAME) ever suffer from any of the following illnesses?</string>
+    <string name="C40101">Yes</string>
+    <string name="C40102">No</string>
+
+    <string name="C402">Any other illnesses? [PROMT FOR EACH AND RECORD]</string>
+
+    <string name="C40201">High grade fever</string>
+    <string name="C4020101">Yes</string>
+    <string name="C4020102">No</string>
+
+    <string name="C40202">Acute Respiratory Infections</string>
+    <string name="C4020201">Yes</string>
+    <string name="C4020202">No</string>
+
+    <string name="C40203">Diarrhea</string>
+    <string name="C4020301">Yes</string>
+    <string name="C4020302">No</string>
+
+    <string name="C40204">Cough/Flu</string>
+    <string name="C4020401">Yes</string>
+    <string name="C4020402">No</string>
+
+    <string name="C40205">Difficult/Fast breathing</string>
+    <string name="C4020501">Yes</string>
+    <string name="C4020502">No</string>
+
+    <string name="C40206">Chest in drawing</string>
+    <string name="C4020601">Yes</string>
+    <string name="C4020602">No</string>
+
+    <string name="C40207">Skin infection</string>
+    <string name="C4020701">Yes</string>
+    <string name="C4020702">No</string>
+
+    <string name="C40208">Worms in stool</string>
+    <string name="C4020801">Yes</string>
+    <string name="C4020802">No</string>
+
+    <string name="C40209">Rashes</string>
+    <string name="C4020901">Yes</string>
+    <string name="C4020902">No</string>
+
+    <string name="C40296">Other (Specify)</string>
+    <string name="C4029601">Yes</string>
+    <string name="C4029602">No</string>
+
+    <string name="C403">Did you seek any care for these illnesses during the last month (30 days)?</string>
+    <string name="C40301">Yes</string>
+    <string name="C40302">No</string>
+
+    <string name="C404">Who did you see for the illness (s) in the last month (30 days)? Anyone else? [PROBE TO IDENTIFY EACH TYPE OF PERSON AND RECORD ALL MENTIONED]</string>
+    <string name="C40401">Doctor</string>
+    <string name="C40402">Nurse/Midwife/LHV</string>
+    <string name="C40403">CMW (Community Midwife)</string>
+    <string name="C40404">Dai-TBA</string>
+    <string name="C40405">LHW (Lady Health Worker)</string>
+    <string name="C40406">Homeopath</string>
+    <string name="C40407">Hakim</string>
+    <string name="C40408">Dispenser/Compounder</string>
+    <string name="C40496">Other (Specify)</string>
+
+    <string name="C405">What Was Given To Treat Diarrhea?</string>
+    <string name="C40501">ORS</string>
+    <string name="C40502">Pill or syrup</string>
+    <string name="C40503">Antibiotic</string>
+    <string name="C40504">Antimotility (anti-diarrhoea)</string>
+    <string name="C40505">Zinc</string>
+    <string name="C40506">Unknown pill or syrup</string>
+    <string name="C40507">Injection</string>
+    <string name="C40508">Non-antibiotic</string>
+    <string name="C40509">Unknown injection</string>
+    <string name="C40510">Intravenous</string>
+    <string name="C40511">Home remedy /herbal medicine</string>
+    <string name="C40596">Others (Specify)</string>
+
+    <string name='Q_C401'>C401</string>
+    <string name='Q_C40201'>C40201</string>
+    <string name='Q_C40202'>C40202</string>
+    <string name='Q_C40203'>C40203</string>
+    <string name='Q_C40204'>C40204</string>
+    <string name='Q_C40205'>C40205</string>
+    <string name='Q_C40206'>C40206</string>
+    <string name='Q_C40207'>C40207</string>
+    <string name='Q_C40208'>C40208</string>
+    <string name='Q_C40296'>C40296</string>
+    <string name='Q_C403'>C403</string>
+    <string name='Q_C404'>C404</string>
+    <string name='Q_C405'>C405</string>
+
+    <!-- D101 -->
+    <string name="D1Heading">SECTION D1: INTRA HOUSEHOLD DECISION-MAKING</string>
+
+    <string name="D101">Who decides how the household finances should be spent/allocated?</string>
+    <string name="D10100">Household is not involved in this activity</string>
+    <string name="D10101">Alone only</string>
+    <string name="D10102">Husband alone</string>
+    <string name="D10103">Husband and me jointly</string>
+    <string name="D10104">Elderly male household member alone</string>
+    <string name="D10105">Elderly female household member alone</string>
+    <string name="D10106">Self and other elderly male household member jointly</string>
+    <string name="D10107">Self and other elderly female household member jointly</string>
+    <string name="D10108">Husband and other elderly male household member jointly</string>
+    <string name="D10109">Husband and other elderly female household member jointly</string>
+    <string name="D10110">Household joint decision</string>
+    <string name="D10199">Others</string>
+
+    <string name="D102">Who manages the household finances and implements these decisions?</string>
+    <string name="D10200">Household is not involved in this activity</string>
+    <string name="D10201">Alone only</string>
+    <string name="D10202">Husband alone</string>
+    <string name="D10203">Husband and me jointly</string>
+    <string name="D10204">Elderly male household member alone</string>
+    <string name="D10205">Elderly female household member alone</string>
+    <string name="D10206">Self and other elderly male household member jointly</string>
+    <string name="D10207">Self and other elderly female household member jointly</string>
+    <string name="D10208">Husband and other elderly male household member jointly</string>
+    <string name="D10209">Husband and other elderly female household member jointly</string>
+    <string name="D10210">Household joint decision</string>
+    <string name="D10299">Others</string>
+
+    <string name="D103">Who decides on household expenditures purchased on a daily basis?</string>
+    <string name="D10300">Household is not involved in this activity</string>
+    <string name="D10301">Alone only</string>
+    <string name="D10302">Husband alone</string>
+    <string name="D10303">Husband and me jointly</string>
+    <string name="D10304">Elderly male household member alone</string>
+    <string name="D10305">Elderly female household member alone</string>
+    <string name="D10306">Self and other elderly male household member jointly</string>
+    <string name="D10307">Self and other elderly female household member jointly</string>
+    <string name="D10308">Husband and other elderly male household member jointly</string>
+    <string name="D10309">Husband and other elderly female household member jointly</string>
+    <string name="D10310">Household joint decision</string>
+    <string name="D10399">Others</string>
+
+    <string name="D104">Who manages household expenditure on items purchased on a daily basis?</string>
+    <string name="D10400">Household is not involved in this activity</string>
+    <string name="D10401">Alone only</string>
+    <string name="D10402">Husband alone</string>
+    <string name="D10403">Husband and me jointly</string>
+    <string name="D10404">Elderly male household member alone</string>
+    <string name="D10405">Elderly female household member alone</string>
+    <string name="D10406">Self and other elderly male household member jointly</string>
+    <string name="D10407">Self and other elderly female household member jointly</string>
+    <string name="D10408">Husband and other elderly male household member jointly</string>
+    <string name="D10409">Husband and other elderly female household member jointly</string>
+    <string name="D10410">Household joint decision</string>
+    <string name="D10499">Others</string>
+
+    <string name="D105">Who is responsible for daily food preparation in the household?</string>
+    <string name="D10500">Household is not involved in this activity</string>
+    <string name="D10501">Alone only</string>
+    <string name="D10502">Husband alone</string>
+    <string name="D10503">Husband and me jointly</string>
+    <string name="D10504">Elderly male household member alone</string>
+    <string name="D10505">Elderly female household member alone</string>
+    <string name="D10506">Self and other elderly male household member jointly</string>
+    <string name="D10507">Self and other elderly female household member jointly</string>
+    <string name="D10508">Husband and other elderly male household member jointly</string>
+    <string name="D10509">Husband and other elderly female household member jointly</string>
+    <string name="D10510">Household joint decision</string>
+    <string name="D10599">Others</string>
+
+    <string name="D106">Who makes decisions concerning where to go for medical help for adults in the household?</string>
+    <string name="D10600">Household is not involved in this activity</string>
+    <string name="D10601">Alone only</string>
+    <string name="D10602">Husband alone</string>
+    <string name="D10603">Husband and me jointly</string>
+    <string name="D10604">Elderly male household member alone</string>
+    <string name="D10605">Elderly female household member alone</string>
+    <string name="D10606">Self and other elderly male household member jointly</string>
+    <string name="D10607">Self and other elderly female household member jointly</string>
+    <string name="D10608">Husband and other elderly male household member jointly</string>
+    <string name="D10609">Husband and other elderly female household member jointly</string>
+    <string name="D10610">Household joint decision</string>
+    <string name="D10699">Others</string>
+
+    <string name="D107">Who makes decisions concerning where to go for medical help for children in the household?</string>
+    <string name="D10700">Household is not involved in this activity</string>
+    <string name="D10701">Alone only</string>
+    <string name="D10702">Husband alone</string>
+    <string name="D10703">Husband and me jointly</string>
+    <string name="D10704">Elderly male household member alone</string>
+    <string name="D10705">Elderly female household member alone</string>
+    <string name="D10706">Self and other elderly male household member jointly</string>
+    <string name="D10707">Self and other elderly female household member jointly</string>
+    <string name="D10708">Husband and other elderly male household member jointly</string>
+    <string name="D10709">Husband and other elderly female household member jointly</string>
+    <string name="D10710">Household joint decision</string>
+    <string name="D10799">Others</string>
+
+    <string name="D108">Who manages expenditures on medical treatment?</string>
+    <string name="D10800">Household is not involved in this activity</string>
+    <string name="D10801">Alone only</string>
+    <string name="D10802">Husband alone</string>
+    <string name="D10803">Husband and me jointly</string>
+    <string name="D10804">Elderly male household member alone</string>
+    <string name="D10805">Elderly female household member alone</string>
+    <string name="D10806">Self and other elderly male household member jointly</string>
+    <string name="D10807">Self and other elderly female household member jointly</string>
+    <string name="D10808">Husband and other elderly male household member jointly</string>
+    <string name="D10809">Husband and other elderly female household member jointly</string>
+    <string name="D10810">Household joint decision</string>
+    <string name="D10899">Others</string>
+
+    <string name="D109">Who makes decisions on buying clothes for adults in the household (16–65 years)?</string>
+    <string name="D10900">Household is not involved in this activity</string>
+    <string name="D10901">Alone only</string>
+    <string name="D10902">Husband alone</string>
+    <string name="D10903">Husband and me jointly</string>
+    <string name="D10904">Elderly male household member alone</string>
+    <string name="D10905">Elderly female household member alone</string>
+    <string name="D10906">Self and other elderly male household member jointly</string>
+    <string name="D10907">Self and other elderly female household member jointly</string>
+    <string name="D10908">Husband and other elderly male household member jointly</string>
+    <string name="D10909">Husband and other elderly female household member jointly</string>
+    <string name="D10910">Household joint decision</string>
+    <string name="D10999">Others</string>
+
+    <string name="D110">Who makes decisions buying clothes for children in the household (0–15 years)?</string>
+    <string name="D11000">Household is not involved in this activity</string>
+    <string name="D11001">Alone only</string>
+    <string name="D11002">Husband alone</string>
+    <string name="D11003">Husband and me jointly</string>
+    <string name="D11004">Elderly male household member alone</string>
+    <string name="D11005">Elderly female household member alone</string>
+    <string name="D11006">Self and other elderly male household member jointly</string>
+    <string name="D11007">Self and other elderly female household member jointly</string>
+    <string name="D11008">Husband and other elderly male household member jointly</string>
+    <string name="D11009">Husband and other elderly female household member jointly</string>
+    <string name="D11010">Household joint decision</string>
+    <string name="D11099">Others</string>
+
+    <string name="D111">Who makes decisions on buying clothes for the elderly in the household (66+)?</string>
+    <string name="D11100">Household is not involved in this activity</string>
+    <string name="D11101">Alone only</string>
+    <string name="D11102">Husband alone</string>
+    <string name="D11103">Husband and me jointly</string>
+    <string name="D11104">Elderly male household member alone</string>
+    <string name="D11105">Elderly female household member alone</string>
+    <string name="D11106">Self and other elderly male household member jointly</string>
+    <string name="D11107">Self and other elderly female household member jointly</string>
+    <string name="D11108">Husband and other elderly male household member jointly</string>
+    <string name="D11109">Husband and other elderly female household member jointly</string>
+    <string name="D11110">Household joint decision</string>
+    <string name="D11199">Others</string>
+
+    <string name="D112">Who decides on whether financial loan should be made to relatives or other than household members?</string>
+    <string name="D11200">Household is not involved in this activity</string>
+    <string name="D11201">Alone only</string>
+    <string name="D11202">Husband alone</string>
+    <string name="D11203">Husband and me jointly</string>
+    <string name="D11204">Elderly male household member alone</string>
+    <string name="D11205">Elderly female household member alone</string>
+    <string name="D11206">Self and other elderly male household member jointly</string>
+    <string name="D11207">Self and other elderly female household member jointly</string>
+    <string name="D11208">Husband and other elderly male household member jointly</string>
+    <string name="D11209">Husband and other elderly female household member jointly</string>
+    <string name="D11210">Household joint decision</string>
+    <string name="D11299">Others</string>
+
+    <string name="D113">Who decides on whether to borrow money and how much to borrow?</string>
+    <string name="D11300">Household is not involved in this activity</string>
+    <string name="D11301">Alone only</string>
+    <string name="D11302">Husband alone</string>
+    <string name="D11303">Husband and me jointly</string>
+    <string name="D11304">Elderly male household member alone</string>
+    <string name="D11305">Elderly female household member alone</string>
+    <string name="D11306">Self and other elderly male household member jointly</string>
+    <string name="D11307">Self and other elderly female household member jointly</string>
+    <string name="D11308">Husband and other elderly male household member jointly</string>
+    <string name="D11309">Husband and other elderly female household member jointly</string>
+    <string name="D11310">Household joint decision</string>
+    <string name="D11399">Others</string>
+
+    <string name="D114">Who decides on the level of cash savings the household should keep?</string>
+    <string name="D11400">Household is not involved in this activity</string>
+    <string name="D11401">Alone only</string>
+    <string name="D11402">Husband alone</string>
+    <string name="D11403">Husband and me jointly</string>
+    <string name="D11404">Elderly male household member alone</string>
+    <string name="D11405">Elderly female household member alone</string>
+    <string name="D11406">Self and other elderly male household member jointly</string>
+    <string name="D11407">Self and other elderly female household member jointly</string>
+    <string name="D11408">Husband and other elderly male household member jointly</string>
+    <string name="D11409">Husband and other elderly female household member jointly</string>
+    <string name="D11410">Household joint decision</string>
+    <string name="D11499">Others</string>
+
+    <string name="D115">Who manages these cash savings?</string>
+    <string name="D11500">Household is not involved in this activity</string>
+    <string name="D11501">Alone only</string>
+    <string name="D11502">Husband alone</string>
+    <string name="D11503">Husband and me jointly</string>
+    <string name="D11504">Elderly male household member alone</string>
+    <string name="D11505">Elderly female household member alone</string>
+    <string name="D11506">Self and other elderly male household member jointly</string>
+    <string name="D11507">Self and other elderly female household member jointly</string>
+    <string name="D11508">Husband and other elderly male household member jointly</string>
+    <string name="D11509">Husband and other elderly female household member jointly</string>
+    <string name="D11510">Household joint decision</string>
+    <string name="D11599">Others</string>
+
+    <string name="D116">Who decides on buying assets for the household, such as land, livestock, housing, motor vehicles etc.)?</string>
+    <string name="D11600">Household is not involved in this activity</string>
+    <string name="D11601">Alone only</string>
+    <string name="D11602">Husband alone</string>
+    <string name="D11603">Husband and me jointly</string>
+    <string name="D11604">Elderly male household member alone</string>
+    <string name="D11605">Elderly female household member alone</string>
+    <string name="D11606">Self and other elderly male household member jointly</string>
+    <string name="D11607">Self and other elderly female household member jointly</string>
+    <string name="D11608">Husband and other elderly male household member jointly</string>
+    <string name="D11609">Husband and other elderly female household member jointly</string>
+    <string name="D11610">Household joint decision</string>
+    <string name="D11699">Others</string>
+
+    <string name="D117">Who manages the process of buying such assets? (i.e. whose name is written on the title deed and is responsible for payment)?</string>
+    <string name="D11700">Household is not involved in this activity</string>
+    <string name="D11701">Alone only</string>
+    <string name="D11702">Husband alone</string>
+    <string name="D11703">Husband and me jointly</string>
+    <string name="D11704">Elderly male household member alone</string>
+    <string name="D11705">Elderly female household member alone</string>
+    <string name="D11706">Self and other elderly male household member jointly</string>
+    <string name="D11707">Self and other elderly female household member jointly</string>
+    <string name="D11708">Husband and other elderly male household member jointly</string>
+    <string name="D11709">Husband and other elderly female household member jointly</string>
+    <string name="D11710">Household joint decision</string>
+    <string name="D11799">Others</string>
+
+    <string name="D118">Who decides on selling high value assets such as agricultural or non-agriculture land or livestock?</string>
+    <string name="D11800">Household is not involved in this activity</string>
+    <string name="D11801">Alone only</string>
+    <string name="D11802">Husband alone</string>
+    <string name="D11803">Husband and me jointly</string>
+    <string name="D11804">Elderly male household member alone</string>
+    <string name="D11805">Elderly female household member alone</string>
+    <string name="D11806">Self and other elderly male household member jointly</string>
+    <string name="D11807">Self and other elderly female household member jointly</string>
+    <string name="D11808">Husband and other elderly male household member jointly</string>
+    <string name="D11809">Husband and other elderly female household member jointly</string>
+    <string name="D11810">Household joint decision</string>
+    <string name="D11899">Others</string>
+
+    <string name="D118a">Who keeps the money comes from selling?</string>
+    <string name="D118a00">Household is not involved in this activity</string>
+    <string name="D118a01">Alone only</string>
+    <string name="D118a02">Husband alone</string>
+    <string name="D118a03">Husband and me jointly</string>
+    <string name="D118a04">Elderly male household member alone</string>
+    <string name="D118a05">Elderly female household member alone</string>
+    <string name="D118a06">Self and other elderly male household member jointly</string>
+    <string name="D118a07">Self and other elderly female household member jointly</string>
+    <string name="D118a08">Husband and other elderly male household member jointly</string>
+    <string name="D118a09">Husband and other elderly female household member jointly</string>
+    <string name="D118a10">Household joint decision</string>
+    <string name="D118a99">Others</string>
+
+    <string name="D119">Who decides on selling jewelry? Do the proceeds from this sale accrue to the individual or the household?</string>
+    <string name="D11900">Household is not involved in this activity</string>
+    <string name="D11901">Alone only</string>
+    <string name="D11902">Husband alone</string>
+    <string name="D11903">Husband and me jointly</string>
+    <string name="D11904">Elderly male household member alone</string>
+    <string name="D11905">Elderly female household member alone</string>
+    <string name="D11906">Self and other elderly male household member jointly</string>
+    <string name="D11907">Self and other elderly female household member jointly</string>
+    <string name="D11908">Husband and other elderly male household member jointly</string>
+    <string name="D11909">Husband and other elderly female household member jointly</string>
+    <string name="D11910">Household joint decision</string>
+    <string name="D11999">Others</string>
+
+    <string name="D120">Who decides which schools the children should attend?</string>
+    <string name="D12000">Household is not involved in this activity</string>
+    <string name="D12001">Alone only</string>
+    <string name="D12002">Husband alone</string>
+    <string name="D12003">Husband and me jointly</string>
+    <string name="D12004">Elderly male household member alone</string>
+    <string name="D12005">Elderly female household member alone</string>
+    <string name="D12006">Self and other elderly male household member jointly</string>
+    <string name="D12007">Self and other elderly female household member jointly</string>
+    <string name="D12008">Husband and other elderly male household member jointly</string>
+    <string name="D12009">Husband and other elderly female household member jointly</string>
+    <string name="D12010">Household joint decision</string>
+    <string name="D12099">Others</string>
+
+    <string name="D121">Who is responsible for childcare in the household?</string>
+    <string name="D12100">Household is not involved in this activity</string>
+    <string name="D12101">Alone only</string>
+    <string name="D12102">Husband alone</string>
+    <string name="D12103">Husband and me jointly</string>
+    <string name="D12104">Elderly male household member alone</string>
+    <string name="D12105">Elderly female household member alone</string>
+    <string name="D12106">Self and other elderly male household member jointly</string>
+    <string name="D12107">Self and other elderly female household member jointly</string>
+    <string name="D12108">Husband and other elderly male household member jointly</string>
+    <string name="D12109">Husband and other elderly female household member jointly</string>
+    <string name="D12110">Household joint decision</string>
+    <string name="D12199">Others</string>
+
+    <string name="D122">Who manages the payment of school fees, and school related expenditures?</string>
+    <string name="D12200">Household is not involved in this activity</string>
+    <string name="D12201">Alone only</string>
+    <string name="D12202">Husband alone</string>
+    <string name="D12203">Husband and me jointly</string>
+    <string name="D12204">Elderly male household member alone</string>
+    <string name="D12205">Elderly female household member alone</string>
+    <string name="D12206">Self and other elderly male household member jointly</string>
+    <string name="D12207">Self and other elderly female household member jointly</string>
+    <string name="D12208">Husband and other elderly male household member jointly</string>
+    <string name="D12209">Husband and other elderly female household member jointly</string>
+    <string name="D12210">Household joint decision</string>
+    <string name="D12299">Others</string>
+
+    <string name="D123">Who is responsible for caring for the elderly or for sick household members?</string>
+    <string name="D12300">Household is not involved in this activity</string>
+    <string name="D12301">Alone only</string>
+    <string name="D12302">Husband alone</string>
+    <string name="D12303">Husband and me jointly</string>
+    <string name="D12304">Elderly male household member alone</string>
+    <string name="D12305">Elderly female household member alone</string>
+    <string name="D12306">Self and other elderly male household member jointly</string>
+    <string name="D12307">Self and other elderly female household member jointly</string>
+    <string name="D12308">Husband and other elderly male household member jointly</string>
+    <string name="D12309">Husband and other elderly female household member jointly</string>
+    <string name="D12310">Household joint decision</string>
+    <string name="D12399">Others</string>
+
+    <string name="D124">Who is decides the purchase and sale of agricultural or non-agriculture land or livestock like cattle and goats (e.g. which to buy, where/when to sell, etc.)?</string>
+    <string name="D12400">Household is not involved in this activity</string>
+    <string name="D12401">Alone only</string>
+    <string name="D12402">Husband alone</string>
+    <string name="D12403">Husband and me jointly</string>
+    <string name="D12404">Elderly male household member alone</string>
+    <string name="D12405">Elderly female household member alone</string>
+    <string name="D12406">Self and other elderly male household member jointly</string>
+    <string name="D12407">Self and other elderly female household member jointly</string>
+    <string name="D12408">Husband and other elderly male household member jointly</string>
+    <string name="D12409">Husband and other elderly female household member jointly</string>
+    <string name="D12410">Household joint decision</string>
+    <string name="D12499">Others</string>
+
+    <string name="D125">Who decides contributions to events such as marry and funerals?</string>
+    <string name="D12500">Household is not involved in this activity</string>
+    <string name="D12501">Alone only</string>
+    <string name="D12502">Husband alone</string>
+    <string name="D12503">Husband and me jointly</string>
+    <string name="D12504">Elderly male household member alone</string>
+    <string name="D12505">Elderly female household member alone</string>
+    <string name="D12506">Self and other elderly male household member jointly</string>
+    <string name="D12507">Self and other elderly female household member jointly</string>
+    <string name="D12508">Husband and other elderly male household member jointly</string>
+    <string name="D12509">Husband and other elderly female household member jointly</string>
+    <string name="D12510">Household joint decision</string>
+    <string name="D12599">Others</string>
+
+    <string name="D126">Who usually makes decisions about visits to relatives?</string>
+    <string name="D12600">Household is not involved in this activity</string>
+    <string name="D12601">Alone only</string>
+    <string name="D12602">Husband alone</string>
+    <string name="D12603">Husband and me jointly</string>
+    <string name="D12604">Elderly male household member alone</string>
+    <string name="D12605">Elderly female household member alone</string>
+    <string name="D12606">Self and other elderly male household member jointly</string>
+    <string name="D12607">Self and other elderly female household member jointly</string>
+    <string name="D12608">Husband and other elderly male household member jointly</string>
+    <string name="D12609">Husband and other elderly female household member jointly</string>
+    <string name="D12610">Household joint decision</string>
+    <string name="D12699">Others</string>
+
+    <string name="D127">Who decides about number of children to have and use of family planning methods?</string>
+    <string name="D12700">Household is not involved in this activity</string>
+    <string name="D12701">Alone only</string>
+    <string name="D12702">Husband alone</string>
+    <string name="D12703">Husband and me jointly</string>
+    <string name="D12704">Elderly male household member alone</string>
+    <string name="D12705">Elderly female household member alone</string>
+    <string name="D12706">Self and other elderly male household member jointly</string>
+    <string name="D12707">Self and other elderly female household member jointly</string>
+    <string name="D12708">Husband and other elderly male household member jointly</string>
+    <string name="D12709">Husband and other elderly female household member jointly</string>
+    <string name="D12710">Household joint decision</string>
+    <string name="D12799">Others</string>
+
+    <string name="D128">Do you take part in decision making at home?</string>
+    <string name="D12801">Not at all</string>
+    <string name="D12802">To some extent</string>
+    <string name="D12803">To a large extent</string>
+    <string name="D12898">Not applicable</string>
+
+    <string name="D129">Do you have a cell phone?</string>
+    <string name="D12901">Yes</string>
+    <string name="D12902">No</string>
+
+    <string name="D130">Are you permissible to call anyone you want to call?</string>
+    <string name="D13001">Yes</string>
+    <string name="D13002">No</string>
+
+    <string name="D131">Can you go outside whenever you want to/needed?</string>
+    <string name="D13101">Yes</string>
+    <string name="D13102">No</string>
+
+    <string name="D132">What would be the matters for which you can easily travel?</string>
+
+    <string name="D133">Do you have any aspiration to fulfil?</string>
+    <string name="D13301">Yes</string>
+    <string name="D13302">No</string>
+
+    <string name='Q_D101'>D101</string>
+    <string name='Q_D102'>D102</string>
+    <string name='Q_D103'>D103</string>
+    <string name='Q_D104'>D104</string>
+    <string name='Q_D105'>D105</string>
+    <string name='Q_D106'>D106</string>
+    <string name='Q_D107'>D107</string>
+    <string name='Q_D108'>D108</string>
+    <string name='Q_D109'>D109</string>
+    <string name='Q_D110'>D110</string>
+    <string name='Q_D111'>D111</string>
+    <string name='Q_D112'>D112</string>
+    <string name='Q_D113'>D113</string>
+    <string name='Q_D114'>D114</string>
+    <string name='Q_D115'>D115</string>
+    <string name='Q_D116'>D116</string>
+    <string name='Q_D117'>D117</string>
+    <string name='Q_D118'>D118</string>
+    <string name='Q_D118a'>D118a</string>
+    <string name='Q_D119'>D119</string>
+    <string name='Q_D120'>D120</string>
+    <string name='Q_D121'>D121</string>
+    <string name='Q_D122'>D122</string>
+    <string name='Q_D123'>D123</string>
+    <string name='Q_D124'>D124</string>
+    <string name='Q_D125'>D125</string>
+    <string name='Q_D126'>D126</string>
+    <string name='Q_D127'>D127</string>
+    <string name='Q_D128'>D128</string>
+    <string name='Q_D10128'>D10128</string>
+    <string name='Q_D10228'>D10228</string>
+    <string name='Q_D10328'>D10328</string>
+    <string name='Q_D10428'>D10428</string>
+    <string name='Q_D10528'>D10528</string>
+    <string name='Q_D10628'>D10628</string>
+    <string name='Q_D10728'>D10728</string>
+    <string name='Q_D10828'>D10828</string>
+    <string name='Q_D10928'>D10928</string>
+    <string name='Q_D11028'>D11028</string>
+    <string name='Q_D11128'>D11128</string>
+    <string name='Q_D11228'>D11228</string>
+    <string name='Q_D11328'>D11328</string>
+    <string name='Q_D11428'>D11428</string>
+    <string name='Q_D11528'>D11528</string>
+    <string name='Q_D11628'>D11628</string>
+    <string name='Q_D11728'>D11728</string>
+    <string name='Q_D11828'>D11828</string>
+    <string name='Q_D118a28'>D118a28</string>
+    <string name='Q_D11928'>D11928</string>
+    <string name='Q_D12028'>D12028</string>
+    <string name='Q_D12128'>D12128</string>
+    <string name='Q_D12228'>D12228</string>
+    <string name='Q_D12328'>D12328</string>
+    <string name='Q_D12428'>D12428</string>
+    <string name='Q_D12528'>D12528</string>
+    <string name='Q_D12628'>D12628</string>
+    <string name='Q_D12728'>D12728</string>
+    <string name='Q_D129'>D129</string>
+    <string name='Q_D130'>D130</string>
+    <string name='Q_D131'>D131</string>
+    <string name='Q_D132'>D132</string>
+    <string name='Q_D133'>D133</string>
+
+    <!-- D2 -->
+    <string name="D2Heading">SECTION D2: SOCIAL NETWORKS</string>
+
+    <string name="D201">About how many close friends do you have these days? (These are people you feel at ease with, can talk to about private matters and call on for help)</string>
+
+    <string name="D202">If you suddenly needed a small amount of money, how many people beyond your immediate household could you turn to who would be willing to provide the money? (In rural areas, this amount can be set at the level of being enough to cover expenses for the household for a week; while in urban areas; it can be set as being equal to a week\'s wages)</string>
+    <string name="D20201">Near relatives</string>
+    <string name="D20202">Extended relatives</string>
+    <string name="D20203">Close friends</string>
+    <string name="D20204">Accostabile</string>
+    <string name="D20205">Coworkers</string>
+    <string name="D20296">Others(Specify)</string>
+
+    <string name="D202a">Are most of these people of similar/higher/lower economic status than you?</string>
+    <string name="D202a01">Similar</string>
+    <string name="D202a02">Higher</string>
+    <string name="D202a03">Lower</string>
+
+    <string name="D203">Do you face any difficulty in reaching the designated point?</string>
+    <string name="D20301">Yes</string>
+    <string name="D20302">No</string>
+
+    <string name="D203a">If yes, how often do you socialize (eat together, talk, play sports) with your neighbors?</string>
+    <string name="D203a01">To a small extent</string>
+    <string name="D203a02">To a medium extent</string>
+    <string name="D203a03">To a large extent</string>
+
+    <string name="D204">If you suddenly had to go away for a day or two, could you count on your neighbors to take care of your property?</string>
+    <string name="D20401">Yes</string>
+    <string name="D20402">No</string>
+
+    <string name="D205">If you suddenly had to go away for a day or two, could you count on your neighbors to take care of your children?</string>
+    <string name="D20501">Yes</string>
+    <string name="D20502">No</string>
+
+    <string name="D206">If you suddenly faced a long-term shock (such as the death of a breadwinner, a harvest loss, or job loss), how many people beyond your immediate household could you turn to who would be willing to provide the money?</string>
+    <string name="D20601">Near relatives</string>
+    <string name="D20602">Extended relatives</string>
+    <string name="D20603">Close friends</string>
+    <string name="D20604">Accostabile</string>
+    <string name="D20605">Coworkers</string>
+    <string name="D20696">Others(Specify)</string>
+
+    <string name="D206a">Are most of these people of similar/higher/lower economic status than you?</string>
+    <string name="D206a01">Similar</string>
+    <string name="D206a02">Higher</string>
+    <string name="D206a03">Lower</string>
+
+    <string name="D207">In the last month, how many times have you met up with people in a public place either to talk or have food or drinks?</string>
+
+    <string name="D208">In the last month, how many times have people visited your home?</string>
+
+    <string name="D209">In the last month, how many times have you visited people in their home?</string>
+
+    <string name="D210">In the last 3 months, how many times have you gotten together with people to play games, sports or other recreational activities?</string>
+
+    <string name="D211">How many times in the past 12 months, did you participate in a family/village/neighborhood festival or ceremony (wedding, funeral, religious etc.)</string>
+
+    <string name="D212">In the past 12 months, did you attend a village/neighborhood council meeting, public hearing or public discussion group?</string>
+    <string name="D21201">Yes</string>
+    <string name="D21202">No</string>
+
+    <string name="D213">In the past 12 months, did you participate in a protest or demonstration?</string>
+    <string name="D21301">Yes</string>
+    <string name="D21302">No</string>
+
+    <string name="D214">In the past 12 months, did you participate in an information or election campaign?</string>
+    <string name="D21401">Yes</string>
+    <string name="D21402">No</string>
+
+    <string name="D215">In the past 12 months, did you alert newspaper, radio or TV to a local problem?</string>
+    <string name="D21501">Yes</string>
+    <string name="D21502">No</string>
+
+    <string name="D216">In the past 12 months, did you notify police or court about a local?</string>
+    <string name="D21601">Yes</string>
+    <string name="D21602">No</string>
+
+    <string name="D217">Do you belong to any community group?</string>
+    <string name="D21701">Yes</string>
+    <string name="D21702">No</string>
+
+    <string name="D218a">If yes, to what extent were you involved in making important decisions in the group?</string>
+    <string name="D218a01">Not at all</string>
+    <string name="D218a02">To some extent</string>
+    <string name="D218a03">To a large extent</string>
+    <string name="D218a99">Not applicable</string>
+
+    <string name="D21901">Women\'s Association</string>
+    <string name="D2190101">Yes</string>
+    <string name="D2190102">No</string>
+
+    <string name="D21902">Agricultural / livestock/ fisheries producer’s group (including marketing groups)</string>
+    <string name="D2190201">Yes</string>
+    <string name="D2190202">No</string>
+
+    <string name="D21903">Non-agricultural business group</string>
+    <string name="D2190301">Yes</string>
+    <string name="D2190302">No</string>
+
+    <string name="D21904">Credit or microfinance group</string>
+    <string name="D2190401">Yes</string>
+    <string name="D2190402">No</string>
+
+    <string name="D21905">Mutual help or insurance group</string>
+    <string name="D2190501">Yes</string>
+    <string name="D2190502">No</string>
+
+    <string name="D21906">Parent/teachers association (school committees)</string>
+    <string name="D2190601">Yes</string>
+    <string name="D2190602">No</string>
+
+    <string name="D21907">Civic groups (improving community) or charitable group (helping others)</string>
+    <string name="D2190701">Yes</string>
+    <string name="D2190702">No</string>
+
+    <string name="D21908">Political group</string>
+    <string name="D2190801">Yes</string>
+    <string name="D2190802">No</string>
+
+    <string name="D21909">Religious group</string>
+    <string name="D2190901">Yes</string>
+    <string name="D2190902">No</string>
+
+    <string name="D21910">Occupation association</string>
+    <string name="D2191001">Yes</string>
+    <string name="D2191002">No</string>
+
+    <string name="D21911">Other group (only if it does not fit into one of the other categories)</string>
+    <string name="D2191101">Yes</string>
+    <string name="D2191102">No</string>
+
+    <string name='Q_D201'>D201</string>
+    <string name='Q_D202'>D202</string>
+    <string name='Q_D202a'>D202a</string>
+    <string name='Q_D203'>D203</string>
+    <string name='Q_D203a'>D203a</string>
+    <string name='Q_D204'>D204</string>
+    <string name='Q_D205'>D205</string>
+    <string name='Q_D206'>D206</string>
+    <string name='Q_D206a'>D206a</string>
+    <string name='Q_D207'>D207</string>
+    <string name='Q_D208'>D208</string>
+    <string name='Q_D209'>D209</string>
+    <string name='Q_D210'>D210</string>
+    <string name='Q_D211'>D211</string>
+    <string name='Q_D212'>D212</string>
+    <string name='Q_D213'>D213</string>
+    <string name='Q_D214'>D214</string>
+    <string name='Q_D215'>D215</string>
+    <string name='Q_D216'>D216</string>
+    <string name='Q_D217'>D217</string>
+    <string name='Q_D218a'>D218a</string>
+    <string name='Q_D21901'>D21901</string>
+    <string name='Q_D21902'>D21902</string>
+    <string name='Q_D21903'>D21903</string>
+    <string name='Q_D21904'>D21904</string>
+    <string name='Q_D21905'>D21905</string>
+    <string name='Q_D21906'>D21906</string>
+    <string name='Q_D21907'>D21907</string>
+    <string name='Q_D21908'>D21908</string>
+    <string name='Q_D21909'>D21909</string>
+    <string name='Q_D21910'>D21910</string>
+    <string name='Q_D21911'>D21911</string>
+
+
+    <!-- E1 -->
+    <string name="E1Heading">SECTION E1: ANTHROPOMETRY AND EXAMINATION</string>
+
+    <string name="E101">Line number</string>
+
+    <string name="E102">Weight (kg) in format: xxx.xx</string>
+
+    <string name="E103">Height/length (cm) in format xxx.x</string>
+
+    <string name="E104">MUAC (cm)</string>
+
+    <string name="E105">Odeama</string>
+    <string name="E10501">Yes</string>
+    <string name="E10502">No</string>
+
+    <string name="E106">Assesment Status</string>
+    <string name="E10601">Done</string>
+    <string name="E10602">Not Done</string>
+    <string name="E10603">Refused</string>
+
+    <string name='Q_E101'>E101</string>
+    <string name='Q_E102'>E102</string>
+    <string name='Q_E103'>E103</string>
+    <string name='Q_E104'>E104</string>
+    <string name='Q_E105'>E105</string>
+    <string name='Q_E106'>E106</string>
+
 
 </resources>

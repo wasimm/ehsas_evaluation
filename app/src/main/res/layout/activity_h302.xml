@@ -494,7 +494,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H31396"
                             android:tag="H31396"
-                            android:text='@{H31396.checked? H31396.getText().toString() : ""}'
+                            android:text='@{H31396.checked? H31396x.getText().toString() : ""}'
                             android:visibility='@{H31396.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -566,7 +566,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H31496"
                             android:tag="H31496"
-                            android:text='@{H31496.checked? H31496.getText().toString() : ""}'
+                            android:text='@{H31496.checked? H31496x.getText().toString() : ""}'
                             android:visibility='@{H31496.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -736,7 +736,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H31696"
                             android:tag="H31696"
-                            android:text='@{H31696.checked? H31696.getText().toString() : ""}'
+                            android:text='@{H31696.checked? H31696x.getText().toString() : ""}'
                             android:visibility='@{H31696.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -874,7 +874,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H31796"
                             android:tag="H31796"
-                            android:text='@{H31796.checked? H31796.getText().toString() : ""}'
+                            android:text='@{H31796.checked? H31796x.getText().toString() : ""}'
                             android:visibility='@{H31796.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -1024,7 +1024,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H31896"
                             android:tag="H31896"
-                            android:text='@{H31896.checked? H31896.getText().toString() : ""}'
+                            android:text='@{H31896.checked? H31896x.getText().toString() : ""}'
                             android:visibility='@{H31896.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -1067,12 +1067,13 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H319"
                         android:inputType="number"
-                        app:mask="#########"
-                        app:maxValue="999999999"
+                        app:mask="##"
+                        app:maxValue="15"
                         app:minValue="1"
                         app:type="range" />
 
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!--H320  Radio-->
@@ -1147,6 +1148,11 @@
                             android:layout_height="match_parent"
                             android:text="@string/Q_H321" />
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/H321" />
+
                     </LinearLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -1156,9 +1162,12 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H32101"
                         android:inputType="number"
-                        app:mask="#########"
+                        android:maxLength="3"
+                        android:text='@{H32198.checked? "" : H32101.getText().toString()}'
+                        android:visibility='@{H32198.checked? View.GONE : View.VISIBLE}'
+                        app:mask="###"
                         app:maxValue="999"
-                        app:minValue="1"
+                        app:minValue="0"
                         app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -1168,9 +1177,12 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H32102"
                         android:inputType="number"
-                        app:mask="#########"
+                        android:maxLength="3"
+                        android:text='@{H32198.checked? "" : H32102.getText().toString()}'
+                        android:visibility='@{H32198.checked? View.GONE : View.VISIBLE}'
+                        app:mask="###"
                         app:maxValue="999"
-                        app:minValue="1"
+                        app:minValue="0"
                         app:type="range" />
 
                     <CheckBox
@@ -1264,9 +1276,9 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H32301"
                         android:inputType="number"
-                        app:mask="#########"
-                        app:maxValue="999999999"
-                        app:minValue="1"
+                        app:mask="###"
+                        app:maxValue="999"
+                        app:minValue="0"
                         app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -1276,9 +1288,9 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H32302"
                         android:inputType="number"
-                        app:mask="#########"
-                        app:maxValue="999999999"
-                        app:minValue="1"
+                        app:mask="###"
+                        app:maxValue="999"
+                        app:minValue="0"
                         app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -1288,9 +1300,9 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H32303"
                         android:inputType="number"
-                        app:mask="#########"
-                        app:maxValue="999999999"
-                        app:minValue="1"
+                        app:mask="###"
+                        app:maxValue="999"
+                        app:minValue="0"
                         app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -1300,9 +1312,9 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H32304"
                         android:inputType="number"
-                        app:mask="#########"
-                        app:maxValue="999999999"
-                        app:minValue="1"
+                        app:mask="###"
+                        app:maxValue="999"
+                        app:minValue="0"
                         app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -1312,9 +1324,9 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H32305"
                         android:inputType="number"
-                        app:mask="#########"
-                        app:maxValue="999999999"
-                        app:minValue="1"
+                        app:mask="###"
+                        app:maxValue="999"
+                        app:minValue="0"
                         app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -1324,9 +1336,9 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H32306"
                         android:inputType="number"
-                        app:mask="#########"
-                        app:maxValue="999999999"
-                        app:minValue="1"
+                        app:mask="###"
+                        app:maxValue="999"
+                        app:minValue="0"
                         app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -1336,9 +1348,9 @@
                         android:layout_marginBottom="12dp"
                         android:hint="@string/H32307"
                         android:inputType="number"
-                        app:mask="#########"
-                        app:maxValue="999999999"
-                        app:minValue="1"
+                        app:mask="###"
+                        app:maxValue="999"
+                        app:minValue="0"
                         app:type="range" />
 
                 </LinearLayout>

@@ -3,19 +3,58 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/wasim.abbas/AppData/Local/Android/Sdk/platforms/android-30/data/res/drawable/list_selector_background.xml" value="0.5828125" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/bottom.xml" value="0.33515625" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_download.xml" value="0.26875" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_home.xml" value="0.26875" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26875" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.26875" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_lock_close.xml" value="0.26875" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_lock_open.xml" value="0.26875" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_plus.xml" value="0.26875" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_H1.xml" value="0.4184873949579832" />
-        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h1.xml" value="0.6" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_c1.xml" value="0.4102911306702776" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_c2.xml" value="0.536" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_c3.xml" value="0.536" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_c4.xml" value="0.536" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_child_ending.xml" value="0.3140625" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_children_listview.xml" value="0.4525" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_d1.xml" value="0.6" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_d101.xml" value="0.1" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_d102.xml" value="0.1" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_d103.xml" value="0.1" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_d2.xml" value="0.21023228462216995" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_e1.xml" value="0.3890625" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_ending.xml" value="0.55859375" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h1.xml" value="0.21420882669537136" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h2.xml" value="0.21410146173688735" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h3.xml" value="0.1" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h301.xml" value="0.536" />
-        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h302.xml" value="0.536" />
-        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h4.xml" value="0.4" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h302.xml" value="0.11658932714617169" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h4.xml" value="0.6" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h5.xml" value="0.2607329842931937" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h6.xml" value="0.536" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h7.xml" value="0.72" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_login.xml" value="0.3890625" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_main.xml" value="0.2859375" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_members_listview.xml" value="0.28093158660844253" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_mwra_ending.xml" value="0.72" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_mwras_listview.xml" value="0.4231843575418994" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_section_b.xml" value="0.3975" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_section_c.xml" value="0.2859375" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w1.xml" value="0.3442416614222782" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w101.xml" value="0.24043062200956938" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w102.xml" value="0.4150731158605174" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w2.xml" value="0.1" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w3.xml" value="0.1" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w4.xml" value="0.6" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w6.xml" value="0.72" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/single_item.xml" value="0.55859375" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/single_item2.xml" value="0.536" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

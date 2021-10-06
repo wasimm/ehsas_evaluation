@@ -90,12 +90,124 @@
             android:theme="@style/AppThemeEnglish" />
 
         <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.H5"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.H6"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.D101"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.D102"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.D103"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.D2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.E1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.H2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.MemberList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.W101"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.W102"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.W2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.W3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.W4"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.W6"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.C1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.C2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.C3"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.C4"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.MWRAsList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.sections.ChildrenList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+
+        <activity
             android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeEnglish" />
 
         <activity
             android:name="edu.aku.wasimabbas.ehsas_evaluation.core.AndroidDatabaseManager"
+            android:parentActivityName="edu.aku.wasimabbas.ehsas_evaluation.ui.other.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEnglish" />
+
+        <activity
+            android:name="edu.aku.wasimabbas.ehsas_evaluation.core.AndroidManager"
             android:parentActivityName="edu.aku.wasimabbas.ehsas_evaluation.ui.other.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />

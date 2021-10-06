@@ -4,6 +4,10 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
+import android.text.Editable
+import android.text.TextWatcher
+import android.widget.Toast
+import com.edittextpicker.aliazaz.EditTextPicker
 
 
 fun isNetworkConnected(context: Context): Boolean {
@@ -33,4 +37,29 @@ fun isNetworkConnected(context: Context): Boolean {
     }
 
     return result
+}
+
+
+fun chkValues(edx: EditTextPicker, val1: Array<Double>, context: Context) {
+
+    edx.addTextChangedListener(object : TextWatcher {
+
+        override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+
+        override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+
+            Toast.makeText(context, "" + s.toString(), Toast.LENGTH_SHORT).show()
+
+            if (edx.text.toString().isNotEmpty()) {
+                if (edx.text.toString().indexOf(".") != -1) {
+                    for (item in val1) {
+                        if (edx.text.toString().toDouble() == item)
+                            edx.rangedefaultvalue = item.toFloat()
+                    }
+                }
+            }
+        }
+
+        override fun afterTextChanged(s: Editable) {}
+    })
 }

@@ -383,7 +383,8 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
         protected String doInBackground(Boolean... booleans) {
             runOnUiThread(() -> {
 
-                String[] syncItems = {"Users", "Schools"};
+                //String[] syncItems = {"Users", "Schools"};
+                String[] syncItems = {"Users"};
 
 
                 for (String syncItem : syncItems) {

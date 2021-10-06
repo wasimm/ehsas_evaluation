@@ -27,9 +27,9 @@
             android:orientation="vertical">
 
 
-            <!-- a06  Radio   -->
+            <!-- H118  Radio   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVa06"
+                android:id="@+id/fldGrpCVH118"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -42,58 +42,82 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/qtxt_a06"
+                            android:id="@+id/qtxt_H118"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_a06"
-                            android:text="@string/istatus" />
+                            android:layout_toEndOf="@id/q_H118"
+                            android:text="@string/H118" />
 
                         <TextView
-                            android:id="@+id/q_a06"
+                            android:id="@+id/q_H118"
                             style="@style/quesNum"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_a06"
-                            android:layout_alignBottom="@id/qtxt_a06"
-                            android:text="istatus" />
+                            android:layout_alignTop="@id/qtxt_H118"
+                            android:layout_alignBottom="@id/qtxt_H118"
+                            android:text="@string/Q_H118" />
 
                     </RelativeLayout>
 
 
                     <RadioGroup
-                        android:id="@+id/istatus"
+                        android:id="@+id/H118"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <RadioButton
-                            android:id="@+id/istatusa"
+                            android:id="@+id/H11801"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/istatusa" />
+                            android:text="@string/H11801" />
 
                         <RadioButton
-                            android:id="@+id/istatusb"
+                            android:id="@+id/H11802"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/istatusb" />
+                            android:text="@string/H11802" />
 
                         <RadioButton
-                            android:id="@+id/istatus96"
+                            android:id="@+id/H11803"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/istatus96" />
+                            android:text="@string/H11803" />
+
+                        <RadioButton
+                            android:id="@+id/H11804"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/H11804" />
+
+                        <RadioButton
+                            android:id="@+id/H11805"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/H11805" />
+
+                        <RadioButton
+                            android:id="@+id/H11806"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/H11806" />
+
+                        <RadioButton
+                            android:id="@+id/H11896"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/H11896" />
 
                         <EditText
-                            android:id="@+id/istatus96x"
+                            android:id="@+id/H11896x"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789"
-                            android:hint="@string/istatus96x"
+                            android:hint="@string/H11896"
                             android:inputType="text"
                             android:maxLength="40"
-                            android:tag="istatus96"
-                            android:text='@{istatus96.checked ? istatus96x.getText().toString() : ""}'
-                            android:visibility='@{istatus96.checked ? View.VISIBLE : View.GONE}' />
+                            android:tag="H11896"
+                            android:text='@{H11896.checked ? H11896x.getText().toString() : ""}'
+                            android:visibility='@{H11896.checked ? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
 

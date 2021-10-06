@@ -3,17 +3,17 @@ package edu.aku.wasimabbas.ehsas_evaluation.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.List;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
@@ -34,10 +34,7 @@ public class H301 extends AppCompatActivity {
 
     ActivityH301Binding bi;
     Intent oF = null;
-    String SectionBActivity;
     private DatabaseHelper db;
-    private List<String> schools;
-    private String semisCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +45,94 @@ public class H301 extends AppCompatActivity {
     }
 
     private void setupSkip() {
+
+        //H30301
+        bi.H30301.setOnCheckedChangeListener((group, checkedId) -> {
+
+            bi.H30302.clearCheck();
+
+            if (checkedId == bi.H3030101.getId()) {
+
+                bi.H3030201.setEnabled(true);
+                bi.H3030202.setEnabled(true);
+                bi.H3030203.setEnabled(false);
+                bi.H3030204.setEnabled(false);
+                bi.H3030205.setEnabled(false);
+                bi.H3030206.setEnabled(false);
+                bi.H3030207.setEnabled(false);
+                bi.H3030208.setEnabled(false);
+                bi.H3030209.setEnabled(false);
+                bi.H3030210.setEnabled(false);
+                bi.H3030211.setEnabled(false);
+                bi.H3030212.setEnabled(false);
+                bi.H3030213.setEnabled(false);
+                bi.H3030214.setEnabled(false);
+                bi.H3030215.setEnabled(false);
+                bi.H3030216.setEnabled(false);
+                bi.H3030296.setEnabled(false);
+            } else {
+                bi.H3030201.setEnabled(false);
+                bi.H3030202.setEnabled(false);
+                bi.H3030203.setEnabled(true);
+                bi.H3030204.setEnabled(true);
+                bi.H3030205.setEnabled(true);
+                bi.H3030206.setEnabled(true);
+                bi.H3030207.setEnabled(true);
+                bi.H3030208.setEnabled(true);
+                bi.H3030209.setEnabled(true);
+                bi.H3030210.setEnabled(true);
+                bi.H3030211.setEnabled(true);
+                bi.H3030212.setEnabled(true);
+                bi.H3030213.setEnabled(true);
+                bi.H3030214.setEnabled(true);
+                bi.H3030215.setEnabled(true);
+                bi.H3030216.setEnabled(true);
+                bi.H3030296.setEnabled(true);
+            }
+        });
+
+        //H30302
+        bi.H30302.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H3030201.getId() || checkedId == bi.H3030202.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH304);
+                bi.fldGrpCVH304.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH304.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //H305
+        bi.H305.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H30502.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH306);
+                bi.fldGrpCVH306.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH306.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //H307
+        bi.H307.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H30708.getId() || checkedId == bi.H30709.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH308);
+                bi.fldGrpCVH308.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVH309);
+                bi.fldGrpCVH309.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH308.setVisibility(View.VISIBLE);
+                bi.fldGrpCVH309.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //H308
+        bi.H308.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H30802.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH309);
+                bi.fldGrpCVH309.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH309.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     public void BtnContinue() {
@@ -71,7 +156,7 @@ public class H301 extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        db = new DatabaseHelper(this);
         int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_JSON, MainApp.form.getJSON());
         if (updcount == 1) {
             return true;

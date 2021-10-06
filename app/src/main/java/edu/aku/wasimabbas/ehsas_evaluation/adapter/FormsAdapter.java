@@ -50,7 +50,7 @@ public class FormsAdapter extends RecyclerView.Adapter<FormsAdapter.ViewHolder> 
         // - replace the contents of the view with that element
 
         int childCount = 0;
-        //childCount = db.getChildrenByUUID(form.get(position).get_UID());
+        //childCount = db.getChildrenByFUID(form.get(position).get_UID());
         int photoChild = 0;
         //photoChild = db.getChildrenPhotoCheck(form.get(position).get_UID());
         int cardChild = 0;

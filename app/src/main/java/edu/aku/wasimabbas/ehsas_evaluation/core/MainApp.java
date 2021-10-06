@@ -26,7 +26,11 @@ import java.util.List;
 
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.UsersContract;
 import edu.aku.wasimabbas.ehsas_evaluation.location.LocationLiveData;
+import edu.aku.wasimabbas.ehsas_evaluation.models.EligibleChild;
+import edu.aku.wasimabbas.ehsas_evaluation.models.EligibleMWRA;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Form;
+import edu.aku.wasimabbas.ehsas_evaluation.models.Member;
+import edu.aku.wasimabbas.ehsas_evaluation.models.Pregnancy;
 import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 import kotlin.Pair;
 
@@ -35,14 +39,14 @@ public class MainApp extends Application {
     public static final String TAG = "AppMain";
     //public static final String _IP = "https://vcoe1.aku.edu";// .LIVE server
     //public static final String _IP = "http://f38158";// .TEST server
-    public static final String _IP = "http://192.168.1.16:90";// .TEST server
-    //public static final String _IP = "http://10.198.96.104:90";// .TEST server
+    //public static final String _IP = "http://192.168.1.21:90";// .TEST server
+    public static final String _IP = "http://10.198.96.106:90";// .TEST server
     public static final String _HOST_URL = MainApp._IP + "/enp/api/";// .TEST server;
     public static final String _SERVER_URL = "sync.php";
     public static final String _SERVER_GET_URL = "getData.php";
     public static final String _PHOTO_UPLOAD_URL = MainApp._IP + "/enp/api/uploads.php";
 
-    public static final String _UPDATE_URL = MainApp._IP + "/ses/app/";
+    public static final String _UPDATE_URL = MainApp._IP + "/enp/app/";
     public static final Integer MONTHS_LIMIT = 11;
     public static final Integer DAYS_LIMIT = 29;
     // Location settings
@@ -76,6 +80,10 @@ public class MainApp extends Application {
     public static String userName = "0000";
     public static UsersContract user;
     public static Form form;
+    public static Member mc;
+    public static Pregnancy p;
+    public static EligibleMWRA mwra;
+    public static EligibleChild child;
     public static int deathCount = 0;
     public static String DeviceURL = "devices.php";
     public static String IMEI;
@@ -85,6 +93,7 @@ public class MainApp extends Application {
     public static Pair<List<Integer>, List<String>> selectedChildren;
     protected static LocationManager locationManager;
     private LocationLiveData locationlivedata;
+    public static String interviewDate;
 
     public static void setItemClick(OnItemClick itemClick) {
         MainApp.itemClick = itemClick;

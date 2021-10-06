@@ -429,7 +429,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H40696"
                             android:tag="H40696"
-                            android:text='@{H40696.checked? H40696.getText().toString() : ""}'
+                            android:text='@{H40696.checked? H40696x.getText().toString() : ""}'
                             android:visibility='@{H40696.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>

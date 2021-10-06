@@ -3,17 +3,17 @@ package edu.aku.wasimabbas.ehsas_evaluation.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.List;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
@@ -21,7 +21,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityH4Binding;
 import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.MainActivity;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 
@@ -37,7 +36,6 @@ public class H4 extends AppCompatActivity {
     Intent oF = null;
     String SectionBActivity;
     private DatabaseHelper db;
-    private List<String> schools;
     private String semisCode;
 
     @Override
@@ -49,6 +47,29 @@ public class H4 extends AppCompatActivity {
     }
 
     private void setupSkip() {
+
+        //H401
+        bi.H401.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H40102.getId() || checkedId == bi.H40103.getId() || checkedId == bi.H40104.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH402);
+                bi.fldGrpCVH402.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVH403);
+                bi.fldGrpCVH403.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH402.setVisibility(View.VISIBLE);
+                bi.fldGrpCVH403.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //H404
+        bi.H404.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H40402.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH405);
+                bi.fldGrpCVH405.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH405.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     public void BtnContinue() {
@@ -60,7 +81,7 @@ public class H4 extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, H5.class));
         } else {
             Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
         }
@@ -72,7 +93,7 @@ public class H4 extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        db = new DatabaseHelper(this);
         int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_JSON, MainApp.form.getJSON());
         if (updcount == 1) {
             return true;

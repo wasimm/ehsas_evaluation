@@ -1,19 +1,18 @@
 package edu.aku.wasimabbas.ehsas_evaluation.ui.sections;
 
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.List;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
@@ -34,10 +33,7 @@ public class H302 extends AppCompatActivity {
 
     ActivityH302Binding bi;
     Intent oF = null;
-    String SectionBActivity;
     private DatabaseHelper db;
-    private List<String> schools;
-    private String semisCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +44,36 @@ public class H302 extends AppCompatActivity {
     }
 
     private void setupSkip() {
+
+        //H314
+        bi.H314.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H31402.getId() || checkedId == bi.H31403.getId() || checkedId == bi.H31496.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH315);
+                bi.fldGrpCVH315.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH315.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //H320
+        bi.H320.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H32002.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH321);
+                bi.fldGrpCVH321.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH321.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //H322
+        bi.H322.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H32202.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH323);
+                bi.fldGrpCVH323.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH323.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     public void BtnContinue() {
@@ -71,7 +97,7 @@ public class H302 extends AppCompatActivity {
     }
 
     private boolean UpdateDB() {
-        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        db = new DatabaseHelper(this);
         int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_JSON, MainApp.form.getJSON());
         if (updcount == 1) {
             return true;

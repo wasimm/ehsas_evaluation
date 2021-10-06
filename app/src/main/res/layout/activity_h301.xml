@@ -155,7 +155,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H30196"
                             android:tag="H30196"
-                            android:text='@{H30196.checked? H30196.getText().toString() : ""}'
+                            android:text='@{H30196.checked? H30196x.getText().toString() : ""}'
                             android:visibility='@{H30196.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -221,7 +221,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H30296"
                             android:tag="H30296"
-                            android:text='@{H30296.checked? H30296.getText().toString() : ""}'
+                            android:text='@{H30296.checked? H30296x.getText().toString() : ""}'
                             android:visibility='@{H30296.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -421,7 +421,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H3030296"
                             android:tag="H3030296"
-                            android:text='@{H3030296.checked? H3030296.getText().toString() : ""}'
+                            android:text='@{H3030296.checked? H3030296x.getText().toString() : ""}'
                             android:visibility='@{H3030296.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -600,7 +600,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H30696"
                             android:tag="H30696"
-                            android:text='@{H30696.checked? H30696.getText().toString() : ""}'
+                            android:text='@{H30696.checked? H30696x.getText().toString() : ""}'
                             android:visibility='@{H30696.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -708,7 +708,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H30796"
                             android:tag="H30796"
-                            android:text='@{H30796.checked? H30796.getText().toString() : ""}'
+                            android:text='@{H30796.checked? H30796x.getText().toString() : ""}'
                             android:visibility='@{H30796.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
@@ -904,7 +904,7 @@
                             android:layout_marginBottom="12dp"
                             android:hint="@string/H31096"
                             android:tag="H31096"
-                            android:text='@{H31096.checked? H31096.getText().toString() : ""}'
+                            android:text='@{H31096.checked? H31096x.getText().toString() : ""}'
                             android:visibility='@{H31096.checked? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
