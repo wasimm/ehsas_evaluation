@@ -300,8 +300,4 @@ public class H1 extends AppCompatActivity {
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 
-    /*public void onBackPressed() {
-        Toast.makeText(this, "You Can't go back", Toast.LENGTH_LONG).show();
-    }*/
-
 }

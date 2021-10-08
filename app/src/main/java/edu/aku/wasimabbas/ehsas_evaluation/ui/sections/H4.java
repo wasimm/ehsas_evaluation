@@ -26,17 +26,9 @@ import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 public class H4 extends AppCompatActivity {
 
-    /*private static final String[] COUNTRIES = new String[] {
-            "Belgium", "France", "Italy", "Germany", "Spain"
-    };
-    String[] language ={"C","C++","Java",".NET","iPhone","Android","ASP.NET","PHP"};
-    */
-
     ActivityH4Binding bi;
     Intent oF = null;
-    String SectionBActivity;
     private DatabaseHelper db;
-    private String semisCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +36,8 @@ public class H4 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_h4);
         bi.setCallback(this);
         setupSkip();
+
+        Toast.makeText(this, "H4: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
     }
 
     private void setupSkip() {

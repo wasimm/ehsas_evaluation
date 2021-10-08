@@ -25,12 +25,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 public class H302 extends AppCompatActivity {
 
-    /*private static final String[] COUNTRIES = new String[] {
-            "Belgium", "France", "Italy", "Germany", "Spain"
-    };
-    String[] language ={"C","C++","Java",".NET","iPhone","Android","ASP.NET","PHP"};
-    */
-
     ActivityH302Binding bi;
     Intent oF = null;
     private DatabaseHelper db;
@@ -41,6 +35,8 @@ public class H302 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_h302);
         bi.setCallback(this);
         setupSkip();
+
+        Toast.makeText(this, "H302: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
     }
 
     private void setupSkip() {

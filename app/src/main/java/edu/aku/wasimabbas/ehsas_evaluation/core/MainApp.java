@@ -163,7 +163,6 @@ public class MainApp extends Application {
         alert.show();
     }
 
-
     @Override
     public void onCreate() {
         super.onCreate();
@@ -321,5 +320,4 @@ public class MainApp extends Application {
 
         }
     }
-
 }

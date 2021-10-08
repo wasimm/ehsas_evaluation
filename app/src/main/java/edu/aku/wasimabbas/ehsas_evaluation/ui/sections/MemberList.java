@@ -33,7 +33,7 @@ public class MemberList extends AppCompatActivity {
         bi.setCallback(this);
 
         fuid = MainApp.form.getUid();
-        Toast.makeText(this, "Form UID: " + fuid, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "MemberList: " + MainApp.form.getUid(), Toast.LENGTH_SHORT).show();
 
         Intent intent = getIntent();
         counter = intent.getIntExtra("counter", 0);
@@ -61,7 +61,7 @@ public class MemberList extends AppCompatActivity {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                if (bi.familyMembers.getCount() < 2) {
+                                if (bi.familyMembers.getCount() < 1) {
                                     Toast.makeText(MemberList.this, "Minimum two family members must be added", Toast.LENGTH_LONG).show();
                                 } else {
                                     startActivity(new Intent(MemberList.this, H301.class));

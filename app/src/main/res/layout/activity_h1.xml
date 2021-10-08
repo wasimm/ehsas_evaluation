@@ -23,19 +23,25 @@
             <!--Heading  Radio-->
             <androidx.cardview.widget.CardView style="@style/cardView">
 
-                <LinearLayout
+                <com.google.android.material.appbar.AppBarLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:theme="@style/AppTheme">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/red"
+                        android:theme="@style/AppTheme" />
 
                     <TextView
                         style="@style/i_textview"
                         android:text="@string/H1Heading" />
 
-                </LinearLayout>
+                </com.google.android.material.appbar.AppBarLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!--H101  Input-Numeric -->
             <androidx.cardview.widget.CardView

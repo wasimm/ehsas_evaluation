@@ -40,7 +40,7 @@ public class MWRAsList extends AppCompatActivity {
         bi.setCallback(this);
 
         fuid = MainApp.form.getUid();
-        Toast.makeText(this, "" + fuid, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "MWRAsList: " + MainApp.form.getUid(), Toast.LENGTH_SHORT).show();
 
         db = new DatabaseHelper(this);
         MWRAsList = db.getAllMWRAs(fuid);

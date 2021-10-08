@@ -40,7 +40,7 @@ public class ChildrenList extends AppCompatActivity {
         bi.setCallback(this);
 
         fuid = MainApp.form.getUid();
-        Toast.makeText(this, "" + fuid, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "ChildrenList: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
 
         db = new DatabaseHelper(this);
         MWRAsList = db.getAllChildren(fuid);

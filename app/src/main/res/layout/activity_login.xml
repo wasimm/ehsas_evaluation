@@ -44,7 +44,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:background="@color/white"
+                android:background="@color/red"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -61,7 +61,7 @@
                     android:gravity="center"
                     android:text="@string/app_name"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
                 <TextView
@@ -71,7 +71,7 @@
                     android:layout_margin="12dp"
                     android:text="SIGN IN"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -91,7 +91,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="#f7f7f7"
+                            android:background="@color/school_color"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -105,14 +105,14 @@
                                     android:layout_height="wrap_content"
                                     android:text="Username"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                    android:textColor="@color/black_overlay"
+                                    android:textColor="@color/white"
                                     android:textSize="17sp"
                                     android:textStyle="bold" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="?attr/actionBarSize"
-                                    android:layout_marginTop="10dp"
+                                    android:layout_marginTop="0dp"
                                     android:orientation="horizontal">
 
                                     <EditText
@@ -121,7 +121,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_gravity="center_horizontal"
 
-                                        android:background="@color/white_overlay"
+                                        android:background="@color/white"
                                         android:drawableStart="@drawable/ic_username"
                                         android:drawablePadding="8dp"
                                         android:elevation="1dp"
@@ -136,7 +136,7 @@
                                         android:paddingEnd="12dp"
                                         android:radius="2dp"
                                         android:singleLine="true"
-                                        android:textColor="@color/colorPrimary"
+                                        android:textColor="@color/black"
                                         android:textSize="20sp" />
 
                                 </LinearLayout>
@@ -146,14 +146,14 @@
                                     android:layout_height="wrap_content"
                                     android:text="Password"
                                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                    android:textColor="@color/black_overlay"
+                                    android:textColor="@color/white"
                                     android:textSize="17sp"
                                     android:textStyle="bold" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="?attr/actionBarSize"
-                                    android:layout_marginTop="10dp"
+                                    android:layout_marginTop="0dp"
                                     android:orientation="horizontal">
 
                                     <EditText
@@ -162,7 +162,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_gravity="center_horizontal"
                                         android:layout_weight="8"
-                                        android:background="@color/white_overlay"
+                                        android:background="@color/white"
                                         android:drawableStart="@drawable/ic_lock_close"
                                         android:drawablePadding="8dp"
                                         android:elevation="1dp"
@@ -177,7 +177,7 @@
                                         android:paddingEnd="12dp"
                                         android:radius="2dp"
                                         android:singleLine="true"
-                                        android:textColor="@color/colorPrimary"
+                                        android:textColor="@color/black"
                                         android:textSize="20sp" />
 
                                     <ImageButton
@@ -185,7 +185,7 @@
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
                                         android:layout_weight="2"
-                                        android:background="@drawable/et_style"
+                                        android:background="@color/white"
                                         android:onClick="onShowPasswordClick"
                                         android:src="@drawable/ic_red_eye"
                                         android:textSize="20sp" />
@@ -208,7 +208,7 @@
                                     android:layout_gravity="center"
                                     android:layout_marginTop="16dp"
                                     android:layout_marginBottom="16dp"
-                                    android:background="@drawable/outline_btn"
+                                    android:background="@color/red"
                                     android:text="Login"
                                     android:textColor="@color/white"
                                     android:textSize="20dp"
@@ -259,20 +259,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:background="@color/black_overlay"
+                        android:layout_marginTop="10dp"
                         android:drawableStart="@drawable/ic_download"
                         android:drawablePadding="12dp"
                         android:onClick="onSyncDataClick"
                         android:padding="12dp"
-
                         android:text="Download User Data"
-                        android:textColor="@color/white_overlay" />
-
-                    <!--     <Button
-                             android:layout_width="wrap_content"
-                             android:layout_height="wrap_content"
-                             android:onClick="takePhotos"
-                             android:text="Take Photo" />-->
+                        android:background="@color/school_color"
+                        android:textColor="@color/white" />
 
                     <TextView
                         android:id="@+id/txtinstalldate"
@@ -287,7 +281,7 @@
                         android:shadowDy="1"
                         android:shadowRadius="1"
                         android:text="Ver."
-                        android:textColor="#7f7f7f"
+                        android:textColor="#ffffff"
                         android:textSize="12sp" />
 
                 </LinearLayout>

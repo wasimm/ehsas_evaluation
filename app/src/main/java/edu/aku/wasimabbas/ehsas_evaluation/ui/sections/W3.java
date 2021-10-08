@@ -46,6 +46,7 @@ public class W3 extends AppCompatActivity {
 
         setupSkip();
 
+        Toast.makeText(this, "W3: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
 
         Intent intent = getIntent();
         id = intent.getLongExtra("id", 0);

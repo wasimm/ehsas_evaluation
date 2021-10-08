@@ -58,6 +58,8 @@ public class C1 extends AppCompatActivity {
 
         fuid = form.getUid();
 
+        Toast.makeText(this, "C1: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
+
         bi.C101.setText(name);
         bi.C102.setText(String.valueOf(serialNO));
 

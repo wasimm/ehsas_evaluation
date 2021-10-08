@@ -21,7 +21,7 @@ class EndingMWRA : AppCompatActivity() {
     var flag = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_ending)
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_mwra_ending)
         bi.callback = this
 
         val check = intent.getBooleanExtra("complete", false)
@@ -42,6 +42,8 @@ class EndingMWRA : AppCompatActivity() {
         }
 
         flag = intent.getStringExtra(CONSTANTS.SELECTED_MODEL).toString()
+
+        Toast.makeText(this, "EndingMWRA: " + form.uid, Toast.LENGTH_SHORT).show()
     }
 
     fun BtnEnd() {

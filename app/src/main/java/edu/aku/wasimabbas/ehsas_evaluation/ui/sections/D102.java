@@ -50,6 +50,8 @@ public class D102 extends AppCompatActivity {
         serialNO = intent.getIntExtra("serialNo", 0);
         name = intent.getStringExtra("name");
         uid = intent.getStringExtra("uid");
+
+        Toast.makeText(this, "D102: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
     }
 
     private void setupSkip() {

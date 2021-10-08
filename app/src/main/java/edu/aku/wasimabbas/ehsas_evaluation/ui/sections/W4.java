@@ -40,6 +40,8 @@ public class W4 extends AppCompatActivity {
         id = intent.getLongExtra("id", 0);
 
         setupSkip();
+
+        Toast.makeText(this, "W4: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
     }
 
     private void setupSkip() {
@@ -54,7 +56,7 @@ public class W4 extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, EndingMWRA.class).putExtra("id", id).putExtra("complete", true));
+            startActivity(new Intent(this, W6.class).putExtra("id", id));
         } else {
             Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
         }
@@ -71,7 +73,7 @@ public class W4 extends AppCompatActivity {
         int updcount = db.updatesMWRAColumn(EligibleMWRAsContract.MWRAsTable.COLUMN_JSON, MainApp.mwra.getJSON());
         if (updcount == 1) {
             db.updateCollectedColumn(MembersContract.MembersTable.COLUMN_COLLECTED, 1, id);
-            Toast.makeText(this, "MUID ID: " + MainApp.mwra.getId(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "MUID ID: " + MainApp.mwra.getId(), Toast.LENGTH_SHORT).show();
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

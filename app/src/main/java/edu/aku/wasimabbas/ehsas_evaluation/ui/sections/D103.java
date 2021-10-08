@@ -45,6 +45,8 @@ public class D103 extends AppCompatActivity {
 
         setupSkip();
 
+        Toast.makeText(this, "D103: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
+
         Intent intent = getIntent();
         id = intent.getLongExtra("id", 0);
         serialNO = intent.getIntExtra("serialNo", 0);

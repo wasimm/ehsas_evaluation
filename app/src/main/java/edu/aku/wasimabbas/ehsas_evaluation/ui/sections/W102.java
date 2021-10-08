@@ -33,6 +33,7 @@ public class W102 extends AppCompatActivity {
     public String uid;
     public String name;
     public int np;
+    public int tp;
     ActivityW102Binding bi;
     Intent oF = null;
     private DatabaseHelper db;
@@ -45,6 +46,8 @@ public class W102 extends AppCompatActivity {
 
         setupSkip();
 
+        Toast.makeText(this, "W102: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
+
         Intent intent = getIntent();
         id = intent.getLongExtra("id", 0);
         serialNO = intent.getIntExtra("serialNo", 0);
@@ -52,10 +55,12 @@ public class W102 extends AppCompatActivity {
         uid = intent.getStringExtra("uid");
         Toast.makeText(this, "" + uid, Toast.LENGTH_SHORT).show();
         np = intent.getIntExtra("np", 0);
+        tp = intent.getIntExtra("tp", 0);
         np = np - 1;
         counter = intent.getIntExtra("counter", 0);
         counter = counter + 1;
-        bi.W116.setText(counter);
+        bi.heading.setText(name + ": Pregnancy Number " + counter + "/" + tp);
+        bi.W116.setText(String.valueOf(counter));
     }
 
     private void setupSkip() {
@@ -100,7 +105,7 @@ public class W102 extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
             if (np > 0) {
-                startActivity(new Intent(this, W102.class).putExtra("np", np).putExtra("id", id).putExtra("uid", uid).putExtra("counter", counter));
+                startActivity(new Intent(this, W102.class).putExtra("np", np).putExtra("id", id).putExtra("uid", uid).putExtra("counter", counter).putExtra("tp", tp).putExtra("name", name));
             } else {
                 startActivity(new Intent(this, W2.class).putExtra("id", id).putExtra("uid", uid));
             }

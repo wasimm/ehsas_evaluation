@@ -20,6 +20,7 @@ import org.json.JSONException;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
+import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityE1Binding;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Member;
 import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
@@ -41,6 +42,8 @@ public class E1 extends AppCompatActivity {
         bi.setCallback(this);
 
         setupSkip();
+
+        Toast.makeText(this, "E1: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
 
         db = new DatabaseHelper(this);
         cursor = db.getAllMembers(form.getUid());

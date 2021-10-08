@@ -31,7 +31,6 @@ public class MWRAsAdapter extends RecyclerView.Adapter<MWRAsAdapter.ViewHolder> 
         this.context = context;
         this.MWRAsList = MWRAsList;
         this.rvMWRAs = rvMWRAs;
-        this.fuid = fuid;
     }
 
     @NonNull
@@ -94,10 +93,10 @@ public class MWRAsAdapter extends RecyclerView.Adapter<MWRAsAdapter.ViewHolder> 
             /*v.setBackgroundResource(R.color.green_overlay);
             v.setOnClickListener(null);*/
 
-            if (context instanceof edu.aku.wasimabbas.ehsas_evaluation.ui.sections.MWRAsList) {
+            /*if (context instanceof edu.aku.wasimabbas.ehsas_evaluation.ui.sections.MWRAsList) {
 
                 Toast.makeText(context, "Context: " + context, Toast.LENGTH_SHORT).show();
-            }
+            }*/
 
             Intent intent;
 

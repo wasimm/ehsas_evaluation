@@ -63,9 +63,10 @@ public class W101 extends AppCompatActivity {
 
         fuid = form.getUid();
 
+        Toast.makeText(this, "W101: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
+
         bi.W102.setText(name);
         bi.W103.setText(String.valueOf(serialNO));
-
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -179,7 +180,9 @@ public class W101 extends AppCompatActivity {
                 } else {
                     np = Integer.parseInt(bi.W110.getText().toString());
                 }
-                startActivity(new Intent(this, W102.class).putExtra("np", np).putExtra("id", id).putExtra("uid", uid).putExtra("counter", 0));
+
+                int tp = np;
+                startActivity(new Intent(this, W102.class).putExtra("np", np).putExtra("id", id).putExtra("uid", uid).putExtra("counter", 0).putExtra("tp", tp).putExtra("name", name));
             }
 
 

@@ -1,6 +1,5 @@
 package edu.aku.wasimabbas.ehsas_evaluation.ui.sections;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -26,24 +25,23 @@ import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 public class W6 extends AppCompatActivity {
 
-    /*private static final String[] COUNTRIES = new String[] {
-            "Belgium", "France", "Italy", "Germany", "Spain"
-    };
-    String[] language ={"C","C++","Java",".NET","iPhone","Android","ASP.NET","PHP"};
-    */
-
     ActivityW6Binding bi;
     Intent oF = null;
-    String SectionBActivity;
     private DatabaseHelper db;
-    private String semisCode;
+    public long id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_w6);
         bi.setCallback(this);
+
+        Intent intent = getIntent();
+        id = intent.getLongExtra("id", 0);
+
         setupSkip();
+
+        Toast.makeText(this, "W6: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
     }
 
     private void setupSkip() {
@@ -68,7 +66,7 @@ public class W6 extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(this, D2.class));
+            startActivity(new Intent(this, EndingMWRA.class).putExtra("id", id).putExtra("complete", true));
         } else {
             Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
         }

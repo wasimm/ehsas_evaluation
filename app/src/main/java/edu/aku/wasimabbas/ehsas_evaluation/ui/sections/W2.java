@@ -44,6 +44,8 @@ public class W2 extends AppCompatActivity {
 
         setupSkip();
 
+        Toast.makeText(this, "W2: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
+
         Intent intent = getIntent();
         id = intent.getLongExtra("id", 0);
     }

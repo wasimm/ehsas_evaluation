@@ -26,12 +26,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 public class H5 extends AppCompatActivity {
 
-    /*private static final String[] COUNTRIES = new String[] {
-            "Belgium", "France", "Italy", "Germany", "Spain"
-    };
-    String[] language ={"C","C++","Java",".NET","iPhone","Android","ASP.NET","PHP"};
-    */
-
     ActivityH5Binding bi;
     Intent oF = null;
     String SectionBActivity;
@@ -44,6 +38,8 @@ public class H5 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_h5);
         bi.setCallback(this);
         setupSkip();
+
+        Toast.makeText(this, "H5: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
     }
 
     private void setupSkip() {

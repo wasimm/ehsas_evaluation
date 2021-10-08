@@ -110,7 +110,7 @@ public class H2 extends AppCompatActivity {
         //H20603
         //bi.H20603.addTextChangedListener(textwatcher);
 
-        Toast.makeText(this, "interviewDate: " + MainApp.interviewDate, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "H2: " + fuid, Toast.LENGTH_LONG).show();
     }
 
     @Override
