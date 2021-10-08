@@ -23,7 +23,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.ui.other.MWRAs;
 public class MWRAsList extends AppCompatActivity {
 
     public int counter;
-    public String fuid;
     ActivityMwrasListviewBinding bi;
     Intent oF = null;
     MWRAsAdapter MWRAsAdapter;
@@ -39,11 +38,8 @@ public class MWRAsList extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_mwras_listview);
         bi.setCallback(this);
 
-        fuid = MainApp.form.getUid();
-        Toast.makeText(this, "MWRAsList: " + MainApp.form.getUid(), Toast.LENGTH_SHORT).show();
-
         db = new DatabaseHelper(this);
-        MWRAsList = db.getAllMWRAs(fuid);
+        MWRAsList = db.getAllMWRAs(MainApp.form.getUid());
 
         if (MWRAsList.size() == 0) {
             startActivity(new Intent(this, ChildrenList.class));

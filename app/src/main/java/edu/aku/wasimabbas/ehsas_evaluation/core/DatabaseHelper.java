@@ -936,7 +936,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor cursor = db.rawQuery("SELECT * FROM HHMembers WHERE fuid = '" + fuid + "' AND E101 = '-1' ORDER BY CAST(H201 AS INTEGER) ASC LIMIT 1", null);
+        Cursor cursor = db.rawQuery("SELECT * FROM HHMembers WHERE fuid = '" + fuid + "' AND (E101 = '-1' OR E101 = '' OR E101 is NULL) ORDER BY CAST(H201 AS INTEGER) ASC LIMIT 1", null);
         return cursor;
     }
 

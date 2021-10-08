@@ -93,14 +93,15 @@ public class MWRAsAdapter extends RecyclerView.Adapter<MWRAsAdapter.ViewHolder> 
             /*v.setBackgroundResource(R.color.green_overlay);
             v.setOnClickListener(null);*/
 
-            /*if (context instanceof edu.aku.wasimabbas.ehsas_evaluation.ui.sections.MWRAsList) {
-
-                Toast.makeText(context, "Context: " + context, Toast.LENGTH_SHORT).show();
-            }*/
-
             Intent intent;
 
-            if (Integer.parseInt(age) > 1) {
+            /*if (Integer.parseInt(age) > 1) {
+                intent = new Intent(context, W101.class);
+            } else {
+                intent = new Intent(context, C1.class);
+            }*/
+
+            if (context instanceof edu.aku.wasimabbas.ehsas_evaluation.ui.sections.MWRAsList) {
                 intent = new Intent(context, W101.class);
             } else {
                 intent = new Intent(context, C1.class);

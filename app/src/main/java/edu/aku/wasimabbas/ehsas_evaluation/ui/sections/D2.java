@@ -35,7 +35,9 @@ public class D2 extends AppCompatActivity {
         bi.setCallback(this);
         setupSkip();
 
-        Toast.makeText(this, "D2: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "D2: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
+
+        //MainApp.form.setUid("fb47bf5763adfcbf1");
     }
 
     private void setupSkip() {

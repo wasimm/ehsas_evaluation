@@ -116,7 +116,7 @@
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
                         android:hint="@string/E102"
-                        android:inputType="number"
+                        app:defaultValue=""
                         app:mask="###.##"
                         app:pattern="^(\\d{3,3}\\.\\d{2,2})$"
                         app:type="equal" />
@@ -160,7 +160,7 @@
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
                         android:hint="@string/E103"
-                        android:inputType="number"
+                        app:defaultValue=""
                         app:mask="###.#"
                         app:pattern="^(\\d{3,3}\\.\\d{1,1})$"
                         app:type="equal" />
@@ -204,7 +204,7 @@
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
                         android:hint="@string/E104"
-                        android:inputType="number"
+                        app:defaultValue=""
                         app:mask="###.##"
                         app:maxValue="40"
                         app:minValue="1"

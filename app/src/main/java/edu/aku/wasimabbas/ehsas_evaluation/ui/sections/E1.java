@@ -20,7 +20,6 @@ import org.json.JSONException;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
-import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityE1Binding;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Member;
 import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
@@ -43,14 +42,14 @@ public class E1 extends AppCompatActivity {
 
         setupSkip();
 
-        Toast.makeText(this, "E1: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "E1: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
 
         db = new DatabaseHelper(this);
         cursor = db.getAllMembers(form.getUid());
         //cursor = db.getAllMembers("fb47bf5763adfcbf1");
 
         if (cursor.getCount() == 0) {
-            startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
+            startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
         } else {
             cursor.moveToFirst();
             muid = cursor.getString(cursor.getColumnIndex("uid"));
@@ -76,7 +75,7 @@ public class E1 extends AppCompatActivity {
         }
         if (UpdateDB()) {
             finish();
-            startActivity(new Intent(E1.this, E1.class).putExtra("complete", true));
+            startActivity(new Intent(E1.this, E1.class));
         } else {
             Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
         }
