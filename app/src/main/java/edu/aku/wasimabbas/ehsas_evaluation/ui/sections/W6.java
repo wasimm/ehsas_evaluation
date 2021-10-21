@@ -19,7 +19,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityW6Binding;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 
@@ -49,10 +48,146 @@ public class W6 extends AppCompatActivity {
         //W60101
         bi.W60101.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == bi.W6010101.getId()) {
+
+                bi.fldGrpCVW60102.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60103.setVisibility(View.VISIBLE);
+
                 bi.fldGrpCVW602.setVisibility(View.VISIBLE);
+
+                bi.fldGrpCVW60301.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60302.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60303.setVisibility(View.VISIBLE);
+
+                bi.fldGrpCVW60401.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60402.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60403.setVisibility(View.VISIBLE);
+
+                bi.fldGrpCVW60501.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60502.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60503.setVisibility(View.VISIBLE);
+
+                bi.fldGrpCVW60601.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60602.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60603.setVisibility(View.VISIBLE);
+
+                bi.fldGrpCVW60701.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60702.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60703.setVisibility(View.VISIBLE);
+
+                bi.fldGrpCVW608.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW609.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW610.setVisibility(View.VISIBLE);
+
             } else {
+
+                Clear.clearAllFields(bi.fldGrpCVW60102);
+                Clear.clearAllFields(bi.fldGrpCVW60103);
                 Clear.clearAllFields(bi.fldGrpCVW602);
+                Clear.clearAllFields(bi.fldGrpCVW60301);
+                Clear.clearAllFields(bi.fldGrpCVW60302);
+                Clear.clearAllFields(bi.fldGrpCVW60303);
+                Clear.clearAllFields(bi.fldGrpCVW60401);
+                Clear.clearAllFields(bi.fldGrpCVW60402);
+                Clear.clearAllFields(bi.fldGrpCVW60403);
+                Clear.clearAllFields(bi.fldGrpCVW60501);
+                Clear.clearAllFields(bi.fldGrpCVW60502);
+                Clear.clearAllFields(bi.fldGrpCVW60503);
+                Clear.clearAllFields(bi.fldGrpCVW60601);
+                Clear.clearAllFields(bi.fldGrpCVW60602);
+                Clear.clearAllFields(bi.fldGrpCVW60603);
+                Clear.clearAllFields(bi.fldGrpCVW60701);
+                Clear.clearAllFields(bi.fldGrpCVW60702);
+                Clear.clearAllFields(bi.fldGrpCVW60703);
+                Clear.clearAllFields(bi.fldGrpCVW608);
+                Clear.clearAllFields(bi.fldGrpCVW609);
+                Clear.clearAllFields(bi.fldGrpCVW610);
+
+                bi.fldGrpCVW60102.setVisibility(View.GONE);
+                bi.fldGrpCVW60103.setVisibility(View.GONE);
                 bi.fldGrpCVW602.setVisibility(View.GONE);
+                bi.fldGrpCVW60301.setVisibility(View.GONE);
+                bi.fldGrpCVW60302.setVisibility(View.GONE);
+                bi.fldGrpCVW60303.setVisibility(View.GONE);
+                bi.fldGrpCVW60401.setVisibility(View.GONE);
+                bi.fldGrpCVW60402.setVisibility(View.GONE);
+                bi.fldGrpCVW60403.setVisibility(View.GONE);
+                bi.fldGrpCVW60501.setVisibility(View.GONE);
+                bi.fldGrpCVW60502.setVisibility(View.GONE);
+                bi.fldGrpCVW60503.setVisibility(View.GONE);
+                bi.fldGrpCVW60601.setVisibility(View.GONE);
+                bi.fldGrpCVW60602.setVisibility(View.GONE);
+                bi.fldGrpCVW60603.setVisibility(View.GONE);
+                bi.fldGrpCVW60701.setVisibility(View.GONE);
+                bi.fldGrpCVW60702.setVisibility(View.GONE);
+                bi.fldGrpCVW60703.setVisibility(View.GONE);
+                bi.fldGrpCVW608.setVisibility(View.GONE);
+                bi.fldGrpCVW609.setVisibility(View.GONE);
+                bi.fldGrpCVW610.setVisibility(View.GONE);
+            }
+        });
+
+        //W60301
+        bi.W60301.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.W6030102.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVW60302);
+                Clear.clearAllFields(bi.fldGrpCVW60303);
+                bi.fldGrpCVW60302.setVisibility(View.GONE);
+                bi.fldGrpCVW60303.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVW60302.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60303.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //W60401
+        bi.W60401.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.W6040102.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVW60402);
+                Clear.clearAllFields(bi.fldGrpCVW60403);
+                bi.fldGrpCVW60402.setVisibility(View.GONE);
+                bi.fldGrpCVW60403.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVW60402.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60403.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //W60501
+        bi.W60501.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.W6050102.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVW60502);
+                Clear.clearAllFields(bi.fldGrpCVW60503);
+                bi.fldGrpCVW60502.setVisibility(View.GONE);
+                bi.fldGrpCVW60503.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVW60502.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60503.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //W60601
+        bi.W60601.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.W6060102.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVW60602);
+                Clear.clearAllFields(bi.fldGrpCVW60603);
+                bi.fldGrpCVW60602.setVisibility(View.GONE);
+                bi.fldGrpCVW60603.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVW60602.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60603.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //W60701
+        bi.W60701.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.W6070102.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVW60702);
+                Clear.clearAllFields(bi.fldGrpCVW60703);
+                bi.fldGrpCVW60702.setVisibility(View.GONE);
+                bi.fldGrpCVW60703.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVW60702.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW60703.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -73,8 +208,7 @@ public class W6 extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        oF = new Intent(this, EndingActivity.class);
-        startActivity(oF);
+        MainApp.openEndActivity(this);
     }
 
     private boolean UpdateDB() {

@@ -246,6 +246,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_ISTATUS, form.getIstatus());
         values.put(FormsTable.COLUMN_ISTATUS96x, form.getIstatus96x());
         values.put(FormsTable.COLUMN_JSON, form.getJSON());
+        values.put(FormsTable.COLUMN_H213, form.getH213());
+        values.put(FormsTable.COLUMN_H214, form.getH214());
+        values.put(FormsTable.COLUMN_H21501, form.getH21501());
+        values.put(FormsTable.COLUMN_H21502, form.getH21502());
+        values.put(FormsTable.COLUMN_H21601, form.getH21601());
+        values.put(FormsTable.COLUMN_H21602, form.getH21602());
+        values.put(FormsTable.COLUMN_H21701, form.getH21701());
+        values.put(FormsTable.COLUMN_H21702, form.getH21702());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;
@@ -389,6 +397,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_APPVERSION,
                 FormsTable.COLUMN_ISTATUS,
                 FormsTable.COLUMN_ISTATUS96x,
+                FormsTable.COLUMN_H213,
+                FormsTable.COLUMN_H214,
+                FormsTable.COLUMN_H21501,
+                FormsTable.COLUMN_H21502,
+                FormsTable.COLUMN_H21601,
+                FormsTable.COLUMN_H21602,
+                FormsTable.COLUMN_H21701,
+                FormsTable.COLUMN_H21702,
                 FormsTable.COLUMN_JSON,
 
         };
@@ -512,13 +528,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] columns = {
                 FormsTable.COLUMN_ID,
                 FormsTable.COLUMN_UID,
-                //FormsTable.COLUMN_SEEM_VID,
-                //FormsTable.COLUMN_MPSYSDATE,
-                //FormsTable.COLUMN_FORMTYPE,
                 FormsTable.COLUMN_SYSDATE,
-                //FormsTable.COLUMN_MP102,
-                //FormsTable.COLUMN_MP103,
-                //FormsTable.COLUMN_MP101,
                 FormsTable.COLUMN_ISTATUS,
                 FormsTable.COLUMN_SYNCED,
         };
@@ -579,6 +589,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_ISTATUS,
                 FormsTable.COLUMN_ISTATUS96x,
                 FormsTable.COLUMN_JSON,
+                FormsTable.COLUMN_H213,
+                FormsTable.COLUMN_H214,
+                FormsTable.COLUMN_H21501,
+                FormsTable.COLUMN_H21502,
+                FormsTable.COLUMN_H21601,
+                FormsTable.COLUMN_H21602,
+                FormsTable.COLUMN_H21701,
+                FormsTable.COLUMN_H21702,
                 FormsTable.COLUMN_ENDINGDATETIME,
         };
 
@@ -666,7 +684,51 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
+    public void updateH214ToH216(String fuid, String gender, String age) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        if (Integer.parseInt(age) < 5) {
+            if (Integer.parseInt(gender) == 1) {
+                db.execSQL("UPDATE HHInformation set H21601 = (CAST(H21601 AS INTEGER) + 1), H21701 = (CAST(H21701 AS INTEGER) + 1) where uid = '" + fuid + "'");
+            } else if (Integer.parseInt(gender) == 2) {
+                db.execSQL("UPDATE HHInformation set H21602 = (CAST(H21602 AS INTEGER) + 1), H21702 = (CAST(H21702 AS INTEGER) + 1) where uid = '" + fuid + "'");
+            }
+        } else if (Integer.parseInt(age) >= 10 && Integer.parseInt(age) <= 19) {
+            if (Integer.parseInt(gender) == 1) {
+                db.execSQL("UPDATE HHInformation set H21501 = (CAST(H21501 AS INTEGER) + 1), H21701 = (CAST(H21701 AS INTEGER) + 1) where uid = '" + fuid + "'");
+            } else if (Integer.parseInt(gender) == 2) {
+                if (Integer.parseInt(age) >= 15) {
+                    db.execSQL("UPDATE HHInformation set H21502 = (CAST(H21502 AS INTEGER) + 1), H21702 = (CAST(H21702 AS INTEGER) + 1), H214 = (CAST(H214 AS INTEGER) + 1) where uid = '" + fuid + "'");
+                } else {
+                    db.execSQL("UPDATE HHInformation set H21502 = (CAST(H21502 as INTEGER) + 1), H21702 = (CAST(H21702 AS INTEGER) + 1) where uid = '" + fuid + "'");
+                }
+            }
+        } else {
+            if (Integer.parseInt(gender) == 1) {
+                db.execSQL("UPDATE HHInformation set H21701 = (H21701 + 1) where uid = '" + fuid + "'");
+            } else if (Integer.parseInt(gender) == 2) {
+                if (Integer.parseInt(age) >= 20 && Integer.parseInt(age) <= 49) {
+                    db.execSQL("UPDATE HHInformation set H21702 = (CAST(H21702 AS INTEGER) + 1), H214 = (CAST(H214 AS INTEGER) + 1) where uid = '" + fuid + "'");
+                } else {
+                    db.execSQL("UPDATE HHInformation set H21702 = (CAST(H21702 AS INTEGER) + 1) where uid = '" + fuid + "'");
+                }
+            }
+        }
+
+        /*ContentValues values = new ContentValues();
+
+        String selection = EligibleMWRAsContract.MWRAsTable.COLUMN_ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.mwra.getId())};
+
+        return db.update(EligibleMWRAsContract.MWRAsTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);*/
+    }
+
     public int updatesFamilyMemberColumn(String column, String value, String valueID) {
+
         SQLiteDatabase db = this.getReadableDatabase();
 
         ContentValues values = new ContentValues();
@@ -882,8 +944,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(EligibleChildrenContract.ChildrenTable.COLUMN_USERNAME, child.getUsername());
         values.put(EligibleChildrenContract.ChildrenTable.COLUMN_SYSDATE, child.getSysdate());
         values.put(EligibleChildrenContract.ChildrenTable.COLUMN_APPVERSION, child.getAppversion());
-        values.put(EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS, child.getIstatus());
-        values.put(EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS96x, child.getIstatus96x());
         values.put(EligibleChildrenContract.ChildrenTable.COLUMN_JSON, child.getJSON());
 
         // Insert the new row, returning the primary key value of the new row

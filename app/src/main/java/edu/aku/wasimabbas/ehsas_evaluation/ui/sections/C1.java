@@ -25,7 +25,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityC1Binding;
 import edu.aku.wasimabbas.ehsas_evaluation.models.EligibleChild;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 
 
 public class C1 extends AppCompatActivity {
@@ -100,8 +99,7 @@ public class C1 extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        oF = new Intent(this, EndingActivity.class);
-        startActivity(oF);
+        MainApp.openEndActivity(this);
     }
 
     private boolean UpdateDB() {

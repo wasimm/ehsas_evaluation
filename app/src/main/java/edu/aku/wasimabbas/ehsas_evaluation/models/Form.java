@@ -28,6 +28,18 @@ public class Form extends LiveData<Form> {
     private String sysdate = "";
     private String username = "";
 
+    private String H213 = "";
+    private String H214 = "";
+
+    private String H21501 = "";
+    private String H21502 = "";
+
+    private String H21601 = "";
+    private String H21602 = "";
+
+    private String H21701 = "";
+    private String H21702 = "";
+
     public Form() {
     }
 
@@ -120,12 +132,76 @@ public class Form extends LiveData<Form> {
         this.deviceid = deviceid;
     }
 
-    public String getTagid() {
+    public String getDevicetagid() {
         return devicetagid;
     }
 
-    public void setTagid(String tagid) {
-        this.devicetagid = tagid;
+    public void setDevicetagid(String devicetagid) {
+        this.devicetagid = devicetagid;
+    }
+
+    public String getH213() {
+        return H213;
+    }
+
+    public void setH213(String H213) {
+        this.H213 = H213;
+    }
+
+    public String getH214() {
+        return H214;
+    }
+
+    public void setH214(String H214) {
+        this.H214 = H214;
+    }
+
+    public String getH21501() {
+        return H21501;
+    }
+
+    public void setH21501(String H21501) {
+        this.H21501 = H21501;
+    }
+
+    public String getH21502() {
+        return H21502;
+    }
+
+    public void setH21502(String H21502) {
+        this.H21502 = H21502;
+    }
+
+    public String getH21601() {
+        return H21601;
+    }
+
+    public void setH21601(String H21601) {
+        this.H21601 = H21601;
+    }
+
+    public String getH21602() {
+        return H21602;
+    }
+
+    public void setH21602(String H21602) {
+        this.H21602 = H21602;
+    }
+
+    public String getH21701() {
+        return H21701;
+    }
+
+    public void setH21701(String H21701) {
+        this.H21701 = H21701;
+    }
+
+    public String getH21702() {
+        return H21702;
+    }
+
+    public void setH21702(String H21702) {
+        this.H21702 = H21702;
     }
 
     public String getJSON() {
@@ -151,10 +227,17 @@ public class Form extends LiveData<Form> {
         this.sysdate = jsonObject.getString(FormsTable.COLUMN_SYSDATE);
         this.username = jsonObject.getString(FormsTable.COLUMN_USERNAME);
         this.form_json = jsonObject.getString(FormsTable.COLUMN_JSON);
+        this.H213 = jsonObject.getString(FormsTable.COLUMN_H213);
+        this.H214 = jsonObject.getString(FormsTable.COLUMN_H214);
+        this.H21501 = jsonObject.getString(FormsTable.COLUMN_H21501);
+        this.H21502 = jsonObject.getString(FormsTable.COLUMN_H21502);
+        this.H21601 = jsonObject.getString(FormsTable.COLUMN_H21601);
+        this.H21602 = jsonObject.getString(FormsTable.COLUMN_H21602);
+        this.H21701 = jsonObject.getString(FormsTable.COLUMN_H21701);
+        this.H21702 = jsonObject.getString(FormsTable.COLUMN_H21702);
 
         return this;
     }
-
 
     public Form Hydrate(Cursor cursor) {
 
@@ -169,10 +252,17 @@ public class Form extends LiveData<Form> {
         this.sysdate = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SYSDATE));
         this.username = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_USERNAME));
         this.form_json = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_JSON));
+        this.H213 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_H213));
+        this.H214 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_H214));
+        this.H21501 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_H21501));
+        this.H21502 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_H21502));
+        this.H21601 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_H21601));
+        this.H21602 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_H21602));
+        this.H21701 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_H21701));
+        this.H21702 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_H21702));
 
         return this;
     }
-
 
     public JSONObject toJSONObject() throws JSONException {
 
@@ -183,13 +273,19 @@ public class Form extends LiveData<Form> {
         json.put(FormsTable.COLUMN_ISTATUS, this.istatus == null ? JSONObject.NULL : this.istatus);
         json.put(FormsTable.COLUMN_ISTATUS96x, this.istatus96x == null ? JSONObject.NULL : this.istatus96x);
         json.put(FormsTable.COLUMN_ENDINGDATETIME, this.endingdatetime == null ? JSONObject.NULL : this.endingdatetime);
-        //json.put(FormsTable.COLUMN_SYNCED, this.synced == null ? JSONObject.NULL : this.synced);
-        //json.put(FormsTable.COLUMN_SYNCED_DATE, this.synced_date == null ? JSONObject.NULL : this.synced_date);
         json.put(FormsTable.COLUMN_APPVERSION, this.appversion == null ? JSONObject.NULL : this.appversion);
         json.put(FormsTable.COLUMN_DEVICEID, this.deviceid == null ? JSONObject.NULL : this.deviceid);
         json.put(FormsTable.COLUMN_DEVICETAGID, this.devicetagid == null ? JSONObject.NULL : this.devicetagid);
         json.put(FormsTable.COLUMN_SYSDATE, this.sysdate == null ? JSONObject.NULL : this.sysdate);
         json.put(FormsTable.COLUMN_USERNAME, this.username == null ? JSONObject.NULL : this.username);
+        json.put(FormsTable.COLUMN_H213, this.H213 == null ? JSONObject.NULL : this.H213);
+        json.put(FormsTable.COLUMN_H214, this.H214 == null ? JSONObject.NULL : this.H214);
+        json.put(FormsTable.COLUMN_H21501, this.H21501 == null ? JSONObject.NULL : this.H21501);
+        json.put(FormsTable.COLUMN_H21502, this.H21502 == null ? JSONObject.NULL : this.H21502);
+        json.put(FormsTable.COLUMN_H21601, this.H21601 == null ? JSONObject.NULL : this.H21601);
+        json.put(FormsTable.COLUMN_H21602, this.H21602 == null ? JSONObject.NULL : this.H21602);
+        json.put(FormsTable.COLUMN_H21701, this.H21701 == null ? JSONObject.NULL : this.H21701);
+        json.put(FormsTable.COLUMN_H21702, this.H21702 == null ? JSONObject.NULL : this.H21702);
 
         if (!this.form_json.equals("")) {
             json.put(FormsTable.COLUMN_JSON, this.form_json.equals("") ? JSONObject.NULL : new JSONObject(this.form_json));

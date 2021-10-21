@@ -20,7 +20,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityD103Binding;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 
@@ -199,8 +198,7 @@ public class D103 extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        oF = new Intent(this, EndingActivity.class);
-        startActivity(oF);
+        MainApp.openEndActivity(this);
     }
 
     private boolean UpdateDB() {

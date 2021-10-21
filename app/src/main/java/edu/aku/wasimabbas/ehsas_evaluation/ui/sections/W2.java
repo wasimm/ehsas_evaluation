@@ -19,7 +19,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleMWRAsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityW2Binding;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 
@@ -206,8 +205,7 @@ public class W2 extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        oF = new Intent(this, EndingActivity.class);
-        startActivity(oF);
+        MainApp.openEndActivity(this);
     }
 
     private boolean UpdateDB() {

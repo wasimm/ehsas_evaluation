@@ -21,20 +21,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--Heading  Radio-->
+            <!--Heading -->
             <androidx.cardview.widget.CardView style="@style/cardView">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
                     <TextView
                         style="@style/i_textview"
                         android:text="@string/H2Heading2" />
-
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
 
@@ -73,7 +69,7 @@
             android:layout_gravity="bottom|right"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@color/school_color"
+            android:background="@color/colorNew"
             app:fabCustomSize="80dp"
             app:fabSize="normal"
             app:srcCompat="@drawable/ic_plus" />

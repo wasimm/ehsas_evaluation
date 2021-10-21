@@ -334,7 +334,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!--H406  Radio-->
+            <!--H406  CheckBox-->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVH406"
                 style="@style/cardView">
@@ -363,66 +363,68 @@
 
                     </LinearLayout>
 
-                    <RadioGroup
-                        android:id="@+id/H406"
+                    <LinearLayout
+                        android:id="@+id/H406check"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:tag="0">
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40601"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H40601" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40602"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H40602" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40603"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H40603" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40604"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H40604" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40605"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H40605" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40606"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H40606" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40607"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H40607" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40608"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H40608" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40609"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H40609" />
 
-                        <RadioButton
+                        <CheckBox
                             android:id="@+id/H40696"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -438,10 +440,10 @@
                             android:text='@{H40696.checked? H40696x.getText().toString() : ""}'
                             android:visibility='@{H40696.checked? View.VISIBLE : View.GONE}' />
 
-                    </RadioGroup>
+                    </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
 
             <LinearLayout
                 android:id="@+id/submitBtns"
@@ -454,28 +456,30 @@
 
                 <Button
                     android:id="@+id/btn_End"
+                    style="@style/buttons_bottom"
+                    android:background="@android:color/holo_red_light"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="@string/endInterview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:background="@color/red_overlay"
-                    android:onClick="@{() -> callback.BtnEnd()}"
-                    android:text="Cancel"
                     android:textColor="@color/white" />
+
 
                 <Button
                     android:id="@+id/btn_Continue"
+                    style="@style/buttons_bottom"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:background="@color/green_overlay"
                     android:onClick="@{() -> callback.BtnContinue()}"
-                    android:text="Save"
+                    android:text="@string/nextSection"
                     android:textColor="@color/white" />
 
             </LinearLayout>
 
         </LinearLayout>
-
 
     </ScrollView>
 

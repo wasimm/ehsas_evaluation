@@ -20,7 +20,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleChildrenContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityC2Binding;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 
@@ -178,8 +177,7 @@ public class C2 extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        oF = new Intent(this, EndingActivity.class);
-        startActivity(oF);
+        MainApp.openEndActivity(this);
     }
 
     private boolean UpdateDB() {
@@ -405,7 +403,6 @@ public class C2 extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 }

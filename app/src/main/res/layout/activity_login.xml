@@ -91,7 +91,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/school_color"
+                            android:background="@color/colorNew"
                             android:orientation="vertical">
 
                             <LinearLayout
@@ -265,7 +265,7 @@
                         android:onClick="onSyncDataClick"
                         android:padding="12dp"
                         android:text="Download User Data"
-                        android:background="@color/school_color"
+                        android:background="@color/colorNew"
                         android:textColor="@color/white" />
 
                     <TextView

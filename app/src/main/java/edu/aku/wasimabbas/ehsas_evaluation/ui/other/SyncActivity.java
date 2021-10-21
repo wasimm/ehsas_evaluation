@@ -154,6 +154,21 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     db.getUnsyncedForms(), 0, uploadListAdapter, uploadlist
             ).execute();
 
+            /*if (uploadlistActivityCreated) {
+                uploadmodel = new SyncModel();
+                uploadmodel.setstatusID(0);
+                uploadlist.add(uploadmodel);
+            }
+            new SyncAllData(
+                    this,
+                    "ChildTable",
+                    "updateSyncedChildForms",
+                    ChildContract.class,
+                    MainApp._HOST_URL + MainApp._SERVER_URL,
+                    ChildContract.ChildTable.TABLE_NAME,
+                    db.getUnsyncedChildsForms(), 6, uploadListAdapter, uploadlist
+            ).execute();*/
+
             uploadlistActivityCreated = false;
 
             SharedPreferences syncPref = getSharedPreferences("SyncInfo", Context.MODE_PRIVATE);

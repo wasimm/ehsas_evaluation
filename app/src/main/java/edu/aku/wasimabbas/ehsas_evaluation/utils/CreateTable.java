@@ -26,6 +26,14 @@ public final class CreateTable {
             + FormsTable.COLUMN_APPVERSION + " TEXT,"
             + FormsTable.COLUMN_ENDINGDATETIME + " TEXT,"
             + FormsTable.COLUMN_JSON + " TEXT,"
+            + FormsTable.COLUMN_H213 + " TEXT,"
+            + FormsTable.COLUMN_H214 + " TEXT,"
+            + FormsTable.COLUMN_H21501 + " TEXT,"
+            + FormsTable.COLUMN_H21502 + " TEXT,"
+            + FormsTable.COLUMN_H21601 + " TEXT,"
+            + FormsTable.COLUMN_H21602 + " TEXT,"
+            + FormsTable.COLUMN_H21701 + " TEXT,"
+            + FormsTable.COLUMN_H21702 + " TEXT,"
             + FormsTable.COLUMN_ISTATUS + " TEXT,"
             + FormsTable.COLUMN_ISTATUS96x + " TEXT,"
             + FormsTable.COLUMN_SYNCED + " TEXT,"
@@ -41,9 +49,9 @@ public final class CreateTable {
 
     public static final String SQL_CREATE_VERSIONAPP = "CREATE TABLE " + VersionAppContract.VersionAppTable.TABLE_NAME + " (" +
             VersionAppContract.VersionAppTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-            VersionAppContract.VersionAppTable.COLUMN_VERSION_CODE + " TEXT, " +
-            VersionAppContract.VersionAppTable.COLUMN_VERSION_NAME + " TEXT, " +
-            VersionAppContract.VersionAppTable.COLUMN_PATH_NAME + " TEXT " +
+            VersionAppContract.VersionAppTable.COLUMN_VERSION_CODE + " TEXT," +
+            VersionAppContract.VersionAppTable.COLUMN_VERSION_NAME + " TEXT," +
+            VersionAppContract.VersionAppTable.COLUMN_PATH_NAME + " TEXT" +
             ");";
 
     public static final String SQL_CREATE_MEMBERS = "CREATE TABLE "
@@ -56,8 +64,6 @@ public final class CreateTable {
             + MembersTable.COLUMN_SYSDATE + " TEXT,"
             + MembersTable.COLUMN_DEVICETAGID + " TEXT,"
             + MembersTable.COLUMN_APPVERSION + " TEXT,"
-            + MembersTable.COLUMN_SYNCED + " TEXT,"
-            + MembersTable.COLUMN_SYNCED_DATE + " TEXT,"
             + MembersTable.COLUMN_H201 + " TEXT,"
             + MembersTable.COLUMN_H202 + " TEXT,"
             + MembersTable.COLUMN_H203 + " TEXT,"
@@ -86,7 +92,9 @@ public final class CreateTable {
             + MembersTable.COLUMN_E103 + " TEXT,"
             + MembersTable.COLUMN_E104 + " TEXT,"
             + MembersTable.COLUMN_E105 + " TEXT,"
-            + MembersTable.COLUMN_E106 + " TEXT"
+            + MembersTable.COLUMN_E106 + " TEXT,"
+            + MembersTable.COLUMN_SYNCED + " TEXT,"
+            + MembersTable.COLUMN_SYNCED_DATE + " TEXT"
             + " );";
 
     public static final String SQL_CREATE_MWRAS = "CREATE TABLE "
@@ -119,8 +127,6 @@ public final class CreateTable {
             + PregnanciesContract.PregnanciesTable.COLUMN_SYSDATE + " TEXT,"
             + PregnanciesContract.PregnanciesTable.COLUMN_DEVICETAGID + " TEXT,"
             + PregnanciesContract.PregnanciesTable.COLUMN_APPVERSION + " TEXT,"
-            + PregnanciesContract.PregnanciesTable.COLUMN_SYNCED + " TEXT,"
-            + PregnanciesContract.PregnanciesTable.COLUMN_SYNCED_DATE + " TEXT,"
             + PregnanciesContract.PregnanciesTable.COLUMN_W116 + " TEXT,"
             + PregnanciesContract.PregnanciesTable.COLUMN_W11701 + " TEXT,"
             + PregnanciesContract.PregnanciesTable.COLUMN_W11702 + " TEXT,"
@@ -132,7 +138,9 @@ public final class CreateTable {
             + PregnanciesContract.PregnanciesTable.COLUMN_W12003 + " TEXT,"
             + PregnanciesContract.PregnanciesTable.COLUMN_W12101 + " TEXT,"
             + PregnanciesContract.PregnanciesTable.COLUMN_W12102 + " TEXT,"
-            + PregnanciesContract.PregnanciesTable.COLUMN_W12103 + " TEXT"
+            + PregnanciesContract.PregnanciesTable.COLUMN_W12103 + " TEXT,"
+            + PregnanciesContract.PregnanciesTable.COLUMN_SYNCED + " TEXT,"
+            + PregnanciesContract.PregnanciesTable.COLUMN_SYNCED_DATE + " TEXT"
             + " );";
 
     public static final String SQL_CREATE_CHILDREN = "CREATE TABLE "
@@ -147,8 +155,6 @@ public final class CreateTable {
             + EligibleChildrenContract.ChildrenTable.COLUMN_DEVICETAGID + " TEXT,"
             + EligibleChildrenContract.ChildrenTable.COLUMN_APPVERSION + " TEXT,"
             + EligibleChildrenContract.ChildrenTable.COLUMN_JSON + " TEXT,"
-            + EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS + " TEXT,"
-            + EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS96x + " TEXT,"
             + EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED + " TEXT,"
             + EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED_DATE + " TEXT"
             + " );";

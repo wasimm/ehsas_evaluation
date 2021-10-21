@@ -16,6 +16,7 @@ import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityMembersListviewBinding;
+import edu.aku.wasimabbas.ehsas_evaluation.ui.other.MainActivity;
 
 
 public class MemberList extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class MemberList extends AppCompatActivity {
         bi.setCallback(this);
 
         fuid = MainApp.form.getUid();
-        Toast.makeText(this, "MemberList: " + MainApp.form.getUid(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "MemberList: " + MainApp.form.getUid(), Toast.LENGTH_SHORT).show();
 
         Intent intent = getIntent();
         counter = intent.getIntExtra("counter", 0);
@@ -64,7 +65,7 @@ public class MemberList extends AppCompatActivity {
                                 if (bi.familyMembers.getCount() < 1) {
                                     Toast.makeText(MemberList.this, "Minimum two family members must be added", Toast.LENGTH_LONG).show();
                                 } else {
-                                    startActivity(new Intent(MemberList.this, H301.class));
+                                    startActivity(new Intent(MemberList.this, MainActivity.class));
                                 }
                             }
                         });

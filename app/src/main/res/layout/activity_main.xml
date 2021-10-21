@@ -154,7 +154,7 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@color/school_color"
+                            android:background="@color/colorNew"
                             android:padding="8dp">
 
                             <TextView

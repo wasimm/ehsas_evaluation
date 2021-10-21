@@ -30,7 +30,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityW101Binding;
 import edu.aku.wasimabbas.ehsas_evaluation.models.EligibleMWRA;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 
 
 public class W101 extends AppCompatActivity {
@@ -192,8 +191,7 @@ public class W101 extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        oF = new Intent(this, EndingActivity.class);
-        startActivity(oF);
+        MainApp.openEndActivity(this);
     }
 
     private boolean UpdateDB() {

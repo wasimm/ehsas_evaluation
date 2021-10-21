@@ -28,7 +28,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityH2Binding;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Member;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 
 
 public class H2 extends AppCompatActivity {
@@ -241,6 +240,26 @@ public class H2 extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
             }
         });
+
+        //H20704
+        bi.H20704.setOnCheckedChangeListener((group, isChecked) -> {
+            if (isChecked) {
+                Clear.clearAllFields(bi.fldGrpCVH208);
+                bi.fldGrpCVH208.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH208.setVisibility(View.VISIBLE);
+            }
+        });
+
+        //H20796
+        bi.H20796.setOnCheckedChangeListener((group, isChecked) -> {
+            if (isChecked) {
+                Clear.clearAllFields(bi.fldGrpCVH208);
+                bi.fldGrpCVH208.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVH208.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     public void BtnContinue() {
@@ -259,8 +278,7 @@ public class H2 extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        oF = new Intent(this, EndingActivity.class);
-        startActivity(oF);
+        MainApp.openEndActivity(this);
     }
 
     private boolean UpdateDB() {
@@ -271,6 +289,7 @@ public class H2 extends AppCompatActivity {
         if (inserted > 0) {
             MainApp.mc.setUid(MainApp.deviceId + MainApp.mc.getId());
             db.updatesFamilyMemberColumn(MembersContract.MembersTable.COLUMN_UID, MainApp.mc.getUid(), MainApp.mc.getId());
+            db.updateH214ToH216(MainApp.mc.getFuid(), MainApp.mc.getH204(), MainApp.mc.getH20603());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();

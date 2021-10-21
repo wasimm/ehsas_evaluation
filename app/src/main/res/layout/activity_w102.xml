@@ -83,9 +83,9 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- W117  Date   -->
+            <!-- W117  Title   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVd108"
+                android:id="@+id/fldGrpCVW117"
                 style="@style/cardView">
 
                 <LinearLayout
@@ -112,85 +112,84 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/C305D" />
+
+                        <TextView
+                            style="@style/textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/C305M" />
+
+                        <TextView
+                            style="@style/textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/C305Y" />
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/W11701"
+                            style="@style/EditTextDeci"
+                            android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:hint="DD"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:maxValue="31"
+                            app:minValue="1"
+                            app:type="range" />
 
-                            <TextView
-                                style="@style/textView3Head"
-                                android:text="@string/W11701" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/W11701"
-                                style="@style/EditTextNum"
-                                android:hint="@string/W11701"
-                                android:maxLength="2"
-                                android:textColor="@android:color/black"
-                                app:defaultValue="00"
-                                app:maxValue="31"
-                                app:minValue="1"
-                                app:type="range" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/W11702"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:hint="MM"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            app:defaultValue="98"
+                            app:mask="##"
+                            app:maxValue="12"
+                            app:minValue="1"
+                            app:type="range" />
 
-                            <TextView
-                                style="@style/textView3Head"
-                                android:text="@string/W11702" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/W11702"
-                                style="@style/EditTextNum"
-                                android:hint="@string/W11702"
-                                android:maxLength="2"
-                                android:textColor="@android:color/black"
-                                app:defaultValue="00"
-                                app:maxValue="12"
-                                app:minValue="1"
-                                app:type="range" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/W11703"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <TextView
-                                style="@style/textView3Head"
-                                android:text="@string/W11703" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/W11703"
-                                style="@style/EditTextNum"
-                                android:hint="@string/W11703"
-                                android:maxLength="2"
-                                android:textColor="@android:color/black"
-                                app:defaultValue="00"
-                                app:maxValue="31"
-                                app:minValue="1"
-                                app:type="range" />
-
-                        </LinearLayout>
+                            android:hint="YYYY"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:textColor="@android:color/black"
+                            app:defaultValue="9998"
+                            app:mask="####"
+                            app:maxValue="2021"
+                            app:minValue="1970"
+                            app:type="range" />
 
                     </LinearLayout>
 
                 </LinearLayout>
-
 
             </androidx.cardview.widget.CardView>
 
@@ -552,22 +551,25 @@
 
                 <Button
                     android:id="@+id/btn_End"
+                    style="@style/buttons_bottom"
+                    android:background="@android:color/holo_red_light"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="@string/endInterview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
-                    android:background="@color/red_overlay"
-                    android:onClick="@{() -> callback.BtnEnd()}"
-                    android:text="Cancel"
                     android:textColor="@color/white" />
+
 
                 <Button
                     android:id="@+id/btn_Continue"
+                    style="@style/buttons_bottom"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:background="@color/green_overlay"
                     android:onClick="@{() -> callback.BtnContinue()}"
-                    android:text="Save"
+                    android:text="@string/nextSection"
                     android:textColor="@color/white" />
 
             </LinearLayout>

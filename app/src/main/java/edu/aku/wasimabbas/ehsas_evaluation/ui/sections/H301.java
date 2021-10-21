@@ -20,7 +20,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityH301Binding;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 
@@ -43,11 +42,11 @@ public class H301 extends AppCompatActivity {
     private void setupSkip() {
 
         //H30301
-        bi.H30301.setOnCheckedChangeListener((group, checkedId) -> {
+        bi.H30301.setOnCheckedChangeListener((group, idChecked) -> {
 
             bi.H30302.clearCheck();
 
-            if (checkedId == bi.H3030101.getId()) {
+            if (idChecked == bi.H3030101.getId()) {
 
                 bi.H3030201.setEnabled(true);
                 bi.H3030202.setEnabled(true);
@@ -147,8 +146,7 @@ public class H301 extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        oF = new Intent(this, EndingActivity.class);
-        startActivity(oF);
+        MainApp.openEndActivity(this);
     }
 
     private boolean UpdateDB() {

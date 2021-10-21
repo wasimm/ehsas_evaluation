@@ -19,7 +19,6 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityH302Binding;
-import edu.aku.wasimabbas.ehsas_evaluation.ui.other.EndingActivity;
 import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils;
 
 
@@ -41,33 +40,23 @@ public class H302 extends AppCompatActivity {
 
     private void setupSkip() {
 
-        //H314
-        bi.H314.setOnCheckedChangeListener((group, checkedId) -> {
-            if (checkedId == bi.H31402.getId() || checkedId == bi.H31403.getId() || checkedId == bi.H31496.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVH315);
-                bi.fldGrpCVH315.setVisibility(View.GONE);
+        //H319
+        bi.H319.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H31902.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH320);
+                bi.fldGrpCVH320.setVisibility(View.GONE);
             } else {
-                bi.fldGrpCVH315.setVisibility(View.VISIBLE);
+                bi.fldGrpCVH320.setVisibility(View.VISIBLE);
             }
         });
 
-        //H320
-        bi.H320.setOnCheckedChangeListener((group, checkedId) -> {
-            if (checkedId == bi.H32002.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVH321);
-                bi.fldGrpCVH321.setVisibility(View.GONE);
+        //H321
+        bi.H321.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.H32102.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVH322);
+                bi.fldGrpCVH322.setVisibility(View.GONE);
             } else {
-                bi.fldGrpCVH321.setVisibility(View.VISIBLE);
-            }
-        });
-
-        //H322
-        bi.H322.setOnCheckedChangeListener((group, checkedId) -> {
-            if (checkedId == bi.H32202.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVH323);
-                bi.fldGrpCVH323.setVisibility(View.GONE);
-            } else {
-                bi.fldGrpCVH323.setVisibility(View.VISIBLE);
+                bi.fldGrpCVH322.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -88,8 +77,7 @@ public class H302 extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        oF = new Intent(this, EndingActivity.class);
-        startActivity(oF);
+        MainApp.openEndActivity(this);
     }
 
     private boolean UpdateDB() {
@@ -152,19 +140,30 @@ public class H302 extends AppCompatActivity {
 
         json.put("H314", bi.H31401.isChecked() ? "1"
                 : bi.H31402.isChecked() ? "2"
-                : bi.H31403.isChecked() ? "3"
-                : bi.H31496.isChecked() ? "96"
                 : "-1");
-        json.put("H31496x", bi.H31496x.getText().toString().trim().isEmpty() ? "-1" : bi.H31496x.getText().toString().trim());
 
-        json.put("H315", bi.H31501.isChecked() ? "1"
-                : bi.H31502.isChecked() ? "2"
+        json.put("H315", bi.H31511.isChecked() ? "11"
+                : bi.H31512.isChecked() ? "12"
+                : bi.H31521.isChecked() ? "21"
+                : bi.H31522.isChecked() ? "22"
+                : bi.H31531.isChecked() ? "31"
+                : bi.H31532.isChecked() ? "32"
+                : bi.H31533.isChecked() ? "33"
+                : bi.H31534.isChecked() ? "34"
+                : bi.H31535.isChecked() ? "35"
+                : bi.H31536.isChecked() ? "36"
+                : bi.H31537.isChecked() ? "37"
+                : bi.H31596.isChecked() ? "96"
                 : "-1");
+        json.put("H31596x", bi.H31596x.getText().toString().trim().isEmpty() ? "-1" : bi.H31596x.getText().toString().trim());
 
         json.put("H316", bi.H31611.isChecked() ? "11"
                 : bi.H31612.isChecked() ? "12"
+                : bi.H31613.isChecked() ? "13"
                 : bi.H31621.isChecked() ? "21"
                 : bi.H31622.isChecked() ? "22"
+                : bi.H31623.isChecked() ? "23"
+                : bi.H31624.isChecked() ? "24"
                 : bi.H31631.isChecked() ? "31"
                 : bi.H31632.isChecked() ? "32"
                 : bi.H31633.isChecked() ? "33"
@@ -183,57 +182,39 @@ public class H302 extends AppCompatActivity {
                 : bi.H31722.isChecked() ? "22"
                 : bi.H31723.isChecked() ? "23"
                 : bi.H31724.isChecked() ? "24"
+                : bi.H31725.isChecked() ? "25"
+                : bi.H31726.isChecked() ? "26"
+                : bi.H31727.isChecked() ? "27"
                 : bi.H31731.isChecked() ? "31"
                 : bi.H31732.isChecked() ? "32"
                 : bi.H31733.isChecked() ? "33"
                 : bi.H31734.isChecked() ? "34"
                 : bi.H31735.isChecked() ? "35"
                 : bi.H31736.isChecked() ? "36"
-                : bi.H31737.isChecked() ? "37"
                 : bi.H31796.isChecked() ? "96"
                 : "-1");
         json.put("H31796x", bi.H31796x.getText().toString().trim().isEmpty() ? "-1" : bi.H31796x.getText().toString().trim());
 
-        json.put("H318", bi.H31811.isChecked() ? "11"
-                : bi.H31812.isChecked() ? "12"
-                : bi.H31813.isChecked() ? "13"
-                : bi.H31821.isChecked() ? "21"
-                : bi.H31822.isChecked() ? "22"
-                : bi.H31823.isChecked() ? "23"
-                : bi.H31824.isChecked() ? "24"
-                : bi.H31825.isChecked() ? "25"
-                : bi.H31826.isChecked() ? "26"
-                : bi.H31827.isChecked() ? "27"
-                : bi.H31831.isChecked() ? "31"
-                : bi.H31832.isChecked() ? "32"
-                : bi.H31833.isChecked() ? "33"
-                : bi.H31834.isChecked() ? "34"
-                : bi.H31835.isChecked() ? "35"
-                : bi.H31836.isChecked() ? "36"
-                : bi.H31896.isChecked() ? "96"
-                : "-1");
-        json.put("H31896x", bi.H31896x.getText().toString().trim().isEmpty() ? "-1" : bi.H31896x.getText().toString().trim());
+        json.put("H318", bi.H318.getText().toString().trim().isEmpty() ? "-1" : bi.H318.getText().toString().trim());
 
-        json.put("H319", bi.H319.getText().toString().trim().isEmpty() ? "-1" : bi.H319.getText().toString().trim());
-
-        json.put("H320", bi.H32001.isChecked() ? "1"
-                : bi.H32002.isChecked() ? "2"
+        json.put("H319", bi.H31901.isChecked() ? "1"
+                : bi.H31902.isChecked() ? "2"
                 : "-1");
 
-        json.put("H32101", bi.H32101.getText().toString().trim().isEmpty() ? "-1" : bi.H32101.getText().toString().trim());
-        json.put("H32102", bi.H32102.getText().toString().trim().isEmpty() ? "-1" : bi.H32102.getText().toString().trim());
-        json.put("H32198", bi.H32198.isChecked() ? "1" : "-1");
+        json.put("H32001", bi.H32001.getText().toString().trim().isEmpty() ? "-1" : bi.H32001.getText().toString().trim());
+        json.put("H32002", bi.H32002.getText().toString().trim().isEmpty() ? "-1" : bi.H32002.getText().toString().trim());
+        json.put("H32098", bi.H32098.isChecked() ? "1" : "-1");
 
-        json.put("H322", bi.H32201.isChecked() ? "1"
-                : bi.H32202.isChecked() ? "2"
+        json.put("H321", bi.H32101.isChecked() ? "1"
+                : bi.H32102.isChecked() ? "2"
                 : "-1");
 
-        json.put("H32301", bi.H32301.getText().toString().trim().isEmpty() ? "-1" : bi.H32301.getText().toString().trim());
-        json.put("H32302", bi.H32302.getText().toString().trim().isEmpty() ? "-1" : bi.H32302.getText().toString().trim());
-        json.put("H32303", bi.H32303.getText().toString().trim().isEmpty() ? "-1" : bi.H32303.getText().toString().trim());
-        json.put("H32304", bi.H32304.getText().toString().trim().isEmpty() ? "-1" : bi.H32304.getText().toString().trim());
-        json.put("H32305", bi.H32305.getText().toString().trim().isEmpty() ? "-1" : bi.H32305.getText().toString().trim());
-        json.put("H32306", bi.H32306.getText().toString().trim().isEmpty() ? "-1" : bi.H32306.getText().toString().trim());
+        json.put("H32201", bi.H32201.getText().toString().trim().isEmpty() ? "-1" : bi.H32201.getText().toString().trim());
+        json.put("H32202", bi.H32202.getText().toString().trim().isEmpty() ? "-1" : bi.H32202.getText().toString().trim());
+        json.put("H32203", bi.H32203.getText().toString().trim().isEmpty() ? "-1" : bi.H32203.getText().toString().trim());
+        json.put("H32204", bi.H32204.getText().toString().trim().isEmpty() ? "-1" : bi.H32204.getText().toString().trim());
+        json.put("H32205", bi.H32205.getText().toString().trim().isEmpty() ? "-1" : bi.H32205.getText().toString().trim());
+        json.put("H32206", bi.H32206.getText().toString().trim().isEmpty() ? "-1" : bi.H32206.getText().toString().trim());
 
         try {
             JSONObject json_merged = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.form.getJSON()), json);

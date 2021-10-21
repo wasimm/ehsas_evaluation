@@ -11,7 +11,7 @@ public class FormsContract {
     public static String CONTENT_AUTHORITY = "edu.aku.wasimabbas.ehsas_evaluation";
 
     public static abstract class FormsTable implements BaseColumns {
-        public static final String TABLE_NAME = "HHInfo";
+        public static final String TABLE_NAME = "HHInformation";
         public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
         public static final String COLUMN_PROJECT_NAME = "EHSAS_NASHONUMA";
 
@@ -29,6 +29,14 @@ public class FormsContract {
         public static final String COLUMN_SYNCED = "synced";
         public static final String COLUMN_SYNCED_DATE = "synced_date";
         public static final String COLUMN_APPVERSION = "appversion";
+        public static final String COLUMN_H213 = "H213";
+        public static final String COLUMN_H214 = "H214";
+        public static final String COLUMN_H21501 = "H21501";
+        public static final String COLUMN_H21502 = "H21502";
+        public static final String COLUMN_H21601 = "H21601";
+        public static final String COLUMN_H21602 = "H21602";
+        public static final String COLUMN_H21701 = "H21701";
+        public static final String COLUMN_H21702 = "H21702";
 
         public static String PATH = "forms";
         public static final String CONTENT_TYPE =

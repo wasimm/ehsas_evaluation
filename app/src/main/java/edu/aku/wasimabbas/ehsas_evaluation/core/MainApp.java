@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Application;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -15,6 +16,8 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.format.DateFormat;
+import android.view.Window;
+import android.view.WindowManager;
 
 import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.LiveData;
@@ -24,6 +27,7 @@ import com.jakewharton.threetenabp.AndroidThreeTen;
 
 import java.util.List;
 
+import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.UsersContract;
 import edu.aku.wasimabbas.ehsas_evaluation.location.LocationLiveData;
 import edu.aku.wasimabbas.ehsas_evaluation.models.EligibleChild;
@@ -40,7 +44,7 @@ public class MainApp extends Application {
     //public static final String _IP = "https://vcoe1.aku.edu";// .LIVE server
     //public static final String _IP = "http://f38158";// .TEST server
     //public static final String _IP = "http://192.168.1.21:90";// .TEST server
-    public static final String _IP = "http://10.198.96.106:90";// .TEST server
+    public static final String _IP = "http://10.198.96.100:90";// .TEST server
     public static final String _HOST_URL = MainApp._IP + "/enp/api/";// .TEST server;
     public static final String _SERVER_URL = "sync.php";
     public static final String _SERVER_GET_URL = "getData.php";
@@ -163,41 +167,25 @@ public class MainApp extends Application {
         alert.show();
     }
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
+    public static void openEndActivity(Activity activity) {
 
-        // font from assets: "assets/fonts/Roboto-Regular.ttf
+        Dialog dialog = new Dialog(activity);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.item_dialog);
+        dialog.setCancelable(false);
+        WindowManager.LayoutParams params = new WindowManager.LayoutParams();
+        params.copyFrom(dialog.getWindow().getAttributes());
+        params.width = WindowManager.LayoutParams.WRAP_CONTENT;
+        params.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        dialog.show();
+        dialog.getWindow().setAttributes(params);
 
-        //TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/MBLateefi.ttf");
-        //TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "@fonts/JameelNooriNastaleeq.ttf");
-
-        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/MBLateefi.ttf");
-        deviceId = Settings.Secure.getString(getApplicationContext().getContentResolver(),
-                Settings.Secure.ANDROID_ID);
-
-        locationlivedata = new LocationLiveData(this);
-        // Requires Permission for GPS -- android.permission.ACCESS_FINE_LOCATION
-        // Requires Additional permission for 5.0 -- android.hardware.location.gps
-        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return;
-        }
-        locationManager.requestLocationUpdates(
-                LocationManager.GPS_PROVIDER,
-                MINIMUM_TIME_BETWEEN_UPDATES,
-                MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
-                new GPSLocationListener() // Implement this class from code
-
-        );
-
-
-//        Initialize Dead Member List
-//        deadMembers = new ArrayList<String>();
-        sharedPref = getSharedPreferences("PSUCodes", Context.MODE_PRIVATE);
-
-        //Initiate DateTime
-        AndroidThreeTen.init(this);
+        dialog.findViewById(R.id.btnOk).setOnClickListener(view -> {
+            activity.finish();
+            activity.startActivity(new Intent(activity, EndingActivity.class).putExtra("complete", false)
+                    .setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+        });
+        dialog.findViewById(R.id.btnNo).setOnClickListener(view -> dialog.dismiss());
     }
 
     protected void showCurrentLocation() {
@@ -319,5 +307,42 @@ public class MainApp extends Application {
         public void onProviderEnabled(String s) {
 
         }
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        // font from assets: "assets/fonts/Roboto-Regular.ttf
+
+        //TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/MBLateefi.ttf");
+        //TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "@fonts/JameelNooriNastaleeq.ttf");
+
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "fonts/jameelnoorinastaleeq.ttf");
+        deviceId = Settings.Secure.getString(getApplicationContext().getContentResolver(),
+                Settings.Secure.ANDROID_ID);
+
+        locationlivedata = new LocationLiveData(this);
+        // Requires Permission for GPS -- android.permission.ACCESS_FINE_LOCATION
+        // Requires Additional permission for 5.0 -- android.hardware.location.gps
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        locationManager.requestLocationUpdates(
+                LocationManager.GPS_PROVIDER,
+                MINIMUM_TIME_BETWEEN_UPDATES,
+                MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
+                new GPSLocationListener() // Implement this class from code
+
+        );
+
+
+//        Initialize Dead Member List
+//        deadMembers = new ArrayList<String>();
+        sharedPref = getSharedPreferences("PSUCodes", Context.MODE_PRIVATE);
+
+        //Initiate DateTime
+        AndroidThreeTen.init(this);
     }
 }

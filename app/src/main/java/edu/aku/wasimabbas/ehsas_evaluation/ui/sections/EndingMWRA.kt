@@ -8,7 +8,8 @@ import androidx.databinding.DataBindingUtil
 import com.validatorcrawler.aliazaz.Validator
 import edu.aku.wasimabbas.ehsas_evaluation.CONSTANTS
 import edu.aku.wasimabbas.ehsas_evaluation.R
-import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp.*
+import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp.appInfo
+import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp.mwra
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityMwraEndingBinding
 import edu.aku.wasimabbas.ehsas_evaluation.utils.JSONUtils
 import org.json.JSONException
@@ -43,7 +44,7 @@ class EndingMWRA : AppCompatActivity() {
 
         flag = intent.getStringExtra(CONSTANTS.SELECTED_MODEL).toString()
 
-        Toast.makeText(this, "EndingMWRA: " + form.uid, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "EndingMWRA: " + mwra.uid, Toast.LENGTH_SHORT).show()
     }
 
     fun BtnEnd() {
@@ -67,10 +68,10 @@ class EndingMWRA : AppCompatActivity() {
         else if (bi.W10496.isChecked) "96"
         else "-1"
 
-        form.istatus = statusValue
-        form.istatus96x =
+        mwra.istatus = statusValue
+        mwra.istatus96x =
             if (bi.W10496x.text.toString().trim().isEmpty()) "-1" else bi.W10496x.text.toString()
-        form.endingdatetime =
+        mwra.endingdatetime =
             SimpleDateFormat("dd-MM-yyyy HH:mm", Locale.ENGLISH).format(Date().time)
 
         val json = JSONObject()

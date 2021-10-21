@@ -1,4 +1,4 @@
-<resources>f
+<resources>
 
 
     <string name="form"> Start Interview </string>
@@ -63,8 +63,12 @@
     <string name="istatus96x"> Specify </string>
 
 
+    <string name="endInterview">ختم</string>
+    <string name="nextSection">اگلا سیکشن</string>
+
+
     <!-- Ehsas Nashonuma Programme -->
-    <string name="app_name"> Ehsas Nashonuma Programme </string>
+    <string name="app_name"> Ehsaas Nashonuma Programme </string>
     <string name="action_database">Database Manager</string>
     <string name="action_data_sync">Sync Data</string>
     <string name="btnDownload">Download Data</string>
@@ -75,38 +79,53 @@
     <!-- Replace with correct text-->
 
     <!-- H1 -->
-    <string name="H1Heading">SECTION H1: HOUSEHOLD INFORMATION</string>
-    <string name="H101">Cluster Number</string>
+    <string name="H1Heading">سیکشن ایچ1: گھرانے کی معلومات</string>
 
-    <string name="H102">Province</string>
-    <string name="H103">District</string>
-    <string name="H104">Tehsil/Taluka</string>
-    <string name="H105">Union Council</string>
-    <string name="H106">City/Village</string>
-    <string name="H107">Household Number</string>
+    <string name="H101">کلسٹر نمبر</string>
+    <string name="H102">صوبہ</string>
+    <string name="H103">ضلع</string>
+    <string name="H104">تحصیل /  تعلقہ</string>
+    <string name="H105">یونین کونسل</string>
+    <string name="H106">شہر/گاؤں</string>
+    <string name="H107">گھرانہ نمبر</string>
+    <string name="H108">انٹرویو کی تاریخ</string>
+    <string name="H109">انٹرویو کا وقت</string>
+    <string name="H110">انٹرویو لینے والے کا نام</string>
+    <string name="H111">جواب دہندہ کانام</string>
 
-    <string name="H108">Is this household a BISP beneficiary?</string>
-    <string name="H10801">Yes</string>
-    <string name="H10802">No</string>
+    <string name="H112">کیایہ گھر بی آئی ایس پی سے مستفید ہوتاہے؟</string>
+    <string name="H11201">ہاں</string>
+    <string name="H11202">نہیں</string>
 
-    <string name="H109">Number of BISP Beneficiaries in  household</string>
-    <string name="H110">Does this household have anyone enrolled in the Esass Nasu-o-Numa Program?</string>
-    <string name="H11001">Yes</string>
-    <string name="H11002">No</string>
+    <string name="H113">بی آئی ایس پی سے مستفید ہونےوالوں کی تعداد</string>
 
-    <string name="H111">Interviewer\'s Name</string>
-    <string name="H112">Date of Interview</string>
-    <string name="H113">Time of Interview</string>
-    <string name="H114">Name of the Respondent</string>
-    <string name="H115">Age of Respondent in completed years</string>
+    <string name="H114">کیاگھرکاکوئی فرد احساس نشونماونمامیں شامل ہے؟</string>
+    <string name="H11401">ہاں</string>
+    <string name="H11402">نہیں</string>
 
-    <string name="H116">Is Respondent Head of Household?</string>
-    <string name="H11601">Yes</string>
-    <string name="H11602">No</string>
+    <string name="H115">کیا جواب دہندہ گھر کا سربراہ ہے؟</string>
+    <string name="H11501">ہاں</string>
+    <string name="H11502">نہیں</string>
 
-    <string name="H117">Was Consent Taken?</string>
-    <string name="H11701">Verbal Consent</string>
-    <string name="H11702">Written Consent</string>
+    <string name="H116">اگر نہیں  توجواب دہندہ کون ہے؟</string>
+    <string name="H11601">گھر کے سربراہ کی بیوی</string>
+    <string name="H11602">گھر کے سربراہ کی بیٹی</string>
+    <string name="H11603">گھر کے سربراہ کی بہو</string>
+    <string name="H11696">دیگر وضاحت کریں</string>
+
+    <string name="H117">کیااجازت لی گئی؟</string>
+    <string name="H11701">زبانی اجازت</string>
+    <string name="H11702">تحریری اجازت</string>
+
+
+    <string name="H118">گھرانے کے انٹرویوکا نتیجہ</string>
+    <string name="H11801">مکمل</string>
+    <string name="H11802">گھرانے کا کوئی فرد یا باصلاحیت جواب دہندہ گھر پر موجود نہیں</string>
+    <string name="H11803">گھرانے کے تمام افراد لمبے عرصے کے لیے گھر سے غیر حاضر تھے</string>
+    <string name="H11804">انکار کردیا</string>
+    <string name="H11805">خالی گھر/غیر رہائشی</string>
+    <string name="H11806">گھر نہیں ملا</string>
+    <string name="H11896">دیگر وضاحت کریں</string>
 
     <string name="only_for_testing">ONLY FOR TESTING</string>
     <string name="database" translatable="false">Database</string>
@@ -129,104 +148,95 @@
     <string name='Q_H117'>H117</string>
     <string name='Q_H118'>H118</string>
 
-    <string name="H118">Result of Household Questionnaire interview</string>
-    <string name="H11801">Completed</string>
-    <string name="H11802">No household member at home or no competent respondent at the time of visit</string>
-    <string name="H11803">Entire household absent for extended period of time</string>
-    <string name="H11804">Refused</string>
-    <string name="H11805">Dwelling vacant or address not a dwelling</string>
-    <string name="H11806">Dwelling not found</string>
-    <string name="H11896">Others, (Specify)</string>
-
     <!-- H2 -->
-    <string name="H2Heading">SECTION H2: LIST OF HOUSEHOLD MEMBER</string>
+    <string name="H2Heading">سیکشن  ایچ 2: گھر کے افراد کی فہرست</string>
 
-    <string name="H2Heading2">SECTION H2: FAMILY MEMBERS</string>
+    <string name="H2Heading2">سیکشن  ایچ 2: گھر کے افراد </string>
 
-    <string name="H201">Line number</string>
+    <string name="H201">لائن نمبر</string>
 
-    <string name="H202">First, please tell me the name of each person who usually lives here, starting with the head of the household.</string>
+    <string name="H202">برا ئےمہربانی پہلے مجھے ان تمام افراد کانام بتائیں جو عام طور پر یہاں رہتے ہیں، خاندان کے سربراہ سے شروع کریں</string>
 
-    <string name="H203">Relationship with Head of household)?</string>
-    <string name="H20301">Head</string>
-    <string name="H20302">Spouse</string>
-    <string name="H20303">Son, Daughter</string>
-    <string name="H20304">Son-In-Law, Daughter-In-Law</string>
-    <string name="H20305">Grandchild</string>
-    <string name="H20306">Parent</string>
-    <string name="H20307">Parent-In-Law</string>
-    <string name="H20308">Brother, Sister</string>
-    <string name="H20309">Brother-In-Law, Sister-In-Law</string>
-    <string name="H20310">Uncle, Aunt</string>
-    <string name="H20311">Niece, Nephew</string>
-    <string name="H20312">Other Relatives</string>
-    <string name="H20313">Adopted ,Foster, Stepchild</string>
-    <string name="H20314">Servant (Live-In)</string>
-    <string name="H20315">Orphan</string>
-    <string name="H20396">Other (Not Related)</string>
-    <string name="H20398">Don\'t Know</string>
+    <string name="H203">گھر کے سربراہ سے رشتہ ؟</string>
+    <string name="H20301">سربراہ</string>
+    <string name="H20302">بیوی</string>
+    <string name="H20303">بیٹا،بیٹی</string>
+    <string name="H20304">داماد ،بہو</string>
+    <string name="H20305">پوتا،پوتی،نواسا،نواسی</string>
+    <string name="H20306">والدین</string>
+    <string name="H20307">ساس،سسر</string>
+    <string name="H20308">بھائی،بہن</string>
+    <string name="H20309">بھابھی،سالا،سالی،دیور،دیورانی</string>
+    <string name="H20310">چچا،چچی،ماموں،ممانی،پھوپھا،پھوپھی،خالہ خالو</string>
+    <string name="H20311">بھانجا،بھانجی،بھتیجا،بھتیج</string>
+    <string name="H20312">دیگر رشتہ دار</string>
+    <string name="H20313">سوتیلے،رضاعی،لے پالک بچے</string>
+    <string name="H20314">ملازم</string>
+    <string name="H20315">یتیم</string>
+    <string name="H20396">دیگر (کوئی رشتہ دار نہیں)</string>
+    <string name="H20398">رشتہ معلوم نہیں</string>
 
-    <string name="H204">Sex</string>
-    <string name="H20401">Male</string>
-    <string name="H20402">Female</string>
-    <string name="H20403">Transgender</string>
+    <string name="H204">جنس</string>
+    <string name="H20401">مرد</string>
+    <string name="H20402">عورت</string>
+    <string name="H20403">مخنث</string>
 
-    <string name="H205">What is (name)’s date of birth?</string>
-    <string name="H20501">Day</string>
-    <string name="H20502">Month</string>
-    <string name="H20503">Year</string>
+    <string name="H205">(نام) کی  تاریخ پیدائش کیاہے؟ (اگر مہینہ/تاریخ معلوم نہ ہوتو 98 لکھیں اور اگر سال معلوم نہ  ہوتو9998 لکھیں)</string>
+    <string name="H20501">دن</string>
+    <string name="H20502">مہینہ</string>
+    <string name="H20503">سال</string>
 
-    <string name="H206">How old is (name)?</string>
-    <string name="H20601">Days</string>
-    <string name="H20602">Months</string>
-    <string name="H20603">Years</string>
+    <string name="H206">(نام) عمر کتنی ہے؟اگر تاریخ پیدائش معلوم نہ ہو</string>
+    <string name="H20601">دن</string>
+    <string name="H20602">مہینہ</string>
+    <string name="H20603">سال</string>
 
-    <string name="H207">Can you please identify whether you have availed any of these programs?</string>
-    <string name="H20701">Ehsaas Kafaalt Program</string>
-    <string name="H20702">Ehsaas Waseela-e-Taleem</string>
-    <string name="H20703">Ehsaas Be-Rozgar Program</string>
-    <string name="H20704">None-BISP Beneficiary</string>
-    <string name="H20796">Other (specify)</string>
+    <string name="H207">کیاآپ ان پروگرامز کی وضاحت کرسکتے ہیں(ایک سے زیادہ جوابات آسکتے ہیں)</string>
+    <string name="H20701">احساس کفالت پروگرام</string>
+    <string name="H20702">احساس وسیلہ تعلیم</string>
+    <string name="H20703">احساس بیروزگار پروگرام</string>
+    <string name="H20704">بی آئی ایس پی پروگرام میں شامل نہیں</string>
+    <string name="H20796">دیگر وضاحت کریں</string>
 
-    <string name="H208">CNIC number of BISP beneficiary</string>
+    <string name="H208">بی آئی ایس پی پروگرام سےمستفیدہونےوالے کا شناختی کارڈنمبر</string>
 
-    <string name="H209">Marital Status (10 years or above)</string>
-    <string name="H20901">Married</string>
-    <string name="H20902">Widowed</string>
-    <string name="H20903">Divorced</string>
-    <string name="H20904">Separated</string>
-    <string name="H20905">Un-Married</string>
+    <string name="H209">ازواجی حیثیت (دس سال سے زیادہ عمرکےافراد</string>
+    <string name="H20901">شادی شدہ</string>
+    <string name="H20902">بیوہ/رنڈوہ</string>
+    <string name="H20903">لاق یافتہ</string>
+    <string name="H20904">الگ رہتا/ رہتی ہو</string>
+    <string name="H20905">کنوارہ/کنواری</string>
 
-    <string name="H210">Current status of married woman</string>
-    <string name="H21001">Pregnant Woman</string>
-    <string name="H21002">Lactating woman with child under 2</string>
-    <string name="H21003">Women with 06-23 months of child</string>
-    <string name="H21004">Non-Pregnant</string>
+    <string name="H210">شادی شدہ خاتون کی موجودہ حالت</string>
+    <string name="H21001">حاملہ عورت</string>
+    <string name="H21002">دودھ پلانے والی عورت 2 سال سے کم عمر کے بچے کے ساتھ</string>
+    <string name="H21003">06–23 ماہ کے بچے والی خواتین۔</string>
+    <string name="H21004">حمل سے نہیں</string>
 
-    <string name="H211">EDUCATION (3 years and above)</string>
-    <string name="H21101">None</string>
-    <string name="H21102">Pre-Primary</string>
-    <string name="H21103">Primary (1–5)</string>
-    <string name="H21104">Middle (6–8)</string>
-    <string name="H21105">Secondary (9–10)</string>
-    <string name="H21106">Intermediate</string>
-    <string name="H21107">Graduation</string>
-    <string name="H21108">Masters</string>
-    <string name="H21109">Ph.D</string>
-    <string name="H21198">Don\'t know</string>
+    <string name="H211">تعلیم*(تین  یا تین سال سے  زائد عمر کےافراد کیلئے)</string>
+    <string name="H21101">کوئی نہیں</string>
+    <string name="H21102">پری پرائمری</string>
+    <string name="H21103">پرائمری (5–1)</string>
+    <string name="H21104">مڈل(8–6)</string>
+    <string name="H21105">سیکنڈری(10–9)</string>
+    <string name="H21106">انٹرمیڈیٹ</string>
+    <string name="H21107">گریجویشن</string>
+    <string name="H21108">ماسٹرز</string>
+    <string name="H21109">پی-ایچ-ڈی</string>
+    <string name="H21198">معلوم نہیں</string>
 
-    <string name="H212">Occupation (3 years and above)</string>
-    <string name="H21201">None</string>
-    <string name="H21202">Unskilled Manual Labour</string>
-    <string name="H21203">Skilled Manual Labour</string>
-    <string name="H21204">Agriculture</string>
-    <string name="H21205">Sales And Services</string>
-    <string name="H21206">Professional</string>
-    <string name="H21207">Student</string>
-    <string name="H21208">Unemployed</string>
-    <string name="H21209">Housewife</string>
-    <string name="H21210">Retired</string>
-    <string name="H21296">Others (Specify)</string>
+    <string name="H212">پیشہ (دس یا دس سال سے زائدعمرکے افراد کیلئے)</string>
+    <string name="H21201">وئی نہیں  </string>
+    <string name="H21202">غیر ہنرمندمزدور</string>
+    <string name="H21203">ہنرمند مزدور</string>
+    <string name="H21204">زراعت سے متعلق</string>
+    <string name="H21205">سیل اور سروسز</string>
+    <string name="H21206">پروفیشنل</string>
+    <string name="H21207">طالب علم</string>
+    <string name="H21208">بےروزگار</string>
+    <string name="H21209">خاتون خانہ</string>
+    <string name="H21210">ریٹائرڈ</string>
+    <string name="H21296">دیگر وضاحت کریں</string>
 
     <string name='Q_H201'>H201</string>
     <string name='Q_H202'>H202</string>
@@ -243,300 +253,294 @@
 
 
     <!-- H3 -->
-    <string name="H3Heading">SECTION H3: SOCIO-ECONOMIC STATUS</string>
-    <string name="H301">What is the mother tongue of the head of the household?</string>
-    <string name="H30101">Urdu</string>
-    <string name="H30102">Punjabi</string>
-    <string name="H30103">Sindhi</string>
-    <string name="H30104">Pushtu</string>
-    <string name="H30105">Baluchi</string>
-    <string name="H30106">Siraiki</string>
-    <string name="H30107">Hindko</string>
-    <string name="H30108">Broshaski</string>
-    <string name="H30109">Khuwar</string>
-    <string name="H30110">Shina</string>
-    <string name="H30111">Wakhi</string>
-    <string name="H30112">Balti</string>
-    <string name="H30113">Pesian</string>
-    <string name="H30196">Others(Specify)</string>
+    <string name="H3Heading">سیکشن ایچ 3: سماجی امداد کے حوالے سے معلومات</string>
+    <string name="H301">گھرانے کے سربراہ کی مادری زبان کیا ہے ؟</string>
+    <string name="H30101">اردو</string>
+    <string name="H30102">پنجابی</string>
+    <string name="H30103">سند ھی</string>
+    <string name="H30104">پشتو</string>
+    <string name="H30105">بلوچی</string>
+    <string name="H30106">سرائیکی</string>
+    <string name="H30107">ہند کو</string>
+    <string name="H30108">بروشسکی</string>
+    <string name="H30109">کھوار</string>
+    <string name="H30110">شینا </string>
+    <string name="H30111">واخی</string>
+    <string name="H30112">بلتی</string>
+    <string name="H30113">فارسی</string>
+    <string name="H30196">دیگر وضاحت کریں</string>
 
-    <string name="H302">What is ownership status of household?</string>
-    <string name="H30201">Own</string>
-    <string name="H30202">Rented</string>
-    <string name="H30296">Others(Specify)</string>
+    <string name="H302">آپ کے گھرکی مالکانہ حیثیت کیا ہے ؟</string>
+    <string name="H30201">اپنا</string>
+    <string name="H30202">کرائے کا</string>
+    <string name="H30296">دیگر وضاحت کریں</string>
 
-    <string name="H30301">Municipal Community Water</string>
-    <string name="H3030101">Yes</string>
-    <string name="H3030102">No</string>
+    <string name="H30301">میونسپل کمیونیٹی واٹر کنیکشن</string>
+    <string name="H3030101">ہاں</string>
+    <string name="H3030102">نہیں</string>
 
-    <string name="H30302">What is the main source of drinking water in your house hold?</string>
-    <string name="H3030201">Piped into dwelling</string>
-    <string name="H3030202">Piped to yard/plot</string>
-    <string name="H3030203">Piped to neighbor</string>
-    <string name="H3030204">Public tap/standpipe</string>
-    <string name="H3030205">Tube well or borehole or suction pump</string>
-    <string name="H3030206">Hand pump</string>
-    <string name="H3030207">Protected Well</string>
-    <string name="H3030208">Unprotected Well</string>
-    <string name="H3030209">Protected Spring</string>
-    <string name="H3030210">Unprotected Spring</string>
-    <string name="H3030211">Rainwater</string>
-    <string name="H3030212">Tanker truck</string>
-    <string name="H3030213">Cart with small tank</string>
-    <string name="H3030214">Surface water (river/dam/lake/pond/canal Irrigation channel)</string>
-    <string name="H3030215">Filtration plant</string>
-    <string name="H3030216">Bottled water</string>
-    <string name="H3030296">Others(Specify)</string>
+    <string name="H30302">آپ کے گھر میں پینے کے پانی کا سب سے اہم ذریعہ کیا ہے ؟</string>
+    <string name="H3030201">گھر میں نلکا</string>
+    <string name="H3030202">صحن پلاٹ میں نلکا</string>
+    <string name="H3030203">پڑوسی کے گھر کا نلکا</string>
+    <string name="H3030204">گلی / علاقہ کا نلکا</string>
+    <string name="H3030205">ٹیوب ویل/ بورنگ کا پانی /پانی کھینچنے کی مشین</string>
+    <string name="H3030206">ہاتھ والا نلکا</string>
+    <string name="H3030207">محفوظ کنواں</string>
+    <string name="H3030208">غیرمحفوظ کنواں</string>
+    <string name="H3030209"> چشمہ محفوظ</string>
+    <string name="H3030210">چشمہ غیرمحفوظ </string>
+    <string name="H3030211">بارش کا پانی</string>
+    <string name="H3030212">پانی کا ٹینکر</string>
+    <string name="H3030213">ریڑھی کے ساتھ چھوٹی ٹنکی</string>
+    <string name="H3030214">سطح والا پانی(دریا،جھیل ،ڈیم،تالاب/ ندی/نہر کا پانی) </string>
+    <string name="H3030215">فلٹریشن پلانٹ</string>
+    <string name="H3030216">بوتل کا پانی </string>
+    <string name="H3030296">دیگر وضاحت کریں</string>
 
-    <string name="H304">How long does it usually take you to go to your main water source, get water, and come back? (This Relates to Drinking Water)</string>
+    <string name="H304">آپکوپانی کے اہم ذریعے تک پہنچنے میں اور وہاں سے پانی لے کر گھر آنے میں کتنا وقت لگتا ہے؟</string>
 
-    <string name="H305">Do you take any step to make the water safer to drink?</string>
-    <string name="H30501">Yes</string>
-    <string name="H30502">No</string>
+    <string name="H305">کیا آپ پانی کو محفوظ بنانے کے لیے کوئی قدم اٹھاتے ہیں</string>
+    <string name="H30501">ہاں</string>
+    <string name="H30502">نہیں</string>
 
-    <string name="H306">What do you usually do to make the water safe to drink?</string>
-    <string name="H30601">Boil</string>
-    <string name="H30602">Add bleach/chlorine</string>
-    <string name="H30603">Strain through a cloth</string>
-    <string name="H30604">Use water filter</string>
-    <string name="H30605">Solar disinfection</string>
-    <string name="H30606">Let it stand and settle</string>
-    <string name="H30696">Others(Specify)</string>
+    <string name="H306">عموماً آپ  پینے کےپانی کو محفوظ  بنانے  کے لیے کیا کرتے ہیں؟</string>
+    <string name="H30601">ابالتے ہیں</string>
+    <string name="H30602">بلیچ/کلورین ملاتے ہیں</string>
+    <string name="H30603">کپڑے کے ذریعہ چھانتے ہیں</string>
+    <string name="H30604">پانی کا فلٹر استعمال کرتے ہیں</string>
+    <string name="H30605">سورج کی شعاعوں سے/دھوپ میں رکھتے ہیں</string>
+    <string name="H30606">برتن میں پانی ڈال کر ٹھہرنے کا انتظار کرتے ہیں</string>
+    <string name="H30696">دیگر وضاحت کریں</string>
 
-    <string name="H307">What type of toilet facilities do you usually use in your household?</string>
-    <string name="H30701">Flush to piped sewer system</string>
-    <string name="H30702">Flush to septic tank</string>
-    <string name="H30703">Flush to pit latrine</string>
-    <string name="H30704">Flush to somewhere else</string>
-    <string name="H30705">Ventilated improved PIT latrine</string>
-    <string name="H30706">PIT latrine with slab</string>
-    <string name="H30707">PIT latrine without slab/open pit</string>
-    <string name="H30708">Bucket toilet</string>
-    <string name="H30709">No facility/bush/field</string>
-    <string name="H30796">Others(Specify)</string>
+    <string name="H307">آپ کے گھرانے کے افراد عام طورپر کس قسم کا بیت الخلاء استعمال کرتے ہیں؟</string>
+    <string name="H30701">فلش سیوریج کے نظام سے منسلک</string>
+    <string name="H30702">فلش سپٹک ٹینک سے منسلک</string>
+    <string name="H30703">فلش گڑھےواے لیٹرین سے منسلک</string>
+    <string name="H30704">فلش کہیں اور</string>
+    <string name="H30705">بہتر ہوا دار گڑھے والا لیٹرین</string>
+    <string name="H30706">گڑھے والا لیٹرین ڈھکا ہوا</string>
+    <string name="H30707">گڑھے والا کھلاہوا  لیٹرین</string>
+    <string name="H30708">بالٹی والا ٹوائلٹ</string>
+    <string name="H30709">کوئی سہولت نہیں /جھاڑیوں/زمین پر</string>
+    <string name="H30796">دیگر وضاحت کریں</string>
 
-    <string name="H308">Do you share this toilet facility with other households?</string>
-    <string name="H30801">Yes</string>
-    <string name="H30802">No</string>
+    <string name="H308">کیا اس بیت الخلاء کی سہولت کو دوسرے گھرانوں کے افراد بھی استعمال کر تے ہیں</string>
+    <string name="H30801">ہاں</string>
+    <string name="H30802">نہیں</string>
 
-    <string name="H309">If yes, how many other households use this toilet facility?</string>
+    <string name="H309">Iاگر ہاں،تو کتنے گھرانےاس بیت الخلاء کی  سہولت کواستعمال کرتے ہیں؟</string>
 
-    <string name="H310">What is usually done to dispose the stools of the youngest child?</string>
-    <string name="H31001">Child uses toilet/latrine</string>
-    <string name="H31002">Child uses diappers</string>
-    <string name="H31003">Put/rinsed on into toiled or latrine</string>
-    <string name="H31004">Put/rinsed on into drain/ditch</string>
-    <string name="H31005">Thrown into garbage</string>
-    <string name="H31006">Left in open</string>
-    <string name="H31007">Buried</string>
-    <string name="H31008">No Child Under 2</string>
-    <string name="H31096">Others(Specify)</string>
+    <string name="H310">سب سے چھوٹے بچے کا پاخانہ پھینکنے کے لیے عام طورپر کیاکرتے ہیں؟</string>
+    <string name="H31001">بچہ لیٹرین استعمال کرتا ہے</string>
+    <string name="H31002">بچہ ڈائپر استعمال کرتا ہے</string>
+    <string name="H31003">پاخانہ لیٹرین سے بہادیتے ہیں</string>
+    <string name="H31004">پاخانہ نالی /گھڑھے سے بہادیتے ہیں</string>
+    <string name="H31005">کچرے میں پھینک دیتے ہیں</string>
+    <string name="H31006">کھلا پڑا رہتا ہے</string>
+    <string name="H31007">زمین میں دبا دیتے ہیں</string>
+    <string name="H31008">گھر میں دو سال سے چھوٹا بچہ نہیں ہے</string>
+    <string name="H31096">دیگر وضاحت کریں</string>
 
-    <string name="H311">Does your household have?</string>
+    <string name="H311">کیا آپ کے گھر میں ان میں سے کچھ موجود ہے؟</string>
 
-    <string name="H31101">Electricity Connection</string>
-    <string name="H3110101">Yes</string>
-    <string name="H3110102">No</string>
+    <string name="H31101">بجلی</string>
+    <string name="H3110101">ہاں</string>
+    <string name="H3110102">نہیں</string>
 
-    <string name="H31102">Radio</string>
-    <string name="H3110201">Yes</string>
-    <string name="H3110202">No</string>
+    <string name="H31102">ریڈیو</string>
+    <string name="H3110201">ہاں</string>
+    <string name="H3110202">نہیں</string>
 
-    <string name="H31103">Television</string>
-    <string name="H3110301">Yes</string>
-    <string name="H3110302">No</string>
+    <string name="H31103">ٹیلی وژن</string>
+    <string name="H3110301">ہاں</string>
+    <string name="H3110302">نہیں</string>
 
-    <string name="H31104">Landline phone</string>
-    <string name="H3110401">Yes</string>
-    <string name="H3110402">No</string>
+    <string name="H31104">ٹیلیفون</string>
+    <string name="H3110401">ہاں</string>
+    <string name="H3110402">نہیں</string>
 
-    <string name="H31105">Refrigerator</string>
-    <string name="H3110501">Yes</string>
-    <string name="H3110502">No</string>
+    <string name="H31105">فریج</string>
+    <string name="H3110501">ہاں</string>
+    <string name="H3110502">نہیں</string>
 
-    <string name="H31106">Almirah/Cabinet</string>
-    <string name="H3110601">Yes</string>
-    <string name="H3110602">No</string>
+    <string name="H31106">الماری</string>
+    <string name="H3110601">ہاں</string>
+    <string name="H3110602">نہیں</string>
 
-    <string name="H31107">Chair</string>
-    <string name="H3110701">Yes</string>
-    <string name="H3110702">No</string>
+    <string name="H31107">کرسی</string>
+    <string name="H3110701">ہاں</string>
+    <string name="H3110702">نہیں</string>
 
-    <string name="H31108">Room Cooler</string>
-    <string name="H3110801">Yes</string>
-    <string name="H3110802">No</string>
+    <string name="H31108">روم کولر</string>
+    <string name="H3110801">ہاں</string>
+    <string name="H3110802">نہیں</string>
 
-    <string name="H31109">Air conditioner</string>
-    <string name="H3110901">Yes</string>
-    <string name="H3110902">No</string>
+    <string name="H31109">ائیرکنڈیشن</string>
+    <string name="H3110901">ہاں</string>
+    <string name="H3110902">نہیں</string>
 
-    <string name="H31110">Washing machine</string>
-    <string name="H3111001">Yes</string>
-    <string name="H3111002">No</string>
+    <string name="H31110">واشنگ مشین</string>
+    <string name="H3111001">ہاں</string>
+    <string name="H3111002">نہیں</string>
 
-    <string name="H31111">Water Pump</string>
-    <string name="H3111101">Yes</string>
-    <string name="H3111102">No</string>
+    <string name="H31111">پانی کا پمپ</string>
+    <string name="H3111101">ہاں</string>
+    <string name="H3111102">نہیں</string>
 
-    <string name="H31112">Bed</string>
-    <string name="H3111201">Yes</string>
-    <string name="H3111202">No</string>
+    <string name="H31112">پلنگ</string>
+    <string name="H3111201">ہاں</string>
+    <string name="H3111202">نہیں</string>
 
-    <string name="H31113">Clock</string>
-    <string name="H3111301">Yes</string>
-    <string name="H3111302">No</string>
+    <string name="H31113">گھٹری</string>
+    <string name="H3111301">ہاں</string>
+    <string name="H3111302">نہیں</string>
 
-    <string name="H31114">Sofa</string>
-    <string name="H3111401">Yes</string>
-    <string name="H3111402">No</string>
+    <string name="H31114">صوفہ</string>
+    <string name="H3111401">ہاں</string>
+    <string name="H3111402">نہیں</string>
 
-    <string name="H31115">Camera</string>
-    <string name="H3111501">Yes</string>
-    <string name="H3111502">No</string>
+    <string name="H31115">کیمرہ</string>
+    <string name="H3111501">ہاں</string>
+    <string name="H3111502">نہیں</string>
 
-    <string name="H31116">Sewing machine</string>
-    <string name="H3111601">Yes</string>
-    <string name="H3111602">No</string>
+    <string name="H31116"> سلائی مشین</string>
+    <string name="H3111601">ہاں</string>
+    <string name="H3111602">نہیں</string>
 
-    <string name="H31117">Computer/laptop</string>
-    <string name="H3111701">Yes</string>
-    <string name="H3111702">No</string>
+    <string name="H31117">کمپیوٹر/لیپ ٹاپ</string>
+    <string name="H3111701">ہاں</string>
+    <string name="H3111702">نہیں</string>
 
-    <string name="H31118">Internet connection</string>
-    <string name="H3111801">Yes</string>
-    <string name="H3111802">No</string>
+    <string name="H31118">انٹرنیٹ کا کنکشن</string>
+    <string name="H3111801">ہاں</string>
+    <string name="H3111802">نہیں</string>
 
-    <string name="H31119">Dish/Cable Network</string>
-    <string name="H3111901">Yes</string>
-    <string name="H3111902">No</string>
+    <string name="H31119">ڈش /کیبل نیٹ ورک</string>
+    <string name="H3111901">ہاں</string>
+    <string name="H3111902">نہیں</string>
 
-    <string name="H312">Does any member of this household own?</string>
+    <string name="H312">کیا گھر کے کسی فرد کے پاس یہ چیزیں موجود ہیں؟</string>
 
-    <string name="H31201">Watch</string>
-    <string name="H3120101">Yes</string>
-    <string name="H3120102">No</string>
+    <string name="H31201">گھڑی</string>
+    <string name="H3120101">ہاں</string>
+    <string name="H3120102">نہیں</string>
 
-    <string name="H31202">Mobile Phone</string>
-    <string name="H3120201">Yes</string>
-    <string name="H3120202">No</string>
+    <string name="H31202">موبائل فون</string>
+    <string name="H3120201">ہاں</string>
+    <string name="H3120202">نہیں</string>
 
-    <string name="H31203">Bicycle</string>
-    <string name="H3120301">Yes</string>
-    <string name="H3120302">No</string>
+    <string name="H31203">سائیکل</string>
+    <string name="H3120301">ہاں</string>
+    <string name="H3120302">نہیں</string>
 
-    <string name="H31204">Motorcycle or scooter</string>
-    <string name="H3120401">Yes</string>
-    <string name="H3120402">No</string>
+    <string name="H31204">موٹر سائیکل/ سکوٹر</string>
+    <string name="H3120401">ہاں</string>
+    <string name="H3120402">نہیں</string>
 
-    <string name="H31205">Animal-drawn cart</string>
-    <string name="H3120501">Yes</string>
-    <string name="H3120502">No</string>
+    <string name="H31205">جانوروں سے چلائی جانے والی گاڑی</string>
+    <string name="H3120501">ہاں</string>
+    <string name="H3120502">نہیں</string>
 
-    <string name="H31206">Car or trunk or bus</string>
-    <string name="H3120601">Yes</string>
-    <string name="H3120602">No</string>
+    <string name="H31206">گاڑی /ٹرک/ بس</string>
+    <string name="H3120601">ہاں</string>
+    <string name="H3120602">نہیں</string>
 
-    <string name="H31207">Tractor</string>
-    <string name="H3120701">Yes</string>
-    <string name="H3120702">No</string>
+    <string name="H31207">ٹریکٹر</string>
+    <string name="H3120701">ہاں</string>
+    <string name="H3120702">نہیں</string>
 
-    <string name="H313">What type of fuel do you usually use for cooking in your household?</string>
-    <string name="H31301">Electricity</string>
-    <string name="H31302">LPG</string>
-    <string name="H31303">Natural Gas</string>
-    <string name="H31304">Biogas</string>
-    <string name="H31305">Kerosene</string>
-    <string name="H31306">Coal/Lignite</string>
-    <string name="H31307">Charcoal</string>
-    <string name="H31308">Wood</string>
-    <string name="H31309">Straw/Shrubs/Grass</string>
-    <string name="H31310">Animal Dung</string>
-    <string name="H31311">No food cooked in household</string>
-    <string name="H31396">Others(Specify)</string>
+    <string name="H313">عام طورپر آپ کے گھر میں کھانا پکانے کے لیے کس قسم کا ایندھن استعمال ہوتا ہے ؟</string>
+    <string name="H31301">بجلی</string>
+    <string name="H31302">ایل –پی-جی</string>
+    <string name="H31303">قدرتی گیس</string>
+    <string name="H31304">بائیو گیس</string>
+    <string name="H31305">مٹی کا تیل</string>
+    <string name="H31306">قدرتی کوئلہ</string>
+    <string name="H31307">لکٹری کاکوئلہ</string>
+    <string name="H31308">لکٹری</string>
+    <string name="H31309">تنکے/جھاڑیاں/گھاس پھونس</string>
+    <string name="H31310">(جانوروں کا گوبر(اوپلے</string>
+    <string name="H31311">گھر میں کھانا نہیں پکتا</string>
+    <string name="H31396">دیگر وضاحت کریں</string>
 
-    <string name="H314">Is the cooking usually done in the house, in a separate room/space, or outdoors?</string>
-    <string name="H31401">In the house</string>
-    <string name="H31402">In a separate building</string>
-    <string name="H31403">Outdoors</string>
-    <string name="H31496">Others(Specify)</string>
+    <string name="H314">کیا آپ کے پاس باروچی خانہ کے طور پر  استعمال کے لیے علیحدہ کمر ہ موجو د ہے ؟</string>
+    <string name="H31401">ہاں</string>
+    <string name="H31402">نہیں</string>
 
-    <string name="H315">Do you have a separate room which is used as a kitchen?</string>
-    <string name="H31501">Yes</string>
-    <string name="H31502">No</string>
+    <string name="H315">گھر کے  فرش  بنانے میں کس قسم کا  میٹریل استعمال کیاگیا ہے گھر کے فرش میں استعمال ہونے والا بنیادی مواد:مشاہدہ کریں۔</string>
+    <string name="H31511">مٹی/چکنی مٹی/زمین/ریت</string>
+    <string name="H31512">جانوروں کا گوبر</string>
+    <string name="H31521">لکٹری کے تختے</string>
+    <string name="H31522">کھجور  یاناریل کے پتے /بانس</string>
+    <string name="H31531">کڑی کا فرش یا پالش والی لکڑی</string>
+    <string name="H31532">لکڑی کی پلائی  یا  لکڑی کے ٹائلز</string>
+    <string name="H31533">سرامک ٹائلز</string>
+    <string name="H31534">سیمنٹ</string>
+    <string name="H31535">قالین</string>
+    <string name="H31536">اینٹیں</string>
+    <string name="H31537">چونے کا پتھر</string>
+    <string name="H31596">دیگر وضاحت کریں</string>
 
-    <string name="H316">Main material of the dwelling floor?</string>
-    <string name="H31611">Mud/Clay/Earth/Sand</string>
-    <string name="H31612">Dung</string>
-    <string name="H31621">Wood planks</string>
-    <string name="H31622">Palm/Bamboo</string>
-    <string name="H31631">Parquet or polished wood</string>
-    <string name="H31632">Vinyl or asphalt strips</string>
-    <string name="H31633">Ceramic tiles</string>
-    <string name="H31634">Cement</string>
-    <string name="H31635">Carpet</string>
-    <string name="H31636">Bricks</string>
-    <string name="H31637">Lime</string>
-    <string name="H31696">Others(Specify)</string>
+    <string name="H316">گھر کی چھت میں استعمال ہونے والا بنیادی مواد۔</string>
+    <string name="H31611">کوئی چھت نہیں</string>
+    <string name="H31612">گھاس پھونس /کھجو ر کے پتے</string>
+    <string name="H31613"> گھاس پھوس سے بنی ہوئی چھت</string>
+    <string name="H31621">تنکے کی  چٹائی</string>
+    <string name="H31622">کھجور  یاناریل کے درخت/بانس</string>
+    <string name="H31623">لکڑی کے تختے</string>
+    <string name="H31624">گتے سے بنی ہوئی چھت</string>
+    <string name="H31631">دھات/ٹین/سی جی آئی</string>
+    <string name="H31632">لکٹری سے بنی ہوئی چھت</string>
+    <string name="H31633">کیلا مائن/سیمنٹ فائبر</string>
+    <string name="H31634">سرامک ٹائلز</string>
+    <string name="H31635">سیمنٹ آر سی سی(پکی چھت) </string>
+    <string name="H31636">چھت میں استعمال ہونے والے ٹائلز </string>
+    <string name="H31637">اینٹیں</string>
+    <string name="H31696">دیگر وضاحت کریں</string>
 
-    <string name="H317">Main material of the ROOF?</string>
-    <string name="H31711">No roof</string>
-    <string name="H31712">Thatch/palm leaf</string>
-    <string name="H31713">Sod</string>
-    <string name="H31721">Rustic mat</string>
-    <string name="H31722">Palm/Bamboo</string>
-    <string name="H31723">Wood planks</string>
-    <string name="H31724">Cardboard</string>
-    <string name="H31731">Metal/Tin/CGI</string>
-    <string name="H31732">Wood</string>
-    <string name="H31733">Calamine/Cement fiber</string>
-    <string name="H31734">Ceramic tiles</string>
-    <string name="H31735">Cement RCC</string>
-    <string name="H31736">Roofing shingles</string>
-    <string name="H31737">Bricks</string>
-    <string name="H31796">Others(Specify)</string>
+    <string name="H317">گھر کی دیوار وں میں استعمال ہونے والا بنیادی مواد</string>
+    <string name="H31711">کوئی دیوار نہیں</string>
+    <string name="H31712">کھجور کے درخت  /بانس</string>
+    <string name="H31713">چکنی مٹی</string>
+    <string name="H31721">بانس اور مٹی سے بنی ہوئی</string>
+    <string name="H31722">پتھر اور مٹی  </string>
+    <string name="H31723">کچی اینٹوں سے بنی(بغیر لیپ) </string>
+    <string name="H31724">لکڑی کی پلائی</string>
+    <string name="H31725">گّتہ</string>
+    <string name="H31726">استعمال شدہ لکڑی</string>
+    <string name="H31727">کپڑا/پردے/شامیانہ</string>
+    <string name="H31731">سیمنٹ</string>
+    <string name="H31732">پتھرچونے/سیمنٹ کے ساتھ</string>
+    <string name="H31733">پکی اینٹیں</string>
+    <string name="H31734">سیمنٹ سے بنی ہوئی بلاکس</string>
+    <string name="H31735">کچی اینٹوں سے بنی(لیپ کی ہوئی)</string>
+    <string name="H31736">لکڑی کے تختے</string>
+    <string name="H31796">دیگر وضاحت کریں</string>
 
-    <string name="H318">Main material of the ROOF?</string>
-    <string name="H31811">No walls</string>
-    <string name="H31812">Cane/Palm/Trunks</string>
-    <string name="H31813">Mud/Dirt</string>
-    <string name="H31821">Bamboo with mud</string>
-    <string name="H31822">Stone with mud</string>
-    <string name="H31823">Uncovered adobe</string>
-    <string name="H31824">Plywood</string>
-    <string name="H31825">Cardboard</string>
-    <string name="H31826">Reused wood</string>
-    <string name="H31827">Cloth/Curtain/Tent</string>
-    <string name="H31831">Cement</string>
-    <string name="H31832">Stone with cement/lime</string>
-    <string name="H31833">Bricks</string>
-    <string name="H31834">Cement blocks</string>
-    <string name="H31835">Covered adobe</string>
-    <string name="H31836">Wood planks/shingles</string>
-    <string name="H31896">Others(Specify)</string>
+    <string name="H318">آپ کے گھر میں کتنے کمرے سونے کے لیے استعمال ہوتے ہیں؟</string>
 
-    <string name="H319">How many rooms in your household are used for sleeping?</string>
+    <string name="H319">کیا اس گھر میں رہنے والا کوئی فرد زرعی زمین کا مالک ہے؟</string>
+    <string name="H31901">ہاں</string>
+    <string name="H31902">نہیں</string>
 
-    <string name="H320">Does any member of this household own any agricultural land?</string>
-    <string name="H32001">Yes</string>
-    <string name="H32002">No</string>
+    <string name="H320">اگر ہاں، تو اس گھر کے افراد کے پاس کتنے مربہ/ایکٹرپر مشتمل زمین ہے ؟</string>
+    <string name="H32001">ایکٹر</string>
+    <string name="H32002">کنال</string>
+    <string name="H32098">معلوم نہیں</string>
 
-    <string name="H321">If yes, how many acres or canals of agricultural land do members of this household own?</string>
-    <string name="H32101">Acres</string>
-    <string name="H32102">Kanals</string>
-    <string name="H32198">Don\'t know</string>
+    <string name="H321">کیاآپ اپنا مال مویشی،جانور یا مرغی خانہ رکھتے ہیں؟</string>
+    <string name="H32101">ہاں</string>
+    <string name="H32102">نہیں</string>
 
-    <string name="H322">Do you have your own livestock, animals or poultry?</string>
-    <string name="H32201">Yes</string>
-    <string name="H32202">No</string>
-
-    <string name="H323">If yes, how many livestock, animals or poultry does your household own?</string>
-    <string name="H32301">Cows, Bulls</string>
-    <string name="H32302">Horses/Donkeys/Mules</string>
-    <string name="H32303">Goats</string>
-    <string name="H32304">Sheep</string>
-    <string name="H32305">Chickens/Poultry</string>
-    <string name="H32306">Buffalo</string>
-    <string name="H32307">Camels</string>
+    <string name="H322">اگر ہاں تو آپ کے گھر میں کتنے مویشی جانور یا مرغیاں موجود ہیں؟</string>
+    <string name="H32201">مال مویشی (گائے اور بیل)</string>
+    <string name="H32202">گھوڑے/گدھے/خچر</string>
+    <string name="H32203">بکریاں</string>
+    <string name="H32204">بھیڑ</string>
+    <string name="H32205">مرغیاں</string>
+    <string name="H32206">بھینسیں</string>
+    <string name="H32207">اونٹ</string>
 
     <string name='Q_H301'>H301</string>
     <string name='Q_H302'>H302</string>
@@ -604,49 +608,48 @@
     <string name='Q_H32307'>H32307</string>
 
     <!-- H4 -->
-    <string name="H4Heading">SECTION H4: HAND WASHING</string>
-    <string name="H401">Please show us where you and members of your household most often wash their hands. OBSERVATION ONLY:</string>
-    <string name="H40101">Observed</string>
-    <string name="H40102">Not in dwelling/plot/yard</string>
-    <string name="H40103">No permission to see</string>
-    <string name="H40104">Other reason</string>
+    <string name="H4Heading">سیکشن ایچ 4:ہاتھ دھونے کی معلومات</string>
+    <string name="H401">صرف مشاہدہ:براہ مہربانی وہ جگہ دکھا  ئیں جہاں آپ اور آپ کے گھروالے اکثر ہاتھ دھوتے ہیں؟</string>
+    <string name="H40101">مشاہدہ کیا </string>
+    <string name="H40102">رہائشی جگہ اور پلاٹ میں موجود نہیں</string>
+    <string name="H40103">دیکھنے کی اجازت نہیں</string>
+    <string name="H40104">کو  ئی اور وجہ</string>
 
-    <string name="H402">Observe presence of water at the place for hand washing.</string>
-    <string name="H40201">Water is available</string>
-    <string name="H40202">Water is not available</string>
+    <string name="H402">ہاتھ دھونے کے لئے مخصوص جگہ پر پانی کی موجودگی کا مشاہدہ</string>
+    <string name="H40201">پانی موجود ہے</string>
+    <string name="H40202">پانی موجود نہیں  ہے</string>
 
-    <string name="H403">Observe presence of soap, detergent or other cleansing agent.</string>
-    <string name="H40301">Bar Soap</string>
-    <string name="H40302">Detergent (powder/liquid/paste)</string>
-    <string name="H40303">Liquid soap</string>
-    <string name="H40304">Ash/mud/sand</string>
-    <string name="H40305">None</string>
+    <string name="H403">صابن، ڈٹرجنٹ یا دیگر صفائی ایجنٹ کی موجودگی کا مشاہدہ</string>
+    <string name="H40301">نہانے یا ہاتھ دھونے ولا صابن</string>
+    <string name="H40302">ڈٹرجنٹ پاوڈریا پانی جیسی پیسٹ</string>
+    <string name="H40303">مائع یا پانی والا صابن</string>
+    <string name="H40304">خاک /مٹی/ریت</string>
+    <string name="H40305">کچھ نہیں</string>
 
-    <string name="H404">Do you have any soap or detergent in your household for hand washing?</string>
-    <string name="H40401">Yes</string>
-    <string name="H40402">No</string>
+    <string name="H404">کیاآپ کے گھر میں  ہاتھ دھونے کے لئے کوئی صابن یا ڈٹرجنٹ ہے؟</string>
+    <string name="H40401">ہاں</string>
+    <string name="H40402">نہیں</string>
 
-    <string name="H405">If yes, can you please show it to me?</string>
-    <string name="H40501">Bar Soap</string>
-    <string name="H40502">Detergent (powder/liquid/paste)</string>
-    <string name="H40503">Liquid soap</string>
-    <string name="H40504">Ash/mud/sand</string>
-    <string name="H40505">None</string>
+    <string name="H405">اگرہاں تو کیا  آپ مجھے  دکھا سکتے ہیں ؟</string>
+    <string name="H40501">ہانے یا ہاتھ دھونے ولا صابن</string>
+    <string name="H40502">ڈٹرجنٹ پاوڈریا پانی جیسی پیسٹ</string>
+    <string name="H40503">مائع یا پانی والا صابن</string>
+    <string name="H40504">خاک /مٹی/ریت</string>
+    <string name="H40505">کچھ نہیں</string>
 
-    <string name="H406">In what situations do you wash your hands with soap?
-This is an open-ended question. Do not read the answer choices.
-After the respondent stops listing times, ask “Are there any other situations where you wash your hands with soap?” Keep asking this question until the respondent thinks there are no other times.
+    <string name="H406">کن حالات میں آپ صابن سے ہاتھ دھوتے ہو۔
+اس  سوال کا کوئی بھی جواب پڑھ کے نہیں سنانا ہے۔ہر سوال وقفے کے  بعد   بار بار دھرانا ہے  جب تک  جواب دہندہ   یہ نہ سمجھیں  کہ ان کے پاس کوئی اور جواب نہیں۔
 </string>
-    <string name="H40601">Before preparing food</string>
-    <string name="H40602">Before cooking food</string>
-    <string name="H40603">Before eating</string>
-    <string name="H40604">Before feeding a child</string>
-    <string name="H40605">Before breastfeeding</string>
-    <string name="H40606">After cleaning a child\'s anas</string>
-    <string name="H40607">After changing a baby\'s nappy</string>
-    <string name="H40608">After disposing of children’s feces</string>
-    <string name="H40609">After you defecate</string>
-    <string name="H40696">Others( Specify)</string>
+    <string name="H40601">کھانا تیار کرنے سے پہلے</string>
+    <string name="H40602">کھانا پکانے سے پہلے</string>
+    <string name="H40603">کھانا کھانے سے پہلے</string>
+    <string name="H40604">بچے کو  کھانا کھلانے  سے پہلے </string>
+    <string name="H40605">بچے کو  ما ں کا دودھ پلانے سے پہلے</string>
+    <string name="H40606">بچے کا پاخانہ  صاف  کرنے کے  بعد</string>
+    <string name="H40607">بچے کی نیپی تبدیل کرنے کے بعد</string>
+    <string name="H40608">بچوں کا پاخانہ پھینکنے کے بعد</string>
+    <string name="H40609">لیٹرین استعمال کرنے کے بعد</string>
+    <string name="H40696">دیگر وضاحت کریں</string>
 
     <string name='Q_H401'>H401</string>
     <string name='Q_H402'>H402</string>
@@ -657,182 +660,175 @@ After the respondent stops listing times, ask “Are there any other situations 
 
 
     <!-- H5 -->
-    <string name="H5Heading">SECTION H5: FOOD INSECURITY EXPERIENCE SCALE HOUSEHOLD REFERENCED</string>
+    <string name="H5Heading">سیکشن ایچ 5: غذائی قلت کےتجربات کی معلومات </string>
 
-    <string name="H501">During the last 12 months, was there a time when you or others in your household were worried you would not have enough food to eat because of a lack of money or other resources? (if "yes", go to question Q1a, otherwise go to question Q2)</string>
-    <string name="H50101">Yes</string>
-    <string name="H50102">No</string>
-    <string name="H50103">Don\'t know</string>
-    <string name="H50104">Refused</string>
+    <string name="H501">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا ہوا  تھا جب آپ
+	یا آپ کے گھر کے دیگر افراد  اس وجہ سے پریشان تھے کہ پیسے کی کمی یا دیگر وسائل کی وجہ سے آپ کے پاس کھانے کے لیے خوراک  کی مناسب مقدار نہیں ہوگی؟</string>
+    <string name="H50101">ہاں</string>
+    <string name="H50102">نہیں</string>
+    <string name="H50103">معلوم نہیں</string>
+    <string name="H50104">انکار کردیا</string>
 
-    <string name="H501a">Was this specifically due to the COVID-19 crisis? (go to question Q1b)</string>
-    <string name="H501a01">Yes</string>
-    <string name="H501a02">No</string>
-    <string name="H501a03">Don\'t know</string>
-    <string name="H501a04">Refused</string>
+    <string name="H501a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H501a01">ہاں</string>
+    <string name="H501a02">نہیں</string>
+    <string name="H501a03">معلوم نہیں</string>
+    <string name="H501a04">انکار کردیا</string>
 
-    <string name="H501b">Did this happen in the past 4 weeks (30 days)? (go to question Q2)</string>
-    <string name="H501b01">Yes</string>
-    <string name="H501b02">No</string>
-    <string name="H501b03">Don\'t know</string>
-    <string name="H501b04">Refused</string>
+    <string name="H501b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H501b01">ہاں</string>
+    <string name="H501b02">نہیں</string>
+    <string name="H501b03">معلوم نہیں</string>
+    <string name="H501b04">انکار کردیا</string>
 
-    <string name="H502">During the last 12 months, was there a time when you or others in your household were unable to eat healthy and nutritious food because of a lack of money or other resources? (if "yes", go to question Q2a, otherwise go to question Q3)</string>
-    <string name="H50201">Yes</string>
-    <string name="H50202">No</string>
-    <string name="H50203">Don\'t know</string>
-    <string name="H50204">Refused</string>
+    <string name="H502">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا ہوا  تھا جب آپ
+	یا آپ کے گھر کے دیگر افراد پیسے کی کمی یا دیگر وسائل کی وجہ سے صحت مند اور غذائیت سے بھرپور  غذا نہیں کھا سکتے تھے؟ </string>
+    <string name="H50201">ہاں</string>
+    <string name="H50202">نہیں</string>
+    <string name="H50203">معلوم نہیں</string>
+    <string name="H50204">انکار کردیا</string>
 
-    <string name="H502a">Was this specifically due to the COVID-19 crisis? (go to question Q2b)</string>
-    <string name="H502a01">Yes</string>
-    <string name="H502a02">No</string>
-    <string name="H502a03">Don\'t know</string>
-    <string name="H502a04">Refused</string>
+    <string name="H502a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H502a01">ہاں</string>
+    <string name="H502a02">نہیں</string>
+    <string name="H502a03">معلوم نہیں</string>
+    <string name="H502a04">انکار کردیا</string>
 
-    <string name="H502b">Did this happen in the past 4 weeks (30 days)? (go to question Q3)</string>
-    <string name="H502b01">Yes</string>
-    <string name="H502b02">No</string>
-    <string name="H502b03">Don\'t know</string>
-    <string name="H502b04">Refused</string>
+    <string name="H502b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H502b01">ہاں</string>
+    <string name="H502b02">نہیں</string>
+    <string name="H502b03">معلوم نہیں</string>
+    <string name="H502b04">انکار کردیا</string>
 
-    <string name="H503">During the last 12 months, was there a time when you or others in your household ate only a few kinds of foods
-because of a lack of money or other resources? (if "yes", go
-to question Q3a, otherwise go to question Q4)</string>
-    <string name="H50301">Yes</string>
-    <string name="H50302">No</string>
-    <string name="H50303">Don\'t know</string>
-    <string name="H50304">Refused</string>
+    <string name="H503">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایساہوا  تھا جب آپ یا آپ کے گھر کے دیگر افراد  کو پیسے کی کمی یا دیگر وسائل کی وجہ سے صرف چند قسم کے کھانے کھانے پڑے ہوں؟</string>
+    <string name="H50301">ہاں</string>
+    <string name="H50302">نہیں</string>
+    <string name="H50303">معلوم نہیں</string>
+    <string name="H50304">انکار کردیا</string>
 
-    <string name="H503a">Was this specifically due to the COVID-19 crisis? (go to question Q3b)</string>
-    <string name="H503a01">Yes</string>
-    <string name="H503a02">No</string>
-    <string name="H503a03">Don\'t know</string>
-    <string name="H503a04">Refused</string>
+    <string name="H503a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H503a01">ہاں</string>
+    <string name="H503a02">نہیں</string>
+    <string name="H503a03">معلوم نہیں</string>
+    <string name="H503a04">انکار کردیا</string>
 
-    <string name="H503b">Did this happen in the past 4 weeks (30 days)? (go to question Q4)</string>
-    <string name="H503b01">Yes</string>
-    <string name="H503b02">No</string>
-    <string name="H503b03">Don\'t know</string>
-    <string name="H503b04">Refused</string>
+    <string name="H503b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H503b01">ہاں</string>
+    <string name="H503b02">نہیں</string>
+    <string name="H503b03">معلوم نہیں</string>
+    <string name="H503b04">انکار کردیا</string>
 
-    <string name="H504">During the last 12 months, was there a time when you or others in your household had to skip a meal because there
-was not enough money or other resources to get food? (if
-"yes", go to question Q4a, otherwise go to question Q5)</string>
-    <string name="H50401">Yes</string>
-    <string name="H50402">No</string>
-    <string name="H50403">Don\'t know</string>
-    <string name="H50404">Refused</string>
+    <string name="H504">پچھلے 12 مہینوں کے دوران ، کیا کبھی ایسا وقت  آیا تھا جب آپ  نے  یا آپ کے گھر کے دیگر افراد نے کھانا  نہیں کھایا ہو  کیونکہ کھانے کے لیے اتنے پیسے یا دیگر وسائل نہیں تھے؟</string>
+    <string name="H50401">ہاں</string>
+    <string name="H50402">نہیں</string>
+    <string name="H50403">معلوم نہیں</string>
+    <string name="H50404">انکار کردیا</string>
 
-    <string name="H504a">Did this happen in the past 4 weeks (30 days)? (go to question Q5)</string>
-    <string name="H504a01">Yes</string>
-    <string name="H504a02">No</string>
-    <string name="H504a03">Don\'t know</string>
-    <string name="H504a04">Refused</string>
+    <string name="H504a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H504a01">ہاں</string>
+    <string name="H504a02">نہیں</string>
+    <string name="H504a03">معلوم نہیں</string>
+    <string name="H504a04">انکار کردیا</string>
 
-    <string name="H504b">Did this happen in the past 4 weeks (30 days)? (go to question Q5)</string>
-    <string name="H504b01">Yes</string>
-    <string name="H504b02">No</string>
-    <string name="H504b03">Don\'t know</string>
-    <string name="H504b04">Refused</string>
+    <string name="H504b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H504b01">ہاں</string>
+    <string name="H504b02">نہیں</string>
+    <string name="H504b03">معلوم نہیں</string>
+    <string name="H504b04">انکار کردیا</string>
 
-    <string name="H505">During the last 12 months, was there a time when you or others in your household ate less than you thought you
-should because of a lack of money or other resources? (if
-"yes", go to question Q5a, otherwise go to question Q6)</string>
-    <string name="H50501">Yes</string>
-    <string name="H50502">No</string>
-    <string name="H50503">Don\'t know</string>
-    <string name="H50504">Refused</string>
+    <string name="H505">پچھلے 12 مہینوں کے دوران ، کیا کبھی  ایسا وقت آیا تھا جب آپ یا آپ کے گھر کے دیگر افراد نے پیسے یا دیگر وسائل کی کمی کی وجہ سے ضرورت  سے  کم کھانا کھا یا ہو  ؟ </string>
+    <string name="H50501">ہاں</string>
+    <string name="H50502">نہیں</string>
+    <string name="H50503">معلوم نہیں</string>
+    <string name="H50504">انکار کردیا</string>
 
-    <string name="H505a">Was this specifically due to the COVID-19 crisis? (go to question Q5b)</string>
-    <string name="H505a01">Yes</string>
-    <string name="H505a02">No</string>
-    <string name="H505a03">Don\'t know</string>
-    <string name="H505a04">Refused</string>
+    <string name="H505a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H505a01">ہاں</string>
+    <string name="H505a02">نہیں</string>
+    <string name="H505a03">معلوم نہیں</string>
+    <string name="H505a04">انکار کردیا</string>
 
-    <string name="H505b">Did this happen in the past 4 weeks (30 days)? (go to question Q6)</string>
-    <string name="H505b01">Yes</string>
-    <string name="H505b02">No</string>
-    <string name="H505b03">Don\'t know</string>
-    <string name="H505b04">Refused</string>
+    <string name="H505b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H505b01">ہاں</string>
+    <string name="H505b02">نہیں</string>
+    <string name="H505b03">معلوم نہیں</string>
+    <string name="H505b04">انکار کردیا</string>
 
-    <string name="H506">During the last 12 months, was there a time when your household ran out of food because of a lack of money or
-other resources? (if "yes", go to question Q6a, otherwise go
-to question Q7)</string>
-    <string name="H50601">Yes</string>
-    <string name="H50602">No</string>
-    <string name="H50603">Don\'t know</string>
-    <string name="H50604">Refused</string>
+    <string name="H506">پچھلے 12 مہینوں کے دوران ، کیا کبھی ایسا وقت آیا تھا جب آپ کے گھر میں پیسے یا دیگر وسائل کی کمی کی وجہ سے کھانا ختم ہو گیا تھا؟ </string>
+    <string name="H50601">ہاں</string>
+    <string name="H50602">نہیں</string>
+    <string name="H50603">معلوم نہیں</string>
+    <string name="H50604">انکار کردیا</string>
 
-    <string name="H506a">Was this specifically due to the COVID-19 crisis? (go to question Q6b)</string>
-    <string name="H506a01">Yes</string>
-    <string name="H506a02">No</string>
-    <string name="H506a03">Don\'t know</string>
-    <string name="H506a04">Refused</string>
+    <string name="H506a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H506a01">ہاں</string>
+    <string name="H506a02">نہیں</string>
+    <string name="H506a03">معلوم نہیں</string>
+    <string name="H506a04">انکار کردیا</string>
 
-    <string name="H506b">Did this happen in the past 4 weeks (30 days)? (if "yes", go to question Q6c, otherwise go to question Q7)</string>
-    <string name="H506b01">Yes</string>
-    <string name="H506b02">No</string>
-    <string name="H506b03">Don\'t know</string>
-    <string name="H506b04">Refused</string>
+    <string name="H506b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
+    <string name="H506b01">ہاں</string>
+    <string name="H506b02">نہیں</string>
+    <string name="H506b03">معلوم نہیں</string>
+    <string name="H506b04">انکار کردیا</string>
 
-    <string name="H506c">How often did this happen? (go to question Q7)</string>
-    <string name="H506c01">Rarely</string>
-    <string name="H506c02">Sometimes</string>
-    <string name="H506c03">Often</string>
-    <string name="H506c04">Don\'t know</string>
-    <string name="H506c05">Refused</string>
+    <string name="H506c">ایسا کتنی بار ہوا؟</string>
+    <string name="H506c01">شازو نادر ہی (1 or 2 timesایک سے دو بار)</string>
+    <string name="H506c02">کبھی کبھار  (3-10 timesتین سے دس  مرتبہ  )</string>
+    <string name="H506c03">اکثر (more than 10 timesدس سے زیادہ مرتبہ)</string>
+    <string name="H506c04">معلوم نہیں</string>
+    <string name="H506c05">انکار کردیا</string>
 
-    <string name="H507">During the last 12 months, was there a time when you or others in your household were hungry but did not eat
-because there was not enough money or other resources for
-food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
-    <string name="H50701">Yes</string>
-    <string name="H50702">No</string>
-    <string name="H50703">Don\'t know</string>
-    <string name="H50704">Refused</string>
+    <string name="H507">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا  وقت  آیا تھا
+	جب آپ یا آپ کے گھر کے دیگر افراد بھوکے یا خالی پیٹ ہونے کے باوجودد  کھانا نہیں کھا سکے  تھے کیونکہ کھانا کھانے کے لیے کافی پیسے یا دیگر وسائل نہیں تھے؟ </string>
+    <string name="H50701">ہاں</string>
+    <string name="H50702">نہیں</string>
+    <string name="H50703">معلوم نہیں</string>
+    <string name="H50704">انکار کردیا</string>
 
-    <string name="H507a">Was this specifically due to the COVID-19 crisis? (go to question Q7b)</string>
-    <string name="H507a01">Yes</string>
-    <string name="H507a02">No</string>
-    <string name="H507a03">Don\'t know</string>
-    <string name="H507a04">Refused</string>
+    <string name="H507a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H507a01">ہاں</string>
+    <string name="H507a02">نہیں</string>
+    <string name="H507a03">معلوم نہیں</string>
+    <string name="H507a04">انکار کردیا</string>
 
-    <string name="H507b">Did this happen in the past 4 weeks (30 days)? (if "yes", go to question Q7c, otherwise go to question Q8)</string>
-    <string name="H507b01">Yes</string>
-    <string name="H507b02">No</string>
-    <string name="H507b03">Don\'t know</string>
-    <string name="H507b04">Refused</string>
+    <string name="H507b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
+    <string name="H507b01">ہاں</string>
+    <string name="H507b02">نہیں</string>
+    <string name="H507b03">معلوم نہیں</string>
+    <string name="H507b04">انکار کردیا</string>
 
-    <string name="H507c">How often did this happen? (go to question Q8)</string>
-    <string name="H507c01">Rarely</string>
-    <string name="H507c02">Sometimes</string>
-    <string name="H507c03">Often</string>
-    <string name="H507c04">Don\'t know</string>
-    <string name="H507c05">Refused</string>
+    <string name="H507c">ایسا کتنی بار ہوا؟</string>
+    <string name="H507c01">شازو نادر ہی (1 or 2 timesایک سے دو بار)</string>
+    <string name="H507c02">کبھی کبھار  (3-10 timesتین سے دس  مرتبہ  )</string>
+    <string name="H507c03">اکثر (more than 10 timesدس سے زیادہ مرتبہ)</string>
+    <string name="H507c04">معلوم نہیں</string>
+    <string name="H507c05">انکار کردیا</string>
 
-    <string name="H508">During the last 12 months, was there a time when you or others in your household went without eating for a whole day because of a lack of money or other resources? (if "yes", go to question Q8a, otherwise END)</string>
-    <string name="H50801">Yes</string>
-    <string name="H50802">No</string>
-    <string name="H50803">Don\'t know</string>
-    <string name="H50804">Refused</string>
+    <string name="H508">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا  وقت آیا تھا جب آپ یا آپ کے گھر کے دیگر  افراد  پیسے یا دیگر وسائل کی کمی کی وجہ سے پورا دن  کھانا کھائے بغیر  رہے ہوں؟ </string>
+    <string name="H50801">ہاں</string>
+    <string name="H50802">نہیں</string>
+    <string name="H50803">معلوم نہیں</string>
+    <string name="H50804">انکار کردیا</string>
 
-    <string name="H508a">Was this specifically due to the COVID-19 crisis? (go to question Q8b)</string>
-    <string name="H508a01">Yes</string>
-    <string name="H508a02">No</string>
-    <string name="H508a03">Don\'t know</string>
-    <string name="H508a04">Refused</string>
+    <string name="H508a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H508a01">ہاں</string>
+    <string name="H508a02">نہیں</string>
+    <string name="H508a03">معلوم نہیں</string>
+    <string name="H508a04">انکار کردیا</string>
 
-    <string name="H508b">Did this happen in the past 4 weeks (30 days)? (if "yes", go to question Q8c, otherwise END)</string>
-    <string name="H508b01">Yes</string>
-    <string name="H508b02">No</string>
-    <string name="H508b03">Don\'t know</string>
-    <string name="H508b04">Refused</string>
+    <string name="H508b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
+    <string name="H508b01">ہاں</string>
+    <string name="H508b02">نہیں</string>
+    <string name="H508b03">معلوم نہیں</string>
+    <string name="H508b04">انکار کردیا</string>
 
-    <string name="H508c">How often did this happen? (END)</string>
-    <string name="H508c01">Rarely</string>
-    <string name="H508c02">Sometimes</string>
-    <string name="H508c03">Often</string>
-    <string name="H508c04">Don\'t know</string>
-    <string name="H508c05">Refused</string>
+    <string name="H508c">ایسا کتنی بار ہوا؟</string>
+    <string name="H508c01">شازو نادر ہی (1 or 2 timesایک سے دو بار)</string>
+    <string name="H508c02">بھی کبھار  (3-10 timesتین سے دس  مرتبہ  )</string>
+    <string name="H508c03">اکثر (more than 10 timesدس سے زیادہ مرتبہ)</string>
+    <string name="H508c04">معلوم نہیں</string>
+    <string name="H508c05">انکار کردیا</string>
 
     <string name='Q_H501'>H501</string>
     <string name='Q_H501a'>H501a</string>
@@ -863,76 +859,181 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
     <string name='Q_H508c'>H508c</string>
 
     <!-- H6 -->
-    <string name="H6Heading">SECTION H6: SOCIAL SAFETY NET(SN) ASSISTANCE RECIPIENTS\' INFORMATION</string>
+    <string name="H6Heading">سیکشن H6: سوشل سیفٹی نیٹ: امداد پہنچانے والے افراد کی معلومات۔</string>
 
-    <string name="H601">How many HH members received the assistance?</string>
+    <string name="H601">آپ کتنے عرصے سے بی آئی ایس پی سے مستفید ہورہے ہیں؟</string>
 
-    <string name="H602">How often do you receive the financial assistance from BISP?</string>
+    <string name="H602">کیاآپ جانتے ہیں کہ آپ بی آئی ایس پی سے ہر 3 ماہ یا فی مہینہ کتنی رقم وصول کرنے کےاہل ہیں؟</string>
+    <string name="H60201">ہاں</string>
+    <string name="H60202">نہیں</string>
 
-    <string name="H603">What is the mode of receiving of the amount?</string>
-    <string name="H60301">Through ATM</string>
-    <string name="H60302">Through Bio Metric</string>
-    <string name="H60303">From POS Agent</string>
-    <string name="H60304">From Shop</string>
-    <string name="H60396">Others(Specify)</string>
+    <string name="H603">آپ نے بی آئی ایس پی سےآخری بار کب رقم وصول کی تھی؟</string>
 
-    <string name="H604">If received from the POS agent or shop, what was the received amount?</string>
+    <string name="H604">آپ نے بی آئی ایس پی سےآخری بارکتنی رقم وصول کی تھی؟</string>
 
-    <string name="H605">Who received the amount?</string>
-    <string name="H60501">My self</string>
-    <string name="H60502">Husband</string>
-    <string name="H60596">Others(Specify)</string>
+    <string name="H605">گزشتہ 12 مہینوں کے درمیان آپ نے کل کتنی رقم وصول کی؟ (اگر اہل ہیں)</string>
 
-    <string name="H606">Did you receive the complete amount?</string>
-    <string name="H60601">Yes</string>
-    <string name="H60602">No</string>
+    <string name="H606">جب آپ نے آخری بار رقم وصول کی تو اس کا ذریعہ کیا تھا؟</string>
+    <string name="H60601">اے ٹی ایم کارڈ کے ذریعے</string>
+    <string name="H60602">بایو میٹرک کے ذریعے</string>
+    <string name="H60603">ایجنٹ سے</string>
+    <string name="H60604">دوکان سے</string>
+    <string name="H60696">دیگر وضاحت کریں</string>
 
-    <string name="H607">Amount received in Last 12 months from BISP?</string>
+    <string name="H607">اگررقم POS ایجنٹ یا دکان سے وصول کی گئی تھی تو وصول شدہ رقم کتنی تھی؟</string>
 
-    <string name="H608">How far the payment facility from your house?</string>
+    <string name="H608">رقم کون وصول کرتا ہے؟</string>
+    <string name="H60801">خود</string>
+    <string name="H60802">شوہر</string>
+    <string name="H60803">ساس</string>
+    <string name="H60804">سسر</string>
+    <string name="H60805">بیوی</string>
+    <string name="H60896">دیگر وضاحت کریں</string>
 
-    <string name="H609">Who accompanied you to the facility?</string>
-    <string name="H60901">No one</string>
-    <string name="H60902">Husband</string>
-    <string name="H60903">Mother-in-law</string>
-    <string name="H60904">Father in law</string>
-    <string name="H60996">Others(Specify)</string>
+    <string name="H609">کیا آپ مکمل رقم وصول کرتے ہیں؟</string>
+    <string name="H60901">ہاں</string>
+    <string name="H60902">نہیں</string>
 
-    <string name="H610">Who usually take decision regarding use of amount?</string>
-    <string name="H61001">My self</string>
-    <string name="H61002">Husband</string>
-    <string name="H61003">Mother-in-law</string>
-    <string name="H61004">Father in law</string>
-    <string name="H61096">Others(Specify)</string>
+    <string name="H610">عام طور پر پیسوں کے استعمال سے متعلق فیصلے کون کرتا ہے؟</string>
+    <string name="H61001">خود</string>
+    <string name="H61002">شوہر</string>
+    <string name="H61003">ساس</string>
+    <string name="H61004">سسر</string>
+    <string name="H61005">بیوی</string>
+    <string name="H61096">دیگر وضاحت کریں</string>
 
-    <string name="H611">Who used the received amount?</string>
-    <string name="H61101">My self</string>
-    <string name="H61102">Husband</string>
-    <string name="H61103">Mother-in-law</string>
-    <string name="H61104">Father in law</string>
-    <string name="H61196">Others(Specify)</string>
+    <string name="H611">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟</string>
+    <string name="H61101">خود</string>
+    <string name="H61102">شوہر</string>
+    <string name="H61103">ساس</string>
+    <string name="H61104">سسر</string>
+    <string name="H61105">بیوی</string>
+    <string name="H61196">دیگر وضاحت کریں</string>
 
-    <string name="H612">Where did you spend the amount received from BISP?</string>
-    <string name="H61201">To buy food</string>
-    <string name="H61202">To buy medicines</string>
-    <string name="H61203">Spent on other household items</string>
+    <string name="H612">بی آئی ایس پی سے ملے ہوئے پیسے کہاں خرچ کئے؟ ایک سے ذیادہ جوابات آسکتے ہیں؟</string>
+    <string name="H61201">کھانے کی چیزیں خریدنے کے لیے</string>
+    <string name="H61202">دوایئاں خریدنے کے لیے</string>
+    <string name="H61203">تعلیم پر</string>
+    <string name="H61204">گھرکی دیگر چیزوں پر</string>
+    <string name="H61296">دیگر وضاحت کریں</string>
 
-    <string name="H613">How much amount from the last assistance provided used for purchasing of food?</string>
+    <string name="H613">گزشتہ مہیا کی گئی سہولت میں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
 
-    <string name="H614">How much amount was spent on travelling to the beneficiary center?</string>
+    <string name="H614">مالی امداد دینے والے مرکز تک جانے کے لئے کتنی رقم خرچ کی گئی تھی؟</string>
 
-    <string name="H615">Do you face any difficulty in reaching the designated point?</string>
-    <string name="H61501">By walk</string>
-    <string name="H61502">Rikshaw</string>
-    <string name="H61503">Bus</string>
-    <string name="H61504">By own conveyance</string>
-    <string name="H61596">Other (specify)</string>
+    <string name="H615">پیسے لینے کی سہولت آپ کے گھر سے کتنی دور ہے؟ اور پیسے لینے کی سہولت تک پہنچنے میں آپ کو کتنا وقت لگتاہے؟</string>
+    <string name="H61501">کلومیٹرز</string>
+    <string name="H61502">وقت منٹوں میں</string>
+    <string name="H61598">معلوم نہیں</string>
 
-    <string name="H616">Do you face any difficulty in reaching the designated point?</string>
-    <string name="H61601">Yes</string>
-    <string name="H61602">No</string>
+    <string name="H616">آپ مالی امداد دینے والے مرکز تک  جانے کے لئے ٹرانسپورٹ کا کون سا طریقہ استعمال کرتے ہیں؟</string>
+    <string name="H61601">پیدل</string>
+    <string name="H61602">رکشہ</string>
+    <string name="H61603">بس</string>
+    <string name="H61604">اپنی سواری کے زریعے</string>
+    <string name="H61696">دیگر وضاحت کریں</string>
 
-    <string name="H617">If yes, please explain</string>
+    <string name="H617">کیا آپ کو وہاں پہنچنے میں کوئی مشکل پیش آتی ہے؟</string>
+    <string name="H61701">ہاں</string>
+    <string name="H61702">نہیں</string>
+
+    <string name="H618">اگر ہاں تو وضاحت کریں</string>
+
+    <string name="H619">کیا آپ احساس نشوونما پروگرام کا حصہ ہیں؟</string>
+    <string name="H61901">ہاں</string>
+    <string name="H61902">نہیں</string>
+
+    <string name="H620">آپ کو احساس نشوونما پروگرام کے بارے میں کیسے پتہ چلا؟</string>
+    <string name="H62001">رشتہ دار</string>
+    <string name="H62002">حمل کے چک اپ کے دوران</string>
+    <string name="H62003">ایل ایچ ڈبلیو یا سوشل موبلائزرکے زریعہ</string>
+    <string name="H62096">دیگر وضاحت کریں</string>
+
+    <string name="H621">آپ کتنے عرصے سے احساس نشوونما پروگرام کا حصہ ہے؟ مہنیوں میں</string>
+
+    <string name="H622">آپ کی موجودہ حیثیت احساس نشوونما پروگرام میں کیا ہے؟</string>
+    <string name="H62201">حاملہ</string>
+    <string name="H62202">دو سال سے کم عمر بچے کی ماں</string>
+
+    <string name="H623">کیا آپ جانتے ہیں کہ آپ احساس نشوونما پروگرام سے کتنی رقم وصول کرنے کے اہل ہے؟</string>
+    <string name="H62301">ہاں</string>
+    <string name="H62302">نہیں</string>
+
+    <string name="H624">آپ نے آخری بار احسا س نشوونما سے کب رقم وصول کی؟</string>
+
+    <string name="H625">آپ نے آخری بار احسا س نشوونما سے کتنی رقم وصول کی؟</string>
+
+    <string name="H626">جب آپ نے آخری بار رقم وصول کی تو اس کا ذریعہ کیا تھا؟</string>
+    <string name="H62601">اے ٹی ایم کارڈ کے ذریعے</string>
+    <string name="H62602">بایو میٹرک کے ذریعے</string>
+    <string name="H62603">ایجنٹ سے</string>
+    <string name="H62604">دوکان سے</string>
+    <string name="H62696">دیگر وضاحت کریں</string>
+
+    <string name="H627">اگررقم POS یا دکان سے وصول کی گئی تھی تو وصول شدہ رقم کتنی تھی؟</string>
+
+    <string name="H628">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟</string>
+    <string name="H62801">خود</string>
+    <string name="H62802">شوہر</string>
+    <string name="H62803">ساس</string>
+    <string name="H62804">سسر</string>
+    <string name="H62805">بیوی</string>
+    <string name="H62896">دیگر وضاحت کریں</string>
+
+    <string name="H629">کیا آپ مکمل رقم وصول کرتے ہیں؟</string>
+    <string name="H62901">ہاں</string>
+    <string name="H62902">نہیں</string>
+
+    <string name="H630">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟</string>
+    <string name="H63001">خود</string>
+    <string name="H63002">شوہر</string>
+    <string name="H63003">ساس</string>
+    <string name="H63004">سسر</string>
+    <string name="H63005">بیوی</string>
+    <string name="H63096">دیگر وضاحت کریں</string>
+
+    <string name="H631">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟</string>
+    <string name="H63101">خود</string>
+    <string name="H63102">شوہر</string>
+    <string name="H63103">ساس</string>
+    <string name="H63104">سسر</string>
+    <string name="H63105">بیوی</string>
+    <string name="H63196">دیگر وضاحت کریں</string>
+
+    <string name="H632">آخری بار احساس نشوونما سے ملے ہوئے پیسے کہاں خرچ کئے؟ [ایک سے زیادہ جوابات آسکتے ہیں]</string>
+    <string name="H63201">کھانے کی چیزیں خریدنے کے لیے</string>
+    <string name="H63202">دوایئاں خریدنے کے لیے</string>
+    <string name="H63203">تعلیم پر</string>
+    <string name="H63204">گھر کی دیگر چیزوں پر</string>
+    <string name="H63296">دیگر وضاحت کریں</string>
+
+    <string name="H633">گزشتہ مہیا کی گئی امدادمیں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
+
+    <string name="H634">مالی امداد دینے والے مرکز تک آنے اورجانے کے لئے کتنی رقم خرچ کی گئی تھی؟</string>
+
+    <string name="H635">پیسے لینے کی سہولت آپ کے گھر سے کتنی دور ہے؟ اور پیسے لینے کی سہولت تک پہنچنےمیں آپ کو کتنا وقت لگتاہے؟</string>
+    <string name="H63501">کلومیٹرز</string>
+    <string name="H63502">وقت منٹوں میں</string>
+    <string name="H63598">معلوم نہیں</string>
+
+    <string name="H636">آپ مالی امداد دینے والے مرکز تک  جانے کے لئے ٹرانسپورٹ کا کون سا طریقہ استعمال کرتے ہیں؟</string>
+    <string name="H63601">پیدل</string>
+    <string name="H63602">رکشہ</string>
+    <string name="H63603">بس</string>
+    <string name="H63604">اپنی سواری کے زریعے</string>
+    <string name="H63696">دیگر وضاحت کریں</string>
+
+    <string name="H637">کیا آپ کو وہاں پہنچنے میں کوئی مشکل پیش آتی ہے؟</string>
+    <string name="H63701">ہاں</string>
+    <string name="H63702">نہیں</string>
+
+    <string name="H638">اگر ہاں تو وضاحت کریں</string>
+
+    <string name="H639">کیا آپ احساس نشوونما پروگرام کے بارے میں جانتے ہیں؟</string>
+    <string name="H63901">ہاں</string>
+    <string name="H63902">نہیں</string>
+
+    <string name="H640">آپ احساس نشوونما کے پروگرام کا حصہ کیوں نہیں ہے؟</string>
 
     <string name='Q_H601'>H601</string>
     <string name='Q_H602'>H602</string>
@@ -951,84 +1052,107 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
     <string name='Q_H615'>H615</string>
     <string name='Q_H616'>H616</string>
     <string name='Q_H617'>H617</string>
+    <string name='Q_H618'>H618</string>
+    <string name='Q_H619'>H619</string>
+    <string name='Q_H620'>H620</string>
+    <string name='Q_H621'>H621</string>
+    <string name='Q_H622'>H622</string>
+    <string name='Q_H623'>H623</string>
+    <string name='Q_H624'>H624</string>
+    <string name='Q_H625'>H625</string>
+    <string name='Q_H626'>H626</string>
+    <string name='Q_H627'>H627</string>
+    <string name='Q_H628'>H628</string>
+    <string name='Q_H629'>H629</string>
+    <string name='Q_H630'>H630</string>
+    <string name='Q_H631'>H631</string>
+    <string name='Q_H632'>H632</string>
+    <string name='Q_H633'>H633</string>
+    <string name='Q_H634'>H634</string>
+    <string name='Q_H635'>H635</string>
+    <string name='Q_H636'>H636</string>
+    <string name='Q_H637'>H637</string>
+    <string name='Q_H638'>H638</string>
+    <string name='Q_H639'>H639</string>
+    <string name='Q_H640'>H640</string>
 
     <!-- W6 -->
-    <string name="W6Heading">SECTION W6. ASSISTANCE/EXPOSURE TO INTERVENTIONS</string>
+    <string name="W6Heading">سیکشن 6 ڈبلیو: امداد/ پروگرام تک رسا ای</string>
 
-    <string name="W60101">Have you ever received any food supplements? (Show Sachet of supplements)</string>
-    <string name="W6010101">Yes</string>
-    <string name="W6010102">No</string>
+    <string name="W60101">کیا آپ کوکبھی اضافی غذاکے کوئی پیکٹ ملے؟ پیکٹ دیکھائیں-</string>
+    <string name="W6010101">ہاں</string>
+    <string name="W6010102">نہیں</string>
 
-    <string name="W60102">Number of Beneficiaries?</string>
+    <string name="W60102">فائدہ اٹھانے والوں کی تعداد؟</string>
 
-    <string name="W60103">Source?</string>
-    <string name="W6010301">Government</string>
-    <string name="W6010302">NGO</string>
-    <string name="W6010303">Private/Individual</string>
+    <string name="W60103">ذریعہ</string>
+    <string name="W6010301">حکومت</string>
+    <string name="W6010302">این جی او</string>
+    <string name="W6010303">نجی/انفرادی</string>
 
-    <string name="W602">If yes, please explain</string>
+    <string name="W602">اگر ہا ں تو وضاحت کریں</string>
 
-    <string name="W60301">RUSF for children/Wawamum</string>
-    <string name="W6030101">Yes</string>
-    <string name="W6030102">No</string>
+    <string name="W60301">بچوں کے لیے RUSF/Wawamum</string>
+    <string name="W6030101">ہاں</string>
+    <string name="W6030102">نہیں</string>
 
-    <string name="W60302">Number of Beneficiaries?</string>
+    <string name="W60302">فائدہ اٹھانے والوں کی تعداد؟</string>
 
-    <string name="W60303">Source?</string>
-    <string name="W6030301">Government</string>
-    <string name="W6030302">NGO</string>
-    <string name="W6030303">Private/Individual</string>
+    <string name="W60303">ذریعہ</string>
+    <string name="W6030301">حکومت</string>
+    <string name="W6030302">این جی او</string>
+    <string name="W6030303">نجی/انفرادی</string>
 
 
-    <string name="W60401">RUTF for children</string>
-    <string name="W6040101">Yes</string>
-    <string name="W6040102">No</string>
+    <string name="W60401">RUTF کے لیے بچوں</string>
+    <string name="W6040101">ہاں</string>
+    <string name="W6040102">نہیں</string>
 
-    <string name="W60402">Number of Beneficiaries?</string>
+    <string name="W60402">فائدہ اٹھانے والوں کی تعداد؟</string>
 
-    <string name="W60403">Source?</string>
-    <string name="W6040301">Government</string>
-    <string name="W6040302">NGO</string>
-    <string name="W6040303">Private/Individual</string>
+    <string name="W60403">ذریعہ</string>
+    <string name="W6040301">حکومت</string>
+    <string name="W6040302">این جی او</string>
+    <string name="W6040303">نجی/انفرادی</string>
 
-    <string name="W60501">Supplementary Nutritional Food - SNF (Mamta)</string>
-    <string name="W6050101">Yes</string>
-    <string name="W6050102">No</string>
+    <string name="W60501">گندم سویا خواتین کے لیے سپرسیریل</string>
+    <string name="W6050101">ہاں</string>
+    <string name="W6050102">نہیں</string>
 
-    <string name="W60502">Number of Beneficiaries?</string>
+    <string name="W60502">فائدہ اٹھانے والوں کی تعداد؟</string>
 
-    <string name="W60503">Source?</string>
-    <string name="W6050301">Government</string>
-    <string name="W6050302">NGO</string>
-    <string name="W6050303">Private/Individual</string>
+    <string name="W60503">ذریعہ</string>
+    <string name="W6050301">حکومت</string>
+    <string name="W6050302">این جی او</string>
+    <string name="W6050303">نجی/انفرادی</string>
 
-    <string name="W60601">Nutritional Counseling and Education</string>
-    <string name="W6060101">Yes</string>
-    <string name="W6060102">No</string>
+    <string name="W60601">غذا  ئیت کے باے میں مشورہ</string>
+    <string name="W6060101">ہاں</string>
+    <string name="W6060102">نہیں</string>
 
-    <string name="W60602">Number of Beneficiaries?</string>
+    <string name="W60602">فائدہ اٹھانے والوں کی تعداد؟</string>
 
-    <string name="W60603">Source?</string>
-    <string name="W6060301">Government</string>
-    <string name="W6060302">NGO</string>
-    <string name="W6060303">Private/Individual</string>
+    <string name="W60603">ذریعہ?</string>
+    <string name="W6060301">حکومت</string>
+    <string name="W6060302">این جی او</string>
+    <string name="W6060303">نجی/انفرادی</string>
 
-    <string name="W60701">Other (Specify)</string>
-    <string name="W6070101">Yes</string>
-    <string name="W6070102">No</string>
+    <string name="W60701">دیگر وضاحت کریں</string>
+    <string name="W6070101">ہاں</string>
+    <string name="W6070102">نہیں</string>
 
-    <string name="W60702">Number of Beneficiaries?</string>
+    <string name="W60702">فائدہ اٹھانے والوں کی تعداد؟</string>
 
-    <string name="W60703">Source?</string>
-    <string name="W6070301">Government</string>
-    <string name="W6070302">NGO</string>
-    <string name="W6070303">Private/Individual</string>
+    <string name="W60703">ذریعہ?</string>
+    <string name="W6070301">حکومت</string>
+    <string name="W6070302">این جی او</string>
+    <string name="W6070303">نجی/انفرادی</string>
 
-    <string name="W608">How many sachets you have received till date?</string>
+    <string name="W608">ابھی تک آپکو  کتنے پیکٹ ملے ہیں</string>
 
-    <string name="W609">Where and how do you keep the received supplements?</string>
+    <string name="W609">آپ موصول شدہ سپلیمنٹس کہاں اور کیسے رکھتے ہیں؟</string>
 
-    <string name="W610">Who provided these supplments to you?</string>
+    <string name="W610">یہ پیکٹ آپ کو کس نے فراہم کیا؟</string>
 
     <string name='Q_W60101'>W60101</string>
     <string name='Q_W60102'>W60102</string>
@@ -1054,26 +1178,26 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
     <string name='Q_W610'>W610</string>
 
     <!-- W1 -->
-    <string name="W1Heading">SECTION W1: REPRODUCTIVE HISTORY</string>
+    <string name="W1Heading">SECTION W1: تولیدی عمر کی خواتین </string>
 
     <string name="W101">BISP Beneficary ID:</string>
 
-    <string name="W102">Name of the Woman</string>
+    <string name="W102">عورت کانام</string>
 
-    <string name="W103">Line number of the Woman</string>
+    <string name="W103">عورت کا لائن نمبر</string>
 
-    <string name="W104">Results of Woman\'s interview</string>
-    <string name="W10401">Completed</string>
-    <string name="W10402">Not at home</string>
-    <string name="W10403">Refused</string>
-    <string name="W10404">Partially completed</string>
-    <string name="W10405">Incapacitated</string>
-    <string name="W10496">Other (specify)</string>
+    <string name="W104">خاتون سے انٹرویو کا نتیجہ</string>
+    <string name="W10401">مکمل</string>
+    <string name="W10402">گھر پرموجود نہیں</string>
+    <string name="W10403">انکار</string>
+    <string name="W10404">جزوی مکمل</string>
+    <string name="W10405">جواب دینے سے قاصر</string>
+    <string name="W10496">دیگر وضاحت کریں</string>
 
-    <string name="W105">What is your date of birth?</string>
-    <string name="W10501">Day</string>
-    <string name="W10502">Month</string>
-    <string name="W10503">Year</string>
+    <string name="W105">آپ کی تاریخ پیدائش کیا ہے؟</string>
+    <string name="W10501">دن</string>
+    <string name="W10502">مہینہ</string>
+    <string name="W10503">سال</string>
 
     <string name="W106">Please tell me how old you are. What was your age at your last birthday? RECORD AGE IN COMPLETED YEARS</string>
 
@@ -1630,97 +1754,99 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
     <string name='Q_W328'>W328</string>
 
     <!-- W4 -->
-    <string name="W4Heading">SECTION W4: MINIMUM DIETARY DIVERSITY FOR WOMEN (15-49 YEARS)</string>
+    <string name="W4Heading">سیکشن W4: خواتین کے مختلف اقسام کے کھانوں کا استعمال</string>
 
-    <string name="W401">Grains, White Roots and Tubers, and Plantains Barley, Millet, Oats, Rice, Sorghum, Wheat, Arracacha, Bananas, Cassava, Lotus Root, Potatoes (all skin colors), Rutabaga, Sweet Potato (White, pale yellow fleshed), arbi/arvi</string>
-    <string name="W40101">Pre-Breakfast</string>
-    <string name="W40102">Breakfast</string>
-    <string name="W40103">Between Breakfast and Lunch</string>
-    <string name="W40104">Lunch</string>
-    <string name="W40105">Between Lunch and Dinner</string>
-    <string name="W40106">Dinner</string>
-    <string name="W40107">Between Dinner and sleep</string>
+    <string name="W401">مثلاً جو،جوار،دلیا،چاول ،شلجم ،گندم،شکرقندی،کچے کیلے، بیھ،اروی،آلو  وغیرہ
+جو،جوار،جو کا دلیہ  ،گندم ، کچے کیلے ،بھ،آلو،شکر قندی،اروی
+</string>
+    <string name="W40101">ناشتے سے پہلے</string>
+    <string name="W40102">ناشتہ</string>
+    <string name="W40103">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W40104">دوپہر کاکھانا</string>
+    <string name="W40105">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W40106">رات کا کھانا</string>
+    <string name="W40107">رات کے کھانے اور سونے کے درمیان</string>
 
-    <string name="W402">Pulses (Beans, Peas, and Lentils) Adzuki Bean, Broad Bean, Chickpeas, Cluster Bean, Common Bean, Lentil, Mung Bean, Pea, Pigeon Pea, Rice bean, Soybean (Soya Bean), Urad Bean</string>
-    <string name="W40201">Pre-Breakfast</string>
-    <string name="W40202">Breakfast</string>
-    <string name="W40203">Between Breakfast and Lunch</string>
-    <string name="W40204">Lunch</string>
-    <string name="W40205">Between Lunch and Dinner</string>
-    <string name="W40206">Dinner</string>
-    <string name="W40207">Between Dinner and sleep</string>
+    <string name="W402">تمام قسم کی لوبیا ،چنا ،مٹر  ،ارد کی دال ،اور تمام دوسری دالیں</string>
+    <string name="W40201">ناشتے سے پہلے</string>
+    <string name="W40202">ناشتہ</string>
+    <string name="W40203">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W40204">دوپہر کاکھانا</string>
+    <string name="W40205">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W40206">رات کا کھانا</string>
+    <string name="W40207">رات کے کھانے اور سونے کے درمیان</string>
 
-    <string name="W403">Nuts and Seeds Peanut/Groundnut, Almond, Cashew, Pistachio, Walnut, Wild Mango (Bush Mango), Locust Bean Seeds, Melon Seeds, Pine Nuts, Pumpkin Seeds, Sesame Seeds, Sunflower Seeds</string>
-    <string name="W40301">Pre-Breakfast</string>
-    <string name="W40302">Breakfast</string>
-    <string name="W40303">Between Breakfast and Lunch</string>
-    <string name="W40304">Lunch</string>
-    <string name="W40305">Between Lunch and Dinner</string>
-    <string name="W40306">Dinner</string>
-    <string name="W40307">Between Dinner and sleep</string>
+    <string name="W403">مونگ پھلی،بادام،کاجو،پستہ،اخروٹ،خربوزے کے بیج، تل،سورج مکھی کے بیج  اور کدو کے بیج وغیرہ</string>
+    <string name="W40301">ناشتے سے پہلے</string>
+    <string name="W40302">ناشتہ</string>
+    <string name="W40303">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W40304">دوپہر کاکھانا</string>
+    <string name="W40305">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W40306">رات کا کھانا</string>
+    <string name="W40307">رات کے کھانے اور سونے کے درمیان</string>
 
-    <string name="W404">Dairy Fresh Whole, Low Fat, Skim milk, reconstituted powdered or evaporated or ultra-high temperature (UHT) boxed milk, Hard cheese, Soft cheese, Kefir, Yoghurt/Curd</string>
-    <string name="W40401">Pre-Breakfast</string>
-    <string name="W40402">Breakfast</string>
-    <string name="W40403">Between Breakfast and Lunch</string>
-    <string name="W40404">Lunch</string>
-    <string name="W40405">Between Lunch and Dinner</string>
-    <string name="W40406">Dinner</string>
-    <string name="W40407">Between Dinner and sleep</string>
+    <string name="W404">کم اور مکمل چکنائی والا دودھ،دودھ ،دہی،پنیر،خشک دودھ اور دودھ  کی تمام قسمیں</string>
+    <string name="W40401">ناشتے سے پہلے</string>
+    <string name="W40402">ناشتہ</string>
+    <string name="W40403">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W40404">دوپہر کاکھانا</string>
+    <string name="W40405">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W40406">رات کا کھانا</string>
+    <string name="W40407">رات کے کھانے اور سونے کے درمیان</string>
 
-    <string name="W405">Meat, Poultry, and Fish Beef, Goat, Mutton, Lamb, Rabbit, Yak, Deer, Antelope, Buffalo or other large wild or domesticated mammals, Tripe or other pale organ meats, Chicken, Duck, Goose, Guinea Fowl, Pigeon, Turkey, Other wild or domesticated birds, Gizzard, Heart, Kidney, Liver, Fresh/Frozen/Dried Fish (all species), Canned Fish (Tuna and Sardines), Shrimp, Lobster, Carbs</string>
-    <string name="W40501">Pre-Breakfast</string>
-    <string name="W40502">Breakfast</string>
-    <string name="W40503">Between Breakfast and Lunch</string>
-    <string name="W40504">Lunch</string>
-    <string name="W40505">Between Lunch and Dinner</string>
-    <string name="W40506">Dinner</string>
-    <string name="W40507">Between Dinner and sleep</string>
+    <string name="W405">گائے ،بھینس ،بکری،بھیڑ،دنبہ،مرغی،بطخ،کبوتر،مرغابی کا گوشت،مچھلی اور دوسرے تمام حلال جانوروں کا گوشت ،پوٹا،کلیجی،اوجھڑی،دل،گردہ،ڈبے میں محفوظ مچھلی،جھینگے،کیٹرا،خشک /برف میں رکھی ہوئی مچھلی</string>
+    <string name="W40501">ناشتے سے پہلے</string>
+    <string name="W40502">ناشتہ</string>
+    <string name="W40503">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W40504">دوپہر کاکھانا</string>
+    <string name="W40505">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W40506">رات کا کھانا</string>
+    <string name="W40507">رات کے کھانے اور سونے کے درمیان</string>
 
-    <string name="W406">Eggs Chicken Eggs and Duck Eggs, Egg powder</string>
-    <string name="W40601">Pre-Breakfast</string>
-    <string name="W40602">Breakfast</string>
-    <string name="W40603">Between Breakfast and Lunch</string>
-    <string name="W40604">Lunch</string>
-    <string name="W40605">Between Lunch and Dinner</string>
-    <string name="W40606">Dinner</string>
-    <string name="W40607">Between Dinner and sleep</string>
+    <string name="W406">مرغی اور بطخ کے انڈے</string>
+    <string name="W40601">ناشتے سے پہلے</string>
+    <string name="W40602">ناشتہ</string>
+    <string name="W40603">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W40604">دوپہر کاکھانا</string>
+    <string name="W40605">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W40606">رات کا کھانا</string>
+    <string name="W40607">رات کے کھانے اور سونے کے درمیان</string>
 
-    <string name="W407">Dark Green Leafy Vegetables Bean Greens, Beet Greens, Bitter Melon Greens, Broccoli, Carrots Green, Chicory Greens, Chilli Greens, Chinese cabbage, Fenugreek Greens (Methi), Lettuce, Mustard Green, Okra Greens (Lady Fingers), Pumpkin Green, Spinach, Turnip Greens</string>
-    <string name="W40701">Pre-Breakfast</string>
-    <string name="W40702">Breakfast</string>
-    <string name="W40703">Between Breakfast and Lunch</string>
-    <string name="W40704">Lunch</string>
-    <string name="W40705">Between Lunch and Dinner</string>
-    <string name="W40706">Dinner</string>
-    <string name="W40707">Between Dinner and sleep</string>
+    <string name="W407">گہرے ہرے پتوں والی سبزیاں مثلاً میتھی   ،پالک، کریلا، بھنڈی، کدو ،بروکولی ،ہری مرچ ، سلاد پتہ ، گوبی ساگ ،ہرا کدو وغیرہ۔</string>
+    <string name="W40701">ناشتے سے پہلے</string>
+    <string name="W40702">ناشتہ</string>
+    <string name="W40703">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W40704">دوپہر کاکھانا</string>
+    <string name="W40705">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W40706">رات کا کھانا</string>
+    <string name="W40707">رات کے کھانے اور سونے کے درمیان</string>
 
-    <string name="W408">Other Vitamin A-rich Fruits and Vegetables Apricot (Fresh or Dried), Cantaloupe Melon (Ripe), Locust Bean Fruit/Pulp, Mango (Ripe, Fresh and Dried), Musk Melon, Papaya (Ripe, fresh and dried), Peaches (dried or raw), Persimmon (ripe), Carrot, Pumpkin, Red Pepper (sweet), Squash (Orange or dark yellow fleshed only), Sweet Potato (Orange or Dark yellow fleshed only)</string>
-    <string name="W40801">Pre-Breakfast</string>
-    <string name="W40802">Breakfast</string>
-    <string name="W40803">Between Breakfast and Lunch</string>
-    <string name="W40804">Lunch</string>
-    <string name="W40805">Between Lunch and Dinner</string>
-    <string name="W40806">Dinner</string>
-    <string name="W40807">Between Dinner and sleep</string>
+    <string name="W408">وٹامن اے سے بھرپور پھل اور سبزیاں مثلاً خوبانی ،خربوزہ، تربوز، پپیتا،آملوک،گاجر وغیرہ</string>
+    <string name="W40801">ناشتے سے پہلے</string>
+    <string name="W40802">ناشتہ</string>
+    <string name="W40803">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W40804">دوپہر کاکھانا</string>
+    <string name="W40805">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W40806">رات کا کھانا</string>
+    <string name="W40807">رات کے کھانے اور سونے کے درمیان</string>
 
-    <string name="W409">Other Vegetables Asparagus, Beans (various) when eaten as fresh pod, Beets, Bitter melon, Cabbage (Common and Red varieties), Cauliflower, Celery, Corn (fresh, not dried /flour/meal - Green Maize), Cucumbers, Eggplant (Brinjal), Green Pepper, Leek, Lettuce (Light Green), Mushroom, Okra, Onion, Pea’s green, Radish, Tomato, Zucchini</string>
-    <string name="W40901">Pre-Breakfast</string>
-    <string name="W40902">Breakfast</string>
-    <string name="W40903">Between Breakfast and Lunch</string>
-    <string name="W40904">Lunch</string>
-    <string name="W40905">Between Lunch and Dinner</string>
-    <string name="W40906">Dinner</string>
-    <string name="W40907">Between Dinner and sleep</string>
+    <string name="W409">دوسری سبزیاں مثلاًٹماٹر ،مکئی،پھول گوبی ،بند گوبی ،تورئی،سلاد پتے ،پیاز،اجوائن،ہرا مٹر، بیگن، کھیرا وغیرہ</string>
+    <string name="W40901">ناشتے سے پہلے</string>
+    <string name="W40902">ناشتہ</string>
+    <string name="W40903">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W40904">دوپہر کاکھانا</string>
+    <string name="W40905">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W40906">رات کا کھانا</string>
+    <string name="W40907">رات کے کھانے اور سونے کے درمیان</string>
 
-    <string name="W410">Other Fruits Apple, Avocado, Banana, Blackberry, Blueberry, Cherries, Coconut Flesh, Dates (Fresh and dried), Grapefruit, Grapes, Guava, Honeydew Melon, Indian Gooseberry (Amla), Jujube, Kiwi, Lemon, Lime, Litchi, Mandarin Orange, Mulberry, Orange, Peach, Pear, Pineapple, Plum, Pomegranate, Pomelo, Rambutan, Raspberry, Sapodella (naseberry), Star Fruit, Strawberry, Sweetsop, Tamarind, Tangerine, Watermelon</string>
-    <string name="W41001">Pre-Breakfast</string>
-    <string name="W41002">Breakfast</string>
-    <string name="W41003">Between Breakfast and Lunch</string>
-    <string name="W41004">Lunch</string>
-    <string name="W41005">Between Lunch and Dinner</string>
-    <string name="W41006">Dinner</string>
-    <string name="W41007">Between Dinner and sleep</string>
+    <string name="W410">سیب،انگور،پپیتا،خوبانی،چکوترا،امرود،ناشپاتی،کیلا،انناس،جامن،لیموں،انار،تربوز،آلوبخارہ ،نارنگی،آم،آڑو وغیرہ</string>
+    <string name="W41001">ناشتے سے پہلے</string>
+    <string name="W41002">ناشتہ</string>
+    <string name="W41003">ناشتہ اور دوپہر کے کھانے کے درمیان</string>
+    <string name="W41004">دوپہر کاکھانا</string>
+    <string name="W41005">دوپہر اور رات کے کھانے کے درمیان</string>
+    <string name="W41006">رات کا کھانا</string>
+    <string name="W41007">رات کے کھانے اور سونے کے درمیان</string>
 
     <string name='Q_W401'>W401</string>
     <string name='Q_W402'>W402</string>
@@ -1736,26 +1862,26 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
     <!-- W5 -->
     <string name="W5Heading">SECTION W5: 24-HOUR RECALL</string>
 
-    <string name="W501">24-Hour Recall</string>
+    <string name="W501">24 گھنٹے کھانےکی یاد/ تفصیل</string>
 
-    <string name="W502">Time (24-hour clock)</string>
+    <string name="W502">وقت(24 گھنٹے گھڑی)</string>
 
-    <string name="W503">Description of Item</string>
+    <string name="W503">اشیاء کی تفصیل</string>
 
-    <string name="W504">Ingredients</string>
+    <string name="W504">اجزاء</string>
 
-    <string name="W50501">Quantity (Scale)</string>
+    <string name="W50501">مقدار (پیمانہ)</string>
 
-    <string name="W50502">Quantity (Amount)</string>
+    <string name="W50502">مقدار (مقدار)</string>
 
-    <string name="W506">Place prepared</string>
-    <string name="W50601">Home grown</string>
-    <string name="W50602">Market</string>
+    <string name="W506">کہاں تیار کیا گیا</string>
+    <string name="W50601">گھر میں اگایا ہوا</string>
+    <string name="W50602">مارکیٹ</string>
 
-    <string name="W507">Place consumed</string>
-    <string name="W50701">Home</string>
-    <string name="W50702">Market</string>
-    <string name="W50796">Others (specify)</string>
+    <string name="W507">استعمال/کھپت کی جگہ</string>
+    <string name="W50701">گھر</string>
+    <string name="W50702">مارکیٹ</string>
+    <string name="W50796">دیگر وضاحت کریں</string>
 
     <string name='Q_W501'>W501</string>
     <string name='Q_W502'>W502</string>
@@ -1767,12 +1893,12 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
     <string name='Q_W507'>W507</string>
 
     <!-- C1 -->
-    <string name="C1Heading">SECTION C1: CHILD NUTRITION UNDER 2 YEARS</string>
+    <string name="C1Heading">ماڈیول سی: دوسال سے کمر عمر بچے کی غذائی معلومات</string>
 
-    <string name="C101">Name of the Child</string>
-    <string name="C102">Line number of the Child</string>
-    <string name="C103">Name of the Primary Caretaker</string>
-    <string name="C104">Line number of the respondent</string>
+    <string name="C101">بچے  کانام</string>
+    <string name="C102">بچے  کا لائن نمبر</string>
+    <string name="C103">جواب دہندہ کانام</string>
+    <string name="C104">جواب دہندہ کا لائن نمبر</string>
 
     <string name='Q_C101'>C101</string>
     <string name='Q_C102'>C102</string>
@@ -1781,215 +1907,231 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
 
 
     <!-- C2 -->
-    <string name="C2Heading">SECTION C2: IYCF AND FOOD DIVERSITY</string>
+    <string name="C2Heading">سیکشن سی 2: نومولود اور چھوٹے بچوں کی غذا کے بارے میں معلومات</string>
 
-    <string name="C201">Was [name] ever breastfed?</string>
-    <string name="C20101">Yes</string>
-    <string name="C20102">No</string>
+    <string name="C201">کیا (نام) کو کبھی ماں کا دودھ پلایا گیا ہے ؟</string>
+    <string name="C20101">ہاں</string>
+    <string name="C20102">نہیں</string>
 
-    <string name="C202">How long after birth was [NAME] first put to the breast? If immediately, circle "000" If less than one hour, record “00” hours If less than 24 hours, record hours Otherwise, record days</string>
-    <string name="C20200">Immediately</string>
-    <string name="C20201">Hours</string>
-    <string name="C20202">Days</string>
+    <string name="C202">آپ نے پیدائش کےکتنی دیر بعد پہلی دفعہ (نام) کو اپنا دودھ پلایا؟ اگر فوری طور پر ، تو "000"پر نشان لگائیں۔
+اگر ایک گھنٹے سے بھی کم تو ، "00" گھنٹے ریکارڈ کریں۔
+اگر 24 گھنٹوں سے کم ، تو گھنٹے درج کریں ۔
+ورنہ دن  درج کریں۔
+</string>
+    <string name="C20200">فوری طور پر</string>
+    <string name="C20201">گھنٹوں میں</string>
+    <string name="C20202">دنوں میں</string>
 
-    <string name="C203">In the first two days after delivery, was [NAME] given anything other than breast milk to eat or drink –[ MASKA/BUTTER IS TRADITIONAL,  common drinks and foods, including ritual feeds(Ghutti, Honey), that may be given to newborn infants]?</string>
-    <string name="C20301">Yes</string>
-    <string name="C20302">No</string>
+    <string name="C203">بچے کی پیدائش  کے بعد پہلے دو دنوں میں ، [NAME] کو کھانے پینے کے لیے ماں کے دودھ کے علاوہ کچھ بھی دیا گیا تھا ، مثلاً ،بچوں کا  فارمولا ملک  ،
+یا [مسکا/بٹر روایتی عام   مشروبات اور کھانے کی اشیاء شامل  کریں ، بشمول رسمی کھانے  ، جو نوزائیدہ بچوں کو دیئے جا سکتے  ہیں]
+</string>
+    <string name="C20301">ہاں</string>
+    <string name="C20302">نہیں</string>
 
-    <string name="C204">Was [NAME] breastfed yesterday during the day or at night?</string>
-    <string name="C20401">Yes</string>
-    <string name="C20402">No</string>
-    <string name="C20498">Don\'t know</string>
+    <string name="C204">کیا (نام) نے کل دن اور رات کے  دوران ماں کا دودھ پیا تھا؟</string>
+    <string name="C20401">ہاں</string>
+    <string name="C20402">نہیں</string>
+    <string name="C20498">معلوم نہیں</string>
 
-    <string name="C205">Did [NAME] drink anything from a bottle with a nipple yesterday during the day or at night?</string>
-    <string name="C20501">Yes</string>
-    <string name="C20502">No</string>
-    <string name="C20598">Don\'t know</string>
+    <string name="C205">کیا (نام) نے گزشتہ دن اوررات ،بوتل سے جس میں نپل لگی ہو کچھ پیا تھا؟</string>
+    <string name="C20501">ہاں</string>
+    <string name="C20502">نہیں</string>
+    <string name="C20598">معلوم نہیں</string>
 
     <string name="C206">Now I would like to ask you about liquids that [NAME] had yesterday during the day or at night. Please tell me about all drinks, whether [NAME] had them at home, or somewhere else. Yesterday during the day or at night, did [NAME] have?</string>
-    <string name="C206A">Plain water?</string>
-    <string name="C206A01">Yes</string>
-    <string name="C206A02">No</string>
-    <string name="C206A98">Don\'t know</string>
+    <string name="C206A">سادہ پانی</string>
+    <string name="C206A01">ہاں</string>
+    <string name="C206A02">نہیں</string>
+    <string name="C206A98">معلوم نہیں</string>
 
-    <string name="C206B">Infant formula, such as [insert local names of common formula] NAN, NUTRILAK, NESTLE, NESTOGEN, SIMILAK</string>
-    <string name="C206B01">Yes</string>
-    <string name="C206B02">No</string>
-    <string name="C206B98">Don\'t know</string>
+    <string name="C206B">شیر خوار فارمولا ، جیسے [عام فارمولے کے مقامی نام داخل کریں] NAN ، NUTRILAK ، NESTLE ، NESTOGEN ، SIMILAK</string>
+    <string name="C206B01">ہاں</string>
+    <string name="C206B02">نہیں</string>
+    <string name="C206B98">معلوم نہیں</string>
 
-    <string name="C206C">If "yes": How many times did [NAME] drink formula? If 7 or more, record "7" If number of times not known, record "99"</string>
+    <string name="C206C">اگر "ہاں":تو
+	[NAME] نے کتنی بار فارمولا ملک پیا؟
+اگر 7 یا اس سے زیادہ ،  تو "7" ریکارڈ کریں اگر اوقات کی تعداد معلوم نہ ہو تو ، "99" ریکارڈ کریں۔
+</string>
 
-    <string name="C206D">Milk from animals, such as fresh, tinned, or powdered milk?</string>
-    <string name="C206D01">Yes</string>
-    <string name="C206D02">No</string>
-    <string name="C206D98">Don\'t know</string>
+    <string name="C206D">مویشی کا دودھ جیساکہ تازہ پاوڈریا ڈبے والا دودھ؟</string>
+    <string name="C206D01">ہاں</string>
+    <string name="C206D02">نہیں</string>
+    <string name="C206D98">معلوم نہیں</string>
 
-    <string name="C206E">If "yes": How many times did [NAME] drink milk? If 7 or more, record "7" If number of times not known, record "99"</string>
+    <string name="C206E">اگر "ہاں":تو
+	[NAME] نے کتنی بار تازہ پاوڈریا ڈبے والا دودھ پیا؟
+اگر 7 یا اس سے زیادہ ،  تو "7" ریکارڈ کریں اگر اوقات کی تعداد معلوم نہ ہو تو ، "99" ریکارڈ کریں۔
+</string>
 
-    <string name="C206F">If "yes": Was the milk or were any of the milk drinks a sweet or flavored type of milk?</string>
-    <string name="C206F01">Yes</string>
-    <string name="C206F02">No</string>
-    <string name="C206F98">Don\'t know</string>
+    <string name="C206F">اگر "ہاں":  تو کیا وہ  دودھ  عام طور پر پینے والا فلیورڈ  ملک  میٹھا یا ذائقہ دار تھا؟</string>
+    <string name="C206F01">ہاں</string>
+    <string name="C206F02">نہیں</string>
+    <string name="C206F98">معلوم نہیں</string>
 
-    <string name="C206G">Yogurt drinks such as [insert local names of common types of yogurt drinks</string>
-    <string name="C206G01">Yes</string>
-    <string name="C206G02">No</string>
-    <string name="C206G98">Don\'t know</string>
+    <string name="C206G">دہی  سے بنے مشروبات جیسے [عام قسم کے دہی سے بنے  مشروبات کے مقامی نام لکھیں[</string>
+    <string name="C206G01">ہاں</string>
+    <string name="C206G02">نہیں</string>
+    <string name="C206G98">معلوم نہیں</string>
 
-    <string name="C206H">If "yes": How many times did [NAME] drink yogurt? If 7 or more, record "7" If number of times not known, record "99"</string>
+    <string name="C206H">اگر "ہاں":تو
+	[NAME] نے کتنی بار  دہی سے بنے مشروبات پیئے تھے؟
+اگر 7 یا اس سے زیادہ ،  تو "7" ریکارڈ کریں اگر اوقات کی تعداد معلوم نہ ہو تو ، "99" ریکارڈ کریں۔
+</string>
 
-    <string name="C206I">If "yes": Was the yogurt or were any of the yogurt drinks a sweet or flavored type of yogurt drink?</string>
-    <string name="C206I01">Yes</string>
-    <string name="C206I02">No</string>
-    <string name="C206I98">Don\'t know</string>
+    <string name="C206I">اگر "ہاں":  تو کیا  دہی عام طور پر فلیورڈ میٹھا دہی  تھا یا  دہی سے بنا پینے والے ذائقہ دار مشروب  تھا؟</string>
+    <string name="C206I01">ہاں</string>
+    <string name="C206I02">نہیں</string>
+    <string name="C206I98">معلوم نہیں</string>
 
-    <string name="C206J">Chocolate-flavored drinks including those made from syrups or powders?</string>
-    <string name="C206J01">Yes</string>
-    <string name="C206J02">No</string>
-    <string name="C206J98">Don\'t know</string>
+    <string name="C206J">چاکلیٹ سے بنے  ذائقہ والے مشروبات بشمول شربت یا پاؤڈر سے بنے۔</string>
+    <string name="C206J01">ہاں</string>
+    <string name="C206J02">نہیں</string>
+    <string name="C206J98">معلوم نہیں</string>
 
-    <string name="C206K">Fruit juice or fruit-flavored drinks including those made from syrups or powders?</string>
-    <string name="C206K01">Yes</string>
-    <string name="C206K02">No</string>
-    <string name="C206K98">Don\'t know</string>
+    <string name="C206K">پھلوں کا رس یا پھلوں سے بنے  ذائقے والے مشروبات بشمول شربت یا پاؤڈر سے بنائے گئے۔</string>
+    <string name="C206K01">ہاں</string>
+    <string name="C206K02">نہیں</string>
+    <string name="C206K98">معلوم نہیں</string>
 
-    <string name="C206L">Sodas, malt drinks, sports drinks, or energy drinks?</string>
-    <string name="C206L01">Yes</string>
-    <string name="C206L02">No</string>
-    <string name="C206L98">Don\'t know</string>
+    <string name="C206L">سوڈاس ، مالٹ ڈرنکس ، اسپورٹس ڈرنکس ، یا انرجی ڈرنکس؟</string>
+    <string name="C206L01">ہاں</string>
+    <string name="C206L02">نہیں</string>
+    <string name="C206L98">معلوم نہیں</string>
 
-    <string name="C206M">Tea, coffee, or herbal drinks?</string>
-    <string name="C206M01">Yes</string>
-    <string name="C206M02">No</string>
-    <string name="C206M98">Don\'t know</string>
+    <string name="C206M">چائے ، کافی یا ہربل مشروبات؟</string>
+    <string name="C206M01">ہاں</string>
+    <string name="C206M02">نہیں</string>
+    <string name="C206M98">معلوم نہیں</string>
 
-    <string name="C206N">If "yes": Was the drink/ Were any of these drinks sweetened?</string>
-    <string name="C206N01">Yes</string>
-    <string name="C206N02">No</string>
-    <string name="C206N98">Don\'t know</string>
+    <string name="C206N">اگر "ہاں": تو  وہ کونسا مشروب تھا/ کیا ان مشروبات میں سے کوئی میٹھا تھا؟</string>
+    <string name="C206N01">ہاں</string>
+    <string name="C206N02">نہیں</string>
+    <string name="C206N98">معلوم نہیں</string>
 
-    <string name="C206O">Clear broth or clear soup?</string>
-    <string name="C206O01">Yes</string>
-    <string name="C206O02">No</string>
-    <string name="C206O98">Don\'t know</string>
+    <string name="C206O">صاف شوربہ یا صاف سوپ؟</string>
+    <string name="C206O01">ہاں</string>
+    <string name="C206O02">نہیں</string>
+    <string name="C206O98">معلوم نہیں</string>
 
-    <string name="C206P">Any other liquids?</string>
-    <string name="C206P01">Yes</string>
-    <string name="C206P02">No</string>
-    <string name="C206P98">Don\'t know</string>
+    <string name="C206P">دیگر کوئی اور مائعات؟</string>
+    <string name="C206P01">ہاں</string>
+    <string name="C206P02">نہیں</string>
+    <string name="C206P98">معلوم نہیں</string>
 
-    <string name="C206Q">If "yes": Was the drink or were any of these drinks sweetened?</string>
-    <string name="C206Q01">Yes</string>
-    <string name="C206Q02">No</string>
-    <string name="C206Q98">Don\'t know</string>
+    <string name="C206Q">اگر "ہاں": تو  وہ کونسے  مشروبات  تھے/ کیا ان مشروبات میں سے کوئی میٹھا تھا؟</string>
+    <string name="C206Q01">ہاں</string>
+    <string name="C206Q02">نہیں</string>
+    <string name="C206Q98">معلوم نہیں</string>
 
-    <string name="C207">Now I would like to ask you about foods that [NAME] had yesterday during the day or at night. I am interested in foods your child ate whether at home or somewhere else. Please think about snacks and small meals as well as main meals.
-    I will ask you about different types of foods, and I would like to know whether your child ate the food even if it was combined with other foods in a mixed dish like [list common local examples of mixed dishes]
-    Please do not answer "yes" for any food or ingredient used in a small amount to add flavor to a dish.
-    Yesterday during the day or at night, did [NAME] eat:</string>
-    <string name="C20701">Yes</string>
-    <string name="C20702">No</string>
-    <string name="C20798">Don\'t know</string>
+    <string name="C207">اب میں آپ سے ان کھانوں کے بارے میں پوچھنا چاہتا ہوں جو
+	[NAME] نے کل دن یا رات کے وقت کھائے تھے۔ مجھے ان کھانوں میں دلچسپی ہے جو آپ کے بچے نے کھائے چاہے گھر میں یا کہیں اور۔ براہ کرم اسنیکس اور ہلکے پھلکے  کھانوں  کے ساتھ ساتھ اہم کھانوں کے بارے میں بھی پوچھیں۔</string>
+    <string name="C20701">ہاں</string>
+    <string name="C20702">نہیں</string>
+    <string name="C20798">معلوم نہیں</string>
 
-    <string name="C207A">Yogurt, other than yogurt drinks?</string>
-    <string name="C207A01">Yes</string>
-    <string name="C207A02">No</string>
-    <string name="C207A98">Don\'t know</string>
+    <string name="C207A">دہی ، دہی کے مشروبات کے علاوہ؟</string>
+    <string name="C207A01">ہاں</string>
+    <string name="C207A02">نہیں</string>
+    <string name="C207A98">معلوم نہیں</string>
 
-    <string name="C207B">If "yes": How many times did [NAME] eat yogurt?</string>
+    <string name="C207B">اگر "ہاں"تو : [NAME] نے کتنی بار دہی کھایا؟</string>
 
-    <string name="C207C">Porridge, bread, rice, noodles, pasta</string>
-    <string name="C207C01">Yes</string>
-    <string name="C207C02">No</string>
-    <string name="C207C98">Don\'t know</string>
+    <string name="C207C">دلیہ ، روٹی ، چاول ، نوڈلس ، پاستا</string>
+    <string name="C207C01">ہاں</string>
+    <string name="C207C02">نہیں</string>
+    <string name="C207C98">معلوم نہیں</string>
 
-    <string name="C207D">Pumpkin, carrots, sweet red peppers</string>
-    <string name="C207D01">Yes</string>
-    <string name="C207D02">No</string>
-    <string name="C207D98">Don\'t know</string>
+    <string name="C207D">کدو ، گاجر ، میٹھی لال مرچ۔</string>
+    <string name="C207D01">ہاں</string>
+    <string name="C207D02">نہیں</string>
+    <string name="C207D98">معلوم نہیں</string>
 
-    <string name="C207E">Plantains, white potatoes, white yams</string>
-    <string name="C207E01">Yes</string>
-    <string name="C207E02">No</string>
-    <string name="C207E98">Don\'t know</string>
+    <string name="C207E"> سفید آلو ، سفید شکر قندی </string>
+    <string name="C207E01">ہاں</string>
+    <string name="C207E02">نہیں</string>
+    <string name="C207E98">معلوم نہیں</string>
 
-    <string name="C207F">Dark green leafy vegetables</string>
-    <string name="C207F01">Yes</string>
-    <string name="C207F02">No</string>
-    <string name="C207F98">Don\'t know</string>
+    <string name="C207F">گہری سبز پتوں والی سبزیاں</string>
+    <string name="C207F01">ہاں</string>
+    <string name="C207F02">نہیں</string>
+    <string name="C207F98">معلوم نہیں</string>
 
-    <string name="C207G">Any other vegetables</string>
-    <string name="C207G01">Yes</string>
-    <string name="C207G02">No</string>
-    <string name="C207G98">Don\'t know</string>
+    <string name="C207G">کوئی دوسری سبزیاں</string>
+    <string name="C207G01">ہاں</string>
+    <string name="C207G02">نہیں</string>
+    <string name="C207G98">معلوم نہیں</string>
 
-    <string name="C207H">Ripe mangoes or ripe papayas </string>
-    <string name="C207H01">Yes</string>
-    <string name="C207H02">No</string>
-    <string name="C207H98">Don\'t know</string>
+    <string name="C207H">پکے ہوئے  آم یا پکے ہوئے  پپیتے</string>
+    <string name="C207H01">ہاں</string>
+    <string name="C207H02">نہیں</string>
+    <string name="C207H98">معلوم نہیں</string>
 
-    <string name="C207I">Any other fruits</string>
-    <string name="C207I01">Yes</string>
-    <string name="C207I02">No</string>
-    <string name="C207I98">Don\'t know</string>
+    <string name="C207I">دیگر کوئی اور پھل</string>
+    <string name="C207I01">ہاں</string>
+    <string name="C207I02">نہیں</string>
+    <string name="C207I98">معلوم نہیں</string>
 
-    <string name="C207J">Liver, kidney, heart</string>
-    <string name="C207J01">Yes</string>
-    <string name="C207J02">No</string>
-    <string name="C207J98">Don\'t know</string>
+    <string name="C207J">جگر ، گردے ، دل</string>
+    <string name="C207J01">ہاں</string>
+    <string name="C207J02">نہیں</string>
+    <string name="C207J98">معلوم نہیں</string>
 
-    <string name="C207K">Hot dogs/frankfurters, , bacon, salami, canned meat</string>
-    <string name="C207K01">Yes</string>
-    <string name="C207K02">No</string>
-    <string name="C207K98">Don\'t know</string>
+    <string name="C207K">ہاٹ ڈاگ/فرینکفرٹر ، بیکن ، سلامی ، ڈبہ  میں پیک  گوشت</string>
+    <string name="C207K01">ہاں</string>
+    <string name="C207K02">نہیں</string>
+    <string name="C207K98">معلوم نہیں</string>
 
-    <string name="C207L">Any other meat, such as beef, lamb, goat, chicken, duck</string>
-    <string name="C207L01">Yes</string>
-    <string name="C207L02">No</string>
-    <string name="C207L98">Don\'t know</string>
+    <string name="C207L">کوئی دوسرا گوشت ، جیسے گائے کا گوشت ، بھیڑ ، بکری ، مرغی ، بطخ کا گوشت </string>
+    <string name="C207L01">ہاں</string>
+    <string name="C207L02">نہیں</string>
+    <string name="C207L98">معلوم نہیں</string>
 
-    <string name="C207M">Eggs</string>
-    <string name="C207M01">Yes</string>
-    <string name="C207M02">No</string>
-    <string name="C207M98">Don\'t know</string>
+    <string name="C207M">انڈے</string>
+    <string name="C207M01">ہاں</string>
+    <string name="C207M02">نہیں</string>
+    <string name="C207M98">معلوم نہیں</string>
 
-    <string name="C207N">Fresh or dried fish?</string>
-    <string name="C207N01">Yes</string>
-    <string name="C207N02">No</string>
-    <string name="C207N98">Don\'t know</string>
+    <string name="C207N">تازہ یا خشک مچھلی ؟</string>
+    <string name="C207N01">ہاں</string>
+    <string name="C207N02">نہیں</string>
+    <string name="C207N98">معلوم نہیں</string>
 
-    <string name="C207O">Beans, peas, lentils, nuts, seeds or [insert commonly consumed foods made from beans, peas, lentils, nuts, or seeds]?</string>
-    <string name="C207O01">Yes</string>
-    <string name="C207O02">No</string>
-    <string name="C207O98">Don\'t know</string>
+    <string name="C207O">پھلیاں ، مٹر ، دال ، گری دار میوے ، بیج یا [پھلیاں ، مٹر ، دال ، گری دار میوے ، یا بیجوں سے بنی عام طور پر استعمال ہونے والی غذائیں شامل  کریں]؟</string>
+    <string name="C207O01">ہاں</string>
+    <string name="C207O02">نہیں</string>
+    <string name="C207O98">معلوم نہیں</string>
 
-    <string name="C207P">Hard or soft cheese </string>
-    <string name="C207P01">Yes</string>
-    <string name="C207P02">No</string>
-    <string name="C207P98">Don\'t know</string>
+    <string name="C207P">سخت یا نرم پنیر</string>
+    <string name="C207P01">ہاں</string>
+    <string name="C207P02">نہیں</string>
+    <string name="C207P98">معلوم نہیں</string>
 
-    <string name="C207Q">Sweet foods such as chocolates, candies, pastries, cakes, biscuits, or frozen treats like ice cream and popsicles</string>
-    <string name="C207Q01">Yes</string>
-    <string name="C207Q02">No</string>
-    <string name="C207Q98">Don\'t know</string>
+    <string name="C207Q">میٹھے  کھانے  جیسے چاکلیٹ ، کینڈی ، پیسٹری ، کیک ، بسکٹ ، یا منجمد  کھانے کی اشیاء جیسے آئس کریم اور  برف سے بنی قلفی</string>
+    <string name="C207Q01">ہاں</string>
+    <string name="C207Q02">نہیں</string>
+    <string name="C207Q98">معلوم نہیں</string>
 
-    <string name="C207R">Chips, crisps, puffs, French fries, fried dough, instant noodles</string>
-    <string name="C207R01">Yes</string>
-    <string name="C207R02">No</string>
-    <string name="C207R98">Don\'t know</string>
+    <string name="C207R">چپس ، کرپس ، پف ، فرنچ فرائز ، فرائیڈ آٹا ، انسٹنٹ نوڈلز</string>
+    <string name="C207R01">ہاں</string>
+    <string name="C207R02">نہیں</string>
+    <string name="C207R98">معلوم نہیں</string>
 
-    <string name="C207S">Any other solid, semi-solid or soft food?</string>
-    <string name="C207S01">Yes</string>
-    <string name="C207S02">No</string>
-    <string name="C207S98">Don\'t know</string>
+    <string name="C207S">دیگر ٹھوس ، نیم ٹھوس یا نرم غذائیں؟</string>
+    <string name="C207S01">ہاں</string>
+    <string name="C207S02">نہیں</string>
+    <string name="C207S98">معلوم نہیں</string>
 
-    <string name="C207OTHER">If "yes": What was the food? [mark food group if it is not yet coded "yes"]</string>
+    <string name="C207OTHER">اگر "ہاں": تو کس قسم کا کھانا کھایا تھا؟
+[فوڈ گروپ کو نشان زد کریں اگر ابھی تک بطور  "ہاں" کوڈ نہیں کیا گیا ہے]
+</string>
 
-    <string name="C208">Did [NAME] eat any solid, semi-solid or soft food yesterday during the day or at night? If "yes" probe: What kind of solid, semi-solid or soft foods did [NAME] eat?</string>
-    <string name="C20801">Yes</string>
-    <string name="C20802">No</string>
+    <string name="C208">اگر "ہاں" تو مزید پوچھیں: [NAME] نے کس قسم کی ٹھوس ، نیم ٹھوس یا نرم خوراک کھائی تھی؟ کیا (نام) نے گزشتہ دن اوررات کے درمیان  کوئی  نیم ٹھوس غذا استعمال کی؟</string>
+    <string name="C20801">ہاں</string>
+    <string name="C20802">نہیں</string>
 
-    <string name="C209">Did [NAME] eat any solid, semi-solid or soft food yesterday during the day or at night? If "yes" probe: What kind of solid, semi-solid or soft foods did [NAME] eat?</string>
+    <string name="C209">[NAME]
+	اگر 7 یا اس سے زیادہ ،  تو "7" ریکارڈ کریں اگر اوقات کی تعداد معلوم نہ ہو تو ، "99" ریکارڈ کریں۔نے کل دن یا رات کے دوران کتنی بار کوئی ٹھوس ، نیم ٹھوس یا نرم غذا کھائی؟</string>
 
     <string name='Q_C201'>C201</string>
     <string name='Q_C202'>C202</string>
@@ -2070,9 +2212,9 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
 
     <string name="C304">Check and copy Date of Birth recorded on card</string>
 
-    <string name="C305D">Day</string>
-    <string name="C305M">Month</string>
-    <string name="C305Y">Year</string>
+    <string name="C305D">دن</string>
+    <string name="C305M">مہینہ</string>
+    <string name="C305Y">سال</string>
 
     <string name="C30501">BCG (Vaccination for TB)</string>
 
@@ -2281,82 +2423,84 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
     <string name='Q_C323'>C323</string>
 
     <!-- C4 -->
-    <string name="C4Heading">SECTION C4: MORBIDITY AND CARE SEEKING BEHAVIOUR</string>
+    <string name="C4Heading">سیکشن سی 4: امراض اور علاج حاصل کرنے کے رویے</string>
 
-    <string name="C401">Did the child (NAME) ever suffer from any of the following illnesses?</string>
-    <string name="C40101">Yes</string>
-    <string name="C40102">No</string>
+    <string name="C401">گزشتہ ایک ماہ کے دوران آپ کے بچے کو  ان  بیماریوں میں سے کوئی بیماری ہوئی؟</string>
+    <string name="C40101">ہاں</string>
+    <string name="C40102">نہیں</string>
 
-    <string name="C402">Any other illnesses? [PROMT FOR EACH AND RECORD]</string>
+    <string name="C402"> ہر ایک پڑھ کے بتائیں اور لکھیں کوئی اور بیماریایک سے زیادہ جوابات آسکتے ہیں</string>
 
-    <string name="C40201">High grade fever</string>
-    <string name="C4020101">Yes</string>
-    <string name="C4020102">No</string>
+    <string name="C40201">تیز بخار</string>
+    <string name="C4020101">ہاں</string>
+    <string name="C4020102">نہیں</string>
 
-    <string name="C40202">Acute Respiratory Infections</string>
-    <string name="C4020201">Yes</string>
-    <string name="C4020202">No</string>
+    <string name="C40202">سانس کی بیماریاں</string>
+    <string name="C4020201">ہاں</string>
+    <string name="C4020202">نہیں</string>
 
-    <string name="C40203">Diarrhea</string>
-    <string name="C4020301">Yes</string>
-    <string name="C4020302">No</string>
+    <string name="C40203">اسہال</string>
+    <string name="C4020301">ہاں</string>
+    <string name="C4020302">نہیں</string>
 
-    <string name="C40204">Cough/Flu</string>
-    <string name="C4020401">Yes</string>
-    <string name="C4020402">No</string>
+    <string name="C40204">کھانس/زکام</string>
+    <string name="C4020401">ہاں</string>
+    <string name="C4020402">نہیں</string>
 
-    <string name="C40205">Difficult/Fast breathing</string>
-    <string name="C4020501">Yes</string>
-    <string name="C4020502">No</string>
+    <string name="C40205">سانس لینے میں تکلیف</string>
+    <string name="C4020501">ہاں</string>
+    <string name="C4020502">نہیں</string>
 
-    <string name="C40206">Chest in drawing</string>
-    <string name="C4020601">Yes</string>
-    <string name="C4020602">No</string>
+    <string name="C40206">پسلیاں چلنا</string>
+    <string name="C4020601">ہاں</string>
+    <string name="C4020602">نہیں</string>
 
-    <string name="C40207">Skin infection</string>
-    <string name="C4020701">Yes</string>
-    <string name="C4020702">No</string>
+    <string name="C40207">جلد کی بیماری</string>
+    <string name="C4020701">ہاں</string>
+    <string name="C4020702">نہیں</string>
 
-    <string name="C40208">Worms in stool</string>
-    <string name="C4020801">Yes</string>
-    <string name="C4020802">No</string>
+    <string name="C40208">پاخانے میں کیڑے</string>
+    <string name="C4020801">ہاں</string>
+    <string name="C4020802">نہیں</string>
 
-    <string name="C40209">Rashes</string>
-    <string name="C4020901">Yes</string>
-    <string name="C4020902">No</string>
+    <string name="C40209">دھبے</string>
+    <string name="C4020901">ہاں</string>
+    <string name="C4020902">نہیں</string>
 
-    <string name="C40296">Other (Specify)</string>
-    <string name="C4029601">Yes</string>
-    <string name="C4029602">No</string>
+    <string name="C40296">دیگر وضاحت کریں</string>
+    <string name="C4029601">ہاں</string>
+    <string name="C4029602">نہیں</string>
 
-    <string name="C403">Did you seek any care for these illnesses during the last month (30 days)?</string>
-    <string name="C40301">Yes</string>
-    <string name="C40302">No</string>
+    <string name="C403">کیا آپ نے گزشتہ ایک ماہ میں ان بیماریوں کا علاج کروایا؟</string>
+    <string name="C40301">ہاں</string>
+    <string name="C40302">نہیں</string>
 
-    <string name="C404">Who did you see for the illness (s) in the last month (30 days)? Anyone else? [PROBE TO IDENTIFY EACH TYPE OF PERSON AND RECORD ALL MENTIONED]</string>
-    <string name="C40401">Doctor</string>
-    <string name="C40402">Nurse/Midwife/LHV</string>
-    <string name="C40403">CMW (Community Midwife)</string>
-    <string name="C40404">Dai-TBA</string>
-    <string name="C40405">LHW (Lady Health Worker)</string>
-    <string name="C40406">Homeopath</string>
-    <string name="C40407">Hakim</string>
-    <string name="C40408">Dispenser/Compounder</string>
-    <string name="C40496">Other (Specify)</string>
+    <string name="C404"> ہر ایک کے بارے میں بار بار پوچھیں اور تمام کا اندراج کریں۔
+ایک سے زیادہ جوابات آسکتے ہیں -
+آپ نےگزشتہ ماہ بیماریوں کا علاج کس  سےکروایا؟</string>
+    <string name="C40401">ڈاکٹر</string>
+    <string name="C40402">نرس/مڈوائف/ایل ایچ وی</string>
+    <string name="C40403">کمیونٹی مڈوائف</string>
+    <string name="C40404">دائی/ٹی بی اے </string>
+    <string name="C40405">لیڈی ہیلتھ ورکر</string>
+    <string name="C40406">ہومیوپیتھک</string>
+    <string name="C40407">حکیم</string>
+    <string name="C40408">ڈسپینسر/کم پائونڈر</string>
+    <string name="C40496">دیگر وضاحت کریں</string>
 
-    <string name="C405">What Was Given To Treat Diarrhea?</string>
-    <string name="C40501">ORS</string>
-    <string name="C40502">Pill or syrup</string>
-    <string name="C40503">Antibiotic</string>
-    <string name="C40504">Antimotility (anti-diarrhoea)</string>
-    <string name="C40505">Zinc</string>
-    <string name="C40506">Unknown pill or syrup</string>
-    <string name="C40507">Injection</string>
-    <string name="C40508">Non-antibiotic</string>
-    <string name="C40509">Unknown injection</string>
-    <string name="C40510">Intravenous</string>
-    <string name="C40511">Home remedy /herbal medicine</string>
-    <string name="C40596">Others (Specify)</string>
+    <string name="C405">بیماری کے علاج کے لئے کون کونسی دوا دی گئی؟</string>
+    <string name="C40501"> (او آر ایس)نمکول</string>
+    <string name="C40502">گولیاں یا شربت</string>
+    <string name="C40503">اینٹی بائیوٹک</string>
+    <string name="C40504">دست روکنے والی ادویات</string>
+    <string name="C40505"> زنک</string>
+    <string name="C40506"> نامعلوم گولیاں/شربت</string>
+    <string name="C40507">انجکشن </string>
+    <string name="C40508">اینٹی بائیوٹک کے علاوہ</string>
+    <string name="C40509">نامعلوم انجکش</string>
+    <string name="C40510">نس کے ذریعہ</string>
+    <string name="C40511"> گھر یلو ادویات یا ہربل ادویات</string>
+    <string name="C40596">دیگر وضاحت کریں </string>
 
     <string name='Q_C401'>C401</string>
     <string name='Q_C40201'>C40201</string>
@@ -2373,423 +2517,423 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
     <string name='Q_C405'>C405</string>
 
     <!-- D101 -->
-    <string name="D1Heading">SECTION D1: INTRA HOUSEHOLD DECISION-MAKING</string>
+    <string name="D1Heading">سیکشن ڈی 1: گھرانےکی سطح پر فیصلہ سازی اوروسا ئل کی تقسیم </string>
 
-    <string name="D101">Who decides how the household finances should be spent/allocated?</string>
-    <string name="D10100">Household is not involved in this activity</string>
-    <string name="D10101">Alone only</string>
-    <string name="D10102">Husband alone</string>
-    <string name="D10103">Husband and me jointly</string>
-    <string name="D10104">Elderly male household member alone</string>
-    <string name="D10105">Elderly female household member alone</string>
-    <string name="D10106">Self and other elderly male household member jointly</string>
-    <string name="D10107">Self and other elderly female household member jointly</string>
-    <string name="D10108">Husband and other elderly male household member jointly</string>
-    <string name="D10109">Husband and other elderly female household member jointly</string>
-    <string name="D10110">Household joint decision</string>
-    <string name="D10199">Others</string>
+    <string name="D101">آپ کے گھر کے مالی معاملات میں کون فیصلے کرتا ہےکس طرح پیسے خرچ کئے جائیں؟</string>
+    <string name="D10100">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D10101">صرف میں اکیلی </string>
+    <string name="D10102">صرف شوہر </string>
+    <string name="D10103">میں اور شوہردونوں </string>
+    <string name="D10104">صرف گھر کے بڑےمرد</string>
+    <string name="D10105">صرف گھر کے بڑےخواتین</string>
+    <string name="D10106">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D10107">میں خود اور گھر کے دیگر بزرگ خواتین </string>
+    <string name="D10108">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D10109">شوہر اور گھر کے دیگر بزرگ خواتین  </string>
+    <string name="D10110">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D10199">دیگر افراد</string>
 
-    <string name="D102">Who manages the household finances and implements these decisions?</string>
-    <string name="D10200">Household is not involved in this activity</string>
-    <string name="D10201">Alone only</string>
-    <string name="D10202">Husband alone</string>
-    <string name="D10203">Husband and me jointly</string>
-    <string name="D10204">Elderly male household member alone</string>
-    <string name="D10205">Elderly female household member alone</string>
-    <string name="D10206">Self and other elderly male household member jointly</string>
-    <string name="D10207">Self and other elderly female household member jointly</string>
-    <string name="D10208">Husband and other elderly male household member jointly</string>
-    <string name="D10209">Husband and other elderly female household member jointly</string>
-    <string name="D10210">Household joint decision</string>
-    <string name="D10299">Others</string>
+    <string name="D102">کون گھر کے پیسوں کا انتظام اور فیصلے کرتا ہے؟</string>
+    <string name="D10200">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D10201">صرف میں اکیلی</string>
+    <string name="D10202">صرف شوہر</string>
+    <string name="D10203">میں اور شوہردونوں</string>
+    <string name="D10204">صرف گھر کے بڑےمرد</string>
+    <string name="D10205">صرف گھر کے بڑےخواتین</string>
+    <string name="D10206">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D10207">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10208">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D10209">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10210">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D10299">دیگر افراد</string>
 
-    <string name="D103">Who decides on household expenditures purchased on a daily basis?</string>
-    <string name="D10300">Household is not involved in this activity</string>
-    <string name="D10301">Alone only</string>
-    <string name="D10302">Husband alone</string>
-    <string name="D10303">Husband and me jointly</string>
-    <string name="D10304">Elderly male household member alone</string>
-    <string name="D10305">Elderly female household member alone</string>
-    <string name="D10306">Self and other elderly male household member jointly</string>
-    <string name="D10307">Self and other elderly female household member jointly</string>
-    <string name="D10308">Husband and other elderly male household member jointly</string>
-    <string name="D10309">Husband and other elderly female household member jointly</string>
-    <string name="D10310">Household joint decision</string>
-    <string name="D10399">Others</string>
+    <string name="D103">کون روزانہ اخراجات اور روزمرہ کے خریداری کےبارے میں فیصلہ کرتاہے؟ </string>
+    <string name="D10300">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D10301">صرف میں اکیلی</string>
+    <string name="D10302">صرف شوہر</string>
+    <string name="D10303">میں اور شوہردونوں</string>
+    <string name="D10304">صرف گھر کے بڑےمرد</string>
+    <string name="D10305">صرف گھر کے بڑےخواتین</string>
+    <string name="D10306">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D10307">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10308">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D10309">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10310">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D10399">دیگر افراد</string>
 
-    <string name="D104">Who manages household expenditure on items purchased on a daily basis?</string>
-    <string name="D10400">Household is not involved in this activity</string>
-    <string name="D10401">Alone only</string>
-    <string name="D10402">Husband alone</string>
-    <string name="D10403">Husband and me jointly</string>
-    <string name="D10404">Elderly male household member alone</string>
-    <string name="D10405">Elderly female household member alone</string>
-    <string name="D10406">Self and other elderly male household member jointly</string>
-    <string name="D10407">Self and other elderly female household member jointly</string>
-    <string name="D10408">Husband and other elderly male household member jointly</string>
-    <string name="D10409">Husband and other elderly female household member jointly</string>
-    <string name="D10410">Household joint decision</string>
-    <string name="D10499">Others</string>
+    <string name="D104">کون روزانہ خریداری اور روزمرہ کے ا خراجات کا انتظام کرتاہے؟</string>
+    <string name="D10400">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D10401">صرف میں اکیلی</string>
+    <string name="D10402">صرف شوہر</string>
+    <string name="D10403">میں اور شوہردونوں</string>
+    <string name="D10404">صرف گھر کے بڑےمرد</string>
+    <string name="D10405">صرف گھر کے بڑےخواتین</string>
+    <string name="D10406">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D10407">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10408">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D10409">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10410">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D10499">دیگر افراد</string>
 
-    <string name="D105">Who is responsible for daily food preparation in the household?</string>
-    <string name="D10500">Household is not involved in this activity</string>
-    <string name="D10501">Alone only</string>
-    <string name="D10502">Husband alone</string>
-    <string name="D10503">Husband and me jointly</string>
-    <string name="D10504">Elderly male household member alone</string>
-    <string name="D10505">Elderly female household member alone</string>
-    <string name="D10506">Self and other elderly male household member jointly</string>
-    <string name="D10507">Self and other elderly female household member jointly</string>
-    <string name="D10508">Husband and other elderly male household member jointly</string>
-    <string name="D10509">Husband and other elderly female household member jointly</string>
-    <string name="D10510">Household joint decision</string>
-    <string name="D10599">Others</string>
+    <string name="D105">گھر میں روزانہ کھانا پکانے کا ذمہ دار کون ہے؟</string>
+    <string name="D10500">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D10501">صرف میں اکیلی</string>
+    <string name="D10502">صرف شوہر</string>
+    <string name="D10503">میں اور شوہردونوں</string>
+    <string name="D10504">صرف گھر کے بڑےمرد</string>
+    <string name="D10505">صرف گھر کے بڑےخواتین</string>
+    <string name="D10506">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D10507">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10508">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D10509">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10510">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D10599">دیگر افراد</string>
 
-    <string name="D106">Who makes decisions concerning where to go for medical help for adults in the household?</string>
-    <string name="D10600">Household is not involved in this activity</string>
-    <string name="D10601">Alone only</string>
-    <string name="D10602">Husband alone</string>
-    <string name="D10603">Husband and me jointly</string>
-    <string name="D10604">Elderly male household member alone</string>
-    <string name="D10605">Elderly female household member alone</string>
-    <string name="D10606">Self and other elderly male household member jointly</string>
-    <string name="D10607">Self and other elderly female household member jointly</string>
-    <string name="D10608">Husband and other elderly male household member jointly</string>
-    <string name="D10609">Husband and other elderly female household member jointly</string>
-    <string name="D10610">Household joint decision</string>
-    <string name="D10699">Others</string>
+    <string name="D106">گھرمیں  بڑوں کو علاج کےلئے جانے کے   بارے میں کون فیصلے کرتا ہے؟ </string>
+    <string name="D10600">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D10601">صرف میں اکیلی</string>
+    <string name="D10602">صرف شوہر</string>
+    <string name="D10603">میں اور شوہردونوں</string>
+    <string name="D10604">صرف گھر کے بڑےمرد</string>
+    <string name="D10605">صرف گھر کے بڑےخواتین</string>
+    <string name="D10606">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D10607">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10608">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D10609">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10610">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D10699">دیگر افراد</string>
 
-    <string name="D107">Who makes decisions concerning where to go for medical help for children in the household?</string>
-    <string name="D10700">Household is not involved in this activity</string>
-    <string name="D10701">Alone only</string>
-    <string name="D10702">Husband alone</string>
-    <string name="D10703">Husband and me jointly</string>
-    <string name="D10704">Elderly male household member alone</string>
-    <string name="D10705">Elderly female household member alone</string>
-    <string name="D10706">Self and other elderly male household member jointly</string>
-    <string name="D10707">Self and other elderly female household member jointly</string>
-    <string name="D10708">Husband and other elderly male household member jointly</string>
-    <string name="D10709">Husband and other elderly female household member jointly</string>
-    <string name="D10710">Household joint decision</string>
-    <string name="D10799">Others</string>
+    <string name="D107">گھرمیں  بچوں کو علاج کےلئے جانے کے   بارے میں کون فیصلے کرتا ہے؟</string>
+    <string name="D10700">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D10701">صرف میں اکیلی</string>
+    <string name="D10702">صرف شوہر</string>
+    <string name="D10703">میں اور شوہردونوں</string>
+    <string name="D10704">صرف گھر کے بڑےمرد</string>
+    <string name="D10705">صرف گھر کے بڑےخواتین</string>
+    <string name="D10706">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D10707">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10708">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D10709">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10710">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D10799">دیگر افراد</string>
 
-    <string name="D108">Who manages expenditures on medical treatment?</string>
-    <string name="D10800">Household is not involved in this activity</string>
-    <string name="D10801">Alone only</string>
-    <string name="D10802">Husband alone</string>
-    <string name="D10803">Husband and me jointly</string>
-    <string name="D10804">Elderly male household member alone</string>
-    <string name="D10805">Elderly female household member alone</string>
-    <string name="D10806">Self and other elderly male household member jointly</string>
-    <string name="D10807">Self and other elderly female household member jointly</string>
-    <string name="D10808">Husband and other elderly male household member jointly</string>
-    <string name="D10809">Husband and other elderly female household member jointly</string>
-    <string name="D10810">Household joint decision</string>
-    <string name="D10899">Others</string>
+    <string name="D108">علاج کے لئے اخراجات کا انتظام کون کرتا ہے؟</string>
+    <string name="D10800">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D10801">صرف میں اکیلی</string>
+    <string name="D10802">صرف شوہر</string>
+    <string name="D10803">میں اور شوہردونوں</string>
+    <string name="D10804">صرف گھر کے بڑےمرد</string>
+    <string name="D10805">صرف گھر کے بڑےخواتین</string>
+    <string name="D10806">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D10807">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10808">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D10809">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10810">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D10899">دیگر افراد</string>
 
-    <string name="D109">Who makes decisions on buying clothes for adults in the household (16–65 years)?</string>
-    <string name="D10900">Household is not involved in this activity</string>
-    <string name="D10901">Alone only</string>
-    <string name="D10902">Husband alone</string>
-    <string name="D10903">Husband and me jointly</string>
-    <string name="D10904">Elderly male household member alone</string>
-    <string name="D10905">Elderly female household member alone</string>
-    <string name="D10906">Self and other elderly male household member jointly</string>
-    <string name="D10907">Self and other elderly female household member jointly</string>
-    <string name="D10908">Husband and other elderly male household member jointly</string>
-    <string name="D10909">Husband and other elderly female household member jointly</string>
-    <string name="D10910">Household joint decision</string>
-    <string name="D10999">Others</string>
+    <string name="D109">گھرکے بالغ افراد کے لئے (15 تا 65سال)کپڑے خریدنے کے بارے میں کون فیصلہ کرتا ہے؟</string>
+    <string name="D10900">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D10901">صرف میں اکیلی</string>
+    <string name="D10902">صرف شوہر</string>
+    <string name="D10903">میں اور شوہردونوں</string>
+    <string name="D10904">صرف گھر کے بڑےمرد</string>
+    <string name="D10905">صرف گھر کے بڑےخواتین</string>
+    <string name="D10906">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D10907">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10908">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D10909">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D10910">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D10999">دیگر افراد</string>
 
-    <string name="D110">Who makes decisions buying clothes for children in the household (0–15 years)?</string>
-    <string name="D11000">Household is not involved in this activity</string>
-    <string name="D11001">Alone only</string>
-    <string name="D11002">Husband alone</string>
-    <string name="D11003">Husband and me jointly</string>
-    <string name="D11004">Elderly male household member alone</string>
-    <string name="D11005">Elderly female household member alone</string>
-    <string name="D11006">Self and other elderly male household member jointly</string>
-    <string name="D11007">Self and other elderly female household member jointly</string>
-    <string name="D11008">Husband and other elderly male household member jointly</string>
-    <string name="D11009">Husband and other elderly female household member jointly</string>
-    <string name="D11010">Household joint decision</string>
-    <string name="D11099">Others</string>
+    <string name="D110">گھرکے بچوں کے لئے (0 تا 15سال)کپڑے خریدنے کے بارے میں کون فیصلہ کرتا ہے؟</string>
+    <string name="D11000">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11001">صرف میں اکیلی</string>
+    <string name="D11002">صرف شوہر</string>
+    <string name="D11003">میں اور شوہردونوں</string>
+    <string name="D11004">صرف گھر کے بڑےمرد</string>
+    <string name="D11005">صرف گھر کے بڑےخواتین</string>
+    <string name="D11006">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11007">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11008">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11009">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11010">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11099">دیگر افراد</string>
 
-    <string name="D111">Who makes decisions on buying clothes for the elderly in the household (66+)?</string>
-    <string name="D11100">Household is not involved in this activity</string>
-    <string name="D11101">Alone only</string>
-    <string name="D11102">Husband alone</string>
-    <string name="D11103">Husband and me jointly</string>
-    <string name="D11104">Elderly male household member alone</string>
-    <string name="D11105">Elderly female household member alone</string>
-    <string name="D11106">Self and other elderly male household member jointly</string>
-    <string name="D11107">Self and other elderly female household member jointly</string>
-    <string name="D11108">Husband and other elderly male household member jointly</string>
-    <string name="D11109">Husband and other elderly female household member jointly</string>
-    <string name="D11110">Household joint decision</string>
-    <string name="D11199">Others</string>
+    <string name="D111">گھرکے عمر رسیدہ افراد کے لئے (66سال سال سے زیادہ)کپڑے خریدنے کے بارے میں کون فیصلہ کرتا ہے؟</string>
+    <string name="D11100">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11101">صرف میں اکیلی</string>
+    <string name="D11102">صرف شوہر</string>
+    <string name="D11103">میں اور شوہردونوں</string>
+    <string name="D11104">صرف گھر کے بڑےمرد</string>
+    <string name="D11105">صرف گھر کے بڑےخواتین</string>
+    <string name="D11106">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11107">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11108">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11109">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11110">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11199">دیگر افراد</string>
 
-    <string name="D112">Who decides on whether financial loan should be made to relatives or other than household members?</string>
-    <string name="D11200">Household is not involved in this activity</string>
-    <string name="D11201">Alone only</string>
-    <string name="D11202">Husband alone</string>
-    <string name="D11203">Husband and me jointly</string>
-    <string name="D11204">Elderly male household member alone</string>
-    <string name="D11205">Elderly female household member alone</string>
-    <string name="D11206">Self and other elderly male household member jointly</string>
-    <string name="D11207">Self and other elderly female household member jointly</string>
-    <string name="D11208">Husband and other elderly male household member jointly</string>
-    <string name="D11209">Husband and other elderly female household member jointly</string>
-    <string name="D11210">Household joint decision</string>
-    <string name="D11299">Others</string>
+    <string name="D112">رشتہ داروں یا دیگر خاندان سے باہرکے افراد کو دینے کے حوالے سے فیصلے کو ن کرتا ہے؟    </string>
+    <string name="D11200">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11201">صرف میں اکیلی</string>
+    <string name="D11202">صرف شوہر</string>
+    <string name="D11203">میں اور شوہردونوں</string>
+    <string name="D11204">صرف گھر کے بڑےمرد</string>
+    <string name="D11205">صرف گھر کے بڑےخواتین</string>
+    <string name="D11206">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11207">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11208">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11209">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11210">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11299">دیگر افراد</string>
 
-    <string name="D113">Who decides on whether to borrow money and how much to borrow?</string>
-    <string name="D11300">Household is not involved in this activity</string>
-    <string name="D11301">Alone only</string>
-    <string name="D11302">Husband alone</string>
-    <string name="D11303">Husband and me jointly</string>
-    <string name="D11304">Elderly male household member alone</string>
-    <string name="D11305">Elderly female household member alone</string>
-    <string name="D11306">Self and other elderly male household member jointly</string>
-    <string name="D11307">Self and other elderly female household member jointly</string>
-    <string name="D11308">Husband and other elderly male household member jointly</string>
-    <string name="D11309">Husband and other elderly female household member jointly</string>
-    <string name="D11310">Household joint decision</string>
-    <string name="D11399">Others</string>
+    <string name="D113">گھرمیں قرضہ لینے کے بارے میں فیصلہ کون کرتاہے؟</string>
+    <string name="D11300">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11301">صرف میں اکیلی</string>
+    <string name="D11302">صرف شوہر</string>
+    <string name="D11303">میں اور شوہردونوں</string>
+    <string name="D11304">صرف گھر کے بڑےمرد</string>
+    <string name="D11305">صرف گھر کے بڑےخواتین</string>
+    <string name="D11306">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11307">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11308">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11309">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11310">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11399">دیگر افراد</string>
 
-    <string name="D114">Who decides on the level of cash savings the household should keep?</string>
-    <string name="D11400">Household is not involved in this activity</string>
-    <string name="D11401">Alone only</string>
-    <string name="D11402">Husband alone</string>
-    <string name="D11403">Husband and me jointly</string>
-    <string name="D11404">Elderly male household member alone</string>
-    <string name="D11405">Elderly female household member alone</string>
-    <string name="D11406">Self and other elderly male household member jointly</string>
-    <string name="D11407">Self and other elderly female household member jointly</string>
-    <string name="D11408">Husband and other elderly male household member jointly</string>
-    <string name="D11409">Husband and other elderly female household member jointly</string>
-    <string name="D11410">Household joint decision</string>
-    <string name="D11499">Others</string>
+    <string name="D114">گھر میں نقد  رقم کتنا رکھنا چاہئے اس کا فیصلہ کون کرتا ہے؟ </string>
+    <string name="D11400">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11401">صرف میں اکیلی</string>
+    <string name="D11402">صرف شوہر</string>
+    <string name="D11403">میں اور شوہردونوں</string>
+    <string name="D11404">صرف گھر کے بڑےمرد</string>
+    <string name="D11405">صرف گھر کے بڑےخواتین</string>
+    <string name="D11406">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11407">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11408">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11409">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11410">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11499">دیگر افراد</string>
 
-    <string name="D115">Who manages these cash savings?</string>
-    <string name="D11500">Household is not involved in this activity</string>
-    <string name="D11501">Alone only</string>
-    <string name="D11502">Husband alone</string>
-    <string name="D11503">Husband and me jointly</string>
-    <string name="D11504">Elderly male household member alone</string>
-    <string name="D11505">Elderly female household member alone</string>
-    <string name="D11506">Self and other elderly male household member jointly</string>
-    <string name="D11507">Self and other elderly female household member jointly</string>
-    <string name="D11508">Husband and other elderly male household member jointly</string>
-    <string name="D11509">Husband and other elderly female household member jointly</string>
-    <string name="D11510">Household joint decision</string>
-    <string name="D11599">Others</string>
+    <string name="D115">اس نقد بچت کا انتظام کون کرتا ہے؟</string>
+    <string name="D11500">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11501">صرف میں اکیلی</string>
+    <string name="D11502">صرف شوہر</string>
+    <string name="D11503">میں اور شوہردونوں</string>
+    <string name="D11504">صرف گھر کے بڑےمرد</string>
+    <string name="D11505">صرف گھر کے بڑےخواتین</string>
+    <string name="D11506">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11507">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11508">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11509">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11510">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11599">دیگر افراد</string>
 
-    <string name="D116">Who decides on buying assets for the household, such as land, livestock, housing, motor vehicles etc.)?</string>
-    <string name="D11600">Household is not involved in this activity</string>
-    <string name="D11601">Alone only</string>
-    <string name="D11602">Husband alone</string>
-    <string name="D11603">Husband and me jointly</string>
-    <string name="D11604">Elderly male household member alone</string>
-    <string name="D11605">Elderly female household member alone</string>
-    <string name="D11606">Self and other elderly male household member jointly</string>
-    <string name="D11607">Self and other elderly female household member jointly</string>
-    <string name="D11608">Husband and other elderly male household member jointly</string>
-    <string name="D11609">Husband and other elderly female household member jointly</string>
-    <string name="D11610">Household joint decision</string>
-    <string name="D11699">Others</string>
+    <string name="D116">گھر میں اثاثوں جیسے زمین ،مویشی،مکان،گاڑیوں کی خریداری کا فیصلہ کون کرتا ہے؟</string>
+    <string name="D11600">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11601">صرف میں اکیلی</string>
+    <string name="D11602">صرف شوہر</string>
+    <string name="D11603">میں اور شوہردونوں</string>
+    <string name="D11604">صرف گھر کے بڑےمرد</string>
+    <string name="D11605">صرف گھر کے بڑےخواتین</string>
+    <string name="D11606">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11607">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11608">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11609">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11610">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11699">دیگر افراد</string>
 
-    <string name="D117">Who manages the process of buying such assets? (i.e. whose name is written on the title deed and is responsible for payment)?</string>
-    <string name="D11700">Household is not involved in this activity</string>
-    <string name="D11701">Alone only</string>
-    <string name="D11702">Husband alone</string>
-    <string name="D11703">Husband and me jointly</string>
-    <string name="D11704">Elderly male household member alone</string>
-    <string name="D11705">Elderly female household member alone</string>
-    <string name="D11706">Self and other elderly male household member jointly</string>
-    <string name="D11707">Self and other elderly female household member jointly</string>
-    <string name="D11708">Husband and other elderly male household member jointly</string>
-    <string name="D11709">Husband and other elderly female household member jointly</string>
-    <string name="D11710">Household joint decision</string>
-    <string name="D11799">Others</string>
+    <string name="D117">ایسے اثاثے خریدنے کے عمل کا انتظام کون کرتا ہے؟ (یعنی کس کا نام دستاویزات میں لکھا ہوا ہے جوادائیگی کے لئے ذمہ دار ہے)؟</string>
+    <string name="D11700">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11701">صرف میں اکیلی</string>
+    <string name="D11702">صرف شوہر</string>
+    <string name="D11703">میں اور شوہردونوں</string>
+    <string name="D11704">صرف گھر کے بڑےمرد</string>
+    <string name="D11705">صرف گھر کے بڑےخواتین</string>
+    <string name="D11706">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11707">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11708">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11709">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11710">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11799">دیگر افراد</string>
 
-    <string name="D118">Who decides on selling high value assets such as agricultural or non-agriculture land or livestock?</string>
-    <string name="D11800">Household is not involved in this activity</string>
-    <string name="D11801">Alone only</string>
-    <string name="D11802">Husband alone</string>
-    <string name="D11803">Husband and me jointly</string>
-    <string name="D11804">Elderly male household member alone</string>
-    <string name="D11805">Elderly female household member alone</string>
-    <string name="D11806">Self and other elderly male household member jointly</string>
-    <string name="D11807">Self and other elderly female household member jointly</string>
-    <string name="D11808">Husband and other elderly male household member jointly</string>
-    <string name="D11809">Husband and other elderly female household member jointly</string>
-    <string name="D11810">Household joint decision</string>
-    <string name="D11899">Others</string>
+    <string name="D118">زرعی /غیر زرعی یا مال مویشی جییسے زیادہ قیمت والے اثاثہ جات کے فروخت کے بارے میں فیصلے کون کرتا ہے؟</string>
+    <string name="D11800">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11801">صرف میں اکیلی</string>
+    <string name="D11802">صرف شوہر</string>
+    <string name="D11803">میں اور شوہردونوں</string>
+    <string name="D11804">صرف گھر کے بڑےمرد</string>
+    <string name="D11805">صرف گھر کے بڑےخواتین</string>
+    <string name="D11806">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11807">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11808">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11809">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11810">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11899">دیگر افراد</string>
 
-    <string name="D118a">Who keeps the money comes from selling?</string>
-    <string name="D118a00">Household is not involved in this activity</string>
-    <string name="D118a01">Alone only</string>
-    <string name="D118a02">Husband alone</string>
-    <string name="D118a03">Husband and me jointly</string>
-    <string name="D118a04">Elderly male household member alone</string>
-    <string name="D118a05">Elderly female household member alone</string>
-    <string name="D118a06">Self and other elderly male household member jointly</string>
-    <string name="D118a07">Self and other elderly female household member jointly</string>
-    <string name="D118a08">Husband and other elderly male household member jointly</string>
-    <string name="D118a09">Husband and other elderly female household member jointly</string>
-    <string name="D118a10">Household joint decision</string>
-    <string name="D118a99">Others</string>
+    <string name="D118a">فروخت سے حاصل ہونے والی رقم کون رکھتا ہے؟</string>
+    <string name="D118a00">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D118a01">صرف میں اکیلی</string>
+    <string name="D118a02">صرف شوہر</string>
+    <string name="D118a03">میں اور شوہردونوں</string>
+    <string name="D118a04">صرف گھر کے بڑےمرد</string>
+    <string name="D118a05">صرف گھر کے بڑےخواتین</string>
+    <string name="D118a06">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D118a07">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D118a08">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D118a09">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D118a10">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D118a99">دیگر افراد</string>
 
-    <string name="D119">Who decides on selling jewelry? Do the proceeds from this sale accrue to the individual or the household?</string>
-    <string name="D11900">Household is not involved in this activity</string>
-    <string name="D11901">Alone only</string>
-    <string name="D11902">Husband alone</string>
-    <string name="D11903">Husband and me jointly</string>
-    <string name="D11904">Elderly male household member alone</string>
-    <string name="D11905">Elderly female household member alone</string>
-    <string name="D11906">Self and other elderly male household member jointly</string>
-    <string name="D11907">Self and other elderly female household member jointly</string>
-    <string name="D11908">Husband and other elderly male household member jointly</string>
-    <string name="D11909">Husband and other elderly female household member jointly</string>
-    <string name="D11910">Household joint decision</string>
-    <string name="D11999">Others</string>
+    <string name="D119">زیورات بیچنے کا فیصلہ کون کرتا ہے؟کیا اس فروخت سے حاصل ہونے والی رقم فرد یا گھر والوں کو مل جاتی ہے</string>
+    <string name="D11900">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D11901">صرف میں اکیلی</string>
+    <string name="D11902">صرف شوہر</string>
+    <string name="D11903">میں اور شوہردونوں</string>
+    <string name="D11904">صرف گھر کے بڑےمرد</string>
+    <string name="D11905">صرف گھر کے بڑےخواتین</string>
+    <string name="D11906">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D11907">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11908">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D11909">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D11910">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D11999">دیگر افراد</string>
 
-    <string name="D120">Who decides which schools the children should attend?</string>
-    <string name="D12000">Household is not involved in this activity</string>
-    <string name="D12001">Alone only</string>
-    <string name="D12002">Husband alone</string>
-    <string name="D12003">Husband and me jointly</string>
-    <string name="D12004">Elderly male household member alone</string>
-    <string name="D12005">Elderly female household member alone</string>
-    <string name="D12006">Self and other elderly male household member jointly</string>
-    <string name="D12007">Self and other elderly female household member jointly</string>
-    <string name="D12008">Husband and other elderly male household member jointly</string>
-    <string name="D12009">Husband and other elderly female household member jointly</string>
-    <string name="D12010">Household joint decision</string>
-    <string name="D12099">Others</string>
+    <string name="D120">بچوں کو کس سکول میں داخل کروانا چاہئے اس کا فیصلہ کون کرتا ہے؟</string>
+    <string name="D12000">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D12001">صرف میں اکیلی</string>
+    <string name="D12002">صرف شوہر</string>
+    <string name="D12003">میں اور شوہردونوں</string>
+    <string name="D12004">صرف گھر کے بڑےمرد</string>
+    <string name="D12005">صرف گھر کے بڑےخواتین</string>
+    <string name="D12006">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D12007">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12008">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D12009">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12010">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D12099">دیگر افراد</string>
 
-    <string name="D121">Who is responsible for childcare in the household?</string>
-    <string name="D12100">Household is not involved in this activity</string>
-    <string name="D12101">Alone only</string>
-    <string name="D12102">Husband alone</string>
-    <string name="D12103">Husband and me jointly</string>
-    <string name="D12104">Elderly male household member alone</string>
-    <string name="D12105">Elderly female household member alone</string>
-    <string name="D12106">Self and other elderly male household member jointly</string>
-    <string name="D12107">Self and other elderly female household member jointly</string>
-    <string name="D12108">Husband and other elderly male household member jointly</string>
-    <string name="D12109">Husband and other elderly female household member jointly</string>
-    <string name="D12110">Household joint decision</string>
-    <string name="D12199">Others</string>
+    <string name="D121">گھر میں بچوں کی دیکھ بھال کا ذمہ دار کون ہے؟</string>
+    <string name="D12100">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D12101">صرف میں اکیلی</string>
+    <string name="D12102">صرف شوہر</string>
+    <string name="D12103">میں اور شوہردونوں</string>
+    <string name="D12104">صرف گھر کے بڑےمرد</string>
+    <string name="D12105">صرف گھر کے بڑےخواتین</string>
+    <string name="D12106">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D12107">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12108">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D12109">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12110">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D12199">دیگر افراد</string>
 
-    <string name="D122">Who manages the payment of school fees, and school related expenditures?</string>
-    <string name="D12200">Household is not involved in this activity</string>
-    <string name="D12201">Alone only</string>
-    <string name="D12202">Husband alone</string>
-    <string name="D12203">Husband and me jointly</string>
-    <string name="D12204">Elderly male household member alone</string>
-    <string name="D12205">Elderly female household member alone</string>
-    <string name="D12206">Self and other elderly male household member jointly</string>
-    <string name="D12207">Self and other elderly female household member jointly</string>
-    <string name="D12208">Husband and other elderly male household member jointly</string>
-    <string name="D12209">Husband and other elderly female household member jointly</string>
-    <string name="D12210">Household joint decision</string>
-    <string name="D12299">Others</string>
+    <string name="D122">بچوں کے سکول فیس اور دیگر اخراجات کا انتظام کون کرتا ہے؟</string>
+    <string name="D12200">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D12201">صرف میں اکیلی</string>
+    <string name="D12202">صرف شوہر</string>
+    <string name="D12203">میں اور شوہردونوں</string>
+    <string name="D12204">صرف گھر کے بڑےمرد</string>
+    <string name="D12205">صرف گھر کے بڑےخواتین</string>
+    <string name="D12206">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D12207">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12208">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D12209">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12210">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D12299">دیگر افراد</string>
 
-    <string name="D123">Who is responsible for caring for the elderly or for sick household members?</string>
-    <string name="D12300">Household is not involved in this activity</string>
-    <string name="D12301">Alone only</string>
-    <string name="D12302">Husband alone</string>
-    <string name="D12303">Husband and me jointly</string>
-    <string name="D12304">Elderly male household member alone</string>
-    <string name="D12305">Elderly female household member alone</string>
-    <string name="D12306">Self and other elderly male household member jointly</string>
-    <string name="D12307">Self and other elderly female household member jointly</string>
-    <string name="D12308">Husband and other elderly male household member jointly</string>
-    <string name="D12309">Husband and other elderly female household member jointly</string>
-    <string name="D12310">Household joint decision</string>
-    <string name="D12399">Others</string>
+    <string name="D123">گھر میں بیمار اور عمر رسیدہ افراد کے دیکھ بھال کا زمہ دار کون ہے؟</string>
+    <string name="D12300">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D12301">صرف میں اکیلی</string>
+    <string name="D12302">صرف شوہر</string>
+    <string name="D12303">میں اور شوہردونوں</string>
+    <string name="D12304">صرف گھر کے بڑےمرد</string>
+    <string name="D12305">صرف گھر کے بڑےخواتین</string>
+    <string name="D12306">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D12307">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12308">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D12309">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12310">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D12399">دیگر افراد</string>
 
-    <string name="D124">Who is decides the purchase and sale of agricultural or non-agriculture land or livestock like cattle and goats (e.g. which to buy, where/when to sell, etc.)?</string>
-    <string name="D12400">Household is not involved in this activity</string>
-    <string name="D12401">Alone only</string>
-    <string name="D12402">Husband alone</string>
-    <string name="D12403">Husband and me jointly</string>
-    <string name="D12404">Elderly male household member alone</string>
-    <string name="D12405">Elderly female household member alone</string>
-    <string name="D12406">Self and other elderly male household member jointly</string>
-    <string name="D12407">Self and other elderly female household member jointly</string>
-    <string name="D12408">Husband and other elderly male household member jointly</string>
-    <string name="D12409">Husband and other elderly female household member jointly</string>
-    <string name="D12410">Household joint decision</string>
-    <string name="D12499">Others</string>
+    <string name="D124">زرعی یا غیر زرعی زمین یا مویشیوں جیسے گائے، بھینس اور بکریوں کی خریدوفروخت کا فیصلہ کون کرتا ہے (جیسے کون سےمویشی خریدنا ہے ، کہاں / کب فروخت کرنا ہے وغیرہ وغیرہ)؟</string>
+    <string name="D12400">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D12401">صرف میں اکیلی</string>
+    <string name="D12402">صرف شوہر</string>
+    <string name="D12403">میں اور شوہردونوں</string>
+    <string name="D12404">صرف گھر کے بڑےمرد</string>
+    <string name="D12405">صرف گھر کے بڑےخواتین</string>
+    <string name="D12406">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D12407">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12408">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D12409">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12410">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D12499">دیگر افراد</string>
 
-    <string name="D125">Who decides contributions to events such as marry and funerals?</string>
-    <string name="D12500">Household is not involved in this activity</string>
-    <string name="D12501">Alone only</string>
-    <string name="D12502">Husband alone</string>
-    <string name="D12503">Husband and me jointly</string>
-    <string name="D12504">Elderly male household member alone</string>
-    <string name="D12505">Elderly female household member alone</string>
-    <string name="D12506">Self and other elderly male household member jointly</string>
-    <string name="D12507">Self and other elderly female household member jointly</string>
-    <string name="D12508">Husband and other elderly male household member jointly</string>
-    <string name="D12509">Husband and other elderly female household member jointly</string>
-    <string name="D12510">Household joint decision</string>
-    <string name="D12599">Others</string>
+    <string name="D125">شادی اور جنازہ جیسے سے رسومات میں شریک ہونے کا فیصلہ کون کرتا ہے؟</string>
+    <string name="D12500">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D12501">صرف میں اکیلی</string>
+    <string name="D12502">صرف شوہر</string>
+    <string name="D12503">میں اور شوہردونوں</string>
+    <string name="D12504">صرف گھر کے بڑےمرد</string>
+    <string name="D12505">صرف گھر کے بڑےخواتین</string>
+    <string name="D12506">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D12507">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12508">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D12509">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12510">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D12599">دیگر افراد</string>
 
-    <string name="D126">Who usually makes decisions about visits to relatives?</string>
-    <string name="D12600">Household is not involved in this activity</string>
-    <string name="D12601">Alone only</string>
-    <string name="D12602">Husband alone</string>
-    <string name="D12603">Husband and me jointly</string>
-    <string name="D12604">Elderly male household member alone</string>
-    <string name="D12605">Elderly female household member alone</string>
-    <string name="D12606">Self and other elderly male household member jointly</string>
-    <string name="D12607">Self and other elderly female household member jointly</string>
-    <string name="D12608">Husband and other elderly male household member jointly</string>
-    <string name="D12609">Husband and other elderly female household member jointly</string>
-    <string name="D12610">Household joint decision</string>
-    <string name="D12699">Others</string>
+    <string name="D126">عام طور پر کون فیصلے  کرتا ہے کہ رشتہ داروں سےملاقات کے لیے جانا ہے ؟</string>
+    <string name="D12600">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D12601">صرف میں اکیلی</string>
+    <string name="D12602">صرف شوہر</string>
+    <string name="D12603">میں اور شوہردونوں</string>
+    <string name="D12604">صرف گھر کے بڑےمرد</string>
+    <string name="D12605">صرف گھر کے بڑےخواتین</string>
+    <string name="D12606">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D12607">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12608">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D12609">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12610">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D12699">دیگر افراد</string>
 
-    <string name="D127">Who decides about number of children to have and use of family planning methods?</string>
-    <string name="D12700">Household is not involved in this activity</string>
-    <string name="D12701">Alone only</string>
-    <string name="D12702">Husband alone</string>
-    <string name="D12703">Husband and me jointly</string>
-    <string name="D12704">Elderly male household member alone</string>
-    <string name="D12705">Elderly female household member alone</string>
-    <string name="D12706">Self and other elderly male household member jointly</string>
-    <string name="D12707">Self and other elderly female household member jointly</string>
-    <string name="D12708">Husband and other elderly male household member jointly</string>
-    <string name="D12709">Husband and other elderly female household member jointly</string>
-    <string name="D12710">Household joint decision</string>
-    <string name="D12799">Others</string>
+    <string name="D127">بچوں کی تعداد اور خاندانی منصوبہ بندی کے طریقے استعمال کرنے کے بارے میں فیصلے کون کرتا ہے؟</string>
+    <string name="D12700">گھرانہ اس سرگرمی میں شال نہیں</string>
+    <string name="D12701">صرف میں اکیلی</string>
+    <string name="D12702">صرف شوہر</string>
+    <string name="D12703">میں اور شوہردونوں</string>
+    <string name="D12704">صرف گھر کے بڑےمرد</string>
+    <string name="D12705">صرف گھر کے بڑےخواتین</string>
+    <string name="D12706">میں خود اور گھر کے دیگر  بٹرےمرد حضرات</string>
+    <string name="D12707">میں خود اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12708">شوہر اور گھر کے دیگر بٹرے مرد حضرات</string>
+    <string name="D12709">شوہر اور گھر کے دیگر بزرگ خواتین</string>
+    <string name="D12710">سب گھر والوں کا مشترکہ فیصلہ</string>
+    <string name="D12799">دیگر افراد</string>
 
-    <string name="D128">Do you take part in decision making at home?</string>
-    <string name="D12801">Not at all</string>
-    <string name="D12802">To some extent</string>
-    <string name="D12803">To a large extent</string>
-    <string name="D12898">Not applicable</string>
+    <string name="D128">کیا آپ گھر کےفیصلوں میں حصہ لیتے ہو؟ا</string>
+    <string name="D12801">بلکل بھی نہیں </string>
+    <string name="D12802">کسی حد تک </string>
+    <string name="D12803">بہت حد تک </string>
+    <string name="D12898">قابل اطلاق نہیں </string>
 
-    <string name="D129">Do you have a cell phone?</string>
-    <string name="D12901">Yes</string>
-    <string name="D12902">No</string>
+    <string name="D129">کیا آپ کے پاس موبائل فون ہے؟</string>
+    <string name="D12901">ہاں</string>
+    <string name="D12902">نہیں</string>
 
-    <string name="D130">Are you permissible to call anyone you want to call?</string>
-    <string name="D13001">Yes</string>
-    <string name="D13002">No</string>
+    <string name="D130">کیا آپ کواپنے مرضی سے کسی کو بھی کال کرنےکی  اجازت ہے؟ </string>
+    <string name="D13001">ہاں</string>
+    <string name="D13002">نہیں</string>
 
-    <string name="D131">Can you go outside whenever you want to/needed?</string>
-    <string name="D13101">Yes</string>
-    <string name="D13102">No</string>
+    <string name="D131">کیا آپ جپ چاہو/ضرورت کے وقت  اپنی مرضی سے باہر جا سکتے ہو؟</string>
+    <string name="D13101">ہاں</string>
+    <string name="D13102">نہیں</string>
 
-    <string name="D132">What would be the matters for which you can easily travel?</string>
+    <string name="D132">کس قسم کے معالات کے لئے آپ  با آسانی باہر جا سکتے ہو؟</string>
 
-    <string name="D133">Do you have any aspiration to fulfil?</string>
-    <string name="D13301">Yes</string>
-    <string name="D13302">No</string>
+    <string name="D133">کیا آپ کی کوئی تمنا/خواہش ہے جو پوری ہو؟</string>
+    <string name="D13301">ہاں</string>
+    <string name="D13302">نہیں</string>
 
     <string name='Q_D101'>D101</string>
     <string name='Q_D102'>D102</string>
@@ -2855,136 +2999,139 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
     <string name='Q_D133'>D133</string>
 
     <!-- D2 -->
-    <string name="D2Heading">SECTION D2: SOCIAL NETWORKS</string>
+    <string name="D2Heading">سوشل نیٹ ورکس (سماجی رابطے)</string>
 
-    <string name="D201">About how many close friends do you have these days? (These are people you feel at ease with, can talk to about private matters and call on for help)</string>
+    <string name="D201">ان دنوں میں آپ کے کتنے قریبی دوست ہیں؟ (یہ وہ لوگ ہیں جن کے ساتھ آپ آسانی محسوس کرتے ہیں ، نجی معاملات کے بارے میں بات  اور مدد کے لئے بلا سکتے ہیں)</string>
 
-    <string name="D202">If you suddenly needed a small amount of money, how many people beyond your immediate household could you turn to who would be willing to provide the money? (In rural areas, this amount can be set at the level of being enough to cover expenses for the household for a week; while in urban areas; it can be set as being equal to a week\'s wages)</string>
-    <string name="D20201">Near relatives</string>
-    <string name="D20202">Extended relatives</string>
-    <string name="D20203">Close friends</string>
-    <string name="D20204">Accostabile</string>
-    <string name="D20205">Coworkers</string>
-    <string name="D20296">Others(Specify)</string>
+    <string name="D202">اگر آپ کو اچانک تھوڑی رقم کی ضرورت ہو تو ، آپ کے گھرکے
+	 فراہم کرنے پر راضی ہوں؟ (دیہی علاقوں میں ، اتنی رقم جو ایک ہفتہ کے لئے گھر کے اخراجات  کے لئے کافی ہو؛ جبکہ شہری علاقوں میں؛ یہ رقم ایک ہفتے کی اجرت کے برابر ہوسکتی ہے)۔علاوہ کیا آپ دیگرلوگوں سے رجوع
+	 کرسکتے ہیں جوآپ کو رقم</string>
+    <string name="D20201">قریبی رشتہ دار</string>
+    <string name="D20202">دور کے رشتہ دار</string>
+    <string name="D20203">قریبی دوست</string>
+    <string name="D20204">جان پہچان والے</string>
+    <string name="D20205">ساتھ کام کرنے والے</string>
+    <string name="D20296">دیگرافراد(واضح کریں)</string>
 
-    <string name="D202a">Are most of these people of similar/higher/lower economic status than you?</string>
-    <string name="D202a01">Similar</string>
-    <string name="D202a02">Higher</string>
-    <string name="D202a03">Lower</string>
+    <string name="D202a">کیا ان میں سے زیادہ تر لوگ آپ جیسے /آپ سے زیادہ مالی حیثیت /کم مالی حیثیت کے ہیں؟</string>
+    <string name="D202a01">میرے برابر</string>
+    <string name="D202a02">مجھ سے زیادہ</string>
+    <string name="D202a03">مجھ سے کم</string>
 
-    <string name="D203">Do you face any difficulty in reaching the designated point?</string>
-    <string name="D20301">Yes</string>
-    <string name="D20302">No</string>
+    <string name="D203">کیا آپ اپنے پڑوسیوں سے بات چیت کرتے ہیں؟</string>
+    <string name="D20301">ہاں</string>
+    <string name="D20302">نہیں</string>
 
-    <string name="D203a">If yes, how often do you socialize (eat together, talk, play sports) with your neighbors?</string>
-    <string name="D203a01">To a small extent</string>
-    <string name="D203a02">To a medium extent</string>
-    <string name="D203a03">To a large extent</string>
+    <string name="D203a">اگر ہاں ، تو آپ اکثر کتنی بار اپنے ہمسایوں کے ساتھ ملکر ( کھانا کھاتے ، بات چیت کرتے ، کھیلتے )   ہیں؟</string>
+    <string name="D203a01">بہت کم</string>
+    <string name="D203a02">درمیانی حد تک</string>
+    <string name="D203a03">زیادہ تر/بڑی حد تک</string>
 
-    <string name="D204">If you suddenly had to go away for a day or two, could you count on your neighbors to take care of your property?</string>
-    <string name="D20401">Yes</string>
-    <string name="D20402">No</string>
+    <string name="D204">اگر آپ کو اچانک ایک یا دو دن کے لئے  باہر جانا پڑے تو کیا آپ اپنے گھر کی دیکھ بھال کے لئے اپنے پڑوسیوں پہ اعتماد کر سکتے ہیں؟ </string>
+    <string name="D20401">ہاں</string>
+    <string name="D20402">نہیں</string>
 
-    <string name="D205">If you suddenly had to go away for a day or two, could you count on your neighbors to take care of your children?</string>
-    <string name="D20501">Yes</string>
-    <string name="D20502">No</string>
+    <string name="D205">ا اگر آپ کو اچانک ایک یا دو دن کے لئے  باہر جانا پڑے تو کیا آپ اپنے بچوں کی دیکھ بھال کے لئے اپنے پڑوسیوں پہ اعتماد کر سکتے ہیں؟</string>
+    <string name="D20501">ہاں</string>
+    <string name="D20502">نہیں</string>
 
-    <string name="D206">If you suddenly faced a long-term shock (such as the death of a breadwinner, a harvest loss, or job loss), how many people beyond your immediate household could you turn to who would be willing to provide the money?</string>
-    <string name="D20601">Near relatives</string>
-    <string name="D20602">Extended relatives</string>
-    <string name="D20603">Close friends</string>
-    <string name="D20604">Accostabile</string>
-    <string name="D20605">Coworkers</string>
-    <string name="D20696">Others(Specify)</string>
+    <string name="D206">  اگر آپ کو اچانک طویل عرصے تک  کسی صدمے یا دھچکےکا سامنا کرنا پڑےجیسےروزی کمانے والے یا خاندان کی کفیل کی موت فصل یا زراعت کا نقصان ، یا ملازمت کا ختم ہونا)
+ تو کیا آپ اپنےگھرکے علاوہ دیگرلوگوں سے رجوع کرسکتے ہیں جوآپ کو رقم فراہم کرنے پر راضی ہونگے؟</string>
+    <string name="D20601">قریبی رشتہ دار</string>
+    <string name="D20602">دور کے رشتہ دار</string>
+    <string name="D20603">قریبی دوست </string>
+    <string name="D20604">جان پہچان والے</string>
+    <string name="D20605">ساتھ کام کرنے والے</string>
+    <string name="D20696">دیگرافراد(واضح کریں)</string>
 
-    <string name="D206a">Are most of these people of similar/higher/lower economic status than you?</string>
-    <string name="D206a01">Similar</string>
-    <string name="D206a02">Higher</string>
-    <string name="D206a03">Lower</string>
+    <string name="D206a">کیا ان میں سے زیادہ تر لوگ آپ جیسے /آپ سے زیادہ مالی حیثیت /کم مالی حیثیت کے ہیں؟</string>
+    <string name="D206a01">میرے برابر</string>
+    <string name="D206a02">مجھ سے زیادہ</string>
+    <string name="D206a03">مجھ سے کم</string>
 
-    <string name="D207">In the last month, how many times have you met up with people in a public place either to talk or have food or drinks?</string>
+    <string name="D207">پچھلے مہینے میں عوامی مقام پر لوگوں سے بات چیت کرنےیا کھانے پینے کے حوالے سے کنتی دفعہ مل چکے ہیں؟</string>
 
-    <string name="D208">In the last month, how many times have people visited your home?</string>
+    <string name="D208">پچھلے مہینے میں کتنے لوگ آپ کے گھر آئے؟</string>
 
-    <string name="D209">In the last month, how many times have you visited people in their home?</string>
+    <string name="D209">پچھلے مہینے میں آپ نے کتنی دفعہ  لوگوں سے ان کے گھروں میں ملاقات کی  ؟</string>
 
-    <string name="D210">In the last 3 months, how many times have you gotten together with people to play games, sports or other recreational activities?</string>
+    <string name="D210">پچھلے تین مہینوں میں ،آپ لوگوں کے ساتھ کتنی بار، کھیل ، کھیلوں یا دیگر تفریحی سرگرمیوں میں حصہ لے چکے ہیں؟</string>
 
-    <string name="D211">How many times in the past 12 months, did you participate in a family/village/neighborhood festival or ceremony (wedding, funeral, religious etc.)</string>
+    <string name="D211">گزشتہ 12 مہینوں میں ،کتنی بار آپ نے خاندان/ گاؤں / محلے کے تہوار یا تقریب (شادی ، جنازہ ، مذہبی وغیرہ) میں  شرکت کی؟</string>
 
-    <string name="D212">In the past 12 months, did you attend a village/neighborhood council meeting, public hearing or public discussion group?</string>
-    <string name="D21201">Yes</string>
-    <string name="D21202">No</string>
+    <string name="D212">گزشتہ 12 مہینوں میں کیا آپ نے گاوں/محلے کےکونسل اجلاس/عوامی سماعت یا عوامی مباحثے میں شر کت کی؟</string>
+    <string name="D21201">ہاں</string>
+    <string name="D21202">نہیں</string>
 
-    <string name="D213">In the past 12 months, did you participate in a protest or demonstration?</string>
-    <string name="D21301">Yes</string>
-    <string name="D21302">No</string>
+    <string name="D213">گزشتہ 12 مہینوں میں کیا آپ کے کسی مظاہرے یا احتجاج میں حصہ لیا؟</string>
+    <string name="D21301">ہاں</string>
+    <string name="D21302">نہیں</string>
 
-    <string name="D214">In the past 12 months, did you participate in an information or election campaign?</string>
-    <string name="D21401">Yes</string>
-    <string name="D21402">No</string>
+    <string name="D214">گزشتہ 12 مہینوں میں کیا آپ کے معلوماتی یا انتخابی عمل  میں حصہ لیا؟</string>
+    <string name="D21401">ہاں</string>
+    <string name="D21402">نہیں</string>
 
-    <string name="D215">In the past 12 months, did you alert newspaper, radio or TV to a local problem?</string>
-    <string name="D21501">Yes</string>
-    <string name="D21502">No</string>
+    <string name="D215">پچھلے 12 مہینوں میں کیا آپ نے ،اخبار،ریڈیو یا ٹی وی کو کسی مقامی مسئلے سے اگاہ کیا؟</string>
+    <string name="D21501">ہاں</string>
+    <string name="D21502">نہیں</string>
 
-    <string name="D216">In the past 12 months, did you notify police or court about a local?</string>
-    <string name="D21601">Yes</string>
-    <string name="D21602">No</string>
+    <string name="D216">پچھلے 12 مہینوں میں کیا آپ نے کسی مقامی مسئلے کے بارے میں پولیس یا  عدالت کو مطلع  کیا؟</string>
+    <string name="D21601">ہاں</string>
+    <string name="D21602">نہیں</string>
 
-    <string name="D217">Do you belong to any community group?</string>
-    <string name="D21701">Yes</string>
-    <string name="D21702">No</string>
+    <string name="D217">کیاآپ کا کسی کمیونٹی گروپ سے تعلق ہے؟</string>
+    <string name="D21701">ہاں</string>
+    <string name="D21702">نہیں</string>
 
-    <string name="D218a">If yes, to what extent were you involved in making important decisions in the group?</string>
-    <string name="D218a01">Not at all</string>
-    <string name="D218a02">To some extent</string>
-    <string name="D218a03">To a large extent</string>
-    <string name="D218a99">Not applicable</string>
+    <string name="D218a">اگر ہاں ،تو آپ کس حد تک گروپ میں اہم فیصلے کرنے میں شامل تھے؟</string>
+    <string name="D218a01">نہیں بالکل نہیں </string>
+    <string name="D218a02">کسی حد تک </string>
+    <string name="D218a03">بڑی حد تک </string>
+    <string name="D218a99">قابل اطلاق نہیں </string>
 
-    <string name="D21901">Women\'s Association</string>
-    <string name="D2190101">Yes</string>
-    <string name="D2190102">No</string>
+    <string name="D21901">خواتین کی انجمن</string>
+    <string name="D2190101">ہاں</string>
+    <string name="D2190102">نہیں</string>
 
-    <string name="D21902">Agricultural / livestock/ fisheries producer’s group (including marketing groups)</string>
-    <string name="D2190201">Yes</string>
-    <string name="D2190202">No</string>
+    <string name="D21902">زرعی /مویشیوں/مچھلیوں کے کاروبارکرنے والوں کا گروپ(بشمول مارکٹنگ گروپ)</string>
+    <string name="D2190201">ہاں</string>
+    <string name="D2190202">نہیں</string>
 
-    <string name="D21903">Non-agricultural business group</string>
-    <string name="D2190301">Yes</string>
-    <string name="D2190302">No</string>
+    <string name="D21903">غیر زرعی کاروباری گروپ</string>
+    <string name="D2190301">ہاں</string>
+    <string name="D2190302">نہیں</string>
 
-    <string name="D21904">Credit or microfinance group</string>
-    <string name="D2190401">Yes</string>
-    <string name="D2190402">No</string>
+    <string name="D21904">کریڈیٹ یا مایٰکروفایننس گروپ </string>
+    <string name="D2190401">ہاں</string>
+    <string name="D2190402">نہیں</string>
 
-    <string name="D21905">Mutual help or insurance group</string>
-    <string name="D2190501">Yes</string>
-    <string name="D2190502">No</string>
+    <string name="D21905">باہمی مدد یا گروپ انشورنس</string>
+    <string name="D2190501">ہاں</string>
+    <string name="D2190502">نہیں</string>
 
-    <string name="D21906">Parent/teachers association (school committees)</string>
-    <string name="D2190601">Yes</string>
-    <string name="D2190602">No</string>
+    <string name="D21906">والدین / اساتذہ ایسوسی ایشن (اسکول کی کمیٹیاں) </string>
+    <string name="D2190601">ہاں</string>
+    <string name="D2190602">نہیں</string>
 
-    <string name="D21907">Civic groups (improving community) or charitable group (helping others)</string>
-    <string name="D2190701">Yes</string>
-    <string name="D2190702">No</string>
+    <string name="D21907">شہری تنظیمیں (برادری کو بہتر بنانا) یا خیراتی گروپ (دوسروں کی مدد کرنا)</string>
+    <string name="D2190701">ہاں</string>
+    <string name="D2190702">نہیں</string>
 
-    <string name="D21908">Political group</string>
-    <string name="D2190801">Yes</string>
-    <string name="D2190802">No</string>
+    <string name="D21908">سیاسی گروہ یا تنظیمیں </string>
+    <string name="D2190801">ہاں</string>
+    <string name="D2190802">نہیں</string>
 
-    <string name="D21909">Religious group</string>
-    <string name="D2190901">Yes</string>
-    <string name="D2190902">No</string>
+    <string name="D21909">مذہبی گروہ </string>
+    <string name="D2190901">ہاں</string>
+    <string name="D2190902">نہیں</string>
 
-    <string name="D21910">Occupation association</string>
-    <string name="D2191001">Yes</string>
-    <string name="D2191002">No</string>
+    <string name="D21910">پیشہ ورانہ انجمن</string>
+    <string name="D2191001">ہاں</string>
+    <string name="D2191002">نہیں</string>
 
-    <string name="D21911">Other group (only if it does not fit into one of the other categories)</string>
-    <string name="D2191101">Yes</string>
-    <string name="D2191102">No</string>
+    <string name="D21911">دیگر گروہ (صرف اس صورت میں جب یہ کسی دوسرے زمرے میں شامل نہ ہوں)</string>
+    <string name="D2191101">ہاں</string>
+    <string name="D2191102">نہیں</string>
 
     <string name='Q_D201'>D201</string>
     <string name='Q_D202'>D202</string>
@@ -3021,24 +3168,24 @@ food? (if "yes", go to question Q7a, otherwise go to question Q8)</string>
 
 
     <!-- E1 -->
-    <string name="E1Heading">SECTION E1: ANTHROPOMETRY AND EXAMINATION</string>
+    <string name="E1Heading">ماڈیول ای: پیمائش اور طبی معائنہ</string>
 
-    <string name="E101">Line number</string>
+    <string name="E101">لائن نمبر</string>
 
-    <string name="E102">Weight (kg) in format: xxx.xx</string>
+    <string name="E102">وزن(کلو گرام): xxx.xx</string>
 
-    <string name="E103">Height/length (cm) in format xxx.x</string>
+    <string name="E103">لمبائی (سینٹی میٹر) xxx.x</string>
 
     <string name="E104">MUAC (cm)</string>
 
-    <string name="E105">Odeama</string>
-    <string name="E10501">Yes</string>
-    <string name="E10502">No</string>
+    <string name="E105">پانچ سال سے کم بچوں کے لیے</string>
+    <string name="E10501">ہاں</string>
+    <string name="E10502">نہیں</string>
 
-    <string name="E106">Assesment Status</string>
-    <string name="E10601">Done</string>
-    <string name="E10602">Not Done</string>
-    <string name="E10603">Refused</string>
+    <string name="E106">تشخیص کی حیثیت</string>
+    <string name="E10601">مکمل</string>
+    <string name="E10602">نہیں کیا</string>
+    <string name="E10603">انکار کردیا</string>
 
     <string name='Q_E101'>E101</string>
     <string name='Q_E102'>E102</string>

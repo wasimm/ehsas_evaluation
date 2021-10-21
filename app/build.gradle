@@ -23,7 +23,7 @@ android {
         versionProps.store(versionPropsFile.newWriter(), null)*/
 
         defaultConfig {
-            applicationId "edu.aku.wasimabbas.ehsas_evaluation"
+            applicationId "edu.aku.wasimabbas.ehsaas_evaluation"
             minSdkVersion 22
             targetSdkVersion 30
             versionCode 1

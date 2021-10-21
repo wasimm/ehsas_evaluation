@@ -8,7 +8,7 @@
     <!-- Base application theme. -->
     <style name="AppThemeEnglish" parent="Theme.AppCompat.Light.NoActionBar">
 
-        <item name="colorPrimary">@color/school_color</item>
+        <item name="colorPrimary">@color/colorNew</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:scrollViewStyle">@style/BackgroundStyle</item>
@@ -48,8 +48,9 @@
         <item name="android:fillAfter">true</item>
         <item name="android:enterFadeDuration">600</item>
         <item name="android:exitFadeDuration">200</item>
-        <item name="android:layoutDirection">ltr</item>
+        <item name="android:layoutDirection">rtl</item>
         <item name="android:animateLayoutChanges">false</item>
+        <item name="android:fontFamily">@font/jameelnoorinastaleeq</item>
 
     </style>
 
@@ -77,7 +78,7 @@
     <style name="labels" parent="@android:style/TextAppearance.Widget.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">20dp</item>
         <item name="android:layout_marginTop">24dp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:gravity">center_vertical</item>
@@ -87,7 +88,7 @@
         <item name="android:paddingBottom">6dp</item>
         <item name="android:minHeight">52dp</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
-        <item name="android:background">@color/school_color</item>
+        <item name="android:background">@color/colorNew</item>
     </style>
 
     <style name="labelsHead" parent="@android:style/TextAppearance.Widget.TextView">
@@ -122,17 +123,14 @@
         <item name="android:minHeight">52dp</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
-
-        <!--
-                <item name="android:textStyle">bold</item>
-        -->
-        <!--        <item name="android:textDirection">ltr</item>-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textDirection">rtl</item>
         <item name="android:focusableInTouchMode">true</item>
     </style>
 
     <style name="radiobutton" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:gravity">center_vertical</item>
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">19dp</item>
         <item name="android:elevation">1dp</item>
         <item name="android:radius">2dp</item>
         <item name="android:drawablePadding">8dp</item>
@@ -141,6 +139,7 @@
         <item name="android:paddingBottom">8dp</item>
         <item name="android:minHeight">52dp</item>
         <item name="android:background">@drawable/options_separator</item>
+        <item name="android:buttonTint">@color/colorNew</item>
     </style>
 
     <style name="checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
@@ -152,8 +151,9 @@
         <item name="android:paddingBottom">8dp</item>
         <item name="android:minHeight">52dp</item>
         <item name="android:clickable">true</item>
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">19dp</item>
         <item name="android:background">@drawable/options_separator</item>
+        <item name="android:buttonTint">@color/colorNew</item>
     </style>
 
     <style name="button" parent="Widget.AppCompat.Button">
@@ -365,7 +365,6 @@
         <item name="colorControlActivated">@color/colorAccent</item>
         <item name="android:selectableItemBackgroundBorderless">@color/white</item>
         <item name="colorControlHighlight">@color/colorPrimaryDark_overlay</item>
-
     </style>
 
 
@@ -377,7 +376,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">30dp</item>
         <item name="android:drawable">@drawable/textview_background_grad</item>
         <item name="android:typeface">sans</item>
         <item name="android:padding">10dp</item>
@@ -403,8 +402,18 @@
         <item name="android:padding">20dp</item>
         <item name="android:textStyle">italic</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:background">@color/school_color</item>
+        <item name="android:background">@color/colorNew</item>
         <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="buttons_bottom">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 </resources>
