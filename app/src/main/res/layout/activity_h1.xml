@@ -85,40 +85,40 @@
                     android:id="@+id/fldGrpCVH101"
                     style="@style/cardView">
 
-                        <LinearLayout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Q_H101" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/H101" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/H101"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:hint="########"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            app:defaultValue=""
+                            app:mask="########"
+                            app:maxValue="99999999"
+                            app:minValue="1"
+                            app:pattern="^(\\d{8,8})$"
+                            app:type="equal" />
 
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_H101" />
-
-                            <TextView
-                                android:layout_width="180dp"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="@string/H101" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/H101"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:hint="########"
-                                android:inputType="number"
-                                android:maxLength="8"
-                                app:defaultValue=""
-                                app:mask="########"
-                                app:maxValue="99999999"
-                                app:minValue="1"
-                                app:pattern="^(\\d{8,8})$"
-                                app:type="equal" />
-
-                        </LinearLayout>
+                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -128,32 +128,32 @@
                     android:id="@+id/fldGrpCVH102"
                     style="@style/cardView">
 
-                        <LinearLayout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Q_H102" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/H102" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/H102"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
+                            android:layout_height="match_parent"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                            android:hint="@string/H102" />
 
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_H102" />
-
-                            <TextView
-                                android:layout_width="180dp"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="@string/H102" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/H102"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
-                                android:hint="@string/H102" />
-
-                        </LinearLayout>
+                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -163,32 +163,32 @@
                     android:id="@+id/fldGrpCVH103"
                     style="@style/cardView">
 
-                        <LinearLayout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Q_H103" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/H103" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/H103"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
+                            android:layout_height="match_parent"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                            android:hint="@string/H103" />
 
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_H103" />
-
-                            <TextView
-                                android:layout_width="180dp"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="@string/H103" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/H103"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
-                                android:hint="@string/H103" />
-
-                        </LinearLayout>
+                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -198,32 +198,32 @@
                     android:id="@+id/fldGrpCVH104"
                     style="@style/cardView">
 
-                        <LinearLayout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Q_H104" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/H104" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/H104"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
+                            android:layout_height="match_parent"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                            android:hint="@string/H104" />
 
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_H104" />
-
-                            <TextView
-                                android:layout_width="180dp"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="@string/H104" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/H104"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
-                                android:hint="@string/H104" />
-
-                        </LinearLayout>
+                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -233,32 +233,32 @@
                     android:id="@+id/fldGrpCVH105"
                     style="@style/cardView">
 
-                        <LinearLayout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Q_H105" />
+
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/H105" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/H105"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
+                            android:layout_height="match_parent"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
+                            android:hint="@string/H105" />
 
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_H105" />
-
-                            <TextView
-                                android:layout_width="180dp"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="@string/H105" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/H105"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
-                                android:hint="@string/H105" />
-
-                        </LinearLayout>
+                    </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
@@ -306,14 +306,14 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
+                        android:background="@drawable/bottom"
+                        android:orientation="horizontal">
 
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_H107" />
+                        <TextView
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Q_H107" />
 
                         <TextView
                             android:layout_width="180dp"
@@ -349,32 +349,26 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:background="@drawable/bottom"
+                        android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bottom"
-                            android:orientation="horizontal">
+                        <TextView
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Q_H108" />
 
-                            <TextView
-                                style="@style/quesNum"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="@string/Q_H108" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="@string/H108" />
-
-                        </LinearLayout>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/H108" />
 
 
                         <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                             android:id="@+id/H108"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:gravity="center"
                             android:hint="dd/mm/yyyy"
                             app:dateFormat="dd/MM/yyyy"
@@ -386,15 +380,11 @@
 
                 </androidx.cardview.widget.CardView>
 
+
                 <!--H109  Input-Numeric -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/fldGrpCVH109"
                     style="@style/cardView">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -409,23 +399,24 @@
                                 android:text="@string/Q_H109" />
 
                             <TextView
-                                android:layout_width="match_parent"
+                                android:layout_width="180dp"
                                 android:layout_height="match_parent"
+                                android:gravity="center"
                                 android:text="@string/H109" />
+
+                            <io.blackbox_vision.datetimepickeredittext.view.TimePickerInputEditText
+                                android:id="@+id/H109"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:hint="HH:mm"
+                                app:is24HourView="true"
+                                app:timeFormat="HH:mm" />
 
                         </LinearLayout>
 
-                        <io.blackbox_vision.datetimepickeredittext.view.TimePickerInputEditText
-                            android:id="@+id/H109"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:hint="HH:mm"
-                            app:is24HourView="true"
-                            app:timeFormat="HH:mm" />
-
-                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
 
                 <!--H110  Input-->
                 <androidx.cardview.widget.CardView
@@ -450,8 +441,9 @@
                                 android:text="@string/Q_H110" />
 
                             <TextView
-                                android:layout_width="match_parent"
+                                android:layout_width="180dp"
                                 android:layout_height="match_parent"
+                                android:gravity="center"
                                 android:text="@string/H110" />
 
                         </LinearLayout>
@@ -459,12 +451,14 @@
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/H110"
                             android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            android:layout_height="match_parent"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
                             android:hint="@string/H110" />
 
                     </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
+
 
                 <!--H111  Input-->
                 <androidx.cardview.widget.CardView
