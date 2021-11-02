@@ -61,8 +61,9 @@ public class W102 extends AppCompatActivity {
         np = np - 1;
         counter = intent.getIntExtra("counter", 0);
         counter = counter + 1;
-        bi.heading.setText(name + ": Pregnancy Number " + counter + "/" + tp);
-        bi.W116.setText(String.valueOf(counter));
+        bi.name.setText(name);
+        bi.pop.setText(counter + "/" + tp + "حمل نمبر:");
+        bi.W114.setText(String.valueOf(counter));
     }
 
     public static boolean isValidDate(String inDate) {
@@ -139,31 +140,42 @@ public class W102 extends AppCompatActivity {
         MainApp.p.setMuid(MainApp.mwra.getUid());
         MainApp.p.setFuid(MainApp.form.getUid());
 
-        MainApp.p.setW116(bi.W116.getText().toString().trim().isEmpty() ? "-1" : bi.W116.getText().toString().trim());
+        MainApp.p.setW116(bi.W114.getText().toString().trim().isEmpty() ? "-1" : bi.W114.getText().toString().trim());
 
-        MainApp.p.setW11701(bi.W11701.getText().toString().trim().isEmpty() ? "-1" : bi.W11701.getText().toString().trim());
-        MainApp.p.setW11702(bi.W11702.getText().toString().trim().isEmpty() ? "-1" : bi.W11702.getText().toString().trim());
-        MainApp.p.setW11703(bi.W11703.getText().toString().trim().isEmpty() ? "-1" : bi.W11703.getText().toString().trim());
+        MainApp.p.setW116(bi.W115.getText().toString().trim().isEmpty() ? "-1" : bi.W115.getText().toString().trim());
 
-        MainApp.p.setW118(bi.W11801.isChecked() ? "1"
-                : bi.W11802.isChecked() ? "2"
-                : bi.W11803.isChecked() ? "3"
-                : bi.W11804.isChecked() ? "4"
-                : bi.W11805.isChecked() ? "5"
-                : bi.W11806.isChecked() ? "6"
+        MainApp.p.setW116(bi.W11601.isChecked() ? "1"
+                : bi.W11602.isChecked() ? "2"
+                : bi.W11603.isChecked() ? "3"
+                : bi.W11604.isChecked() ? "4"
+                : bi.W11605.isChecked() ? "5"
+                : bi.W11606.isChecked() ? "6"
                 : "-1");
 
-        MainApp.p.setW119(bi.W11901.isChecked() ? "1"
-                : bi.W11902.isChecked() ? "2"
+        MainApp.p.setW117(bi.W11701.isChecked() ? "1"
+                : bi.W11702.isChecked() ? "2"
                 : "-1");
 
-        MainApp.p.setW12001(bi.W12001.getText().toString().trim().isEmpty() ? "-1" : bi.W12001.getText().toString().trim());
-        MainApp.p.setW12002(bi.W12002.getText().toString().trim().isEmpty() ? "-1" : bi.W12002.getText().toString().trim());
-        MainApp.p.setW12003(bi.W12003.getText().toString().trim().isEmpty() ? "-1" : bi.W12003.getText().toString().trim());
+        MainApp.p.setW11801(bi.W11801.getText().toString().trim().isEmpty() ? "-1" : bi.W11801.getText().toString().trim());
+        MainApp.p.setW11802(bi.W11802.getText().toString().trim().isEmpty() ? "-1" : bi.W11802.getText().toString().trim());
+        MainApp.p.setW11803(bi.W11803.getText().toString().trim().isEmpty() ? "-1" : bi.W11803.getText().toString().trim());
 
-        MainApp.p.setW12101(bi.W12101.getText().toString().trim().isEmpty() ? "-1" : bi.W12101.getText().toString().trim());
-        MainApp.p.setW12102(bi.W12102.getText().toString().trim().isEmpty() ? "-1" : bi.W12102.getText().toString().trim());
-        MainApp.p.setW12103(bi.W12103.getText().toString().trim().isEmpty() ? "-1" : bi.W12103.getText().toString().trim());
+        MainApp.p.setW11901(bi.W11901.getText().toString().trim().isEmpty() ? "-1" : bi.W11901.getText().toString().trim());
+        MainApp.p.setW11902(bi.W11902.getText().toString().trim().isEmpty() ? "-1" : bi.W11902.getText().toString().trim());
+        MainApp.p.setW11903(bi.W11903.getText().toString().trim().isEmpty() ? "-1" : bi.W11903.getText().toString().trim());
+
+        // Second Child if W11603 is checked
+        MainApp.p.setW117C2(bi.W117C201.isChecked() ? "1"
+                : bi.W117C202.isChecked() ? "2"
+                : "-1");
+
+        MainApp.p.setW118C201(bi.W118C201.getText().toString().trim().isEmpty() ? "-1" : bi.W118C201.getText().toString().trim());
+        MainApp.p.setW118C202(bi.W118C202.getText().toString().trim().isEmpty() ? "-1" : bi.W118C202.getText().toString().trim());
+        MainApp.p.setW118C203(bi.W118C203.getText().toString().trim().isEmpty() ? "-1" : bi.W118C203.getText().toString().trim());
+
+        MainApp.p.setW119C201(bi.W119C201.getText().toString().trim().isEmpty() ? "-1" : bi.W119C201.getText().toString().trim());
+        MainApp.p.setW119C202(bi.W119C202.getText().toString().trim().isEmpty() ? "-1" : bi.W119C202.getText().toString().trim());
+        MainApp.p.setW119C203(bi.W119C203.getText().toString().trim().isEmpty() ? "-1" : bi.W119C203.getText().toString().trim());
     }
 
     private boolean formValidation() {
@@ -177,24 +189,36 @@ public class W102 extends AppCompatActivity {
 
     private void setupSkip() {
 
-        // W118
-        bi.W118.setOnCheckedChangeListener((group, isChecked) -> {
-            if (isChecked == bi.W11802.getId() || isChecked == bi.W11805.getId() || isChecked == bi.W11806.getId()) {
-                Clear.clearAllFields(bi.fldGrpCVW119);
-                bi.fldGrpCVW119.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.fldGrpCVW120);
-                bi.fldGrpCVW120.setVisibility(View.GONE);
-                Clear.clearAllFields(bi.fldGrpCVW121);
-                bi.fldGrpCVW121.setVisibility(View.GONE);
-            } else {
+        // W116
+        bi.W116.setOnCheckedChangeListener((group, idChecked) -> {
+
+            if (idChecked == bi.W11603.getId()) {
+
+                bi.fldGrpCVW117.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW118.setVisibility(View.VISIBLE);
                 bi.fldGrpCVW119.setVisibility(View.VISIBLE);
-                bi.fldGrpCVW120.setVisibility(View.VISIBLE);
-                bi.fldGrpCVW121.setVisibility(View.VISIBLE);
+                bi.child2.setVisibility(View.VISIBLE);
+
+            } else if (idChecked == bi.W11602.getId() || idChecked == bi.W11605.getId() || idChecked == bi.W11606.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVW117);
+                Clear.clearAllFields(bi.fldGrpCVW118);
+                Clear.clearAllFields(bi.fldGrpCVW119);
+                Clear.clearAllFields(bi.child2);
+                bi.fldGrpCVW117.setVisibility(View.GONE);
+                bi.fldGrpCVW118.setVisibility(View.GONE);
+                bi.fldGrpCVW119.setVisibility(View.GONE);
+                bi.child2.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVW117.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW118.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW119.setVisibility(View.VISIBLE);
+                Clear.clearAllFields(bi.child2);
+                bi.child2.setVisibility(View.GONE);
             }
         });
 
         // W119
-        bi.W119.setOnCheckedChangeListener((group, isChecked) -> {
+        /*bi.W119.setOnCheckedChangeListener((group, isChecked) -> {
             if (isChecked == bi.W11902.getId()) {
                 Clear.clearAllFields(bi.fldGrpCVW120);
                 bi.fldGrpCVW120.setVisibility(View.GONE);
@@ -252,7 +276,7 @@ public class W102 extends AppCompatActivity {
                     }
                 }
             }
-        });
+        })*/
     }
 
     public void BtnEnd() {

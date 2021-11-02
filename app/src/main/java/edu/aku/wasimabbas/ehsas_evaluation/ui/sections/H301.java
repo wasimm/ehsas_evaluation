@@ -3,6 +3,8 @@ package edu.aku.wasimabbas.ehsas_evaluation.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.view.View;
 import android.widget.Toast;
 
@@ -34,12 +36,47 @@ public class H301 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_h301);
         bi.setCallback(this);
+        setSupportActionBar(bi.toolbar);
         setupSkip();
 
         Toast.makeText(this, "H301: " + MainApp.form.getUid(), Toast.LENGTH_LONG).show();
     }
 
     private void setupSkip() {
+
+        //H301
+        bi.H30196x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
+
+        //H302
+        bi.H30296x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
 
         //H30301
         bi.H30301.setOnCheckedChangeListener((group, idChecked) -> {
@@ -106,6 +143,23 @@ public class H301 extends AppCompatActivity {
             }
         });
 
+        //H306
+        bi.H30696x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
+
         //H307
         bi.H307.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == bi.H30708.getId() || checkedId == bi.H30709.getId()) {
@@ -119,6 +173,23 @@ public class H301 extends AppCompatActivity {
             }
         });
 
+        //H307
+        bi.H30796x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
+
         //H308
         bi.H308.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == bi.H30802.getId()) {
@@ -127,6 +198,23 @@ public class H301 extends AppCompatActivity {
             } else {
                 bi.fldGrpCVH309.setVisibility(View.VISIBLE);
             }
+        });
+
+        //H307
+        bi.H30796x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
         });
     }
 

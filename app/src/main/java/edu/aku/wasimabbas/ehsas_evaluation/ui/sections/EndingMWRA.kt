@@ -27,19 +27,19 @@ class EndingMWRA : AppCompatActivity() {
 
         val check = intent.getBooleanExtra("complete", false)
         if (check) {
-            bi.W10401.isEnabled = true
-            bi.W10402.isEnabled = false
-            bi.W10403.isEnabled = false
-            bi.W10404.isEnabled = false
-            bi.W10405.isEnabled = false
-            bi.W10496.isEnabled = false
+            bi.H60301.isEnabled = true
+            bi.H60302.isEnabled = false
+            bi.H60303.isEnabled = false
+            bi.H60304.isEnabled = false
+            bi.H60305.isEnabled = false
+            bi.H60396.isEnabled = false
         } else {
-            bi.W10401.isEnabled = false
-            bi.W10402.isEnabled = true
-            bi.W10403.isEnabled = true
-            bi.W10404.isEnabled = true
-            bi.W10405.isEnabled = true
-            bi.W10496.isEnabled = true
+            bi.H60301.isEnabled = false
+            bi.H60302.isEnabled = true
+            bi.H60303.isEnabled = true
+            bi.H60304.isEnabled = true
+            bi.H60305.isEnabled = true
+            bi.H60396.isEnabled = true
         }
 
         flag = intent.getStringExtra(CONSTANTS.SELECTED_MODEL).toString()
@@ -60,28 +60,28 @@ class EndingMWRA : AppCompatActivity() {
 
     private fun saveDraft() {
 
-        val statusValue = if (bi.W10401.isChecked) "1"
-        else if (bi.W10402.isChecked) "2"
-        else if (bi.W10403.isChecked) "3"
-        else if (bi.W10404.isChecked) "4"
-        else if (bi.W10405.isChecked) "5"
-        else if (bi.W10496.isChecked) "96"
+        val statusValue = if (bi.H60301.isChecked) "1"
+        else if (bi.H60302.isChecked) "2"
+        else if (bi.H60303.isChecked) "3"
+        else if (bi.H60304.isChecked) "4"
+        else if (bi.H60305.isChecked) "5"
+        else if (bi.H60396.isChecked) "96"
         else "-1"
 
         mwra.istatus = statusValue
         mwra.istatus96x =
-            if (bi.W10496x.text.toString().trim().isEmpty()) "-1" else bi.W10496x.text.toString()
+            if (bi.H60396x.text.toString().trim().isEmpty()) "-1" else bi.H60396x.text.toString()
         mwra.endingdatetime =
             SimpleDateFormat("dd-MM-yyyy HH:mm", Locale.ENGLISH).format(Date().time)
 
         val json = JSONObject()
         json.put(
-            "W104",
-            if (bi.W10401.isChecked) "1" else if (bi.W10402.isChecked) "2" else if (bi.W10403.isChecked) "3" else if (bi.W10404.isChecked) "4" else if (bi.W10405.isChecked) "5" else if (bi.W10496.isChecked) "96" else "-1"
+            "H603",
+            if (bi.H60301.isChecked) "1" else if (bi.H60302.isChecked) "2" else if (bi.H60303.isChecked) "3" else if (bi.H60304.isChecked) "4" else if (bi.H60305.isChecked) "5" else if (bi.H60396.isChecked) "96" else "-1"
         )
         json.put(
-            "W10496x",
-            if (bi.W10496x.text.toString().trim().isEmpty()) "-1" else bi.W10496x.text
+            "H60396x",
+            if (bi.H60396x.text.toString().trim().isEmpty()) "-1" else bi.H60396x.text
                 .toString().trim()
         )
 

@@ -32,6 +32,16 @@
                         style="@style/i_textview"
                         android:text="@string/H3Heading" />
 
+                    <TextView
+                        android:id="@+id/H3Instructions"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/red_overlay"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="@string/H3Instructions"
+                        android:textStyle="bold" />
+
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -46,6 +56,32 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/Q_H312" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/H312" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -591,6 +627,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
+                        <TextView
+                            android:id="@+id/H315H1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/red_overlay"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/H315H1"
+                            android:textStyle="bold" />
+
                         <RadioButton
                             android:id="@+id/H31511"
                             android:layout_width="match_parent"
@@ -603,6 +649,16 @@
                             android:layout_height="wrap_content"
                             android:text="@string/H31512" />
 
+                        <TextView
+                            android:id="@+id/H315H2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/red_overlay"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/H315H2"
+                            android:textStyle="bold" />
+
                         <RadioButton
                             android:id="@+id/H31521"
                             android:layout_width="match_parent"
@@ -614,6 +670,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H31522" />
+
+                        <TextView
+                            android:id="@+id/H315H3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/red_overlay"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/H315H3"
+                            android:textStyle="bold" />
 
                         <RadioButton
                             android:id="@+id/H31531"
@@ -711,6 +777,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
+                        <TextView
+                            android:id="@+id/H316H1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/red_overlay"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/H316H1"
+                            android:textStyle="bold" />
+
                         <RadioButton
                             android:id="@+id/H31611"
                             android:layout_width="match_parent"
@@ -728,6 +804,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H31613" />
+
+                        <TextView
+                            android:id="@+id/H316H2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/red_overlay"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/H316H2"
+                            android:textStyle="bold" />
 
                         <RadioButton
                             android:id="@+id/H31621"
@@ -752,6 +838,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H31624" />
+
+                        <TextView
+                            android:id="@+id/H316H3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/red_overlay"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/H316H3"
+                            android:textStyle="bold" />
 
                         <RadioButton
                             android:id="@+id/H31631"
@@ -849,6 +945,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
+                        <TextView
+                            android:id="@+id/H317H1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/red_overlay"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/H317H1"
+                            android:textStyle="bold" />
+
                         <RadioButton
                             android:id="@+id/H31711"
                             android:layout_width="match_parent"
@@ -866,6 +972,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H31713" />
+
+                        <TextView
+                            android:id="@+id/H317H2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/red_overlay"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/H317H2"
+                            android:textStyle="bold" />
 
                         <RadioButton
                             android:id="@+id/H31721"
@@ -908,6 +1024,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/H31727" />
+
+                        <TextView
+                            android:id="@+id/H317H3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/red_overlay"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="@string/H317H3"
+                            android:textStyle="bold" />
 
                         <RadioButton
                             android:id="@+id/H31731"
@@ -1315,7 +1441,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:textColor="@color/white" />
-
 
                 <Button
                     android:id="@+id/btn_Continue"

@@ -14,24 +14,30 @@ public class PregnanciesContract {
 
         public static final String TABLE_NAME = "MemberPregnancies";
         public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
-        public static final String COLUMN_PROJECT_NAME = "EHSAS_NASHONUMA";
+        public static final String COLUMN_PROJECT_NAME = "EHSAAS_NASHONUMA";
 
+        public static final String COLUMN_W114 = "W114";
+        public static final String COLUMN_W115 = "W115";
         public static final String COLUMN_W116 = "W116";
+        public static final String COLUMN_W117 = "W117";
 
-        public static final String COLUMN_W11701 = "W11701";
-        public static final String COLUMN_W11702 = "W11702";
-        public static final String COLUMN_W11703 = "W11703";
+        public static final String COLUMN_W11801 = "W11801";
+        public static final String COLUMN_W11802 = "W11802";
+        public static final String COLUMN_W11803 = "W11803";
 
-        public static final String COLUMN_W118 = "W118";
-        public static final String COLUMN_W119 = "W119";
+        public static final String COLUMN_W11901 = "W11901";
+        public static final String COLUMN_W11902 = "W11902";
+        public static final String COLUMN_W11903 = "W11903";
 
-        public static final String COLUMN_W12001 = "W12001";
-        public static final String COLUMN_W12002 = "W12002";
-        public static final String COLUMN_W12003 = "W12003";
+        public static final String COLUMN_W117C2 = "W117C2";
 
-        public static final String COLUMN_W12101 = "W12101";
-        public static final String COLUMN_W12102 = "W12102";
-        public static final String COLUMN_W12103 = "W12103";
+        public static final String COLUMN_W118C201 = "W118C201";
+        public static final String COLUMN_W118C202 = "W118C202";
+        public static final String COLUMN_W118C203 = "W118C203";
+
+        public static final String COLUMN_W119C201 = "W119C201";
+        public static final String COLUMN_W119C202 = "W119C202";
+        public static final String COLUMN_W119C203 = "W119C203";
 
         public static final String COLUMN_ID = "_id";
         public static final String COLUMN_UID = "uid";

@@ -39,6 +39,7 @@
                         style="@style/i_textview"
                         android:text="@string/W1Heading" />
 
+
                 </com.google.android.material.appbar.AppBarLayout>
 
             </androidx.cardview.widget.CardView>
@@ -77,12 +78,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
-                        android:hint="@string/W101"
+                        android:hint="##"
                         android:inputType="number"
-                        app:mask="##"
-                        app:maxValue="40"
-                        app:minValue="1"
-                        app:type="range" />
+                        app:mask="##" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -173,7 +171,52 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- W105  Title   -->
+            <!--W104  Input-Numeric -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVW104"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/Q_W104" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/W104" />
+
+                    </LinearLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/W104"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginBottom="12dp"
+                        android:enabled="false"
+                        android:hint="@string/W104"
+                        android:inputType="number"
+                        app:mask="##"
+                        app:maxValue="40"
+                        app:minValue="1"
+                        app:type="range" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--W105  Radio-->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVW105"
                 style="@style/cardView">
@@ -202,88 +245,28 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
+                    <RadioGroup
+                        android:id="@+id/W105"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:layout_height="wrap_content">
 
-                        <TextView
-                            style="@style/textView"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/C305D" />
-
-                        <TextView
-                            style="@style/textView"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/C305M" />
-
-                        <TextView
-                            style="@style/textView"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/C305Y" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <com.edittextpicker.aliazaz.EditTextPicker
+                        <RadioButton
                             android:id="@+id/W10501"
-                            style="@style/EditTextDeci"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:hint="DD"
-                            android:inputType="number"
-                            android:maxLength="2"
-                            app:defaultValue="98"
-                            app:maxValue="31"
-                            app:minValue="1"
-                            app:type="range" />
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/W10501" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
+                        <RadioButton
                             android:id="@+id/W10502"
-                            style="@style/EditTextNum"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:hint="MM"
-                            android:inputType="number"
-                            android:maxLength="2"
-                            app:defaultValue="98"
-                            app:mask="##"
-                            app:maxValue="12"
-                            app:minValue="1"
-                            app:type="range" />
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/W10502" />
 
-                        <com.edittextpicker.aliazaz.EditTextPicker
-                            android:id="@+id/W10503"
-                            style="@style/EditTextNum"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:hint="YYYY"
-                            android:inputType="number"
-                            android:maxLength="4"
-                            android:textColor="@android:color/black"
-                            app:defaultValue="9998"
-                            app:mask="####"
-                            app:maxValue="2021"
-                            app:minValue="1970"
-                            app:type="range" />
-
-                    </LinearLayout>
-
+                    </RadioGroup>
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
-            <!--W106  Input-Numeric -->
+            <!--W106  Radio-->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVW106"
                 style="@style/cardView">
@@ -312,18 +295,24 @@
 
                     </LinearLayout>
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
+                    <RadioGroup
                         android:id="@+id/W106"
                         android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/W106"
-                        android:inputType="number"
-                        app:mask="##"
-                        app:maxValue="40"
-                        app:minValue="1"
-                        app:type="range" />
+                        android:layout_height="wrap_content">
 
+                        <RadioButton
+                            android:id="@+id/W10601"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/W10601" />
+
+                        <RadioButton
+                            android:id="@+id/W10602"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/W10602" />
+
+                    </RadioGroup>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -364,8 +353,8 @@
                         android:hint="@string/W107"
                         android:inputType="number"
                         app:mask="##"
-                        app:maxValue="40"
-                        app:minValue="1"
+                        app:maxValue="20"
+                        app:minValue="0"
                         app:type="range" />
 
                 </LinearLayout>
@@ -408,8 +397,8 @@
                         android:hint="@string/W108"
                         android:inputType="number"
                         app:mask="##"
-                        app:maxValue="40"
-                        app:minValue="1"
+                        app:maxValue="20"
+                        app:minValue="0"
                         app:type="range" />
 
                 </LinearLayout>
@@ -503,7 +492,7 @@
                         android:inputType="number"
                         app:mask="##"
                         app:maxValue="40"
-                        app:minValue="1"
+                        app:minValue="0"
                         app:type="range" />
 
                 </LinearLayout>
@@ -546,8 +535,8 @@
                         android:hint="@string/W111"
                         android:inputType="number"
                         app:mask="##"
-                        app:maxValue="40"
-                        app:minValue="1"
+                        app:maxValue="20"
+                        app:minValue="0"
                         app:type="range" />
 
                 </LinearLayout>
@@ -590,14 +579,14 @@
                         android:hint="@string/W112"
                         android:inputType="number"
                         app:mask="##"
-                        app:maxValue="40"
-                        app:minValue="1"
+                        app:maxValue="20"
+                        app:minValue="0"
                         app:type="range" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!--W113  Input-Numeric -->
+            <!--W113  Radio-->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVW113"
                 style="@style/cardView">
@@ -626,110 +615,22 @@
 
                     </LinearLayout>
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/W113"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/W113"
-                        android:inputType="number"
-                        app:mask="##"
-                        app:maxValue="40"
-                        app:minValue="1"
-                        app:type="range" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!--W114  Input-Numeric -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVW114"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_W114" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="@string/W114" />
-
-                    </LinearLayout>
-
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/W114"
-                        android:layout_width="match_parent"
-                        android:layout_height="56dp"
-                        android:layout_marginBottom="12dp"
-                        android:hint="@string/W114"
-                        android:inputType="number"
-                        app:mask="##"
-                        app:maxValue="40"
-                        app:minValue="1"
-                        app:type="range" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!--W115  Radio-->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVW115"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bottom"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="@string/Q_W115" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="@string/W115" />
-
-                    </LinearLayout>
-
                     <RadioGroup
-                        android:id="@+id/W115"
+                        android:id="@+id/W113"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <RadioButton
-                            android:id="@+id/W11501"
+                            android:id="@+id/W11301"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/W11501" />
+                            android:text="@string/W11301" />
 
                         <RadioButton
-                            android:id="@+id/W11502"
+                            android:id="@+id/W11302"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/W11502" />
+                            android:text="@string/W11302" />
 
                     </RadioGroup>
                 </LinearLayout>

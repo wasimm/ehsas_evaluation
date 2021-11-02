@@ -2,6 +2,8 @@ package edu.aku.wasimabbas.ehsas_evaluation.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.view.View;
 import android.widget.Toast;
 
@@ -58,6 +60,74 @@ public class H302 extends AppCompatActivity {
             } else {
                 bi.fldGrpCVH322.setVisibility(View.VISIBLE);
             }
+        });
+
+        //H313
+        bi.H31396x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
+
+        //H315
+        bi.H31596x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
+
+        //H316
+        bi.H31696x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
+
+        //H317
+        bi.H31796x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
         });
     }
 
@@ -226,7 +296,16 @@ public class H302 extends AppCompatActivity {
 
     private boolean formValidation() {
 
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
+        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) {
+            return false;
+        }
+
+        if ((Integer.parseInt(bi.H32001.getText().toString()) + Integer.parseInt(bi.H32002.getText().toString())) == 0) {
+            bi.H32001.setError("Sum of Acre and Canal cannot be zero");
+            return false;
+        }
+
+        return true;
     }
 
     public void onBackPressed() {

@@ -43,7 +43,7 @@ public class W101 extends AppCompatActivity {
     public String fuid;
     ActivityW101Binding bi;
     Intent oF = null;
-    int skipToW4 = 0;
+    int skipToW5 = 0;
     private DatabaseHelper db;
 
     @Override
@@ -85,48 +85,52 @@ public class W101 extends AppCompatActivity {
 
     private void setupSkip() {
 
-        bi.W111.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        //W105
+        bi.W105.setOnCheckedChangeListener((group, idChecked) -> {
+
+            if (idChecked == bi.W10502.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVW106);
+                bi.fldGrpCVW106.setVisibility(View.GONE);
+            } else {
+                bi.fldGrpCVW106.setVisibility(View.VISIBLE);
             }
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-                if (s.length() > 0) {
-
-                    if (Integer.parseInt(s.toString()) == 0) {
-
-                        skipToW4 = 1;
-
-                        Clear.clearAllFields(bi.fldGrpCVW112);
-                        bi.fldGrpCVW112.setVisibility(View.GONE);
-
-                        Clear.clearAllFields(bi.fldGrpCVW113);
-                        bi.fldGrpCVW113.setVisibility(View.GONE);
-
-                        Clear.clearAllFields(bi.fldGrpCVW114);
-                        bi.fldGrpCVW114.setVisibility(View.GONE);
-
-                        Clear.clearAllFields(bi.fldGrpCVW115);
-                        bi.fldGrpCVW115.setVisibility(View.GONE);
-
-                    } else {
-
-                        bi.fldGrpCVW112.setVisibility(View.VISIBLE);
-                        bi.fldGrpCVW113.setVisibility(View.VISIBLE);
-                        bi.fldGrpCVW114.setVisibility(View.VISIBLE);
-                        bi.fldGrpCVW115.setVisibility(View.VISIBLE);
-                    }
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-            }
         });
 
-        bi.W113.addTextChangedListener(new TextWatcher() {
+        //W106
+        bi.W106.setOnCheckedChangeListener((group, idChecked) -> {
+
+            if (idChecked == bi.W10601.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVW107);
+                Clear.clearAllFields(bi.fldGrpCVW108);
+                Clear.clearAllFields(bi.fldGrpCVW109);
+                Clear.clearAllFields(bi.fldGrpCVW110);
+                Clear.clearAllFields(bi.fldGrpCVW111);
+                Clear.clearAllFields(bi.fldGrpCVW112);
+                Clear.clearAllFields(bi.fldGrpCVW113);
+                bi.fldGrpCVW107.setVisibility(View.GONE);
+                bi.fldGrpCVW108.setVisibility(View.GONE);
+                bi.fldGrpCVW109.setVisibility(View.GONE);
+                bi.fldGrpCVW110.setVisibility(View.GONE);
+                bi.fldGrpCVW111.setVisibility(View.GONE);
+                bi.fldGrpCVW112.setVisibility(View.GONE);
+                bi.fldGrpCVW113.setVisibility(View.GONE);
+                skipToW5 = 1;
+            } else {
+                bi.fldGrpCVW107.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW108.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW109.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW110.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW111.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW112.setVisibility(View.VISIBLE);
+                bi.fldGrpCVW113.setVisibility(View.VISIBLE);
+                skipToW5 = 0;
+            }
+
+        });
+
+        // W108
+        bi.W108.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
@@ -137,19 +141,19 @@ public class W101 extends AppCompatActivity {
                 if (s.length() > 0) {
 
                     if (Integer.parseInt(s.toString()) == 0) {
-
-                        skipToW4 = 1;
-
-                        Clear.clearAllFields(bi.fldGrpCVW114);
-                        bi.fldGrpCVW114.setVisibility(View.GONE);
-
-                        Clear.clearAllFields(bi.fldGrpCVW115);
-                        bi.fldGrpCVW115.setVisibility(View.GONE);
-
+                        Clear.clearAllFields(bi.fldGrpCVW109);
+                        Clear.clearAllFields(bi.fldGrpCVW110);
+                        Clear.clearAllFields(bi.fldGrpCVW111);
+                        Clear.clearAllFields(bi.fldGrpCVW112);
+                        bi.fldGrpCVW109.setVisibility(View.GONE);
+                        bi.fldGrpCVW110.setVisibility(View.GONE);
+                        bi.fldGrpCVW111.setVisibility(View.GONE);
+                        bi.fldGrpCVW112.setVisibility(View.GONE);
                     } else {
-
-                        bi.fldGrpCVW114.setVisibility(View.VISIBLE);
-                        bi.fldGrpCVW115.setVisibility(View.VISIBLE);
+                        bi.fldGrpCVW109.setVisibility(View.VISIBLE);
+                        bi.fldGrpCVW110.setVisibility(View.VISIBLE);
+                        bi.fldGrpCVW111.setVisibility(View.VISIBLE);
+                        bi.fldGrpCVW112.setVisibility(View.VISIBLE);
                     }
                 }
             }
@@ -170,16 +174,10 @@ public class W101 extends AppCompatActivity {
         if (UpdateDB()) {
             finish();
 
-            if (skipToW4 > 0) {
+            if (skipToW5 > 0) {
                 startActivity(new Intent(this, W4.class).putExtra("id", id).putExtra("uid", uid));
             } else {
-                int np;
-                if (bi.W10901.isChecked()) {
-                    np = Integer.parseInt(bi.W110.getText().toString()) - 1;
-                } else {
-                    np = Integer.parseInt(bi.W110.getText().toString());
-                }
-
+                int np = Integer.parseInt(bi.W107.getText().toString()) - 1;
                 int tp = np;
                 startActivity(new Intent(this, W102.class).putExtra("np", np).putExtra("id", id).putExtra("uid", uid).putExtra("counter", 0).putExtra("tp", tp).putExtra("name", name));
             }
@@ -227,11 +225,15 @@ public class W101 extends AppCompatActivity {
 
         json.put("W103", bi.W103.getText().toString().trim().isEmpty() ? "-1" : bi.W103.getText().toString().trim());
 
-        json.put("W10501", bi.W10501.getText().toString().trim().isEmpty() ? "-1" : bi.W10501.getText().toString().trim());
-        json.put("W10502", bi.W10502.getText().toString().trim().isEmpty() ? "-1" : bi.W10502.getText().toString().trim());
-        json.put("W10503", bi.W10503.getText().toString().trim().isEmpty() ? "-1" : bi.W10503.getText().toString().trim());
+        json.put("W104", bi.W104.getText().toString().trim().isEmpty() ? "-1" : bi.W104.getText().toString().trim());
 
-        json.put("W106", bi.W106.getText().toString().trim().isEmpty() ? "-1" : bi.W106.getText().toString().trim());
+        json.put("W105", bi.W10501.isChecked() ? "1"
+                : bi.W10502.isChecked() ? "2"
+                : "-1");
+
+        json.put("W106", bi.W10601.isChecked() ? "1"
+                : bi.W10602.isChecked() ? "2"
+                : "-1");
 
         json.put("W107", bi.W107.getText().toString().trim().isEmpty() ? "-1" : bi.W107.getText().toString().trim());
 
@@ -247,13 +249,10 @@ public class W101 extends AppCompatActivity {
 
         json.put("W112", bi.W112.getText().toString().trim().isEmpty() ? "-1" : bi.W112.getText().toString().trim());
 
-        json.put("W113", bi.W113.getText().toString().trim().isEmpty() ? "-1" : bi.W113.getText().toString().trim());
-
-        json.put("W114", bi.W114.getText().toString().trim().isEmpty() ? "-1" : bi.W114.getText().toString().trim());
-
-        json.put("W115", bi.W11501.isChecked() ? "1"
-                : bi.W11502.isChecked() ? "2"
+        json.put("W113", bi.W11301.isChecked() ? "1"
+                : bi.W11302.isChecked() ? "2"
                 : "-1");
+
 
         mwra.setJSON(String.valueOf(json));
     }

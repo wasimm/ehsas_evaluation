@@ -40,6 +40,8 @@ public class MembersContract {
         public static final String COLUMN_H211 = "H211";
         public static final String COLUMN_H212 = "H212";
         public static final String COLUMN_H21296X = "H21296x";
+        public static final String COLUMN_MOTHER_SERIAL = "mSerialNo";
+        public static final String COLUMN_FATHER_SERIAL = "fSerialNo";
 
         public static final String COLUMN_E101 = "E101";
         public static final String COLUMN_E102 = "E102";

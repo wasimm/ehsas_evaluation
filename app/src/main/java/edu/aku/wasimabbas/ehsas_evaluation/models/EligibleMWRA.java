@@ -11,7 +11,7 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleMWRAsContract;
 
 public class EligibleMWRA extends LiveData<EligibleMWRA> {
 
-    private final String projectName = "EHSAS_NASHONUMA";
+    private final String projectName = "EHSAAS_NASHONUMA";
     // Variables
     public String mwra_json = "";
     private String endingdatetime = "";

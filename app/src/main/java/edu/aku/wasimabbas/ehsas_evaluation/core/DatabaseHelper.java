@@ -850,18 +850,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(PregnanciesContract.PregnanciesTable.COLUMN_DEVICEID, p.getDeviceid());
         values.put(PregnanciesContract.PregnanciesTable.COLUMN_DEVICETAGID, p.getDevicetagid());
         values.put(PregnanciesContract.PregnanciesTable.COLUMN_APPVERSION, p.getAppversion());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W114, p.getW114());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W115, p.getW115());
         values.put(PregnanciesContract.PregnanciesTable.COLUMN_W116, p.getW116());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W11701, p.getW11701());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W11702, p.getW11702());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W11703, p.getW11703());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W118, p.getW118());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W119, p.getW119());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W12001, p.getW12001());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W12002, p.getW12002());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W12003, p.getW12003());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W12101, p.getW12101());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W12102, p.getW12102());
-        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W12103, p.getW12103());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W117, p.getW117());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W11801, p.getW11801());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W11802, p.getW11802());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W11803, p.getW11803());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W11901, p.getW11901());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W11902, p.getW11902());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W11903, p.getW11903());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W117C2, p.getW117C2());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W118C201, p.getW118C201());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W118C202, p.getW118C202());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W118C203, p.getW118C203());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W119C201, p.getW119C201());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W119C202, p.getW119C202());
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_W119C203, p.getW119C203());
 
         // Insert the new row, returning the primary key value of the new row
         long newRowId;

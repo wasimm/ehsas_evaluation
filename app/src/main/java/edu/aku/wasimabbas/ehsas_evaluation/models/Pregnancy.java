@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData;
 
 public class Pregnancy extends LiveData<Pregnancy> {
 
-    private final String projectName = "EHSAS_NASHONUMA";
+    private final String projectName = "EHSAAS_NASHONUMA";
     // Form Variables
     public String form_json = "";
 
@@ -23,20 +23,28 @@ public class Pregnancy extends LiveData<Pregnancy> {
     private String istatus96x = "";
     private String sysdate = "";
     private String username = "";
+    private String W114 = "";
+    private String W115 = "";
     private String W116 = "";
-    private String W11701 = "";
-    private String W11702 = "";
-    private String W11703 = "";
-    private String W118 = "";
-    private String W119 = "";
+    private String W117 = "";
 
-    private String W12001 = "";
-    private String W12002 = "";
-    private String W12003 = "";
+    private String W11801 = "";
+    private String W11802 = "";
+    private String W11803 = "";
 
-    private String W12101 = "";
-    private String W12102 = "";
-    private String W12103 = "";
+    private String W11901 = "";
+    private String W11902 = "";
+    private String W11903 = "";
+
+    private String W117C2 = "";
+
+    private String W118C201 = "";
+    private String W118C202 = "";
+    private String W118C203 = "";
+
+    private String W119C201 = "";
+    private String W119C202 = "";
+    private String W119C203 = "";
 
     public Pregnancy() {
     }
@@ -157,6 +165,22 @@ public class Pregnancy extends LiveData<Pregnancy> {
         this.username = username;
     }
 
+    public String getW114() {
+        return W114;
+    }
+
+    public void setW114(String w114) {
+        W114 = w114;
+    }
+
+    public String getW115() {
+        return W115;
+    }
+
+    public void setW115(String w115) {
+        W115 = w115;
+    }
+
     public String getW116() {
         return W116;
     }
@@ -165,91 +189,115 @@ public class Pregnancy extends LiveData<Pregnancy> {
         W116 = w116;
     }
 
-    public String getW11701() {
-        return W11701;
+    public String getW117() {
+        return W117;
     }
 
-    public void setW11701(String w11701) {
-        W11701 = w11701;
+    public void setW117(String w117) {
+        W117 = w117;
     }
 
-    public String getW11702() {
-        return W11702;
+    public String getW11801() {
+        return W11801;
     }
 
-    public void setW11702(String w11702) {
-        W11702 = w11702;
+    public void setW11801(String w11801) {
+        W11801 = w11801;
     }
 
-    public String getW11703() {
-        return W11703;
+    public String getW11802() {
+        return W11802;
     }
 
-    public void setW11703(String w11703) {
-        W11703 = w11703;
+    public void setW11802(String w11802) {
+        W11802 = w11802;
     }
 
-    public String getW118() {
-        return W118;
+    public String getW11803() {
+        return W11803;
     }
 
-    public void setW118(String w118) {
-        W118 = w118;
+    public void setW11803(String w11803) {
+        W11803 = w11803;
     }
 
-    public String getW119() {
-        return W119;
+    public String getW11901() {
+        return W11901;
     }
 
-    public void setW119(String w119) {
-        W119 = w119;
+    public void setW11901(String w11901) {
+        W11901 = w11901;
     }
 
-    public String getW12001() {
-        return W12001;
+    public String getW11902() {
+        return W11902;
     }
 
-    public void setW12001(String w12001) {
-        W12001 = w12001;
+    public void setW11902(String w11902) {
+        W11902 = w11902;
     }
 
-    public String getW12002() {
-        return W12002;
+    public String getW11903() {
+        return W11903;
     }
 
-    public void setW12002(String w12002) {
-        W12002 = w12002;
+    public void setW11903(String w11903) {
+        W11903 = w11903;
     }
 
-    public String getW12003() {
-        return W12003;
+    public String getW117C2() {
+        return W117C2;
     }
 
-    public void setW12003(String w12003) {
-        W12003 = w12003;
+    public void setW117C2(String w117C2) {
+        W117C2 = w117C2;
     }
 
-    public String getW12101() {
-        return W12101;
+    public String getW118C201() {
+        return W118C201;
     }
 
-    public void setW12101(String w12101) {
-        W12101 = w12101;
+    public void setW118C201(String w118C201) {
+        W118C201 = w118C201;
     }
 
-    public String getW12102() {
-        return W12102;
+    public String getW118C202() {
+        return W118C202;
     }
 
-    public void setW12102(String w12102) {
-        W12102 = w12102;
+    public void setW118C202(String w118C202) {
+        W118C202 = w118C202;
     }
 
-    public String getW12103() {
-        return W12103;
+    public String getW118C203() {
+        return W118C203;
     }
 
-    public void setW12103(String w12103) {
-        W12103 = w12103;
+    public void setW118C203(String w118C203) {
+        W118C203 = w118C203;
+    }
+
+    public String getW119C201() {
+        return W119C201;
+    }
+
+    public void setW119C201(String w119C201) {
+        W119C201 = w119C201;
+    }
+
+    public String getW119C202() {
+        return W119C202;
+    }
+
+    public void setW119C202(String w119C202) {
+        W119C202 = w119C202;
+    }
+
+    public String getW119C203() {
+        return W119C203;
+    }
+
+    public void setW119C203(String w119C203) {
+        W119C203 = w119C203;
     }
 }

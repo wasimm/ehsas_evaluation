@@ -79,7 +79,8 @@
     <!-- Replace with correct text-->
 
     <!-- H1 -->
-    <string name="H1Heading">سیکشن ایچ1: گھرانے کی معلومات</string>
+    <string name="H1Heading">سیکشن ایچ 1: گھرانے کی معلومات</string>
+    <string name="H1Instructions">ہدایات : یہ سیکشن فہرست میں موجودبی آئی ایس پی سے مستفید ہونے والے فرد سے بھریں۔ فرد کے موجود نہ ہونے کی صورت میں بی آئی ایس پی سے مستفید ہونے والے کسی دوسرے فرد کا انتخاب کریں موجود ہو</string>
 
     <string name="H101">کلسٹر نمبر</string>
     <string name="H102">صوبہ</string>
@@ -118,13 +119,14 @@
     <string name="H11702">تحریری اجازت</string>
 
 
-    <string name="H118">گھرانے کے انٹرویوکا نتیجہ</string>
+    <string name="H118">گھرانے کے انٹرویوکا نتیجہ. انٹرویومکمل نہ ہونے کی صورت میں ٹیم لیڈر سے مشورہ کریں</string>
     <string name="H11801">مکمل</string>
     <string name="H11802">گھرانے کا کوئی فرد یا باصلاحیت جواب دہندہ گھر پر موجود نہیں</string>
     <string name="H11803">گھرانے کے تمام افراد لمبے عرصے کے لیے گھر سے غیر حاضر تھے</string>
     <string name="H11804">انکار کردیا</string>
     <string name="H11805">خالی گھر/غیر رہائشی</string>
     <string name="H11806">گھر نہیں ملا</string>
+    <string name="H11807">بی آئی ایس پی سے فائدہ اٹھانے والا موجود نہیں ہے</string>
     <string name="H11896">دیگر وضاحت کریں</string>
 
     <string name="only_for_testing">ONLY FOR TESTING</string>
@@ -155,11 +157,11 @@
 
     <string name="H201">لائن نمبر</string>
 
-    <string name="H202">برا ئےمہربانی پہلے مجھے ان تمام افراد کانام بتائیں جو عام طور پر یہاں رہتے ہیں، خاندان کے سربراہ سے شروع کریں</string>
+    <string name="H202">برا ئےمہربانی پہلے مجھے ان تمام افراد کانام بتائیں جو عام طور پر یہاں رہتے ہیں، خاندان کے سربراہ سے شروع کریں. گھر کے دیگر افراد کے بارے میں پوچھیں</string>
 
     <string name="H203">گھر کے سربراہ سے رشتہ ؟</string>
     <string name="H20301">سربراہ</string>
-    <string name="H20302">بیوی</string>
+    <string name="H20302">خاوند ،بیوی</string>
     <string name="H20303">بیٹا،بیٹی</string>
     <string name="H20304">داماد ،بہو</string>
     <string name="H20305">پوتا،پوتی،نواسا،نواسی</string>
@@ -168,7 +170,7 @@
     <string name="H20308">بھائی،بہن</string>
     <string name="H20309">بھابھی،سالا،سالی،دیور،دیورانی</string>
     <string name="H20310">چچا،چچی،ماموں،ممانی،پھوپھا،پھوپھی،خالہ خالو</string>
-    <string name="H20311">بھانجا،بھانجی،بھتیجا،بھتیج</string>
+    <string name="H20311">بھانجا،بھانجی،بھتیجا،بھتیجی</string>
     <string name="H20312">دیگر رشتہ دار</string>
     <string name="H20313">سوتیلے،رضاعی،لے پالک بچے</string>
     <string name="H20314">ملازم</string>
@@ -181,12 +183,12 @@
     <string name="H20402">عورت</string>
     <string name="H20403">مخنث</string>
 
-    <string name="H205">(نام) کی  تاریخ پیدائش کیاہے؟ (اگر مہینہ/تاریخ معلوم نہ ہوتو 98 لکھیں اور اگر سال معلوم نہ  ہوتو9998 لکھیں)</string>
+    <string name="H205">(نام) کی  تاریخ پیدائش کیاہے؟ (اگر مہینہ/تاریخ معلوم نہ ہوتو 98 لکھیں اور اگر سال معلوم نہ  ہوتو9998 لکھیں) 2 سال سے کم عمر کے بچے کے لیے مہینہ لازمی ہے۔</string>
     <string name="H20501">دن</string>
     <string name="H20502">مہینہ</string>
     <string name="H20503">سال</string>
 
-    <string name="H206">(نام) عمر کتنی ہے؟اگر تاریخ پیدائش معلوم نہ ہو</string>
+    <string name="H206">(نام) عمر کتنی ہے؟اگر تاریخ پیدائش معلوم نہ ہو. مکمل دن مہینہ سال لکھیں (اگر عمر95 سال سے زیادہ ہے تو 95 لکھیں)</string>
     <string name="H20601">دن</string>
     <string name="H20602">مہینہ</string>
     <string name="H20603">سال</string>
@@ -200,18 +202,17 @@
 
     <string name="H208">بی آئی ایس پی پروگرام سےمستفیدہونےوالے کا شناختی کارڈنمبر</string>
 
-    <string name="H209">ازواجی حیثیت (دس سال سے زیادہ عمرکےافراد</string>
+    <string name="H209">ازواجی حیثیت (دس سال سے زیادہ عمر کےافراد کیلئے)</string>
     <string name="H20901">شادی شدہ</string>
     <string name="H20902">بیوہ/رنڈوہ</string>
-    <string name="H20903">لاق یافتہ</string>
-    <string name="H20904">الگ رہتا/ رہتی ہو</string>
+    <string name="H20903">طلاق یافتہ</string>
+    <string name="H20904">الگ رہتا/رہتی ہے</string>
     <string name="H20905">کنوارہ/کنواری</string>
 
     <string name="H210">شادی شدہ خاتون کی موجودہ حالت</string>
     <string name="H21001">حاملہ عورت</string>
-    <string name="H21002">دودھ پلانے والی عورت 2 سال سے کم عمر کے بچے کے ساتھ</string>
-    <string name="H21003">06–23 ماہ کے بچے والی خواتین۔</string>
-    <string name="H21004">حمل سے نہیں</string>
+    <string name="H21002">عورت 2 سال سے کم عمر بچے کے ساتھ</string>
+    <string name="H21003">حمل سے نہیں اور 2 سال سے کم عمر بچہ بھی نہیں ہے</string>
 
     <string name="H211">تعلیم*(تین  یا تین سال سے  زائد عمر کےافراد کیلئے)</string>
     <string name="H21101">کوئی نہیں</string>
@@ -226,7 +227,7 @@
     <string name="H21198">معلوم نہیں</string>
 
     <string name="H212">پیشہ (دس یا دس سال سے زائدعمرکے افراد کیلئے)</string>
-    <string name="H21201">وئی نہیں  </string>
+    <string name="H21201">کوئی نہیں</string>
     <string name="H21202">غیر ہنرمندمزدور</string>
     <string name="H21203">ہنرمند مزدور</string>
     <string name="H21204">زراعت سے متعلق</string>
@@ -253,7 +254,9 @@
 
 
     <!-- H3 -->
-    <string name="H3Heading">سیکشن ایچ 3: سماجی امداد کے حوالے سے معلومات</string>
+    <string name="H3Heading">سیکشن ایچ 3: سماجی اور معاشی حالات کے حوالے سے معلومات</string>
+    <string name="H3Instructions">ہدایات : یہ سیکشن گھر کے سربراہ سے یا گھر میں کم سے کم 18 سال یا اس سے ذائد عمر کے کسی سمجھدار شخص سے پوچھا جائیگا</string>
+
     <string name="H301">گھرانے کے سربراہ کی مادری زبان کیا ہے ؟</string>
     <string name="H30101">اردو</string>
     <string name="H30102">پنجابی</string>
@@ -288,8 +291,8 @@
     <string name="H3030206">ہاتھ والا نلکا</string>
     <string name="H3030207">محفوظ کنواں</string>
     <string name="H3030208">غیرمحفوظ کنواں</string>
-    <string name="H3030209"> چشمہ محفوظ</string>
-    <string name="H3030210">چشمہ غیرمحفوظ </string>
+    <string name="H3030209">محفوظ چشمہ</string>
+    <string name="H3030210">غیرمحفوظ چشمہ</string>
     <string name="H3030211">بارش کا پانی</string>
     <string name="H3030212">پانی کا ٹینکر</string>
     <string name="H3030213">ریڑھی کے ساتھ چھوٹی ٹنکی</string>
@@ -298,7 +301,7 @@
     <string name="H3030216">بوتل کا پانی </string>
     <string name="H3030296">دیگر وضاحت کریں</string>
 
-    <string name="H304">آپکوپانی کے اہم ذریعے تک پہنچنے میں اور وہاں سے پانی لے کر گھر آنے میں کتنا وقت لگتا ہے؟</string>
+    <string name="H304">آپکوپانی کے اہم ذریعے تک پہنچنے میں اور وہاں سے پانی لے کر گھر آنے میں کتنا وقت لگتا ہے؟ (یہ سوال پینے کے پانی سے متعلق ہے). وقت منٹوں میں لکھیں۔اگر معلوم نہیں 998 لکھیں۔ اگر پانی گھر پر موجود ہے یا پانی گھر پر فراہم کیا جاتا ہے تو 000 لکھیں۔</string>
 
     <string name="H305">کیا آپ پانی کو محفوظ بنانے کے لیے کوئی قدم اٹھاتے ہیں</string>
     <string name="H30501">ہاں</string>
@@ -314,10 +317,12 @@
     <string name="H30696">دیگر وضاحت کریں</string>
 
     <string name="H307">آپ کے گھرانے کے افراد عام طورپر کس قسم کا بیت الخلاء استعمال کرتے ہیں؟</string>
+    <string name="H307H1">فلش یا انڈیل کر پانی ڈالنے والا</string>
     <string name="H30701">فلش سیوریج کے نظام سے منسلک</string>
     <string name="H30702">فلش سپٹک ٹینک سے منسلک</string>
-    <string name="H30703">فلش گڑھےواے لیٹرین سے منسلک</string>
+    <string name="H30703">فلش گڑھے واے لیٹرین سے منسلک</string>
     <string name="H30704">فلش کہیں اور</string>
+    <string name="H307H2">گڑھے والا لیٹرین</string>
     <string name="H30705">بہتر ہوا دار گڑھے والا لیٹرین</string>
     <string name="H30706">گڑھے والا لیٹرین ڈھکا ہوا</string>
     <string name="H30707">گڑھے والا کھلاہوا  لیٹرین</string>
@@ -325,11 +330,11 @@
     <string name="H30709">کوئی سہولت نہیں /جھاڑیوں/زمین پر</string>
     <string name="H30796">دیگر وضاحت کریں</string>
 
-    <string name="H308">کیا اس بیت الخلاء کی سہولت کو دوسرے گھرانوں کے افراد بھی استعمال کر تے ہیں</string>
+    <string name="H308">کیا اس بیت الخلاء کی سہولت کو دوسرے گھرانوں کے افراد بھی استعمال کر تے ہیں؟ (جو آپ کے گھرانے کے فرد نہیں ہیں)</string>
     <string name="H30801">ہاں</string>
     <string name="H30802">نہیں</string>
 
-    <string name="H309">Iاگر ہاں،تو کتنے گھرانےاس بیت الخلاء کی  سہولت کواستعمال کرتے ہیں؟</string>
+    <string name="H309">اگر ہاں،تو کتنے گھرانےاس بیت الخلاء کی سہولت کواستعمال کرتے ہیں؟</string>
 
     <string name="H310">سب سے چھوٹے بچے کا پاخانہ پھینکنے کے لیے عام طورپر کیاکرتے ہیں؟</string>
     <string name="H31001">بچہ لیٹرین استعمال کرتا ہے</string>
@@ -342,7 +347,7 @@
     <string name="H31008">گھر میں دو سال سے چھوٹا بچہ نہیں ہے</string>
     <string name="H31096">دیگر وضاحت کریں</string>
 
-    <string name="H311">کیا آپ کے گھر میں ان میں سے کچھ موجود ہے؟</string>
+    <string name="H311">کیا آپ کے گھر میں ان میں سے کچھ موجود ہے؟ ہر آپشن کے لئے پوچھیں۔</string>
 
     <string name="H31101">بجلی</string>
     <string name="H3110101">ہاں</string>
@@ -420,7 +425,7 @@
     <string name="H3111901">ہاں</string>
     <string name="H3111902">نہیں</string>
 
-    <string name="H312">کیا گھر کے کسی فرد کے پاس یہ چیزیں موجود ہیں؟</string>
+    <string name="H312">کیا گھر کے کسی فرد کے پاس یہ چیزیں موجود ہیں؟ ہر آپشن کے لئے پوچھیں۔</string>
 
     <string name="H31201">گھڑی</string>
     <string name="H3120101">ہاں</string>
@@ -460,20 +465,23 @@
     <string name="H31307">لکٹری کاکوئلہ</string>
     <string name="H31308">لکٹری</string>
     <string name="H31309">تنکے/جھاڑیاں/گھاس پھونس</string>
-    <string name="H31310">(جانوروں کا گوبر(اوپلے</string>
+    <string name="H31310">جانوروں کا گوبر(اوپلے)</string>
     <string name="H31311">گھر میں کھانا نہیں پکتا</string>
     <string name="H31396">دیگر وضاحت کریں</string>
 
-    <string name="H314">کیا آپ کے پاس باروچی خانہ کے طور پر  استعمال کے لیے علیحدہ کمر ہ موجو د ہے ؟</string>
+    <string name="H314">کیا آپ کے پاس باروچی خانہ کے طور پر  استعمال کے لیے علیحدہ کمر ہ موجو د ہے؟</string>
     <string name="H31401">ہاں</string>
     <string name="H31402">نہیں</string>
 
-    <string name="H315">گھر کے  فرش  بنانے میں کس قسم کا  میٹریل استعمال کیاگیا ہے گھر کے فرش میں استعمال ہونے والا بنیادی مواد:مشاہدہ کریں۔</string>
+    <string name="H315">گھر کے فرش میں استعمال ہونے والا بنیادی مواد: [مشاہدہ کریں]</string>
+    <string name="H315H1">قدرتی فرش</string>
     <string name="H31511">مٹی/چکنی مٹی/زمین/ریت</string>
     <string name="H31512">جانوروں کا گوبر</string>
+    <string name="H315H2">بنیادی /ابتدائی فرش</string>
     <string name="H31521">لکٹری کے تختے</string>
     <string name="H31522">کھجور  یاناریل کے پتے /بانس</string>
-    <string name="H31531">کڑی کا فرش یا پالش والی لکڑی</string>
+    <string name="H315H3">تیار فرش</string>
+    <string name="H31531">لکڑی کا فرش یا پالش والی لکڑی</string>
     <string name="H31532">لکڑی کی پلائی  یا  لکڑی کے ٹائلز</string>
     <string name="H31533">سرامک ٹائلز</string>
     <string name="H31534">سیمنٹ</string>
@@ -482,14 +490,17 @@
     <string name="H31537">چونے کا پتھر</string>
     <string name="H31596">دیگر وضاحت کریں</string>
 
-    <string name="H316">گھر کی چھت میں استعمال ہونے والا بنیادی مواد۔</string>
+    <string name="H316">گھر کی چھت میں استعمال ہونے والا بنیادی مواد۔ [مشاہدہ کریں]</string>
+    <string name="H316H1">قدرتی چھت</string>
     <string name="H31611">کوئی چھت نہیں</string>
     <string name="H31612">گھاس پھونس /کھجو ر کے پتے</string>
     <string name="H31613"> گھاس پھوس سے بنی ہوئی چھت</string>
+    <string name="H316H2">بنیادی سادہ چھت</string>
     <string name="H31621">تنکے کی  چٹائی</string>
     <string name="H31622">کھجور  یاناریل کے درخت/بانس</string>
     <string name="H31623">لکڑی کے تختے</string>
     <string name="H31624">گتے سے بنی ہوئی چھت</string>
+    <string name="H316H3">تیار چھت</string>
     <string name="H31631">دھات/ٹین/سی جی آئی</string>
     <string name="H31632">لکٹری سے بنی ہوئی چھت</string>
     <string name="H31633">کیلا مائن/سیمنٹ فائبر</string>
@@ -499,17 +510,20 @@
     <string name="H31637">اینٹیں</string>
     <string name="H31696">دیگر وضاحت کریں</string>
 
-    <string name="H317">گھر کی دیوار وں میں استعمال ہونے والا بنیادی مواد</string>
+    <string name="H317">گھر کی دیوار وں میں استعمال ہونے والا بنیادی مواد. [مشاہدہ کریں]</string>
+    <string name="H317H1">قدرتی دیواریں</string>
     <string name="H31711">کوئی دیوار نہیں</string>
     <string name="H31712">کھجور کے درخت  /بانس</string>
     <string name="H31713">چکنی مٹی</string>
+    <string name="H317H2">بنیادی سادہ دیواریں</string>
     <string name="H31721">بانس اور مٹی سے بنی ہوئی</string>
     <string name="H31722">پتھر اور مٹی  </string>
-    <string name="H31723">کچی اینٹوں سے بنی(بغیر لیپ) </string>
+    <string name="H31723">کچی اینٹوں سے بنی(بغیر لیپ)</string>
     <string name="H31724">لکڑی کی پلائی</string>
     <string name="H31725">گّتہ</string>
     <string name="H31726">استعمال شدہ لکڑی</string>
     <string name="H31727">کپڑا/پردے/شامیانہ</string>
+    <string name="H317H3">تیاردیواریں</string>
     <string name="H31731">سیمنٹ</string>
     <string name="H31732">پتھرچونے/سیمنٹ کے ساتھ</string>
     <string name="H31733">پکی اینٹیں</string>
@@ -533,7 +547,7 @@
     <string name="H32101">ہاں</string>
     <string name="H32102">نہیں</string>
 
-    <string name="H322">اگر ہاں تو آپ کے گھر میں کتنے مویشی جانور یا مرغیاں موجود ہیں؟</string>
+    <string name="H322">اگر ہاں تو آپ کے گھر میں کتنے مویشی جانور یا مرغیاں موجود ہیں؟ ایک ایک کرکے جانوروں کے نام پوچھیں اور شمار کنندہ مشاہدہ کرے اگر کوئی نہیں تو 000 لکھیں. اگر 999 سے زیادہ ہے تو 999 لکھیں.</string>
     <string name="H32201">مال مویشی (گائے اور بیل)</string>
     <string name="H32202">گھوڑے/گدھے/خچر</string>
     <string name="H32203">بکریاں</string>
@@ -609,17 +623,17 @@
 
     <!-- H4 -->
     <string name="H4Heading">سیکشن ایچ 4:ہاتھ دھونے کی معلومات</string>
-    <string name="H401">صرف مشاہدہ:براہ مہربانی وہ جگہ دکھا  ئیں جہاں آپ اور آپ کے گھروالے اکثر ہاتھ دھوتے ہیں؟</string>
+    <string name="H401">صرف مشاہدہ: براہ مہربانی وہ جگہ دکھا  ئیں جہاں آپ اور آپ کے گھروالے اکثر ہاتھ دھوتے ہیں؟</string>
     <string name="H40101">مشاہدہ کیا </string>
     <string name="H40102">رہائشی جگہ اور پلاٹ میں موجود نہیں</string>
     <string name="H40103">دیکھنے کی اجازت نہیں</string>
     <string name="H40104">کو  ئی اور وجہ</string>
 
-    <string name="H402">ہاتھ دھونے کے لئے مخصوص جگہ پر پانی کی موجودگی کا مشاہدہ</string>
+    <string name="H402">صرف مشاہدہ: ہاتھ دھونے کے لئے مخصوص جگہ پر پانی کی موجودگی کا مشاہدہ.</string>
     <string name="H40201">پانی موجود ہے</string>
     <string name="H40202">پانی موجود نہیں  ہے</string>
 
-    <string name="H403">صابن، ڈٹرجنٹ یا دیگر صفائی ایجنٹ کی موجودگی کا مشاہدہ</string>
+    <string name="H403">صرف مشاہدہ: صابن، ڈٹرجنٹ یا دیگر صفائی ایجنٹ کی موجودگی کا مشاہدہ. [ایک سے زیادہ جوابات آسکتے ہیں]</string>
     <string name="H40301">نہانے یا ہاتھ دھونے ولا صابن</string>
     <string name="H40302">ڈٹرجنٹ پاوڈریا پانی جیسی پیسٹ</string>
     <string name="H40303">مائع یا پانی والا صابن</string>
@@ -630,16 +644,14 @@
     <string name="H40401">ہاں</string>
     <string name="H40402">نہیں</string>
 
-    <string name="H405">اگرہاں تو کیا  آپ مجھے  دکھا سکتے ہیں ؟</string>
-    <string name="H40501">ہانے یا ہاتھ دھونے ولا صابن</string>
+    <string name="H405">اگر ہاں تو کیا آپ مجھے  دکھا سکتے ہیں؟ [ایک سے زیادہ جوابات آسکتے ہیں]</string>
+    <string name="H40501">نہانے یا ہاتھ دھونے ولا صابن</string>
     <string name="H40502">ڈٹرجنٹ پاوڈریا پانی جیسی پیسٹ</string>
     <string name="H40503">مائع یا پانی والا صابن</string>
     <string name="H40504">خاک /مٹی/ریت</string>
     <string name="H40505">کچھ نہیں</string>
 
-    <string name="H406">کن حالات میں آپ صابن سے ہاتھ دھوتے ہو۔
-اس  سوال کا کوئی بھی جواب پڑھ کے نہیں سنانا ہے۔ہر سوال وقفے کے  بعد   بار بار دھرانا ہے  جب تک  جواب دہندہ   یہ نہ سمجھیں  کہ ان کے پاس کوئی اور جواب نہیں۔
-</string>
+    <string name="H406">کن حالات میں آپ صابن سے ہاتھ دھوتے ہو۔ اس سوال کا کوئی بھی جواب پڑھ کے نہیں سنانا ہے۔ ہر سوال وقفے کے  بعد بار بار دھرانا ہے جب تک جواب دہندہ یہ نہ سمجھیں کہ ان کے پاس کوئی اور جواب نہیں۔</string>
     <string name="H40601">کھانا تیار کرنے سے پہلے</string>
     <string name="H40602">کھانا پکانے سے پہلے</string>
     <string name="H40603">کھانا کھانے سے پہلے</string>
@@ -662,57 +674,55 @@
     <!-- H5 -->
     <string name="H5Heading">سیکشن ایچ 5: غذائی قلت کےتجربات کی معلومات </string>
 
-    <string name="H501">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا ہوا  تھا جب آپ
-	یا آپ کے گھر کے دیگر افراد  اس وجہ سے پریشان تھے کہ پیسے کی کمی یا دیگر وسائل کی وجہ سے آپ کے پاس کھانے کے لیے خوراک  کی مناسب مقدار نہیں ہوگی؟</string>
+    <string name="H501">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا ہوا  تھا جب آپ یا آپ کے گھر کے دیگر افراد اس وجہ سے پریشان تھے کہ پیسے کی کمی یا دیگر وسائل کی وجہ سے آپ کے پاس کھانے کے لیے خوراک  کی مناسب مقدار نہیں ہوگی؟</string>
     <string name="H50101">ہاں</string>
     <string name="H50102">نہیں</string>
     <string name="H50103">معلوم نہیں</string>
     <string name="H50104">انکار کردیا</string>
 
-    <string name="H501a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H501a">اگر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19 کے وبائی بحران کی وجہ سے ہوا تھا؟</string>
     <string name="H501a01">ہاں</string>
     <string name="H501a02">نہیں</string>
     <string name="H501a03">معلوم نہیں</string>
     <string name="H501a04">انکار کردیا</string>
 
-    <string name="H501b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H501b">کیا ایسا گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
     <string name="H501b01">ہاں</string>
     <string name="H501b02">نہیں</string>
     <string name="H501b03">معلوم نہیں</string>
     <string name="H501b04">انکار کردیا</string>
 
-    <string name="H502">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا ہوا  تھا جب آپ
-	یا آپ کے گھر کے دیگر افراد پیسے کی کمی یا دیگر وسائل کی وجہ سے صحت مند اور غذائیت سے بھرپور  غذا نہیں کھا سکتے تھے؟ </string>
+    <string name="H502">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا ہوا تھا جب آپ یا آپ کے گھر کے دیگر افراد پیسے کی کمی یا دیگر وسائل کی وجہ سے صحت مند اور غذائیت سے بھرپور غذا نہیں کھا سکتے تھے؟ </string>
     <string name="H50201">ہاں</string>
     <string name="H50202">نہیں</string>
     <string name="H50203">معلوم نہیں</string>
     <string name="H50204">انکار کردیا</string>
 
-    <string name="H502a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H502a">اگر ہاں، تو کیا ایسا خاص طور پر کووڈ-19 کے وبائی بحران کی وجہ سے ہوا تھا؟</string>
     <string name="H502a01">ہاں</string>
     <string name="H502a02">نہیں</string>
     <string name="H502a03">معلوم نہیں</string>
     <string name="H502a04">انکار کردیا</string>
 
-    <string name="H502b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H502b">کیا ایسا گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
     <string name="H502b01">ہاں</string>
     <string name="H502b02">نہیں</string>
     <string name="H502b03">معلوم نہیں</string>
     <string name="H502b04">انکار کردیا</string>
 
-    <string name="H503">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایساہوا  تھا جب آپ یا آپ کے گھر کے دیگر افراد  کو پیسے کی کمی یا دیگر وسائل کی وجہ سے صرف چند قسم کے کھانے کھانے پڑے ہوں؟</string>
+    <string name="H503">پچھلے 12 مہینوں کے دوران، کیا کبھی ایساہوا تھا جب آپ یا آپ کے گھر کے دیگر افراد کو پیسے کی کمی یا دیگر وسائل کی وجہ سے صرف چند قسم کے کھانے کھانے پڑے ہوں؟</string>
     <string name="H50301">ہاں</string>
     <string name="H50302">نہیں</string>
     <string name="H50303">معلوم نہیں</string>
     <string name="H50304">انکار کردیا</string>
 
-    <string name="H503a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H503a">اگر ہاں، تو کیا ایسا خاص طور پر کووڈ-19 کے وبائی بحران کی وجہ سے ہوا تھا؟</string>
     <string name="H503a01">ہاں</string>
     <string name="H503a02">نہیں</string>
     <string name="H503a03">معلوم نہیں</string>
     <string name="H503a04">انکار کردیا</string>
 
-    <string name="H503b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H503b">کیا ایسا گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
     <string name="H503b01">ہاں</string>
     <string name="H503b02">نہیں</string>
     <string name="H503b03">معلوم نہیں</string>
@@ -724,109 +734,108 @@
     <string name="H50403">معلوم نہیں</string>
     <string name="H50404">انکار کردیا</string>
 
-    <string name="H504a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H504a">اگر ہاں، تو کیا ایسا خاص طور پر کووڈ-19 کے وبائی بحران کی وجہ سے ہوا تھا؟</string>
     <string name="H504a01">ہاں</string>
     <string name="H504a02">نہیں</string>
     <string name="H504a03">معلوم نہیں</string>
     <string name="H504a04">انکار کردیا</string>
 
-    <string name="H504b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H504b">کیا ایسا گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
     <string name="H504b01">ہاں</string>
     <string name="H504b02">نہیں</string>
     <string name="H504b03">معلوم نہیں</string>
     <string name="H504b04">انکار کردیا</string>
 
-    <string name="H505">پچھلے 12 مہینوں کے دوران ، کیا کبھی  ایسا وقت آیا تھا جب آپ یا آپ کے گھر کے دیگر افراد نے پیسے یا دیگر وسائل کی کمی کی وجہ سے ضرورت  سے  کم کھانا کھا یا ہو  ؟ </string>
+    <string name="H505">پچھلے 12 مہینوں کے دوران ، کیا کبھی ایسا وقت آیا تھا جب آپ یا آپ کے گھر کے دیگر افراد نے پیسے یا دیگر وسائل کی کمی کی وجہ سے ضرورت سے کم کھانا کھایا ہو؟</string>
     <string name="H50501">ہاں</string>
     <string name="H50502">نہیں</string>
     <string name="H50503">معلوم نہیں</string>
     <string name="H50504">انکار کردیا</string>
 
-    <string name="H505a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H505a">اگر ہاں، تو کیا ایسا خاص طور پر کووڈ-19 کے وبائی بحران کی وجہ سے ہوا تھا؟</string>
     <string name="H505a01">ہاں</string>
     <string name="H505a02">نہیں</string>
     <string name="H505a03">معلوم نہیں</string>
     <string name="H505a04">انکار کردیا</string>
 
-    <string name="H505b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟ </string>
+    <string name="H505b">کیا ایسا گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
     <string name="H505b01">ہاں</string>
     <string name="H505b02">نہیں</string>
     <string name="H505b03">معلوم نہیں</string>
     <string name="H505b04">انکار کردیا</string>
 
-    <string name="H506">پچھلے 12 مہینوں کے دوران ، کیا کبھی ایسا وقت آیا تھا جب آپ کے گھر میں پیسے یا دیگر وسائل کی کمی کی وجہ سے کھانا ختم ہو گیا تھا؟ </string>
+    <string name="H506">پچھلے 12 مہینوں کے دوران، کیا کبھی ایسا وقت آیا تھا جب آپ کے گھر میں پیسے یا دیگر وسائل کی کمی کی وجہ سے کھانا ختم ہو گیا تھا؟</string>
     <string name="H50601">ہاں</string>
     <string name="H50602">نہیں</string>
     <string name="H50603">معلوم نہیں</string>
     <string name="H50604">انکار کردیا</string>
 
-    <string name="H506a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H506a">اگر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
     <string name="H506a01">ہاں</string>
     <string name="H506a02">نہیں</string>
     <string name="H506a03">معلوم نہیں</string>
     <string name="H506a04">انکار کردیا</string>
 
-    <string name="H506b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
+    <string name="H506b">کیا ایسا گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
     <string name="H506b01">ہاں</string>
     <string name="H506b02">نہیں</string>
     <string name="H506b03">معلوم نہیں</string>
     <string name="H506b04">انکار کردیا</string>
 
     <string name="H506c">ایسا کتنی بار ہوا؟</string>
-    <string name="H506c01">شازو نادر ہی (1 or 2 timesایک سے دو بار)</string>
-    <string name="H506c02">کبھی کبھار  (3-10 timesتین سے دس  مرتبہ  )</string>
-    <string name="H506c03">اکثر (more than 10 timesدس سے زیادہ مرتبہ)</string>
+    <string name="H506c01">شازو نادر ہی (ایک سے دو بار)</string>
+    <string name="H506c02">کبھی کبھار  (تین سے دس  مرتبہ)</string>
+    <string name="H506c03">اکثر (دس سے زیادہ مرتبہ)</string>
     <string name="H506c04">معلوم نہیں</string>
     <string name="H506c05">انکار کردیا</string>
 
-    <string name="H507">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا  وقت  آیا تھا
-	جب آپ یا آپ کے گھر کے دیگر افراد بھوکے یا خالی پیٹ ہونے کے باوجودد  کھانا نہیں کھا سکے  تھے کیونکہ کھانا کھانے کے لیے کافی پیسے یا دیگر وسائل نہیں تھے؟ </string>
+    <string name="H507">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا  وقت  آیا تھا جب آپ یا آپ کے گھر کے دیگر افراد بھوکے یا خالی پیٹ ہونے کے باوجود کھانا نہیں کھا سکے  تھے کیونکہ کھانا کھانے کے لیے کافی پیسے یا دیگر وسائل نہیں تھے؟ </string>
     <string name="H50701">ہاں</string>
     <string name="H50702">نہیں</string>
     <string name="H50703">معلوم نہیں</string>
     <string name="H50704">انکار کردیا</string>
 
-    <string name="H507a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H507a">اگر ہاں، تو کیا ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا تھا؟</string>
     <string name="H507a01">ہاں</string>
     <string name="H507a02">نہیں</string>
     <string name="H507a03">معلوم نہیں</string>
     <string name="H507a04">انکار کردیا</string>
 
-    <string name="H507b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
+    <string name="H507b">کیا ایسا گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
     <string name="H507b01">ہاں</string>
     <string name="H507b02">نہیں</string>
     <string name="H507b03">معلوم نہیں</string>
     <string name="H507b04">انکار کردیا</string>
 
     <string name="H507c">ایسا کتنی بار ہوا؟</string>
-    <string name="H507c01">شازو نادر ہی (1 or 2 timesایک سے دو بار)</string>
-    <string name="H507c02">کبھی کبھار  (3-10 timesتین سے دس  مرتبہ  )</string>
-    <string name="H507c03">اکثر (more than 10 timesدس سے زیادہ مرتبہ)</string>
+    <string name="H507c01">شازو نادر ہی (ایک سے دو بار)</string>
+    <string name="H507c02">کبھی کبھار  (تین سے دس  مرتبہ  )</string>
+    <string name="H507c03">اکثر (دس سے زیادہ مرتبہ)</string>
     <string name="H507c04">معلوم نہیں</string>
     <string name="H507c05">انکار کردیا</string>
 
-    <string name="H508">پچھلے 12 مہینوں کے دوران ، کیا  کبھی ایسا  وقت آیا تھا جب آپ یا آپ کے گھر کے دیگر  افراد  پیسے یا دیگر وسائل کی کمی کی وجہ سے پورا دن  کھانا کھائے بغیر  رہے ہوں؟ </string>
+    <string name="H508">پچھلے 12 مہینوں کے دوران، کیا کبھی ایسا وقت آیا تھا جب آپ یا آپ کے گھر کے دیگر افراد پیسے یا دیگر وسائل کی کمی کی وجہ سے پورا دن  کھانا کھائے بغیر رہے ہوں؟ </string>
     <string name="H50801">ہاں</string>
     <string name="H50802">نہیں</string>
     <string name="H50803">معلوم نہیں</string>
     <string name="H50804">انکار کردیا</string>
 
-    <string name="H508a">گر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19  کے وبائی بحران کی وجہ سے ہوا  تھا؟</string>
+    <string name="H508a">اگر ہاں، تو کیا  ایسا خاص طور پر کووڈ-19 کے وبائی بحران کی وجہ سے ہوا تھا؟</string>
     <string name="H508a01">ہاں</string>
     <string name="H508a02">نہیں</string>
     <string name="H508a03">معلوم نہیں</string>
     <string name="H508a04">انکار کردیا</string>
 
-    <string name="H508b">کیا  ایسا  گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
+    <string name="H508b">کیا ایسا گزشتہ 4 ہفتوں (30 دن) میں ہوا ہے؟</string>
     <string name="H508b01">ہاں</string>
     <string name="H508b02">نہیں</string>
     <string name="H508b03">معلوم نہیں</string>
     <string name="H508b04">انکار کردیا</string>
 
     <string name="H508c">ایسا کتنی بار ہوا؟</string>
-    <string name="H508c01">شازو نادر ہی (1 or 2 timesایک سے دو بار)</string>
-    <string name="H508c02">بھی کبھار  (3-10 timesتین سے دس  مرتبہ  )</string>
-    <string name="H508c03">اکثر (more than 10 timesدس سے زیادہ مرتبہ)</string>
+    <string name="H508c01">شازو نادر ہی (ایک سے دو بار)</string>
+    <string name="H508c02">بھی کبھار  (تین سے دس  مرتبہ  )</string>
+    <string name="H508c03">اکثر (دس سے زیادہ مرتبہ)</string>
     <string name="H508c04">معلوم نہیں</string>
     <string name="H508c05">انکار کردیا</string>
 
@@ -859,181 +868,202 @@
     <string name='Q_H508c'>H508c</string>
 
     <!-- H6 -->
-    <string name="H6Heading">سیکشن H6: سوشل سیفٹی نیٹ: امداد پہنچانے والے افراد کی معلومات۔</string>
+    <string name="H6Heading">سیکشن ایچ 6: سوشل سیفٹی نیٹ: امداد پہنچانے والے افراد کی معلومات۔</string>
 
-    <string name="H601">آپ کتنے عرصے سے بی آئی ایس پی سے مستفید ہورہے ہیں؟</string>
+    <string name="H601">منتخب خاتون کا لائن نمبر</string>
 
-    <string name="H602">کیاآپ جانتے ہیں کہ آپ بی آئی ایس پی سے ہر 3 ماہ یا فی مہینہ کتنی رقم وصول کرنے کےاہل ہیں؟</string>
-    <string name="H60201">ہاں</string>
-    <string name="H60202">نہیں</string>
+    <string name="H602">منتخب خاتون کا نام</string>
 
-    <string name="H603">آپ نے بی آئی ایس پی سےآخری بار کب رقم وصول کی تھی؟</string>
+    <string name="H603">خاتون سے انٹرویو کا نتیجہ</string>
+    <string name="H60301">مکمل</string>
+    <string name="H60302">گھر پرموجود نہیں</string>
+    <string name="H60303">انکار</string>
+    <string name="H60304">جزوی مکمل</string>
+    <string name="H60305">جواب دینے سے قاصر</string>
+    <string name="H60396">دیگر وضاحت کریں</string>
 
-    <string name="H604">آپ نے بی آئی ایس پی سےآخری بارکتنی رقم وصول کی تھی؟</string>
 
-    <string name="H605">گزشتہ 12 مہینوں کے درمیان آپ نے کل کتنی رقم وصول کی؟ (اگر اہل ہیں)</string>
+    <string name="H604">آپ کتنے عرصے سے بی آئی ایس پی سے مستفید ہورہے ہیں؟</string>
+    <string name="H60401">مہینہ</string>
+    <string name="H60498"> معلوم نہیں</string>
 
-    <string name="H606">جب آپ نے آخری بار رقم وصول کی تو اس کا ذریعہ کیا تھا؟</string>
-    <string name="H60601">اے ٹی ایم کارڈ کے ذریعے</string>
-    <string name="H60602">بایو میٹرک کے ذریعے</string>
-    <string name="H60603">ایجنٹ سے</string>
-    <string name="H60604">دوکان سے</string>
-    <string name="H60696">دیگر وضاحت کریں</string>
+    <string name="H605">آپ نے بی آئی ایس پی سےآخری بار کب رقم وصول کی تھی؟</string>
+    <string name="H60501">مہینہ</string>
+    <string name="H60598">معلوم نہیں</string>
 
-    <string name="H607">اگررقم POS ایجنٹ یا دکان سے وصول کی گئی تھی تو وصول شدہ رقم کتنی تھی؟</string>
+    <string name="H606">آپ نے بی آئی ایس پی سےآخری بارکتنی رقم وصول کی تھی؟</string>
 
-    <string name="H608">رقم کون وصول کرتا ہے؟</string>
-    <string name="H60801">خود</string>
-    <string name="H60802">شوہر</string>
-    <string name="H60803">ساس</string>
-    <string name="H60804">سسر</string>
-    <string name="H60805">بیوی</string>
+    <string name="H607">گزشتہ 12 مہینوں کے درمیان آپ نے کل کتنی رقم وصول کی؟ (اگر اہل ہیں)</string>
+
+    <string name="H608">جب آپ نے آخری بار رقم وصول کی تو اس کا ذریعہ کیا تھا؟</string>
+    <string name="H60801">اے ٹی ایم کارڈ کے ذریعے</string>
+    <string name="H60802">بایو میٹرک کے ذریعے</string>
+    <string name="H60803">ایجنٹ سے</string>
+    <string name="H60804">دوکان سے</string>
     <string name="H60896">دیگر وضاحت کریں</string>
 
-    <string name="H609">کیا آپ مکمل رقم وصول کرتے ہیں؟</string>
-    <string name="H60901">ہاں</string>
-    <string name="H60902">نہیں</string>
+    <string name="H609">اگررقم POS ایجنٹ یا دکان سے وصول کی گئی تھی تو وصول شدہ رقم کتنی تھی؟</string>
 
-    <string name="H610">عام طور پر پیسوں کے استعمال سے متعلق فیصلے کون کرتا ہے؟</string>
+    <string name="H610">رقم کس نے وصول کی تھی؟</string>
     <string name="H61001">خود</string>
     <string name="H61002">شوہر</string>
     <string name="H61003">ساس</string>
     <string name="H61004">سسر</string>
-    <string name="H61005">بیوی</string>
     <string name="H61096">دیگر وضاحت کریں</string>
 
-    <string name="H611">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟</string>
-    <string name="H61101">خود</string>
-    <string name="H61102">شوہر</string>
-    <string name="H61103">ساس</string>
-    <string name="H61104">سسر</string>
-    <string name="H61105">بیوی</string>
-    <string name="H61196">دیگر وضاحت کریں</string>
+    <string name="H611">کیا آپ نے مکمل رقم وصول کی تھی جس کے آپ اہل ہیں؟</string>
+    <string name="H61101">ہاں</string>
+    <string name="H61102">نہیں</string>
+    <string name="H61198">معلوم نہیں</string>
 
-    <string name="H612">بی آئی ایس پی سے ملے ہوئے پیسے کہاں خرچ کئے؟ ایک سے ذیادہ جوابات آسکتے ہیں؟</string>
-    <string name="H61201">کھانے کی چیزیں خریدنے کے لیے</string>
-    <string name="H61202">دوایئاں خریدنے کے لیے</string>
-    <string name="H61203">تعلیم پر</string>
-    <string name="H61204">گھرکی دیگر چیزوں پر</string>
+    <string name="H612">عام طور پر پیسوں کے استعمال سے متعلق فیصلے کون کرتا ہے؟ [ایک سے زیادہ جوابات آسکتے ہیں]</string>
+    <string name="H61201">خود</string>
+    <string name="H61202">شوہر</string>
+    <string name="H61203">ساس</string>
+    <string name="H61204">سسر</string>
+    <string name="H61205">بیوی</string>
     <string name="H61296">دیگر وضاحت کریں</string>
 
-    <string name="H613">گزشتہ مہیا کی گئی سہولت میں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
+    <string name="H613">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟ [ایک سے زیادہ جوابات آسکتے ہیں]</string>
+    <string name="H61301">خود</string>
+    <string name="H61302">شوہر</string>
+    <string name="H61303">ساس</string>
+    <string name="H61304">سسر</string>
+    <string name="H61305">بیوی</string>
+    <string name="H61396">دیگر وضاحت کریں</string>
 
-    <string name="H614">مالی امداد دینے والے مرکز تک جانے کے لئے کتنی رقم خرچ کی گئی تھی؟</string>
+    <string name="H614">آخری بار بی آئی ایس پی سے ملے ہوئے پیسے کہاں خرچ کئے؟ [ایک سے زیادہ جوابات آسکتے ہیں]</string>
+    <string name="H61401">کھانے کی چیزیں خریدنے کے لیے</string>
+    <string name="H61402">دوایئاں خریدنے کے لیے</string>
+    <string name="H61403">تعلیم پر</string>
+    <string name="H61404">گھرکی دیگر چیزوں پر</string>
+    <string name="H61496">دیگر وضاحت کریں</string>
 
-    <string name="H615">پیسے لینے کی سہولت آپ کے گھر سے کتنی دور ہے؟ اور پیسے لینے کی سہولت تک پہنچنے میں آپ کو کتنا وقت لگتاہے؟</string>
-    <string name="H61501">کلومیٹرز</string>
-    <string name="H61502">وقت منٹوں میں</string>
-    <string name="H61598">معلوم نہیں</string>
+    <string name="H615">کس چیز پر آپ نے زیادہ رقم خرچ کی؟</string>
+    <string name="H61501">کھانے کی چیزیں خریدنے کے لیے</string>
+    <string name="H61502">دوایئاں خریدنے کے لیے</string>
+    <string name="H61503">تعلیم پر</string>
+    <string name="H61504">گھرکی دیگر چیزوں پر</string>
+    <string name="H61596">دیگر وضاحت کریں</string>
 
-    <string name="H616">آپ مالی امداد دینے والے مرکز تک  جانے کے لئے ٹرانسپورٹ کا کون سا طریقہ استعمال کرتے ہیں؟</string>
-    <string name="H61601">پیدل</string>
-    <string name="H61602">رکشہ</string>
-    <string name="H61603">بس</string>
-    <string name="H61604">اپنی سواری کے زریعے</string>
-    <string name="H61696">دیگر وضاحت کریں</string>
 
-    <string name="H617">کیا آپ کو وہاں پہنچنے میں کوئی مشکل پیش آتی ہے؟</string>
-    <string name="H61701">ہاں</string>
-    <string name="H61702">نہیں</string>
+    <string name="H616">گزشتہ مہیا کی گئی سہولت میں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
 
-    <string name="H618">اگر ہاں تو وضاحت کریں</string>
+    <string name="H617">مالی امداد دینے والے مرکز تک جانے کے لئے کتنی رقم خرچ کی گئی تھی؟</string>
 
-    <string name="H619">کیا آپ احساس نشوونما پروگرام کا حصہ ہیں؟</string>
-    <string name="H61901">ہاں</string>
-    <string name="H61902">نہیں</string>
+    <string name="H618">پیسے لینے کی سہولت تک پہنچنے میں آپ کو کتنا وقت لگتاہے؟</string>
 
-    <string name="H620">آپ کو احساس نشوونما پروگرام کے بارے میں کیسے پتہ چلا؟</string>
-    <string name="H62001">رشتہ دار</string>
-    <string name="H62002">حمل کے چک اپ کے دوران</string>
-    <string name="H62003">ایل ایچ ڈبلیو یا سوشل موبلائزرکے زریعہ</string>
-    <string name="H62096">دیگر وضاحت کریں</string>
+    <string name="H619">آپ مالی امداد دینے والے مرکز تک جانے کے لئے ٹرانسپورٹ کا کون سا طریقہ استعمال کرتے ہیں؟</string>
+    <string name="H61901">پیدل</string>
+    <string name="H61902">رکشہ</string>
+    <string name="H61903">بس</string>
+    <string name="H61904">اپنی سواری کے زریعے</string>
+    <string name="H61996">دیگر وضاحت کریں</string>
 
-    <string name="H621">آپ کتنے عرصے سے احساس نشوونما پروگرام کا حصہ ہے؟ مہنیوں میں</string>
+    <string name="H620">کیا آپ کو وہاں پہنچنے میں کوئی مشکل پیش آتی ہے؟</string>
+    <string name="H62001">ہاں</string>
+    <string name="H62002">نہیں</string>
 
-    <string name="H622">آپ کی موجودہ حیثیت احساس نشوونما پروگرام میں کیا ہے؟</string>
-    <string name="H62201">حاملہ</string>
-    <string name="H62202">دو سال سے کم عمر بچے کی ماں</string>
+    <string name="H621">اگر ہاں تو وضاحت کریں</string>
 
-    <string name="H623">کیا آپ جانتے ہیں کہ آپ احساس نشوونما پروگرام سے کتنی رقم وصول کرنے کے اہل ہے؟</string>
-    <string name="H62301">ہاں</string>
-    <string name="H62302">نہیں</string>
+    <string name="H622">کیا آپ احساس نشوونما پروگرام کا حصہ ہیں؟</string>
+    <string name="H62201">ہاں</string>
+    <string name="H62202">نہیں</string>
 
-    <string name="H624">آپ نے آخری بار احسا س نشوونما سے کب رقم وصول کی؟</string>
+    <string name="H623">آپ کو احساس نشوونما پروگرام کے بارے میں کیسے پتہ چلا؟</string>
+    <string name="H62301">رشتہ دار</string>
+    <string name="H62302">حمل کے چک اپ کے دوران</string>
+    <string name="H62303">ایل ایچ ڈبلیو یا سوشل موبلائزرکے زریعہ</string>
+    <string name="H62396">دیگر وضاحت کریں</string>
 
-    <string name="H625">آپ نے آخری بار احسا س نشوونما سے کتنی رقم وصول کی؟</string>
+    <string name="H624">آپ کتنے عرصے سے احساس نشوونما پروگرام کا حصہ ہے؟ مہنیوں میں</string>
 
-    <string name="H626">جب آپ نے آخری بار رقم وصول کی تو اس کا ذریعہ کیا تھا؟</string>
-    <string name="H62601">اے ٹی ایم کارڈ کے ذریعے</string>
-    <string name="H62602">بایو میٹرک کے ذریعے</string>
-    <string name="H62603">ایجنٹ سے</string>
-    <string name="H62604">دوکان سے</string>
-    <string name="H62696">دیگر وضاحت کریں</string>
+    <string name="H625">آپ کی موجودہ حیثیت احساس نشوونما پروگرام میں کیا ہے؟</string>
+    <string name="H62501">حاملہ</string>
+    <string name="H62502">دو سال سے کم عمر بچے کی ماں</string>
 
-    <string name="H627">اگررقم POS یا دکان سے وصول کی گئی تھی تو وصول شدہ رقم کتنی تھی؟</string>
+    <string name="H626">آپ احساس نشوونما پروگرام سے فی وزٹ کتنی رقم وصول کرنے کے اہل ہے؟</string>
+    <string name="H62698">معلوم نہیں</string>
 
-    <string name="H628">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟</string>
-    <string name="H62801">خود</string>
-    <string name="H62802">شوہر</string>
-    <string name="H62803">ساس</string>
-    <string name="H62804">سسر</string>
-    <string name="H62805">بیوی</string>
-    <string name="H62896">دیگر وضاحت کریں</string>
+    <string name="H627">آپ کو آخری بار احسا س نشوونما سے کب رقم ملی؟</string>
+    <string name="H62798">کوئی رقم وصول نہیں کی</string>
 
-    <string name="H629">کیا آپ مکمل رقم وصول کرتے ہیں؟</string>
-    <string name="H62901">ہاں</string>
-    <string name="H62902">نہیں</string>
+    <string name="H628">آپ نے آخری بار احسا س نشوونما سے کتنی رقم وصول کی؟</string>
 
-    <string name="H630">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟</string>
-    <string name="H63001">خود</string>
-    <string name="H63002">شوہر</string>
-    <string name="H63003">ساس</string>
-    <string name="H63004">سسر</string>
-    <string name="H63005">بیوی</string>
-    <string name="H63096">دیگر وضاحت کریں</string>
+    <string name="H629">جب آپ نے آخری بار رقم وصول کی تو اس کا ذریعہ کیا تھا؟</string>
+    <string name="H62901">اے ٹی ایم کارڈ کے ذریعے</string>
+    <string name="H62902">بایو میٹرک کے ذریعے</string>
+    <string name="H62903">ایجنٹ سے</string>
+    <string name="H62904">دوکان سے</string>
+    <string name="H62996">دیگر وضاحت کریں</string>
 
-    <string name="H631">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟</string>
+    <string name="H630">اگر رقم POS یا دکان سے وصول کی گئی تھی تو وصول شدہ رقم کتنی تھی؟</string>
+
+    <string name="H631">رقم کس نے وصول کی تھی؟</string>
     <string name="H63101">خود</string>
     <string name="H63102">شوہر</string>
     <string name="H63103">ساس</string>
     <string name="H63104">سسر</string>
-    <string name="H63105">بیوی</string>
     <string name="H63196">دیگر وضاحت کریں</string>
 
-    <string name="H632">آخری بار احساس نشوونما سے ملے ہوئے پیسے کہاں خرچ کئے؟ [ایک سے زیادہ جوابات آسکتے ہیں]</string>
-    <string name="H63201">کھانے کی چیزیں خریدنے کے لیے</string>
-    <string name="H63202">دوایئاں خریدنے کے لیے</string>
-    <string name="H63203">تعلیم پر</string>
-    <string name="H63204">گھر کی دیگر چیزوں پر</string>
-    <string name="H63296">دیگر وضاحت کریں</string>
+    <string name="H632">کیا آپ مکمل رقم وصول کرتے ہیں؟</string>
+    <string name="H63201">ہاں</string>
+    <string name="H63202">نہیں</string>
 
-    <string name="H633">گزشتہ مہیا کی گئی امدادمیں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
+    <string name="H633">عام طور پر پیسوں کے استعمال سے متعلق فیصلے کون کرتا ہے؟ [ایک سے زیادہ جوابات آسکتے ہیں]</string>
+    <string name="H63301">خود</string>
+    <string name="H63302">شوہر</string>
+    <string name="H63303">ساس</string>
+    <string name="H63304">سسر</string>
+    <string name="H63396">دیگر وضاحت کریں</string>
 
-    <string name="H634">مالی امداد دینے والے مرکز تک آنے اورجانے کے لئے کتنی رقم خرچ کی گئی تھی؟</string>
+    <string name="H634">عام طور پر  پیسوں کو استعمال کون کرتا ہے؟ [ایک سے زیادہ جوابات آسکتے ہیں]</string>
+    <string name="H63401">خود</string>
+    <string name="H63402">شوہر</string>
+    <string name="H63403">ساس</string>
+    <string name="H63404">سسر</string>
+    <string name="H63496">دیگر وضاحت کریں</string>
 
-    <string name="H635">پیسے لینے کی سہولت آپ کے گھر سے کتنی دور ہے؟ اور پیسے لینے کی سہولت تک پہنچنےمیں آپ کو کتنا وقت لگتاہے؟</string>
-    <string name="H63501">کلومیٹرز</string>
-    <string name="H63502">وقت منٹوں میں</string>
-    <string name="H63598">معلوم نہیں</string>
+    <string name="H635">آخری بار احساس نشوونما سے ملے ہوئے پیسے کہاں خرچ کئے؟ [ایک سے زیادہ جوابات آسکتے ہیں]</string>
+    <string name="H63501">کھانے کی چیزیں خریدنے کے لیے</string>
+    <string name="H63502">دوایئاں خریدنے کے لیے</string>
+    <string name="H63503">تعلیم پر</string>
+    <string name="H63504">گھر کی دیگر چیزوں پر</string>
+    <string name="H63596">دیگر وضاحت کریں</string>
 
-    <string name="H636">آپ مالی امداد دینے والے مرکز تک  جانے کے لئے ٹرانسپورٹ کا کون سا طریقہ استعمال کرتے ہیں؟</string>
-    <string name="H63601">پیدل</string>
-    <string name="H63602">رکشہ</string>
-    <string name="H63603">بس</string>
-    <string name="H63604">اپنی سواری کے زریعے</string>
+    <string name="H636">آپ نے سب سے زیادہ رقم کس چیز پر خرچ کی؟</string>
+    <string name="H63601">کھانے کی چیزیں خریدنے کے لیے</string>
+    <string name="H63602">دوایئاں خریدنے کے لیے</string>
+    <string name="H63603">تعلیم پر</string>
+    <string name="H63604">گھر کی دیگر چیزوں پر</string>
     <string name="H63696">دیگر وضاحت کریں</string>
 
-    <string name="H637">کیا آپ کو وہاں پہنچنے میں کوئی مشکل پیش آتی ہے؟</string>
-    <string name="H63701">ہاں</string>
-    <string name="H63702">نہیں</string>
+    <string name="H637">گزشتہ مہیا کی گئی امدادمیں سے کتنے پیسوں سے آپ نے کھانا خریدا تھا؟</string>
 
-    <string name="H638">اگر ہاں تو وضاحت کریں</string>
+    <string name="H638">مالی امداد دینے والے مرکز تک آنے اورجانے کے لئے کتنی رقم خرچ کی گئی تھی؟</string>
 
-    <string name="H639">کیا آپ احساس نشوونما پروگرام کے بارے میں جانتے ہیں؟</string>
-    <string name="H63901">ہاں</string>
-    <string name="H63902">نہیں</string>
+    <string name="H639">پیسے لینے کی سہولت تک پہنچنے میں آپ کو کتنا وقت لگتا ہے؟</string>
+    <string name="H63901">وقت گھنٹوں اور منٹوں میں</string>
+    <string name="H63998">معلوم نہیں</string>
 
-    <string name="H640">آپ احساس نشوونما کے پروگرام کا حصہ کیوں نہیں ہے؟</string>
+    <string name="H640">آپ مالی امداد دینے والے مرکز تک  جانے کے لئے ٹرانسپورٹ کا کون سا طریقہ استعمال کرتے ہیں؟</string>
+    <string name="H64001">پیدل</string>
+    <string name="H64002">رکشہ</string>
+    <string name="H64003">بس</string>
+    <string name="H64004">اپنی سواری کے زریعے</string>
+    <string name="H64096">دیگر وضاحت کریں</string>
+
+    <string name="H641">کیا آپ کو وہاں پہنچنے میں کوئی مشکل پیش آتی ہے؟</string>
+    <string name="H64101">ہاں</string>
+    <string name="H64102">نہیں</string>
+
+    <string name="H642">اگر ہاں تو وضاحت کریں</string>
+
+    <string name="H643">کیا آپ احساس نشوونما پروگرام کے بارے میں جانتے ہیں؟</string>
+    <string name="H64301">ہاں</string>
+    <string name="H64302">نہیں</string>
+
+    <string name="H644">آپ احساس نشوونما کے پروگرام کا حصہ کیوں نہیں ہے؟</string>
 
     <string name='Q_H601'>H601</string>
     <string name='Q_H602'>H602</string>
@@ -1075,6 +1105,10 @@
     <string name='Q_H638'>H638</string>
     <string name='Q_H639'>H639</string>
     <string name='Q_H640'>H640</string>
+    <string name='Q_H641'>H641</string>
+    <string name='Q_H642'>H642</string>
+    <string name='Q_H643'>H643</string>
+    <string name='Q_H644'>H644</string>
 
     <!-- W6 -->
     <string name="W6Heading">سیکشن 6 ڈبلیو: امداد/ پروگرام تک رسا ای</string>
@@ -1178,79 +1212,63 @@
     <string name='Q_W610'>W610</string>
 
     <!-- W1 -->
-    <string name="W1Heading">SECTION W1: تولیدی عمر کی خواتین </string>
+    <string name="W1Heading">سیکشن 1 ڈبلیو: تولیدی عمر کی خواتین </string>
 
-    <string name="W101">BISP Beneficary ID:</string>
+    <string name="W1Instructions">میں اندراج کردہ حمل کی تعداد کے  مطابق  بار بار پوچھا جائے گا، زچگی کے نتیجے کا سال ریکارڈ کرنا ضروری ہے۔ W111 یہ ٹیبل 15 سے 49 سال کے درمیان منتخب شدہ تولیدی صحت کی حامل شادی شدہ خواتین کے لیے ہے۔ یہ سوال، سوال نمبر</string>
 
-    <string name="W102">عورت کانام</string>
+    <string name="W101">منتخب خاتون کا لائن نمبر</string>
 
-    <string name="W103">عورت کا لائن نمبر</string>
+    <string name="W102">منتخب خاتون کا نام</string>
 
-    <string name="W104">خاتون سے انٹرویو کا نتیجہ</string>
-    <string name="W10401">مکمل</string>
-    <string name="W10402">گھر پرموجود نہیں</string>
-    <string name="W10403">انکار</string>
-    <string name="W10404">جزوی مکمل</string>
-    <string name="W10405">جواب دینے سے قاصر</string>
-    <string name="W10496">دیگر وضاحت کریں</string>
+    <string name="W103">شادی کے وقت آپ کی عمر کتنی تھی؟</string>
 
-    <string name="W105">آپ کی تاریخ پیدائش کیا ہے؟</string>
-    <string name="W10501">دن</string>
-    <string name="W10502">مہینہ</string>
-    <string name="W10503">سال</string>
+    <string name="W104">پہلی ماہواری/حیض کے وقت آپ کی عمر کتنی تھی؟</string>
 
-    <string name="W106">Please tell me how old you are. What was your age at your last birthday? RECORD AGE IN COMPLETED YEARS</string>
+    <string name="W105">کیا آپ اس وقت حاملہ ہیں؟</string>
+    <string name="W10501">ہاں</string>
+    <string name="W10502">نہیں</string>
 
-    <string name="W107">What was your age, at the time of your marriage?</string>
+    <string name="W106">کیاآپ پہلی بار حمل سے ہیں؟</string>
+    <string name="W10601">ہاں</string>
+    <string name="W10602">نہیں</string>
 
-    <string name="W108">What was your age of menarche?</string>
+    <string name="W107">آپ زندگی میں کتنی بار حاملہ ہوئی  ہیں؟ (موجودہ حمل سمیت)</string>
 
-    <string name="W109">Are you currently pregnant?</string>
-    <string name="W10901">Yes</string>
-    <string name="W10902">No</string>
+    <string name="W108">اب تک آپ کے کتنے بچوں کی پیدائش ہوئی ہے؟</string>
 
-    <string name="W110">How many times you have been pregnant in your life? (Including current Pregnancy)</string>
+    <string name="W109">کیا آپ نے کبھی جڑواں بچوں کو جنم دیا ہے؟</string>
+    <string name="W10901">ہاں</string>
+    <string name="W10902">نہیں</string>
 
-    <string name="W111">How many times have you delivered in your life?</string>
+    <string name="W110">پہلے بچے کی پیدائش  کے وقت آپکی عمر کتنی تھی؟</string>
 
-    <string name="W112">What was age at the time of first birth?</string>
+    <string name="W111">گزشتہ  پانچ سالوں میں آپ کتنی بار حاملہ ہوئیں؟ (موجودہ حمل سمیت)</string>
 
-    <string name="W113">How many times you have been Pregnant during last five years? (Including current Pregnancy)</string>
+    <string name="W112">گزشتہ پانچ سالوں میں آپ کے کتنے بچوں کی پیدائش ہوئی ہے؟</string>
 
-    <string name="W114">How many times have you delivered during last five years?</string>
+    <string name="W113">کیا گزشتہ پانچ سالوں میں زندہ بچوں کی پیدائش ہوئی تھی؟</string>
+    <string name="W11301">ہاں</string>
+    <string name="W11302">نہیں</string>
 
-    <string name="W115">Was there a live birth in last five years?</string>
-    <string name="W11501">Yes</string>
-    <string name="W11502">No</string>
+    <string name="W114">حمل کی گزشتہ معلومات کا نمبر</string>
 
-    <string name="W116">Pregnancy history number</string>
+    <string name="W115">حمل کے نتیجے کی تاریخ</string>
 
-    <string name="W117">Date of outcome of Pregnancy</string>
-    <string name="W11701">Day</string>
-    <string name="W11702">Month</string>
-    <string name="W11703">Year</string>
+    <string name="W116">کیا بچہ زندہ پیدا ہوا تھا، مردہ پیدا ہوا تھا  یا پیدائش سے پہلے ہی ضائع  ہو گیا تھا؟</string>
+    <string name="W11601">زندہ پیدا ہوا</string>
+    <string name="W11602">مردہ پیدا ہوا</string>
+    <string name="W11603">جڑواں بچوں کی پیدائش (زندہ پیدا ئش)</string>
+    <string name="W11604">ایک زندہ بچہ ایک مردہ</string>
+    <string name="W11605">دونوں مردہ پیدا ہوئے</string>
+    <string name="W11606">مدت مکمل ہونے سے پہلے حمل ضائع ہوگیا</string>
 
-    <string name="W118">Was the baby born alive, born dead or lost before birth?</string>
-    <string name="W11801">Born alive (Live birth)</string>
-    <string name="W11802">Born dead (Still birth</string>
-    <string name="W11803">Twin Birth (Live birth)</string>
-    <string name="W11804">One Alive One Dead (still birth)</string>
-    <string name="W11805">Both Dead (still birth)</string>
-    <string name="W11806">Lost before full Term (Miscarriage)</string>
+    <string name="W117">کیا بچہ ابھی بھی زندہ ہے؟</string>
+    <string name="W11701">ہاں</string>
+    <string name="W11702">نہیں</string>
 
-    <string name="W119">Is child Still alive?</string>
-    <string name="W11901">Yes</string>
-    <string name="W11902">No</string>
+    <string name="W118">بچے کی عمر</string>
 
-    <string name="W120">Age of Child?</string>
-    <string name="W12001">Years</string>
-    <string name="W12002">Months</string>
-    <string name="W12003">Days</string>
-
-    <string name="W121">How old was the child when he/she died?</string>
-    <string name="W12101">Years</string>
-    <string name="W12102">Months</string>
-    <string name="W12103">Days</string>
+    <string name="W119">جب بچہ/بچی کا انتقال ہوا تو اس کی عمر کتنی تھی؟</string>
 
     <string name='Q_W101'>W101</string>
     <string name='Q_W102'>W102</string>
@@ -1271,8 +1289,6 @@
     <string name='Q_W117'>W117</string>
     <string name='Q_W118'>W118</string>
     <string name='Q_W119'>W119</string>
-    <string name='Q_W120'>W120</string>
-    <string name='Q_W121'>W121</string>
 
     <!-- W2 -->
     <string name="W2Heading">SECTION W2: ANTE-NATAL CARE</string>

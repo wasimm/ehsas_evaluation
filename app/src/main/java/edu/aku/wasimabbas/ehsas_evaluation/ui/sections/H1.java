@@ -5,11 +5,12 @@ import static edu.aku.wasimabbas.ehsas_evaluation.core.MainApp.form;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
 
 import com.validatorcrawler.aliazaz.Clear;
@@ -93,11 +94,10 @@ public class H1 extends AppCompatActivity {
 
         bi.B4.addTextChangedListener(textwatcher2);*/
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setSupportActionBar(bi.toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
     }
 
     @Override
@@ -131,6 +131,40 @@ public class H1 extends AppCompatActivity {
 
     private void setupSkip() {
 
+        //H110
+        bi.H110.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
+
+        //H111
+        bi.H111.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
+
         //H112
         bi.H112.setOnCheckedChangeListener((group, idChecked) -> {
             if (idChecked == bi.H11202.getId()) {
@@ -162,6 +196,23 @@ public class H1 extends AppCompatActivity {
             } else {
                 bi.fldGrpCVH116.setVisibility(View.VISIBLE);
             }
+        });
+
+        //H116
+        bi.H11696x.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
         });
 
     }

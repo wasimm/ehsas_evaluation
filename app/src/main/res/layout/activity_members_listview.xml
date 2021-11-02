@@ -49,30 +49,35 @@
                 android:orientation="horizontal"
                 android:visibility="visible">
 
-                <Button
-                    android:id="@+id/btnNextSection"
-                    android:layout_width="578dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:background="@color/green_overlay"
-                    android:text="Go to Next Section"
-                    android:textColor="@color/white" />
-
             </LinearLayout>
 
         </LinearLayout>
+
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="10dp"
             android:layout_marginBottom="10dp"
             android:background="@color/colorNew"
             app:fabCustomSize="80dp"
             app:fabSize="normal"
             app:srcCompat="@drawable/ic_plus" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnNextSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/red"
+            app:fabCustomSize="80dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_next" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

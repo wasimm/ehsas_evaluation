@@ -5,6 +5,8 @@ import static java.lang.Integer.parseInt;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Toast;
@@ -50,6 +52,12 @@ public class H2 extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
     public static int MonthsToDays(int tMonth, int tYear) {
 
         if (tMonth == 1 || tMonth == 3 || tMonth == 5 || tMonth == 7
@@ -63,6 +71,41 @@ public class H2 extends AppCompatActivity {
             }
         } else {
             return 30;
+        }
+    }
+
+    public void BtnContinue() {
+        if (!formValidation()) return;
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if (UpdateDB()) {
+            finish();
+            startActivity(new Intent(this, MemberList.class).putExtra("counter", counter));
+        } else {
+            Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void BtnEnd() {
+        MainApp.openEndActivity(this);
+    }
+
+    private boolean UpdateDB() {
+
+        db = new DatabaseHelper(this);
+        long inserted = db.addFamilyMember(MainApp.mc);
+        MainApp.mc.setId(String.valueOf(inserted));
+        if (inserted > 0) {
+            MainApp.mc.setUid(MainApp.deviceId + MainApp.mc.getId());
+            db.updatesFamilyMemberColumn(MembersContract.MembersTable.COLUMN_UID, MainApp.mc.getUid(), MainApp.mc.getId());
+            db.updateH214ToH216(MainApp.mc.getFuid(), MainApp.mc.getH204(), MainApp.mc.getH20603());
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
         }
     }
 
@@ -88,6 +131,47 @@ public class H2 extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
+        if (counter > 1) {
+
+            bi.H20301.setEnabled(false);
+            bi.H20302.setEnabled(true);
+            bi.H20303.setEnabled(true);
+            bi.H20304.setEnabled(true);
+            bi.H20305.setEnabled(true);
+            bi.H20306.setEnabled(true);
+            bi.H20307.setEnabled(true);
+            bi.H20308.setEnabled(true);
+            bi.H20309.setEnabled(true);
+            bi.H20310.setEnabled(true);
+            bi.H20311.setEnabled(true);
+            bi.H20312.setEnabled(true);
+            bi.H20313.setEnabled(true);
+            bi.H20314.setEnabled(true);
+            bi.H20315.setEnabled(true);
+            bi.H20396.setEnabled(true);
+            bi.H20398.setEnabled(true);
+
+        } else {
+            bi.H20301.setEnabled(true);
+            bi.H20301.setChecked(true);
+            bi.H20302.setEnabled(false);
+            bi.H20303.setEnabled(false);
+            bi.H20304.setEnabled(false);
+            bi.H20305.setEnabled(false);
+            bi.H20306.setEnabled(false);
+            bi.H20307.setEnabled(false);
+            bi.H20308.setEnabled(false);
+            bi.H20309.setEnabled(false);
+            bi.H20310.setEnabled(false);
+            bi.H20311.setEnabled(false);
+            bi.H20312.setEnabled(false);
+            bi.H20313.setEnabled(false);
+            bi.H20314.setEnabled(false);
+            bi.H20315.setEnabled(false);
+            bi.H20396.setEnabled(false);
+            bi.H20398.setEnabled(false);
+        }
+
         /*TextWatcher textwatcher = new TextWatcher() {
 
             @Override
@@ -112,21 +196,186 @@ public class H2 extends AppCompatActivity {
         Toast.makeText(this, "H2: " + fuid, Toast.LENGTH_LONG).show();
     }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return true;
-    }
-
     private void setupSkip() {
 
+        //H202
+        bi.H202.setFilters(new InputFilter[]{
+                new InputFilter() {
+                    @Override
+                    public CharSequence filter(CharSequence cs, int start, int end, Spanned spanned, int dStart, int dEnd) {
+                        // TODO Auto-generated method stub
+                        if (cs.equals("")) { // for backspace
+                            return cs;
+                        }
+                        if (cs.toString().matches("[a-zA-Z ]+")) {
+                            return cs;
+                        }
+                        return "";
+                    }
+                }
+        });
+
         //H204
-        bi.H204.setOnCheckedChangeListener((group, checkedId) -> {
-            if (checkedId == bi.H20402.getId()) {
+        bi.H204.setOnCheckedChangeListener((group, idChecked) -> {
+            if (idChecked == bi.H20402.getId() && bi.H20901.isChecked()) {
                 bi.fldGrpCVH210.setVisibility(View.VISIBLE);
             } else {
                 Clear.clearAllFields(bi.fldGrpCVH210);
                 bi.fldGrpCVH210.setVisibility(View.GONE);
+            }
+        });
+
+        bi.H20501.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                Toast.makeText(H2.this, "Length: " + s.length(), Toast.LENGTH_SHORT).show();
+
+                if (s.length() == 2 && bi.H20502.getText().length() == 2 && bi.H20503.getText().length() == 4) {
+
+                    if (!bi.H20501.getText().toString().equals("98") && !bi.H20502.getText().toString().equals("98") && !bi.H20503.getText().toString().equals("9998")) {
+
+                        String dob = bi.H20501.getText().toString() + "/" + bi.H20502.getText().toString() + "/" + bi.H20503.getText().toString();
+
+                        if (!isValidDate(dob)) {
+
+                            bi.H20501.setError("Kindly enter a valid Date of Birth");
+                            bi.H20501.requestFocus();
+
+                        } else {
+
+                            int[] Age = calculateAge(dob, MainApp.interviewDate);
+                            int days = Age[0];
+                            int months = Age[1];
+                            int years = Age[2];
+                            bi.H20601.setText(String.valueOf(days));
+                            bi.H20602.setText(String.valueOf(months));
+                            bi.H20603.setText(String.valueOf(years));
+                        }
+
+                    } else {
+
+                        if (bi.H20503.getText().toString().equals("9998")) {
+
+                            bi.H20601.setEnabled(true);
+                            bi.H20601.setText(null);
+
+                            bi.H20602.setEnabled(true);
+                            bi.H20602.setText(null);
+
+                            bi.H20603.setEnabled(true);
+                            bi.H20603.setText(null);
+
+                        } else {
+
+                            String dob = bi.H20501.getText().toString() + "/" + bi.H20502.getText().toString() + "/" + bi.H20503.getText().toString();
+
+                            int[] Age = calculateAge(dob, MainApp.interviewDate);
+                            int days = Age[0];
+                            int months = Age[1];
+                            int years = Age[2];
+                            bi.H20601.setText(String.valueOf(days));
+                            bi.H20602.setText(String.valueOf(months));
+                            bi.H20603.setText(String.valueOf(years));
+                        }
+                    }
+
+                } else {
+
+                    bi.H20601.setEnabled(false);
+                    bi.H20601.setText(null);
+
+                    bi.H20602.setEnabled(false);
+                    bi.H20602.setText(null);
+
+                    bi.H20603.setEnabled(false);
+                    bi.H20603.setText(null);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
+
+        bi.H20502.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                Toast.makeText(H2.this, "Length: " + s.length(), Toast.LENGTH_SHORT).show();
+
+                if (s.length() == 2 && bi.H20501.getText().length() == 2 && bi.H20503.getText().length() == 4) {
+
+                    if (!bi.H20501.getText().toString().equals("98") && !bi.H20502.getText().toString().equals("98") && !bi.H20503.getText().toString().equals("9998")) {
+
+                        String dob = bi.H20501.getText().toString() + "/" + bi.H20502.getText().toString() + "/" + bi.H20503.getText().toString();
+
+                        if (!isValidDate(dob)) {
+
+                            bi.H20501.setError("Kindly enter a valid Date of Birth");
+                            bi.H20501.requestFocus();
+
+                        } else {
+
+                            int[] Age = calculateAge(dob, MainApp.interviewDate);
+                            int days = Age[0];
+                            int months = Age[1];
+                            int years = Age[2];
+                            bi.H20601.setText(String.valueOf(days));
+                            bi.H20602.setText(String.valueOf(months));
+                            bi.H20603.setText(String.valueOf(years));
+                        }
+
+                    } else {
+
+                        if (bi.H20503.getText().toString().equals("9998")) {
+
+                            bi.H20601.setEnabled(true);
+                            bi.H20601.setText(null);
+
+                            bi.H20602.setEnabled(true);
+                            bi.H20602.setText(null);
+
+                            bi.H20603.setEnabled(true);
+                            bi.H20603.setText(null);
+
+                        } else {
+
+                            String dob = bi.H20501.getText().toString() + "/" + bi.H20502.getText().toString() + "/" + bi.H20503.getText().toString();
+
+                            int[] Age = calculateAge(dob, MainApp.interviewDate);
+                            int days = Age[0];
+                            int months = Age[1];
+                            int years = Age[2];
+                            bi.H20601.setText(String.valueOf(days));
+                            bi.H20602.setText(String.valueOf(months));
+                            bi.H20603.setText(String.valueOf(years));
+                        }
+                    }
+
+                } else {
+
+                    bi.H20601.setEnabled(false);
+                    bi.H20601.setText(null);
+
+                    bi.H20602.setEnabled(false);
+                    bi.H20602.setText(null);
+
+                    bi.H20603.setEnabled(false);
+                    bi.H20603.setText(null);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
             }
         });
 
@@ -140,7 +389,7 @@ public class H2 extends AppCompatActivity {
 
                 Toast.makeText(H2.this, "Length: " + s.length(), Toast.LENGTH_SHORT).show();
 
-                if (s.length() == 4) {
+                if (s.length() == 4 && bi.H20501.getText().length() == 2 && bi.H20502.getText().length() == 2) {
 
                     if (!bi.H20501.getText().toString().equals("98") && !bi.H20502.getText().toString().equals("98") && !bi.H20503.getText().toString().equals("9998")) {
 
@@ -220,18 +469,15 @@ public class H2 extends AppCompatActivity {
                     if (Integer.parseInt(s.toString()) < 3) {
                         Clear.clearAllFields(bi.fldGrpCVH211);
                         bi.fldGrpCVH211.setVisibility(View.GONE);
-                        Clear.clearAllFields(bi.fldGrpCVH212);
-                        bi.fldGrpCVH212.setVisibility(View.GONE);
                     } else {
                         bi.fldGrpCVH211.setVisibility(View.VISIBLE);
-                        bi.fldGrpCVH212.setVisibility(View.VISIBLE);
                     }
 
-                    if (Integer.parseInt(s.toString()) < 10) {
-                        Clear.clearAllFields(bi.fldGrpCVH209);
-                        bi.fldGrpCVH209.setVisibility(View.GONE);
+                    if (Integer.parseInt(s.toString()) >= 10) {
+                        bi.fldGrpCVH212.setVisibility(View.VISIBLE);
                     } else {
-                        bi.fldGrpCVH209.setVisibility(View.VISIBLE);
+                        Clear.clearAllFields(bi.fldGrpCVH212);
+                        bi.fldGrpCVH212.setVisibility(View.GONE);
                     }
                 }
             }
@@ -246,55 +492,111 @@ public class H2 extends AppCompatActivity {
             if (isChecked) {
                 Clear.clearAllFields(bi.fldGrpCVH208);
                 bi.fldGrpCVH208.setVisibility(View.GONE);
+
+                bi.H20701.setChecked(false);
+                bi.H20702.setChecked(false);
+                bi.H20703.setChecked(false);
+                bi.H20796.setChecked(false);
+
+                bi.H20701.setEnabled(false);
+                bi.H20702.setEnabled(false);
+                bi.H20703.setEnabled(false);
+                bi.H20796.setEnabled(false);
+
             } else {
                 bi.fldGrpCVH208.setVisibility(View.VISIBLE);
+
+                bi.H20701.setEnabled(true);
+                bi.H20702.setEnabled(true);
+                bi.H20703.setEnabled(true);
+                bi.H20796.setEnabled(true);
             }
         });
 
         //H20796
-        bi.H20796.setOnCheckedChangeListener((group, isChecked) -> {
+        /*bi.H20796.setOnCheckedChangeListener((group, isChecked) -> {
             if (isChecked) {
                 Clear.clearAllFields(bi.fldGrpCVH208);
                 bi.fldGrpCVH208.setVisibility(View.GONE);
             } else {
                 bi.fldGrpCVH208.setVisibility(View.VISIBLE);
             }
+        });*/
+
+
+        //H209
+        bi.H209.setOnCheckedChangeListener((group, idChecked) -> {
+            if (idChecked == bi.H20901.getId() && bi.H20402.isChecked()) {
+                bi.fldGrpCVH210.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVH210);
+                bi.fldGrpCVH210.setVisibility(View.GONE);
+            }
         });
     }
 
-    public void BtnContinue() {
-        if (!formValidation()) return;
-        try {
-            SaveDraft();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        if (UpdateDB()) {
-            finish();
-            startActivity(new Intent(this, MemberList.class).putExtra("counter", counter));
+    public int[] calculateAge(String dob, String curd) {
+
+        String[] dob_sep = dob.split("/");
+        String[] curd_sep = curd.split("/");
+
+        String dob_day = dob_sep[0];
+        String dob_month = dob_sep[1];
+        String dob_year = dob_sep[2];
+        String curd_day = curd_sep[0];
+        String curd_month = curd_sep[1];
+        String curd_year = curd_sep[2];
+
+        int mYearDiff, mMonDiff, mDayDiff;
+
+        if (parseInt(dob_year) == 9998 || parseInt(curd_year) == 9998) {
+
+            mYearDiff = 0;
+
         } else {
-            Toast.makeText(this, "Sorry. You can't go further.\n Please contact IT Team (Failed to update DB)", Toast.LENGTH_SHORT).show();
+
+            mYearDiff = parseInt(curd_year) - parseInt(dob_year);
         }
-    }
 
-    public void BtnEnd() {
-        MainApp.openEndActivity(this);
-    }
+        if (parseInt(dob_month) == 98 || parseInt(curd_month) == 98) {
 
-    private boolean UpdateDB() {
+            mMonDiff = 0;
 
-        db = new DatabaseHelper(this);
-        long inserted = db.addFamilyMember(MainApp.mc);
-        MainApp.mc.setId(String.valueOf(inserted));
-        if (inserted > 0) {
-            MainApp.mc.setUid(MainApp.deviceId + MainApp.mc.getId());
-            db.updatesFamilyMemberColumn(MembersContract.MembersTable.COLUMN_UID, MainApp.mc.getUid(), MainApp.mc.getId());
-            db.updateH214ToH216(MainApp.mc.getFuid(), MainApp.mc.getH204(), MainApp.mc.getH20603());
-            return true;
         } else {
-            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
-            return false;
+
+            mMonDiff = parseInt(curd_month) - parseInt(dob_month);
+
+            if (mMonDiff < 0) {
+                mYearDiff = mYearDiff - 1;
+                mMonDiff = mMonDiff + 12;
+            }
         }
+
+        if (parseInt(dob_day) == 98 || parseInt(curd_day) == 98) {
+
+            mDayDiff = 0;
+
+        } else {
+
+            mDayDiff = parseInt(curd_day) - parseInt(dob_day);
+        }
+
+        if (mDayDiff < 0) {
+            if (mMonDiff > 0) {
+                mMonDiff = mMonDiff - 1;
+                mDayDiff = mDayDiff + MonthsToDays(parseInt(curd_month) - 1, parseInt(curd_year));
+
+            } else {
+                mYearDiff = mYearDiff - 1;
+                mMonDiff = 11;
+                mDayDiff = mDayDiff + MonthsToDays(parseInt(curd_month) - 1, parseInt(curd_year));
+            }
+
+        }
+
+        int[] Age = new int[]{mDayDiff, mMonDiff, mYearDiff};
+
+        return Age;
     }
 
     private void SaveDraft() throws JSONException {
@@ -363,20 +665,9 @@ public class H2 extends AppCompatActivity {
         MainApp.mc.setH210(bi.H21001.isChecked() ? "1"
                 : bi.H21002.isChecked() ? "2"
                 : bi.H21003.isChecked() ? "3"
-                : bi.H21004.isChecked() ? "4"
                 : "-1");
 
-        MainApp.mc.setH211(bi.H21101.isChecked() ? "1"
-                : bi.H21102.isChecked() ? "2"
-                : bi.H21103.isChecked() ? "3"
-                : bi.H21104.isChecked() ? "4"
-                : bi.H21105.isChecked() ? "5"
-                : bi.H21106.isChecked() ? "6"
-                : bi.H21107.isChecked() ? "7"
-                : bi.H21108.isChecked() ? "8"
-                : bi.H21109.isChecked() ? "9"
-                : bi.H21198.isChecked() ? "98"
-                : "-1");
+        MainApp.mc.setH211(bi.H211.getText().toString().trim().isEmpty() ? "-1" : bi.H211.getText().toString().trim());
 
         MainApp.mc.setH212(bi.H21201.isChecked() ? "1"
                 : bi.H21202.isChecked() ? "2"
@@ -402,81 +693,15 @@ public class H2 extends AppCompatActivity {
 
     private boolean formValidation() {
 
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
-
-        /*String dob = "";
-        if (bi.H20501.getText().toString() == "98" && bi.H20502.getText().toString() == "98" && bi.H20503.getText().toString() == "9998") {
-            dob = bi.H20501.getText().toString() + "-" + bi.H20502.getText().toString() + "-" + bi.H20503.getText().toString();
-        }
-
-        if (!isValidDate(dob)) {
-            bi.H20501.setError("Kindly enter a valid Date of Birth");
-            bi.H20501.requestFocus();
+        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) {
             return false;
-        }*/
-    }
-
-    public int[] calculateAge(String dob, String curd) {
-
-        String[] dob_sep = dob.split("/");
-        String[] curd_sep = curd.split("/");
-
-        String dob_day = dob_sep[0];
-        String dob_month = dob_sep[1];
-        String dob_year = dob_sep[2];
-        String curd_day = curd_sep[0];
-        String curd_month = curd_sep[1];
-        String curd_year = curd_sep[2];
-
-        int mYearDiff, mMonDiff, mDayDiff;
-
-        if (parseInt(dob_year) == 9998 || parseInt(curd_year) == 9998) {
-
-            mYearDiff = 0;
-
-        } else {
-
-            mYearDiff = parseInt(curd_year) - parseInt(dob_year);
         }
 
-        if (parseInt(dob_month) == 98 || parseInt(curd_month) == 98) {
-
-            mMonDiff = 0;
-
-        } else {
-
-            mMonDiff = parseInt(curd_month) - parseInt(dob_month);
-
-            if (mMonDiff < 0) {
-                mYearDiff = mYearDiff - 1;
-                mMonDiff = mMonDiff + 12;
-            }
+        if (Integer.parseInt(bi.H211.getText().toString()) >= Integer.parseInt(bi.H20603.getText().toString())) {
+            bi.H211.setError("Number of completed years of Education cannot be greater than or equal to Age");
+            return false;
         }
 
-        if (parseInt(dob_day) == 98 || parseInt(curd_day) == 98) {
-
-            mDayDiff = 0;
-
-        } else {
-
-            mDayDiff = parseInt(curd_day) - parseInt(dob_day);
-        }
-
-        if (mDayDiff < 0) {
-            if (mMonDiff > 0) {
-                mMonDiff = mMonDiff - 1;
-                mDayDiff = mDayDiff + MonthsToDays(parseInt(curd_month) - 1, parseInt(curd_year));
-
-            } else {
-                mYearDiff = mYearDiff - 1;
-                mMonDiff = 11;
-                mDayDiff = mDayDiff + MonthsToDays(parseInt(curd_month) - 1, parseInt(curd_year));
-            }
-
-        }
-
-        int[] Age = new int[]{mDayDiff, mMonDiff, mYearDiff};
-
-        return Age;
+        return true;
     }
 }
