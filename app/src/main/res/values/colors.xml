@@ -26,5 +26,6 @@
     <color name="ltgray">#f7f7f7f7</color>
     <color name="ltgray_overlay">#f7f7f7</color>
     <color name="colorAccentLightOverlay">#7F7C4DFF</color>
+    <color name="colorPrimaryLightOverlay">#7FF8BBD0</color>
 
 </resources>

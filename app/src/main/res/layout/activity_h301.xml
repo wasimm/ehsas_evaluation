@@ -1320,14 +1320,14 @@
                                 android:text="@string/H31112" />
 
                             <RadioButton
-                                android:id="@+id/H31111201"
+                                android:id="@+id/H3111201"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="@string/H3111201" />
 
                             <RadioButton
-                                android:id="@+id/H31111202"
+                                android:id="@+id/H3111202"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"

@@ -50,7 +50,7 @@
         <item name="android:exitFadeDuration">200</item>
         <item name="android:layoutDirection">rtl</item>
         <item name="android:animateLayoutChanges">false</item>
-        <item name="android:fontFamily">@font/jameelnoorinastaleeq</item>
+        <item name="android:fontFamily">@fonts/jameel_noori_nastaleeq</item>
 
     </style>
 
@@ -348,7 +348,7 @@
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
-    <style name="info">
+    <!--<style name="info">
         <item name="android:layout_margin">4dp</item>
         <item name="android:background">#FFEB9C</item>
         <item name="android:textColor">@color/redLight</item>
@@ -357,7 +357,7 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:letterSpacing">0.04</item>
-    </style>
+    </style>-->
 
     <style name="sub_labels">
         <item name="android:layout_marginTop">0dp</item>
