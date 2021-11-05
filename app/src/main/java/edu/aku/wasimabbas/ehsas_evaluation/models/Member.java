@@ -1,6 +1,10 @@
 package edu.aku.wasimabbas.ehsas_evaluation.models;
 
+import android.database.Cursor;
+
 import androidx.lifecycle.LiveData;
+
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.MembersContract;
 
 public class Member extends LiveData<Member> {
 
@@ -19,7 +23,7 @@ public class Member extends LiveData<Member> {
     private String fuid = "";
     private String sysdate = "";
     private String username = "";
-    private int collected = 0;
+    private String collected = "";
 
     private String H201 = "";
     private String H202 = "";
@@ -325,11 +329,11 @@ public class Member extends LiveData<Member> {
         H21296x = h21296x;
     }
 
-    public int getCollected() {
+    public String getCollected() {
         return collected;
     }
 
-    public void setCollected(int collected) {
+    public void setCollected(String collected) {
         this.collected = collected;
     }
 
@@ -381,6 +385,48 @@ public class Member extends LiveData<Member> {
         E106 = e106;
     }
 
+    public Member Hydrate(Cursor cursor) {
+
+        this.id = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_ID));
+        this.uid = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_UID));
+        this.fuid = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_FUID));
+        this.appversion = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_APPVERSION));
+        this.deviceid = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_DEVICEID));
+        this.devicetagid = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_DEVICETAGID));
+        this.sysdate = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_SYSDATE));
+        this.username = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_USERNAME));
+        this.collected = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_COLLECTED));
+        this.H201 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H201));
+        this.H202 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H202));
+        this.H203 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H203));
+        this.H204 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H204));
+        this.H20501 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20501));
+        this.H20502 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20502));
+        this.H20503 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20503));
+        this.H20601 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20601));
+        this.H20602 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20602));
+        this.H20603 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20603));
+        this.H20701 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20701));
+        this.H20702 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20702));
+        this.H20703 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20703));
+        this.H20704 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20704));
+        this.H20796 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20796));
+        this.H20796x = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H20796x));
+        this.H208 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H208));
+        this.H209 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H209));
+        this.H210 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H210));
+        this.H211 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H211));
+        this.H212 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H212));
+        this.H21296x = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_H21296X));
+        this.E101 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_E101));
+        this.E102 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_E102));
+        this.E103 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_E103));
+        this.E104 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_E104));
+        this.E105 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_E105));
+        this.E106 = cursor.getString(cursor.getColumnIndex(MembersContract.MembersTable.COLUMN_E106));
+
+        return this;
+    }
 
     /*public Member Sync(JSONObject jsonObject) throws JSONException {
 
@@ -412,37 +458,6 @@ public class Member extends LiveData<Member> {
 
         return this;
     }
-
-
-    public Member Hydrate(Cursor cursor) {
-
-        this.id = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_ID));
-        this.uid = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_UID));
-        this.fuid = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_FUID));
-        this.istatus = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_ISTATUS));
-        this.istatus96x = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_ISTATUS96x));
-        this.endingdatetime = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_ENDINGDATETIME));
-        this.appversion = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_APPVERSION));
-        this.deviceid = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_DEVICEID));
-        this.devicetagid = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_DEVICETAGID));
-        this.sysdate = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_SYSDATE));
-        this.username = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_USERNAME));
-
-        this.H201 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H201));
-        this.H202 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H202));
-        this.H203 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H203));
-        this.H204 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H204));
-        this.H205 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H205));
-        this.H206 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H206));
-        this.H207 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H207));
-        this.H208 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H208));
-        this.H209 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H209));
-        this.H210 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H210));
-        this.H211 = cursor.getString(cursor.getColumnIndex(MembersTable.COLUMN_H211));
-
-        return this;
-    }
-
 
     public JSONObject toJSONObject() throws JSONException {
 

@@ -160,12 +160,11 @@
                                 android:id="@+id/formText2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_centerHorizontal="true"
-                                android:layout_centerVertical="true"
+                                android:layout_centerInParent="true"
                                 android:layout_marginStart="10dp"
-                                android:drawableStart="@drawable/ic_upload"
+                                android:drawableStart="@drawable/ic_download"
                                 android:drawablePadding="12dp"
-                                android:text="@string/btnUpload"
+                                android:text="@string/btnDownload"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                                 android:textColor="@color/colorPrimaryDark" />
 
@@ -218,16 +217,41 @@
                     android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/formB"
-                        style="@style/buttons_bottom"
-                        android:layout_width="wrap_content"
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/startInterview"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+
                         android:layout_marginStart="12dp"
-                        android:background="@color/red"
-                        android:onClick="@{callback::openSpecificActivity}"
-                        android:text="Start Interview"
-                        android:textColor="@color/white" />
+                        android:onClick="@{callback::openSpecificActivity}">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:padding="12dp">
+
+
+                            <TextView
+                                android:id="@+id/formText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="10dp"
+                                android:drawableStart="@drawable/ic_next_green"
+                                android:drawablePadding="12dp"
+                                android:text="@string/startInterview"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
 
                 </LinearLayout>
 

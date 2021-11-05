@@ -300,7 +300,7 @@ public class H302 extends AppCompatActivity {
             return false;
         }
 
-        if ((Integer.parseInt(bi.H32001.getText().toString()) + Integer.parseInt(bi.H32002.getText().toString())) == 0) {
+        if (bi.H32001.isShown() && bi.H32002.isShown() && (Integer.parseInt(bi.H32001.getText().toString()) + Integer.parseInt(bi.H32002.getText().toString())) == 0) {
             bi.H32001.setError("Sum of Acre and Canal cannot be zero");
             return false;
         }

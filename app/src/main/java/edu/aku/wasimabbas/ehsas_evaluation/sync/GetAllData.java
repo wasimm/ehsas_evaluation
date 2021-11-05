@@ -20,6 +20,8 @@ import java.net.URL;
 import java.util.List;
 
 import edu.aku.wasimabbas.ehsas_evaluation.adapter.SyncListAdapter;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.ClustersContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.DistrictsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.UsersContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
@@ -56,9 +58,12 @@ public class GetAllData extends AsyncTask<String, String, String> {
             case "Users":
                 position = 0;
                 break;
-            /*case "Schools":
+            case "Districts":
                 position = 1;
-                break;*/
+                break;
+            case "Clusters":
+                position = 2;
+                break;
         }
         list.get(position).settableName(syncClass);
     }
@@ -84,10 +89,12 @@ public class GetAllData extends AsyncTask<String, String, String> {
             case "Users":
                 position = 0;
                 break;
-
-            /*case "Schools":
+            case "Districts":
                 position = 1;
-                break;*/
+                break;
+            case "Clusters":
+                position = 2;
+                break;
         }
         list.get(position).setstatus("Syncing");
         list.get(position).setstatusID(2);
@@ -109,11 +116,16 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     tableName = UsersContract.UsersTable.TABLE_NAME;
                     position = 0;
                     break;
-                /*case "Schools":
+                case "Districts":
                     url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
-                    tableName = SchoolsContract.TableSchool.TABLE_NAME;
+                    tableName = DistrictsContract.DistrictsTable.TABLE_NAME;
                     position = 1;
-                    break;*/
+                    break;
+                case "Clusters":
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = ClustersContract.ClustersTable.TABLE_NAME;
+                    position = 2;
+                    break;
             }
 
             urlConnection = (HttpURLConnection) url.openConnection();
@@ -158,6 +170,8 @@ public class GetAllData extends AsyncTask<String, String, String> {
 
             switch (syncClass) {
                 case "Users":
+                case "Districts":
+                case "Clusters":
                     try {
                         json.put("table", tableName);
                     } catch (JSONException e1) {
@@ -168,7 +182,8 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     wr.close();
                     break;
 
-                /*case "Schools":
+
+                /*case "Districts":
                     try {
                         json.put("table", tableName);
                         json.put("filter", "_id < 13000");
@@ -226,12 +241,16 @@ public class GetAllData extends AsyncTask<String, String, String> {
                             insertCount = db.syncUser(jsonArray);
                             position = 0;
                             break;
-
-                        /*case "Schools":
+                        case "Districts":
                             jsonArray = new JSONArray(result);
-                            insertCount = db.syncSchools(jsonArray);
+                            insertCount = db.syncDistricts(jsonArray);
                             position = 1;
-                            break;*/
+                            break;
+                        case "Clusters":
+                            jsonArray = new JSONArray(result);
+                            insertCount = db.syncClusters(jsonArray);
+                            position = 2;
+                            break;
                     }
 
                     pd.setMessage("Received: " + jsonArray.length());

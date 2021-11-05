@@ -209,7 +209,7 @@
             android:name="edu.aku.wasimabbas.ehsas_evaluation.core.AndroidDatabaseManager"
             android:parentActivityName="edu.aku.wasimabbas.ehsas_evaluation.ui.other.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeUrdu" />
+            android:theme="@style/AppThemeEnglish" />
 
         <activity
             android:name="edu.aku.wasimabbas.ehsas_evaluation.core.AndroidManager"
@@ -222,7 +222,7 @@
             android:label="Data Sync Activity"
             android:parentActivityName="edu.aku.wasimabbas.ehsas_evaluation.ui.other.MainActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppThemeUrdu" />
+            android:theme="@style/AppThemeEnglish" />
 
         <activity
             android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.other.TakePhoto"

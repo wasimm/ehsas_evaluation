@@ -5,21 +5,20 @@ import android.content.ContentUris;
 import android.net.Uri;
 import android.provider.BaseColumns;
 
-
-public class UsersContract {
+public class DistrictsContract {
     public static String CONTENT_AUTHORITY = "edu.aku.wasimabbas.ehsas_evaluation";
 
-    public static abstract class UsersTable implements BaseColumns {
+    public static abstract class DistrictsTable implements BaseColumns {
 
-        public static final String TABLE_NAME = "users";
+        public static final String TABLE_NAME = "districts";
 
-        public static final String _ID = "id";
-        public static final String COLUMN_USERNAME = "username";
-        public static final String COLUMN_PASSWORD = "password";
-        public static final String COLUMN_FULL_NAME = "full_name";
-        public static final String COLUMN_DISTRICT_CODE = "district_code";
-        public static final String SERVER_URI = "users.php";
-        public static String PATH = "users";
+        public static final String COLUMN_ID = "id";
+        public static final String COLUMN_CODE = "code";
+        public static final String COLUMN_NAME = "name";
+        public static final String COLUMN_PROVINCE_CODE = "provinceCode";
+        public static final String COLUMN_PROVINCE_NAME = "provinceName";
+        public static final String SERVER_URI = "districts.php";
+        public static String PATH = "districts";
         public static final String CONTENT_TYPE =
                 ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH;
         public static final String CONTENT_ITEM_TYPE =

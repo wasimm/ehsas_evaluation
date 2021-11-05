@@ -34,6 +34,7 @@ import java.util.Objects;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.core.AndroidDatabaseManager;
+import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityMainBinding;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Form;
@@ -47,6 +48,8 @@ import edu.aku.wasimabbas.ehsas_evaluation.utils.WarningActivityInterface;
 
 public class MainActivity extends AppCompatActivity implements WarningActivityInterface {
 
+    private DatabaseHelper db;
+    private List<String> clusters;
     static File file;
     ActivityMainBinding bi;
     String dtToday = new SimpleDateFormat("dd-MM-yyyy HH:mm").format(new Date().getTime());
@@ -215,12 +218,21 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
         }
         registerReceiver(broadcastReceiver, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
 
-//        Testing visibility
+        // Testing visibility
         if (Integer.parseInt(appInfo.getVersionName().split("\\.")[0]) > 0) {
             bi.testing.setVisibility(View.GONE);
         } else {
             bi.testing.setVisibility(View.VISIBLE);
         }
+
+        // Check to see if Data Downloaded
+        /*db = MainApp.appInfo.getDbHelper();
+        Cursor clustersList = db.getRecords();
+        if (clustersList.getCount() > 0) {
+            bi.startInterview.setVisibility(View.VISIBLE);
+        } else {
+            bi.startInterview.setVisibility(View.GONE);
+        }*/
 
     }
 
@@ -291,7 +303,7 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
     public void openSpecificActivity(View v) {
         Intent oF = null;
         switch (v.getId()) {
-            case R.id.formB:
+            case R.id.startInterview:
                 oF = new Intent(this, H1.class);
                 break;
             /*case R.id.formC:

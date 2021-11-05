@@ -14,7 +14,7 @@ public class MembersContract {
 
         public static final String TABLE_NAME = "HHMembers";
         public static final String COLUMN_NAME_NULLABLE = "NULLHACK";
-        public static final String COLUMN_PROJECT_NAME = "EHSAS_NASHONUMA";
+        public static final String COLUMN_PROJECT_NAME = "EHSAAS_NASHONUMA";
 
         public static final String COLUMN_H201 = "H201";
         public static final String COLUMN_H202 = "H202";

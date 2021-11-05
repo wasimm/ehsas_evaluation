@@ -40,11 +40,14 @@ import edu.aku.wasimabbas.ehsas_evaluation.CONSTANTS;
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.adapter.SyncListAdapter;
 import edu.aku.wasimabbas.ehsas_evaluation.adapter.UploadListAdapter;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleChildrenContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleMWRAsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.MembersContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.PregnanciesContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivitySyncBinding;
-import edu.aku.wasimabbas.ehsas_evaluation.models.Form;
 import edu.aku.wasimabbas.ehsas_evaluation.models.SyncModel;
 import edu.aku.wasimabbas.ehsas_evaluation.sync.GetAllData;
 import edu.aku.wasimabbas.ehsas_evaluation.sync.SyncAllData;
@@ -127,6 +130,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
     }
 
     public void syncServer() {
+
         bi.activityTitle.setText(getString(R.string.btnUpload));
         // Require permissions INTERNET & ACCESS_NETWORK_STATE
         ConnectivityManager connMgr = (ConnectivityManager)
@@ -138,7 +142,9 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
 
             new SyncDevice(this, false).execute();
             //  *******************************************************Forms*********************************
+
             Toast.makeText(getApplicationContext(), String.format("Syncing Forms"), Toast.LENGTH_SHORT).show();
+
             if (uploadlistActivityCreated) {
                 uploadmodel = new SyncModel();
                 uploadmodel.setstatusID(0);
@@ -148,26 +154,71 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     this,
                     "Forms",
                     "updateSyncedForms",
-                    Form.class,
+                    FormsContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     FormsContract.FormsTable.TABLE_NAME,
                     db.getUnsyncedForms(), 0, uploadListAdapter, uploadlist
             ).execute();
 
-            /*if (uploadlistActivityCreated) {
+            if (uploadlistActivityCreated) {
                 uploadmodel = new SyncModel();
                 uploadmodel.setstatusID(0);
                 uploadlist.add(uploadmodel);
             }
             new SyncAllData(
                     this,
-                    "ChildTable",
-                    "updateSyncedChildForms",
-                    ChildContract.class,
+                    "Members",
+                    "updateSyncedMembers",
+                    MembersContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
-                    ChildContract.ChildTable.TABLE_NAME,
-                    db.getUnsyncedChildsForms(), 6, uploadListAdapter, uploadlist
-            ).execute();*/
+                    MembersContract.MembersTable.TABLE_NAME,
+                    db.getUnsyncedMembers(), 1, uploadListAdapter, uploadlist
+            ).execute();
+
+            if (uploadlistActivityCreated) {
+                uploadmodel = new SyncModel();
+                uploadmodel.setstatusID(0);
+                uploadlist.add(uploadmodel);
+            }
+            new SyncAllData(
+                    this,
+                    "Pregnancies",
+                    "updateSyncedPregnancies",
+                    PregnanciesContract.class,
+                    MainApp._HOST_URL + MainApp._SERVER_URL,
+                    PregnanciesContract.PregnanciesTable.TABLE_NAME,
+                    db.getUnsyncedPregnancies(), 2, uploadListAdapter, uploadlist
+            ).execute();
+
+            if (uploadlistActivityCreated) {
+                uploadmodel = new SyncModel();
+                uploadmodel.setstatusID(0);
+                uploadlist.add(uploadmodel);
+            }
+            new SyncAllData(
+                    this,
+                    "EligibleMWRAs",
+                    "updateSyncedMWRAs",
+                    EligibleMWRAsContract.class,
+                    MainApp._HOST_URL + MainApp._SERVER_URL,
+                    EligibleMWRAsContract.MWRAsTable.TABLE_NAME,
+                    db.getUnsyncedMWRAs(), 3, uploadListAdapter, uploadlist
+            ).execute();
+
+            if (uploadlistActivityCreated) {
+                uploadmodel = new SyncModel();
+                uploadmodel.setstatusID(0);
+                uploadlist.add(uploadmodel);
+            }
+            new SyncAllData(
+                    this,
+                    "EligibleChildren",
+                    "updateSyncedChildren",
+                    EligibleChildrenContract.class,
+                    MainApp._HOST_URL + MainApp._SERVER_URL,
+                    EligibleChildrenContract.ChildrenTable.TABLE_NAME,
+                    db.getUnsyncedChildren(), 4, uploadListAdapter, uploadlist
+            ).execute();
 
             uploadlistActivityCreated = false;
 
@@ -378,7 +429,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
 
     }
 
-/*    public void updateCount(int total,){
+    /*    public void updateCount(int total,){
 
         uploadCount.setText("(")
 
@@ -398,9 +449,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
         protected String doInBackground(Boolean... booleans) {
             runOnUiThread(() -> {
 
-                //String[] syncItems = {"Users", "Schools"};
-                String[] syncItems = {"Users"};
-
+                String[] syncItems = {"Users", "Districts", "Clusters"};
 
                 for (String syncItem : syncItems) {
                     if (listActivityCreated) {

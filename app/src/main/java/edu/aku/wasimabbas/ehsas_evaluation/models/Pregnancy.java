@@ -1,6 +1,10 @@
 package edu.aku.wasimabbas.ehsas_evaluation.models;
 
+import android.database.Cursor;
+
 import androidx.lifecycle.LiveData;
+
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.PregnanciesContract;
 
 public class Pregnancy extends LiveData<Pregnancy> {
 
@@ -299,5 +303,38 @@ public class Pregnancy extends LiveData<Pregnancy> {
 
     public void setW119C203(String w119C203) {
         W119C203 = w119C203;
+    }
+
+
+    public Pregnancy Hydrate(Cursor cursor) {
+
+        this.id = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_ID));
+        this.uid = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_UID));
+        this.muid = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_MUID));
+        this.fuid = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_FUID));
+        this.appversion = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_APPVERSION));
+        this.deviceid = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_DEVICEID));
+        this.devicetagid = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_DEVICETAGID));
+        this.sysdate = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_SYSDATE));
+        this.username = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_USERNAME));
+        this.W114 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W114));
+        this.W115 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W115));
+        this.W116 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W116));
+        this.W117 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W117));
+        this.W11801 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W11801));
+        this.W11802 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W11802));
+        this.W11803 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W11803));
+        this.W11901 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W11901));
+        this.W11902 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W11902));
+        this.W11903 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W11903));
+        this.W117C2 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W117C2));
+        this.W118C201 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W118C201));
+        this.W118C202 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W118C202));
+        this.W118C203 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W118C203));
+        this.W119C201 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W119C201));
+        this.W119C202 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W119C202));
+        this.W119C203 = cursor.getString(cursor.getColumnIndex(PregnanciesContract.PregnanciesTable.COLUMN_W119C203));
+
+        return this;
     }
 }

@@ -190,6 +190,10 @@ public class SyncAllData extends AsyncTask<Void, Integer, String> {
 
     @Override
     protected void onPostExecute(String result) {
+
+
+        //Toast.makeText(mContext.getApplicationContext(), "this is my Result: " + result, Toast.LENGTH_SHORT).show();
+
         super.onPostExecute(result);
         int sSynced = 0;
         int sDuplicate = 0;
@@ -213,6 +217,9 @@ public class SyncAllData extends AsyncTask<Void, Integer, String> {
 
             for (int i = 0; i < json.length(); i++) {
                 JSONObject jsonObject = new JSONObject(json.getString(i));
+
+
+                //Toast.makeText(mContext.getApplicationContext(), "This is: " + jsonObject.getString("message"), Toast.LENGTH_SHORT).show();
 
                 if (jsonObject.getString("status").equals("1") && jsonObject.getString("error").equals("0")) {
                     method.invoke(db, jsonObject.getString("id"));

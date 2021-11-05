@@ -50,7 +50,6 @@
         <item name="android:exitFadeDuration">200</item>
         <item name="android:layoutDirection">rtl</item>
         <item name="android:animateLayoutChanges">false</item>
-        <item name="android:fontFamily">@fonts/jameel_noori_nastaleeq</item>
 
     </style>
 
@@ -71,8 +70,6 @@
 
     <style name="actionBarText" parent="@android:style/TextAppearance.Widget.TextView">
         <item name="android:background">@color/colorPrimary</item>
-
-
     </style>
 
     <style name="labels" parent="@android:style/TextAppearance.Widget.TextView">

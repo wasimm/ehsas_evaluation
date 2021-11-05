@@ -3,11 +3,18 @@ package edu.aku.wasimabbas.ehsas_evaluation.ui.sections;
 
 import static edu.aku.wasimabbas.ehsas_evaluation.core.MainApp.form;
 
+import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.InputFilter;
 import android.text.Spanned;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +27,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
@@ -36,6 +45,8 @@ public class H1 extends AppCompatActivity {
     ActivityH1Binding bi;
     Intent oF = null;
     private DatabaseHelper db;
+    private List<String> clusters;
+    private String clusterNo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,31 +54,20 @@ public class H1 extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_h1);
         bi.setCallback(this);
         setupSkip();
+        populateSpinner(this);
 
-        //populateSpinner(this);
+        bi.H102.setEnabled(false);
+        bi.H103.setEnabled(false);
+        bi.H104.setEnabled(false);
+        bi.H105.setEnabled(false);
+        bi.H106.setEnabled(false);
 
-        /*TextWatcher textWatcher = new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+        setSupportActionBar(bi.toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
 
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                String selectedValue = charSequence.toString();
-
-                Toast.makeText(getApplicationContext(), "" + selectedValue, Toast.LENGTH_LONG).show();
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {}
-        };
-        bi.B4.addTextChangedListener(textWatcher);*/
-
-        /*bi.B1.setEnabled(false);
-        bi.B3.setEnabled(false);
-
-        TextWatcher textwatcher2 = new TextWatcher() {
+        TextWatcher textwatcher = new TextWatcher() {
 
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -76,14 +76,9 @@ public class H1 extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-                if (s.length() > 0 && s.length() < 9) {
-                    bi.B1.setText(null);
-                    bi.B2.setText(null);
-                    bi.B3.setText(null);
-                    bi.submitBtns.setVisibility(View.GONE);
-                    //Toast.makeText(getApplicationContext(), "either 0 or greater than 9 length", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "length is 0", Toast.LENGTH_SHORT).show();
+                if (s.length() < 8) {
+                    Clear.clearAllFields(bi.H102TOH117);
+                    bi.H102TOH117.setVisibility(View.GONE);
                 }
             }
 
@@ -91,13 +86,7 @@ public class H1 extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
             }
         };
-
-        bi.B4.addTextChangedListener(textwatcher2);*/
-
-        setSupportActionBar(bi.toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        bi.H101.addTextChangedListener(textwatcher);
     }
 
     @Override
@@ -106,30 +95,52 @@ public class H1 extends AppCompatActivity {
         return true;
     }
 
-    /*private void populateSpinner(final Context context) {
+    private void populateSpinner(final Context context) {
 
         db = MainApp.appInfo.getDbHelper();
-        Cursor schoolsList = db.getRecords();
-        if (schoolsList.getCount() > 0) {
-            schoolsList.moveToFirst();
-            schools = new ArrayList<>();
-            schools.add("....");
-            for (int i = 0; i < schoolsList.getCount(); i++) {
-                schools.add(schoolsList.getString(schoolsList.getColumnIndex("semisCode")));
-                schoolsList.moveToNext();
+        Cursor clustersList = db.getRecords();
+        if (clustersList.getCount() > 0) {
+            clustersList.moveToFirst();
+            clusters = new ArrayList<>();
+            clusters.add("....");
+            for (int i = 0; i < clustersList.getCount(); i++) {
+                clusters.add(clustersList.getString(clustersList.getColumnIndex("clusterNo")));
+                clustersList.moveToNext();
             }
         }
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, android.R.layout.select_dialog_item, schools);
+                (this, android.R.layout.select_dialog_item, clusters);
         //Getting the instance of AutoCompleteTextView
-        AutoCompleteTextView activity = findViewById(R.id.B4);
+        AutoCompleteTextView activity = findViewById(R.id.H101);
         activity.setThreshold(1);//will start working from first character
         activity.setAdapter(adapter);//setting the adapter data into the AutoCompleteTextView
         activity.setTextColor(Color.parseColor("#16A085"));
-    }*/
+    }
 
     private void setupSkip() {
+
+        // H101
+        /*bi.H101.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                clusterNo = bi.H101.getText().toString().trim();
+                db = MainApp.appInfo.getDbHelper();
+                Cursor cluster = db.getCluster(clusterNo);
+                if (cluster.getCount() > 0) {
+                    cluster.moveToFirst();
+                    bi.H102.setText(cluster.getString(cluster.getColumnIndex("provinceName")));
+                    bi.H103.setText(cluster.getString(cluster.getColumnIndex("districtName")));
+                    bi.H104.setText(cluster.getString(cluster.getColumnIndex("tehsil")));
+                    bi.H105.setText(cluster.getString(cluster.getColumnIndex("unionCouncil")));
+                    bi.H106.setText(cluster.getString(cluster.getColumnIndex("city")));
+                    bi.H102TOH117.setVisibility(View.VISIBLE);
+                } else {
+                    bi.H101.setError("No such Cluster, please check");
+                    bi.H102TOH117.setVisibility(View.GONE);
+                }
+            }
+        });*/
 
         //H110
         bi.H110.setFilters(new InputFilter[]{
@@ -315,6 +326,134 @@ public class H1 extends AppCompatActivity {
     private boolean formValidation() {
 
         return Validator.emptyCheckingContainer(this, bi.GrpName);
+    }
+
+    public void FetchCluster(View view) {
+
+        /*if (formValidation()) {
+
+            String mrno = bi.wfa101.getText().toString();
+            db = MainApp.appInfo.getDbHelper();
+            Cursor followups = db.getFollowups(mrno);
+
+            //oast.makeText(this, "" + mrno, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "" + followups.getCount(), Toast.LENGTH_SHORT).show();
+
+            if (followups.getCount() > 0) {
+
+                //Toast.makeText(this, "" + followups.getString(followups.getColumnIndex("s1q501")), Toast.LENGTH_SHORT).show();
+
+                followups.moveToFirst();
+
+                bi.wmError.setVisibility(View.GONE);
+                bi.pbarMR.setVisibility(View.GONE);
+                bi.checkMR.setVisibility(View.VISIBLE);
+
+                col_id = Integer.parseInt(followups.getString(followups.getColumnIndex("id")));
+                if (!followups.getString(followups.getColumnIndex("curfupweek")).equals("") && followups.getString(followups.getColumnIndex("curfupweek")) != null) {
+
+                    if (!followups.getString(followups.getColumnIndex("curfupdt")).equals("") && followups.getString(followups.getColumnIndex("curfupdt")) != null) {
+
+                        String str = followups.getString(followups.getColumnIndex("sf6a"));
+                        String str2 = followups.getString(followups.getColumnIndex("pFollowUpDate"));
+                        delivery_date = str.replace("-", "/");
+
+                        String[] wfb108 = str2.split("-");
+                        String day = wfb108[2];
+                        String month = wfb108[1];
+                        String year = wfb108[0];
+                        pFollowUpDate = day + "/" + month + "/" + year;
+
+                        bi.wfa10401.setMinDate(delivery_date);
+
+                        try {
+                            bi.wfa10401.setMinDate(DateUtils.getNextDate(delivery_date));
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+
+                        bi.wfa11001.setMinDate(delivery_date);
+
+                        Toast.makeText(SectionWFA01Activity.this, "Child followup found.", Toast.LENGTH_SHORT).show();
+
+                        bi.wfa102.setText(followups.getString(followups.getColumnIndex("sf20")));
+                        bi.wfa103.setText(followups.getString(followups.getColumnIndex("s1q3")));
+                        bi.wfa105.setText(followups.getString(followups.getColumnIndex("curfupweek")));
+                        bi.studySite.setText(followups.getString(followups.getColumnIndex("studySite")));
+
+                        bi.wfa105.setEnabled(true);
+                        bi.llsectionwfa01.setVisibility(View.VISIBLE);
+                        // CONTINUE VISIBLE
+                        bi.btnContinue.setVisibility(View.VISIBLE);
+                        bi.btnEnd.setVisibility(View.GONE);
+                        // Clear.clearAllFields(bi.llsectionwfa01);
+                    } else {
+                        Toast.makeText(SectionWFA01Activity.this, followups.getString(followups.getColumnIndex("curfupweek")), Toast.LENGTH_SHORT).show();
+                        bi.llsectionwfa01.setVisibility(View.GONE);
+
+                        // CONTINUE VISIBLE
+                        bi.btnContinue.setVisibility(View.GONE);
+                        bi.btnEnd.setVisibility(View.VISIBLE);
+                        Clear.clearAllFields(bi.llsectionwfa01);
+                        bi.wmError.setText(followups.getString(followups.getColumnIndex("curfupweek")));
+                        bi.wmError.setVisibility(View.VISIBLE);
+
+                    }
+
+                } else {
+
+                    Toast.makeText(SectionWFA01Activity.this, "Child follow-up not found.", Toast.LENGTH_SHORT).show();
+                    bi.llsectionwfa01.setVisibility(View.GONE);
+                    bi.wmError.setText("Child follow-up not found.");
+                    bi.wmError.setVisibility(View.VISIBLE);
+                    // CONTINUE VISIBLE
+                    bi.btnContinue.setVisibility(View.GONE);
+                    bi.btnEnd.setVisibility(View.VISIBLE);
+                    Clear.clearAllFields(bi.llsectionwfa01);
+                }
+
+            } else {
+
+                bi.pbarMR.setVisibility(View.GONE);
+                bi.checkMR.setVisibility(View.VISIBLE);
+                //String message = workInfo.getOutputData().getString("error");
+                bi.wmError.setText("MR No not found");
+                bi.wmError.setVisibility(View.VISIBLE);
+
+            }
+        }*/
+
+        //bi.checkCluster.setVisibility(View.GONE);
+
+        if (formValidation()) {
+            clusterNo = bi.H101.getText().toString().trim();
+
+            if (clusterNo.length() == 8) {
+
+                db = MainApp.appInfo.getDbHelper();
+                Cursor cluster = db.getCluster(clusterNo);
+                if (cluster.getCount() > 0) {
+                    cluster.moveToFirst();
+                    bi.H102.setText(cluster.getString(cluster.getColumnIndex("provinceName")));
+                    bi.H103.setText(cluster.getString(cluster.getColumnIndex("districtName")));
+                    bi.H104.setText(cluster.getString(cluster.getColumnIndex("tehsil")));
+                    bi.H105.setText(cluster.getString(cluster.getColumnIndex("unionCouncil")));
+                    bi.H106.setText(cluster.getString(cluster.getColumnIndex("city")));
+                    bi.H102TOH117.setVisibility(View.VISIBLE);
+                } else {
+                    bi.H101.setError("No such Cluster, please check");
+                    Clear.clearAllFields(bi.H102TOH117);
+                    bi.H102TOH117.setVisibility(View.GONE);
+                    bi.checkCluster.setVisibility(View.VISIBLE);
+                }
+
+            } else {
+
+                Clear.clearAllFields(bi.H102TOH117);
+                bi.H102TOH117.setVisibility(View.GONE);
+                bi.checkCluster.setVisibility(View.VISIBLE);
+            }
+        }
     }
 
 }

@@ -114,7 +114,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
-                        android:enabled="false"
                         android:hint="@string/H602" />
 
                 </LinearLayout>
@@ -1275,7 +1274,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
-                        android:enabled="false"
                         android:hint="@string/H621" />
 
                 </LinearLayout>
@@ -2545,7 +2543,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
-                        android:enabled="false"
                         android:hint="@string/H642" />
 
                 </LinearLayout>
@@ -2636,7 +2633,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
-                        android:enabled="false"
                         android:hint="@string/H644" />
 
                 </LinearLayout>

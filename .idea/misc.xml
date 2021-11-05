@@ -3,11 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/ehsas_evaluation/app/src/main/res/drawable/sub_labels_separator.xml" value="0.33828125" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/ehsas_evaluation/app/src/main/res/layout/activity_h1.xml" value="0.4005602240896359" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/ehsas_evaluation/app/src/main/res/layout/activity_h301.xml" value="0.3140625" />
-        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/ehsas_evaluation/app/src/main/res/layout/activity_login.xml" value="0.3140625" />
         <entry key="..\:/Users/wasim.abbas/AppData/Local/Android/Sdk/platforms/android-30/data/res/drawable/list_selector_background.xml" value="0.5828125" />
+        <entry key="..\:/Users/wasim.abbas/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/select_dialog_item.xml" value="0.55859375" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/bottom.xml" value="0.33515625" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/circle_style.xml" value="0.5828125" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_close.xml" value="0.5828125" />
@@ -18,6 +15,7 @@
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_lock_close.xml" value="0.26875" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_lock_open.xml" value="0.26875" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_next.xml" value="0.5828125" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_next_green.xml" value="0.4925" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_plus.xml" value="0.26875" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_red_eye.xml" value="0.56375" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/ic_stop.xml" value="0.190625" />
@@ -50,14 +48,14 @@
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_d2.xml" value="0.21023228462216995" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_e1.xml" value="0.536" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_ending.xml" value="0.55859375" />
-        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h1.xml" value="0.536" />
-        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h2.xml" value="0.17888652266504412" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h1.xml" value="0.3884103367267032" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h2.xml" value="0.6" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h3.xml" value="0.1" />
-        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h301.xml" value="0.4" />
-        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h302.xml" value="0.12508747375787263" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h301.xml" value="0.3481781376518219" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h302.xml" value="0.6" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h4.xml" value="0.4440993788819876" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h5.xml" value="0.16787978398685138" />
-        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h6.xml" value="0.6" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h6.xml" value="0.536" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_h7.xml" value="0.72" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_item_dialog.xml" value="0.5272277227722773" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_login.xml" value="0.3177004538577912" />
@@ -68,8 +66,10 @@
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_next_button.xml" value="0.2234375" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_section_b.xml" value="0.3975" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_section_c.xml" value="0.2859375" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_splashscreen.xml" value="0.55859375" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_sync.xml" value="0.55859375" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w1.xml" value="0.3442416614222782" />
-        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w101.xml" value="0.72" />
+        <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w101.xml" value="0.4111558366877516" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w102.xml" value="0.536" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w2.xml" value="0.536" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/layout/activity_w3.xml" value="0.6" />

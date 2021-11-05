@@ -827,7 +827,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
                         android:layout_marginBottom="12dp"
-                        android:hint="@string/H208"
+                        android:hint="@string/H211"
                         android:inputType="number"
                         android:maxLength="2"
                         app:mask="##"

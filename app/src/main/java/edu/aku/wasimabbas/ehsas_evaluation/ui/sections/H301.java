@@ -384,8 +384,8 @@ public class H301 extends AppCompatActivity {
                 : bi.H3110902.isChecked() ? "2"
                 : "-1");
 
-        json.put("H31110", bi.H3111001.isChecked() ? "1"
-                : bi.H3111002.isChecked() ? "2"
+        json.put("H31110", bi.H311101.isChecked() ? "1"
+                : bi.H311102.isChecked() ? "2"
                 : "-1");
 
         json.put("H31111", bi.H3111101.isChecked() ? "1"

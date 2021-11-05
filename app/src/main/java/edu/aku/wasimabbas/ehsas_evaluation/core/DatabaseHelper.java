@@ -3,6 +3,8 @@ package edu.aku.wasimabbas.ehsas_evaluation.core;
 import static edu.aku.wasimabbas.ehsas_evaluation.utils.CreateTable.DATABASE_NAME;
 import static edu.aku.wasimabbas.ehsas_evaluation.utils.CreateTable.DATABASE_VERSION;
 import static edu.aku.wasimabbas.ehsas_evaluation.utils.CreateTable.SQL_CREATE_CHILDREN;
+import static edu.aku.wasimabbas.ehsas_evaluation.utils.CreateTable.SQL_CREATE_CLUSTERS;
+import static edu.aku.wasimabbas.ehsas_evaluation.utils.CreateTable.SQL_CREATE_DISTRICTS;
 import static edu.aku.wasimabbas.ehsas_evaluation.utils.CreateTable.SQL_CREATE_FORMS;
 import static edu.aku.wasimabbas.ehsas_evaluation.utils.CreateTable.SQL_CREATE_MEMBERS;
 import static edu.aku.wasimabbas.ehsas_evaluation.utils.CreateTable.SQL_CREATE_MEMBER_PREGNANCIES;
@@ -31,6 +33,8 @@ import java.util.List;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.BLRandomContract.BLRandomTable;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.ClustersContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.DistrictsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleChildrenContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleMWRAsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract.FormsTable;
@@ -40,6 +44,8 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.UsersContract.UsersTable;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.VersionAppContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.VersionAppContract.VersionAppTable;
 import edu.aku.wasimabbas.ehsas_evaluation.models.BLRandom;
+import edu.aku.wasimabbas.ehsas_evaluation.models.Clusters;
+import edu.aku.wasimabbas.ehsas_evaluation.models.Districts;
 import edu.aku.wasimabbas.ehsas_evaluation.models.EligibleChild;
 import edu.aku.wasimabbas.ehsas_evaluation.models.EligibleMWRA;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Form;
@@ -67,6 +73,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         db.execSQL(SQL_CREATE_FORMS);
         db.execSQL(SQL_CREATE_USERS);
+        db.execSQL(SQL_CREATE_DISTRICTS);
+        db.execSQL(SQL_CREATE_CLUSTERS);
         db.execSQL(SQL_CREATE_VERSIONAPP);
         db.execSQL(SQL_CREATE_MEMBERS);
         db.execSQL(SQL_CREATE_MEMBER_PREGNANCIES);
@@ -202,6 +210,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 values.put(UsersTable.COLUMN_USERNAME, user.getUserName());
                 values.put(UsersTable.COLUMN_PASSWORD, user.getPassword());
                 values.put(UsersTable.COLUMN_FULL_NAME, user.getFull_name());
+                values.put(UsersTable.COLUMN_DISTRICT_CODE, user.getDistrict_code());
                 long rowID = db.insert(UsersTable.TABLE_NAME, null, values);
                 if (rowID != -1) insertCount++;
             }
@@ -638,7 +647,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     // Family Members
-
     public Long addFamilyMember(Member mc) {
 
         SQLiteDatabase db = this.getWritableDatabase();
@@ -1023,5 +1031,432 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 values,
                 selection,
                 selectionArgs);
+    }
+
+    public int syncDistricts(JSONArray districtList) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(DistrictsContract.DistrictsTable.TABLE_NAME, null, null);
+        int insertCount = 0;
+        try {
+            for (int i = 0; i < districtList.length(); i++) {
+
+                JSONObject jsonObjectDistrict = districtList.getJSONObject(i);
+
+                Districts district = new Districts();
+                district.Sync(jsonObjectDistrict);
+                ContentValues values = new ContentValues();
+
+                values.put(DistrictsContract.DistrictsTable.COLUMN_CODE, district.getCode());
+                values.put(DistrictsContract.DistrictsTable.COLUMN_NAME, district.getName());
+                values.put(DistrictsContract.DistrictsTable.COLUMN_PROVINCE_CODE, district.getProvinceCode());
+                values.put(DistrictsContract.DistrictsTable.COLUMN_PROVINCE_NAME, district.getProvinceName());
+                long rowID = db.insert(DistrictsContract.DistrictsTable.TABLE_NAME, null, values);
+                if (rowID != -1) insertCount++;
+            }
+
+        } catch (Exception e) {
+            Log.d(TAG, "syncDistricts(e): " + e);
+            db.close();
+        } finally {
+            db.close();
+        }
+        return insertCount;
+    }
+
+    public int syncClusters(JSONArray clusterList) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(ClustersContract.ClustersTable.TABLE_NAME, null, null);
+        int insertCount = 0;
+        try {
+            for (int i = 0; i < clusterList.length(); i++) {
+
+                JSONObject jsonObjectcluster = clusterList.getJSONObject(i);
+
+                Clusters cluster = new Clusters();
+                cluster.Sync(jsonObjectcluster);
+                ContentValues values = new ContentValues();
+
+                values.put(ClustersContract.ClustersTable.COLUMN_CLUSTER_NO, cluster.getClusterNo());
+                values.put(ClustersContract.ClustersTable.COLUMN_PROVINCE_CODE, cluster.getProvinceCode());
+                values.put(ClustersContract.ClustersTable.COLUMN_PROVINCE_NAME, cluster.getProvinceName());
+                values.put(ClustersContract.ClustersTable.COLUMN_DISTRICT_CODE, cluster.getDistrictCode());
+                values.put(ClustersContract.ClustersTable.COLUMN_DISTRICT_NAME, cluster.getDistrictName());
+                values.put(ClustersContract.ClustersTable.COLUMN_TEHSIL, cluster.getTehsil());
+                values.put(ClustersContract.ClustersTable.COLUMN_UNION_COUNCIL, cluster.getUnionCouncil());
+                values.put(ClustersContract.ClustersTable.COLUMN_CITY, cluster.getCity());
+                long rowID = db.insert(ClustersContract.ClustersTable.TABLE_NAME, null, values);
+                if (rowID != -1) insertCount++;
+            }
+
+        } catch (Exception e) {
+            Log.d(TAG, "syncClusters(e): " + e);
+            db.close();
+        } finally {
+            db.close();
+        }
+        return insertCount;
+    }
+
+
+    public Collection<Member> getUnsyncedMembers() {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+
+                MembersContract.MembersTable.COLUMN_ID,
+                MembersContract.MembersTable.COLUMN_UID,
+                MembersContract.MembersTable.COLUMN_FUID,
+                MembersContract.MembersTable.COLUMN_DEVICEID,
+                MembersContract.MembersTable.COLUMN_DEVICETAGID,
+                MembersContract.MembersTable.COLUMN_USERNAME,
+                MembersContract.MembersTable.COLUMN_SYSDATE,
+                MembersContract.MembersTable.COLUMN_APPVERSION,
+                MembersContract.MembersTable.COLUMN_COLLECTED,
+                MembersContract.MembersTable.COLUMN_H201,
+                MembersContract.MembersTable.COLUMN_H202,
+                MembersContract.MembersTable.COLUMN_H203,
+                MembersContract.MembersTable.COLUMN_H204,
+                MembersContract.MembersTable.COLUMN_H20501,
+                MembersContract.MembersTable.COLUMN_H20502,
+                MembersContract.MembersTable.COLUMN_H20503,
+                MembersContract.MembersTable.COLUMN_H20601,
+                MembersContract.MembersTable.COLUMN_H20602,
+                MembersContract.MembersTable.COLUMN_H20603,
+                MembersContract.MembersTable.COLUMN_H20701,
+                MembersContract.MembersTable.COLUMN_H20702,
+                MembersContract.MembersTable.COLUMN_H20703,
+                MembersContract.MembersTable.COLUMN_H20704,
+                MembersContract.MembersTable.COLUMN_H20796,
+                MembersContract.MembersTable.COLUMN_H20796x,
+                MembersContract.MembersTable.COLUMN_H208,
+                MembersContract.MembersTable.COLUMN_H209,
+                MembersContract.MembersTable.COLUMN_H210,
+                MembersContract.MembersTable.COLUMN_H211,
+                MembersContract.MembersTable.COLUMN_H212,
+                MembersContract.MembersTable.COLUMN_H21296X,
+                MembersContract.MembersTable.COLUMN_MOTHER_SERIAL,
+                MembersContract.MembersTable.COLUMN_FATHER_SERIAL,
+                MembersContract.MembersTable.COLUMN_E101,
+                MembersContract.MembersTable.COLUMN_E102,
+                MembersContract.MembersTable.COLUMN_E103,
+                MembersContract.MembersTable.COLUMN_E104,
+                MembersContract.MembersTable.COLUMN_E105,
+                MembersContract.MembersTable.COLUMN_E106,
+        };
+
+        String whereClause;
+        String[] whereArgs;
+
+        whereClause = MembersContract.MembersTable.COLUMN_SYNCED + " is null OR " + MembersContract.MembersTable.COLUMN_SYNCED + " == ''";
+        whereArgs = null;
+
+        String groupBy = null;
+        String having = null;
+        String orderBy = MembersContract.MembersTable.COLUMN_ID + " ASC";
+
+        Collection<Member> allMembers = new ArrayList<>();
+        try {
+            c = db.query(
+                    MembersContract.MembersTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                Log.d(TAG, "getUnsyncedMembers: " + c.getCount());
+                Member member = new Member();
+                allMembers.add(member.Hydrate(c));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allMembers;
+    }
+
+    public void updateSyncedMembers(String id) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // New value for one column
+        ContentValues values = new ContentValues();
+        values.put(MembersContract.MembersTable.COLUMN_SYNCED, true);
+        values.put(MembersContract.MembersTable.COLUMN_SYNCED_DATE, new Date().toString());
+
+        // Which row to update, based on the title
+        String where = MembersContract.MembersTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                MembersContract.MembersTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public Collection<Pregnancy> getUnsyncedPregnancies() {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+
+                PregnanciesContract.PregnanciesTable.COLUMN_ID,
+                PregnanciesContract.PregnanciesTable.COLUMN_UID,
+                PregnanciesContract.PregnanciesTable.COLUMN_MUID,
+                PregnanciesContract.PregnanciesTable.COLUMN_FUID,
+                PregnanciesContract.PregnanciesTable.COLUMN_DEVICEID,
+                PregnanciesContract.PregnanciesTable.COLUMN_DEVICETAGID,
+                PregnanciesContract.PregnanciesTable.COLUMN_USERNAME,
+                PregnanciesContract.PregnanciesTable.COLUMN_SYSDATE,
+                PregnanciesContract.PregnanciesTable.COLUMN_APPVERSION,
+                PregnanciesContract.PregnanciesTable.COLUMN_W114,
+                PregnanciesContract.PregnanciesTable.COLUMN_W115,
+                PregnanciesContract.PregnanciesTable.COLUMN_W116,
+                PregnanciesContract.PregnanciesTable.COLUMN_W117,
+                PregnanciesContract.PregnanciesTable.COLUMN_W11801,
+                PregnanciesContract.PregnanciesTable.COLUMN_W11802,
+                PregnanciesContract.PregnanciesTable.COLUMN_W11803,
+                PregnanciesContract.PregnanciesTable.COLUMN_W11901,
+                PregnanciesContract.PregnanciesTable.COLUMN_W11902,
+                PregnanciesContract.PregnanciesTable.COLUMN_W11903,
+                PregnanciesContract.PregnanciesTable.COLUMN_W117C2,
+                PregnanciesContract.PregnanciesTable.COLUMN_W118C201,
+                PregnanciesContract.PregnanciesTable.COLUMN_W118C202,
+                PregnanciesContract.PregnanciesTable.COLUMN_W118C203,
+                PregnanciesContract.PregnanciesTable.COLUMN_W119C201,
+                PregnanciesContract.PregnanciesTable.COLUMN_W119C202,
+                PregnanciesContract.PregnanciesTable.COLUMN_W119C203,
+        };
+
+        String whereClause;
+        String[] whereArgs;
+
+        whereClause = PregnanciesContract.PregnanciesTable.COLUMN_SYNCED + " is null OR " + PregnanciesContract.PregnanciesTable.COLUMN_SYNCED + " == ''";
+        whereArgs = null;
+
+        String groupBy = null;
+        String having = null;
+        String orderBy = PregnanciesContract.PregnanciesTable.COLUMN_ID + " ASC";
+
+        Collection<Pregnancy> allPregnancies = new ArrayList<>();
+        try {
+            c = db.query(
+                    PregnanciesContract.PregnanciesTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                Log.d(TAG, "getUnsyncedPregnancies: " + c.getCount());
+                Pregnancy pregnancy = new Pregnancy();
+                allPregnancies.add(pregnancy.Hydrate(c));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allPregnancies;
+    }
+
+    public void updateSyncedPregnancies(String id) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // New value for one column
+        ContentValues values = new ContentValues();
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_SYNCED, true);
+        values.put(PregnanciesContract.PregnanciesTable.COLUMN_SYNCED_DATE, new Date().toString());
+
+        // Which row to update, based on the title
+        String where = PregnanciesContract.PregnanciesTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                PregnanciesContract.PregnanciesTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public Collection<EligibleMWRA> getUnsyncedMWRAs() {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+
+                EligibleMWRAsContract.MWRAsTable.COLUMN_ID,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_UID,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_MUID,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_FUID,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_DEVICEID,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_DEVICETAGID,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_USERNAME,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_SYSDATE,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_APPVERSION,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_ISTATUS,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_ISTATUS96x,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_ENDINGDATETIME,
+                EligibleMWRAsContract.MWRAsTable.COLUMN_JSON,
+        };
+
+        String whereClause;
+        String[] whereArgs;
+
+        whereClause = EligibleMWRAsContract.MWRAsTable.COLUMN_SYNCED + " is null OR " + EligibleMWRAsContract.MWRAsTable.COLUMN_SYNCED + " == ''";
+        whereArgs = null;
+
+        String groupBy = null;
+        String having = null;
+        String orderBy = EligibleMWRAsContract.MWRAsTable.COLUMN_ID + " ASC";
+
+        Collection<EligibleMWRA> allMWRAs = new ArrayList<>();
+        try {
+            c = db.query(
+                    EligibleMWRAsContract.MWRAsTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                Log.d(TAG, "getUnsyncedMWRAs: " + c.getCount());
+                EligibleMWRA mwra = new EligibleMWRA();
+                allMWRAs.add(mwra.Hydrate(c));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allMWRAs;
+    }
+
+    public void updateSyncedMWRAs(String id) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // New value for one column
+        ContentValues values = new ContentValues();
+        values.put(EligibleMWRAsContract.MWRAsTable.COLUMN_SYNCED, true);
+        values.put(EligibleMWRAsContract.MWRAsTable.COLUMN_SYNCED_DATE, new Date().toString());
+
+        // Which row to update, based on the title
+        String where = EligibleMWRAsContract.MWRAsTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                EligibleMWRAsContract.MWRAsTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public Collection<EligibleChild> getUnsyncedChildren() {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+
+                EligibleChildrenContract.ChildrenTable.COLUMN_ID,
+                EligibleChildrenContract.ChildrenTable.COLUMN_UID,
+                EligibleChildrenContract.ChildrenTable.COLUMN_MUID,
+                EligibleChildrenContract.ChildrenTable.COLUMN_FUID,
+                EligibleChildrenContract.ChildrenTable.COLUMN_DEVICEID,
+                EligibleChildrenContract.ChildrenTable.COLUMN_DEVICETAGID,
+                EligibleChildrenContract.ChildrenTable.COLUMN_USERNAME,
+                EligibleChildrenContract.ChildrenTable.COLUMN_SYSDATE,
+                EligibleChildrenContract.ChildrenTable.COLUMN_APPVERSION,
+                EligibleChildrenContract.ChildrenTable.COLUMN_JSON,
+        };
+
+        String whereClause;
+        String[] whereArgs;
+
+        whereClause = EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED + " is null OR " + EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED + " == ''";
+        whereArgs = null;
+
+        String groupBy = null;
+        String having = null;
+        String orderBy = EligibleChildrenContract.ChildrenTable.COLUMN_ID + " ASC";
+
+        Collection<EligibleChild> allChildren = new ArrayList<>();
+        try {
+            c = db.query(
+                    EligibleChildrenContract.ChildrenTable.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                Log.d(TAG, "getUnsyncedMWRAs: " + c.getCount());
+                EligibleChild child = new EligibleChild();
+                allChildren.add(child.Hydrate(c));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allChildren;
+    }
+
+    public void updateSyncedChildren(String id) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // New value for one column
+        ContentValues values = new ContentValues();
+        values.put(EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED, true);
+        values.put(EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED_DATE, new Date().toString());
+
+        // Which row to update, based on the title
+        String where = EligibleChildrenContract.ChildrenTable.COLUMN_ID + " = ?";
+        String[] whereArgs = {id};
+
+        int count = db.update(
+                EligibleChildrenContract.ChildrenTable.TABLE_NAME,
+                values,
+                where,
+                whereArgs);
+    }
+
+    public Cursor getRecords() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from clusters", null);
+        return res;
+    }
+
+    public Cursor getCluster(String clusterNo) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from clusters where clusterNo = '" + clusterNo + "'", null);
+        return res;
     }
 }

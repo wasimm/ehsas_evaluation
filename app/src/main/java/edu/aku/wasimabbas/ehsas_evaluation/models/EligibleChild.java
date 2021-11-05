@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleMWRAsContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleChildrenContract;
 
 public class EligibleChild extends LiveData<EligibleChild> {
 
@@ -21,10 +21,10 @@ public class EligibleChild extends LiveData<EligibleChild> {
     private String deviceid = "";
     private String devicetagid = "";
     // Other Variables
-    private String id = "id";
-    private String uid = "uid";
-    private String muid = "muid";
-    private String fuid = "fuid";
+    private String id = "";
+    private String uid = "";
+    private String muid = "";
+    private String fuid = "";
     private String istatus = "";
     private String istatus96x = "";
     private String sysdate = "";
@@ -155,20 +155,23 @@ public class EligibleChild extends LiveData<EligibleChild> {
 
     public EligibleChild Sync(JSONObject jsonObject) throws JSONException {
 
-        this.id = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_ID);
-        this.uid = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_UID);
-        this.fuid = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_FUID);
-        this.istatus = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_ISTATUS);
-        this.istatus96x = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_ISTATUS96x);
-        this.endingdatetime = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_ENDINGDATETIME);
-        this.synced = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_SYNCED);
-        this.synced_date = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_SYNCED_DATE);
-        this.appversion = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_APPVERSION);
-        this.deviceid = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_DEVICEID);
-        this.devicetagid = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_DEVICETAGID);
-        this.sysdate = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_SYSDATE);
-        this.username = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_USERNAME);
-        this.child_json = jsonObject.getString(EligibleMWRAsContract.MWRAsTable.COLUMN_JSON);
+        this.id = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_ID);
+        this.uid = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_UID);
+        this.muid = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_MUID);
+        this.fuid = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_FUID);
+
+        /*this.istatus = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS);
+        this.istatus96x = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS96x);
+        this.endingdatetime = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_ENDINGDATETIME);*/
+
+        this.synced = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED);
+        this.synced_date = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED_DATE);
+        this.appversion = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_APPVERSION);
+        this.deviceid = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_DEVICEID);
+        this.devicetagid = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_DEVICETAGID);
+        this.sysdate = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_SYSDATE);
+        this.username = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_USERNAME);
+        this.child_json = jsonObject.getString(EligibleChildrenContract.ChildrenTable.COLUMN_JSON);
 
         return this;
     }
@@ -176,18 +179,21 @@ public class EligibleChild extends LiveData<EligibleChild> {
 
     public EligibleChild Hydrate(Cursor cursor) {
 
-        this.id = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_ID));
-        this.uid = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_UID));
-        this.fuid = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_FUID));
-        this.istatus = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_ISTATUS));
-        this.istatus96x = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_ISTATUS96x));
-        this.endingdatetime = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_ENDINGDATETIME));
-        this.appversion = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_APPVERSION));
-        this.deviceid = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_DEVICEID));
-        this.devicetagid = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_DEVICETAGID));
-        this.sysdate = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_SYSDATE));
-        this.username = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_USERNAME));
-        this.child_json = cursor.getString(cursor.getColumnIndex(EligibleMWRAsContract.MWRAsTable.COLUMN_JSON));
+        this.id = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_ID));
+        this.uid = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_UID));
+        this.muid = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_MUID));
+        this.fuid = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_FUID));
+
+        /*this.istatus = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS));
+        this.istatus96x = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS96x));
+        this.endingdatetime = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_ENDINGDATETIME));*/
+
+        this.appversion = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_APPVERSION));
+        this.deviceid = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_DEVICEID));
+        this.devicetagid = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_DEVICETAGID));
+        this.sysdate = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_SYSDATE));
+        this.username = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_USERNAME));
+        this.child_json = cursor.getString(cursor.getColumnIndex(EligibleChildrenContract.ChildrenTable.COLUMN_JSON));
 
         return this;
     }
@@ -197,20 +203,23 @@ public class EligibleChild extends LiveData<EligibleChild> {
 
         JSONObject json = new JSONObject();
 
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_ID, this.id == null ? JSONObject.NULL : this.id);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_UID, this.uid == null ? JSONObject.NULL : this.uid);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_FUID, this.fuid == null ? JSONObject.NULL : this.fuid);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_ISTATUS, this.istatus == null ? JSONObject.NULL : this.istatus);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_ISTATUS96x, this.istatus96x == null ? JSONObject.NULL : this.istatus96x);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_ENDINGDATETIME, this.endingdatetime == null ? JSONObject.NULL : this.endingdatetime);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_APPVERSION, this.appversion == null ? JSONObject.NULL : this.appversion);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_DEVICEID, this.deviceid == null ? JSONObject.NULL : this.deviceid);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_DEVICETAGID, this.devicetagid == null ? JSONObject.NULL : this.devicetagid);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_SYSDATE, this.sysdate == null ? JSONObject.NULL : this.sysdate);
-        json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_USERNAME, this.username == null ? JSONObject.NULL : this.username);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_ID, this.id == null ? JSONObject.NULL : this.id);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_UID, this.uid == null ? JSONObject.NULL : this.uid);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_MUID, this.muid == null ? JSONObject.NULL : this.muid);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_FUID, this.fuid == null ? JSONObject.NULL : this.fuid);
+
+        /*json.put(EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS, this.istatus == null ? JSONObject.NULL : this.istatus);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_ISTATUS96x, this.istatus96x == null ? JSONObject.NULL : this.istatus96x);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_ENDINGDATETIME, this.endingdatetime == null ? JSONObject.NULL : this.endingdatetime);*/
+
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_APPVERSION, this.appversion == null ? JSONObject.NULL : this.appversion);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_DEVICEID, this.deviceid == null ? JSONObject.NULL : this.deviceid);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_DEVICETAGID, this.devicetagid == null ? JSONObject.NULL : this.devicetagid);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_SYSDATE, this.sysdate == null ? JSONObject.NULL : this.sysdate);
+        json.put(EligibleChildrenContract.ChildrenTable.COLUMN_USERNAME, this.username == null ? JSONObject.NULL : this.username);
 
         if (!this.child_json.equals("")) {
-            json.put(EligibleMWRAsContract.MWRAsTable.COLUMN_JSON, this.child_json.equals("") ? JSONObject.NULL : new JSONObject(this.child_json));
+            json.put(EligibleChildrenContract.ChildrenTable.COLUMN_JSON, this.child_json.equals("") ? JSONObject.NULL : new JSONObject(this.child_json));
         }
 
         return json;

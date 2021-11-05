@@ -6,12 +6,6 @@
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="formB"> B </string>
-    <string name="formC"> C </string>
-    <string name="formD1"> D1 </string>
-    <string name="formD2"> D2 </string>
-    <string name="formE"> E </string>
-    <string name="formF"> F </string>
     <string name="openScreening"> Screening </string>
     <string name="openPretest"> Pre Test Knowlegde </string>
     <string name="sectionagisidentification_mainheading">Section A: GIS identification: Section A: GIS identification</string>
@@ -73,6 +67,7 @@
     <string name="action_data_sync">Sync Data</string>
     <string name="btnDownload">Download Data</string>
     <string name="btnUpload">Upload Data</string>
+    <string name="startInterview">Start Interview</string>
 
     <!--SECTION HEADINGS-->
     <string name="householdinformationform_heading"> Household Information Form </string>

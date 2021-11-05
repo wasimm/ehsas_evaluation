@@ -21,8 +21,8 @@ public class Form extends LiveData<Form> {
     private String deviceid = "";
     private String devicetagid = "";
     // Other Variables
-    private String id = "id";
-    private String uid = "uid";
+    private String id = "";
+    private String uid = "";
     private String istatus = "";
     private String istatus96x = "";
     private String sysdate = "";

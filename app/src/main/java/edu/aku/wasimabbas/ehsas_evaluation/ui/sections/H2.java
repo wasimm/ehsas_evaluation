@@ -466,16 +466,28 @@ public class H2 extends AppCompatActivity {
 
                 if (s.length() > 0) {
 
-                    if (Integer.parseInt(s.toString()) < 3) {
+                    int age = Integer.parseInt(s.toString());
+
+                    if (age < 3) {
                         Clear.clearAllFields(bi.fldGrpCVH211);
                         bi.fldGrpCVH211.setVisibility(View.GONE);
                     } else {
                         bi.fldGrpCVH211.setVisibility(View.VISIBLE);
                     }
 
-                    if (Integer.parseInt(s.toString()) >= 10) {
+                    if (age >= 10) {
+
+                        if (age > 10) {
+                            bi.fldGrpCVH209.setVisibility(View.VISIBLE);
+                        } else {
+                            Clear.clearAllFields(bi.fldGrpCVH209);
+                            bi.fldGrpCVH209.setVisibility(View.GONE);
+                        }
+
                         bi.fldGrpCVH212.setVisibility(View.VISIBLE);
+
                     } else {
+
                         Clear.clearAllFields(bi.fldGrpCVH212);
                         bi.fldGrpCVH212.setVisibility(View.GONE);
                     }
@@ -697,7 +709,8 @@ public class H2 extends AppCompatActivity {
             return false;
         }
 
-        if (Integer.parseInt(bi.H211.getText().toString()) >= Integer.parseInt(bi.H20603.getText().toString())) {
+        if (bi.H211.isShown() && Integer.parseInt(bi.H211.getText().toString()) >= Integer.parseInt(bi.H20603.getText().toString())) {
+
             bi.H211.setError("Number of completed years of Education cannot be greater than or equal to Age");
             return false;
         }

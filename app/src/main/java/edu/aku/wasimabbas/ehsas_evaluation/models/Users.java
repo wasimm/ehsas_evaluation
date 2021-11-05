@@ -15,6 +15,7 @@ public class Users {
     String username;
     String password;
     String full_name;
+    String district_code;
 //    String REGION_DSS;
 
     public Users() {
@@ -58,19 +59,20 @@ public class Users {
         this.full_name = full_name;
     }
 
-/*    public String getREGION_DSS() {
-        return REGION_DSS;
+    public String getDistrict_code() {
+        return district_code;
     }
 
-    public void setREGION_DSS(String REGION_DSS) {
-        this.REGION_DSS = REGION_DSS;
-    }*/
+    public void setDistrict_code(String district_code) {
+        this.district_code = district_code;
+    }
+
 
     public Users Sync(JSONObject jsonObject) throws JSONException {
         this.username = jsonObject.getString(UsersTable.COLUMN_USERNAME);
         this.password = jsonObject.getString(UsersTable.COLUMN_PASSWORD);
         this.full_name = jsonObject.getString(UsersTable.COLUMN_FULL_NAME);
-//        this.REGION_DSS = jsonObject.getString(singleUser.REGION_DSS);
+        this.district_code = jsonObject.getString(UsersTable.COLUMN_DISTRICT_CODE);
         return this;
 
     }
@@ -78,6 +80,7 @@ public class Users {
     public Users Hydrate(Cursor cursor) {
         this.username = cursor.getString(cursor.getColumnIndex(UsersTable.COLUMN_USERNAME));
         this.full_name = cursor.getString(cursor.getColumnIndex(UsersTable.COLUMN_FULL_NAME));
+        this.district_code = cursor.getString(cursor.getColumnIndex(UsersTable.COLUMN_DISTRICT_CODE));
         return this;
 
     }
@@ -90,7 +93,7 @@ public class Users {
         json.put(UsersTable.COLUMN_USERNAME, this.username == null ? JSONObject.NULL : this.username);
         json.put(UsersTable.COLUMN_PASSWORD, this.password == null ? JSONObject.NULL : this.password);
         json.put(UsersTable.COLUMN_FULL_NAME, this.full_name == null ? JSONObject.NULL : this.full_name);
-//        json.put(singleUser.REGION_DSS, this.REGION_DSS == null ? JSONObject.NULL : this.REGION_DSS);
+        json.put(UsersTable.COLUMN_DISTRICT_CODE, this.district_code == null ? JSONObject.NULL : this.district_code);
         return json;
     }
 

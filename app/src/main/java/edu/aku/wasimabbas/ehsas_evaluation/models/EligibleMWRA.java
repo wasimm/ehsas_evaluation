@@ -21,10 +21,10 @@ public class EligibleMWRA extends LiveData<EligibleMWRA> {
     private String deviceid = "";
     private String devicetagid = "";
     // Other Variables
-    private String id = "id";
-    private String uid = "uid";
-    private String muid = "muid";
-    private String fuid = "fuid";
+    private String id = "";
+    private String uid = "";
+    private String muid = "";
+    private String fuid = "";
     private String istatus = "";
     private String istatus96x = "";
     private String sysdate = "";

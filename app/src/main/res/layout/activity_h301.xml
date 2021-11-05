@@ -22,7 +22,7 @@
             android:id="@+id/toolbar"
             style="@null"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/CustomToolbarTheme"
@@ -1260,14 +1260,14 @@
                                 android:text="@string/H31110" />
 
                             <RadioButton
-                                android:id="@+id/H3111001"
+                                android:id="@+id/H311101"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:text="@string/H3111001" />
 
                             <RadioButton
-                                android:id="@+id/H3111002"
+                                android:id="@+id/H311102"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -1305,7 +1305,7 @@
 
                         </RadioGroup>
 
-                        <!--H311112 -->
+                        <!--H31112 -->
                         <RadioGroup
                             android:id="@+id/H31112"
                             android:layout_width="match_parent"

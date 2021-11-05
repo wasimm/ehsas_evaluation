@@ -1,5 +1,7 @@
 package edu.aku.wasimabbas.ehsas_evaluation.utils;
 
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.ClustersContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.DistrictsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleChildrenContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleMWRAsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract.FormsTable;
@@ -44,7 +46,8 @@ public final class CreateTable {
             + UsersContract.UsersTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + UsersContract.UsersTable.COLUMN_USERNAME + " TEXT,"
             + UsersContract.UsersTable.COLUMN_PASSWORD + " TEXT,"
-            + UsersContract.UsersTable.COLUMN_FULL_NAME + " TEXT"
+            + UsersContract.UsersTable.COLUMN_FULL_NAME + " TEXT,"
+            + UsersContract.UsersTable.COLUMN_DISTRICT_CODE + " TEXT"
             + " );";
 
     public static final String SQL_CREATE_VERSIONAPP = "CREATE TABLE " + VersionAppContract.VersionAppTable.TABLE_NAME + " (" +
@@ -164,5 +167,27 @@ public final class CreateTable {
             + EligibleChildrenContract.ChildrenTable.COLUMN_JSON + " TEXT,"
             + EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED + " TEXT,"
             + EligibleChildrenContract.ChildrenTable.COLUMN_SYNCED_DATE + " TEXT"
+            + " );";
+
+    public static final String SQL_CREATE_DISTRICTS = "CREATE TABLE "
+            + DistrictsContract.DistrictsTable.TABLE_NAME + "("
+            + DistrictsContract.DistrictsTable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + DistrictsContract.DistrictsTable.COLUMN_CODE + " TEXT,"
+            + DistrictsContract.DistrictsTable.COLUMN_NAME + " TEXT,"
+            + DistrictsContract.DistrictsTable.COLUMN_PROVINCE_CODE + " TEXT,"
+            + DistrictsContract.DistrictsTable.COLUMN_PROVINCE_NAME + " TEXT"
+            + " );";
+
+    public static final String SQL_CREATE_CLUSTERS = "CREATE TABLE "
+            + ClustersContract.ClustersTable.TABLE_NAME + "("
+            + ClustersContract.ClustersTable.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + ClustersContract.ClustersTable.COLUMN_CLUSTER_NO + " TEXT,"
+            + ClustersContract.ClustersTable.COLUMN_PROVINCE_CODE + " TEXT,"
+            + ClustersContract.ClustersTable.COLUMN_PROVINCE_NAME + " TEXT,"
+            + ClustersContract.ClustersTable.COLUMN_DISTRICT_CODE + " TEXT,"
+            + ClustersContract.ClustersTable.COLUMN_DISTRICT_NAME + " TEXT,"
+            + ClustersContract.ClustersTable.COLUMN_TEHSIL + " TEXT,"
+            + ClustersContract.ClustersTable.COLUMN_UNION_COUNCIL + " TEXT,"
+            + ClustersContract.ClustersTable.COLUMN_CITY + " TEXT"
             + " );";
 }
