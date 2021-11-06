@@ -151,12 +151,12 @@ public class SyncAllData extends AsyncTask<Void, Integer, String> {
                     //TODO table server
                     JSONObject jsonTable = new JSONObject();
                     jsonTable.put("table", tableName);
-
-
                     JSONArray jsonParam = new JSONArray();
                     jsonParam
                             .put(jsonTable)
                             .put(jsonSync);
+
+                    //Toast.makeText(mContext.getApplicationContext(), "HHHHHHH: " +jsonSync, Toast.LENGTH_SHORT).show();
 
                     wr.writeBytes(String.valueOf(jsonParam));
                     wr.flush();
@@ -185,6 +185,9 @@ public class SyncAllData extends AsyncTask<Void, Integer, String> {
 
             return "No new records to sync.";
         }
+
+        //Toast.makeText(mContext.getApplicationContext(), "HHH:" + line, Toast.LENGTH_SHORT).show();
+
         return line;
     }
 
@@ -236,7 +239,7 @@ public class SyncAllData extends AsyncTask<Void, Integer, String> {
 
             pd.setMessage(syncClass + " synced: " + sSynced + "\r\n\r\n Duplicates: " + sDuplicate + "\r\n\r\n Errors: " + sSyncedError);
             pd.setTitle("Done uploading +" + syncClass + " data");
-//            pd.show();
+            // pd.show();
             if (sSyncedError.toString().equals("")) {
                 uploadlist.get(position).setmessage(syncClass + " synced: " + sSynced + "\r\n\r\n Duplicates: " + sDuplicate + "\r\n\r\n Errors: " + sSyncedError);
                 uploadlist.get(position).setstatus("Completed");

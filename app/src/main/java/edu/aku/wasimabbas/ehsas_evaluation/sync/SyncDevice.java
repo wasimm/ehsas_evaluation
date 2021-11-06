@@ -122,6 +122,9 @@ public class SyncDevice extends AsyncTask<Void, Integer, String> {
         int sSynced = 0;
         StringBuilder sSyncedError = new StringBuilder();
         JSONArray json = null;
+
+        //Toast.makeText(context.getApplicationContext(), "Hi Data: " + result, Toast.LENGTH_SHORT).show();
+
         try {
             json = new JSONArray(result);
             if (json.length() > 0) {

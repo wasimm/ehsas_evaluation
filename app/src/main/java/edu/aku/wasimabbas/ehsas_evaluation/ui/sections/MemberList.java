@@ -14,6 +14,7 @@ import androidx.databinding.DataBindingUtil;
 
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
+import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivityMembersListviewBinding;
 
 
@@ -31,8 +32,8 @@ public class MemberList extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_members_listview);
         bi.setCallback(this);
 
-        //fuid = MainApp.form.getUid();
-        fuid = "fb47bf5763adfcbf1";
+        fuid = MainApp.form.getUid();
+        //fuid = "fb47bf5763adfcbf1";
 
         Intent intent = getIntent();
         counter = intent.getIntExtra("counter", 0);

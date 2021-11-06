@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements WarningActivityIn
 
         //bi.txtinstalldate.setText(appInfo.getAppInfo());
         Collection<Form> todaysForms = appInfo.getDbHelper().getTodayForms(sysdateToday);
-        Collection<Form> unsyncedForms = appInfo.getDbHelper().getUnsyncedForms();
+        Collection<Form> unsyncedForms = appInfo.getDbHelper().getUnsyncedHHInformation();
         Collection<Form> unclosedForms = appInfo.getDbHelper().getUnclosedForms();
 
         StringBuilder rSumText = new StringBuilder()
