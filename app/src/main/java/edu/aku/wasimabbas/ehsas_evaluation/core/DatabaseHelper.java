@@ -306,7 +306,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return count;
     }
 
-    public void updateSyncedForms(String id) {
+    public void updateSyncedHHInformation(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
 // New value for one column
@@ -582,7 +582,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allForms;
     }
 
-    public Collection<Form> getUnsyncedForms() {
+    public Collection<Form> getUnsyncedHHInformation() {
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
@@ -1098,7 +1098,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public Collection<Member> getUnsyncedMembers() {
+    public Collection<Member> getUnsyncedHHMembers() {
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
@@ -1182,7 +1182,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allMembers;
     }
 
-    public void updateSyncedMembers(String id) {
+    public void updateSyncedHHMembers(String id) {
 
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -1202,7 +1202,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-    public Collection<Pregnancy> getUnsyncedPregnancies() {
+    public Collection<Pregnancy> getUnsyncedMemberPregnancies() {
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
@@ -1273,7 +1273,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allPregnancies;
     }
 
-    public void updateSyncedPregnancies(String id) {
+    public void updateSyncedMemberPregnancies(String id) {
 
         SQLiteDatabase db = this.getReadableDatabase();
 

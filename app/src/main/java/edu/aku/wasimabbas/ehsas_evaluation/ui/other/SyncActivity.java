@@ -153,11 +153,11 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             new SyncAllData(
                     this,
                     "Forms",
-                    "updateSyncedForms",
+                    "updateSyncedHHInformation",
                     FormsContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     FormsContract.FormsTable.TABLE_NAME,
-                    db.getUnsyncedForms(), 0, uploadListAdapter, uploadlist
+                    db.getUnsyncedHHInformation(), 0, uploadListAdapter, uploadlist
             ).execute();
 
             if (uploadlistActivityCreated) {
@@ -167,12 +167,12 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Members",
-                    "updateSyncedMembers",
+                    "Member",
+                    "updateSyncedHHMembers",
                     MembersContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     MembersContract.MembersTable.TABLE_NAME,
-                    db.getUnsyncedMembers(), 1, uploadListAdapter, uploadlist
+                    db.getUnsyncedHHMembers(), 1, uploadListAdapter, uploadlist
             ).execute();
 
             if (uploadlistActivityCreated) {
@@ -183,11 +183,11 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             new SyncAllData(
                     this,
                     "Pregnancies",
-                    "updateSyncedPregnancies",
+                    "updateSyncedMemberPregnancies",
                     PregnanciesContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     PregnanciesContract.PregnanciesTable.TABLE_NAME,
-                    db.getUnsyncedPregnancies(), 2, uploadListAdapter, uploadlist
+                    db.getUnsyncedMemberPregnancies(), 2, uploadListAdapter, uploadlist
             ).execute();
 
             if (uploadlistActivityCreated) {
