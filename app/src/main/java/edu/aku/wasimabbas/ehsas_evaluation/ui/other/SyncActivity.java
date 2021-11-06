@@ -40,7 +40,11 @@ import edu.aku.wasimabbas.ehsas_evaluation.CONSTANTS;
 import edu.aku.wasimabbas.ehsas_evaluation.R;
 import edu.aku.wasimabbas.ehsas_evaluation.adapter.SyncListAdapter;
 import edu.aku.wasimabbas.ehsas_evaluation.adapter.UploadListAdapter;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleChildrenContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.EligibleMWRAsContract;
 import edu.aku.wasimabbas.ehsas_evaluation.contracts.FormsContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.MembersContract;
+import edu.aku.wasimabbas.ehsas_evaluation.contracts.PregnanciesContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivitySyncBinding;
@@ -156,7 +160,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     db.getUnsyncedHHInformation(), 0, uploadListAdapter, uploadlist
             ).execute();
 
-            /*if (uploadlistActivityCreated) {
+            if (uploadlistActivityCreated) {
                 uploadmodel = new SyncModel();
                 uploadmodel.setstatusID(0);
                 uploadlist.add(uploadmodel);
@@ -214,7 +218,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     EligibleChildrenContract.ChildrenTable.TABLE_NAME,
                     db.getUnsyncedChildren(), 4, uploadListAdapter, uploadlist
-            ).execute();*/
+            ).execute();
 
             uploadlistActivityCreated = false;
 
