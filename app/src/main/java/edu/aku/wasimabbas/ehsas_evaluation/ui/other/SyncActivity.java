@@ -48,6 +48,9 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.PregnanciesContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivitySyncBinding;
+import edu.aku.wasimabbas.ehsas_evaluation.models.Form;
+import edu.aku.wasimabbas.ehsas_evaluation.models.Member;
+import edu.aku.wasimabbas.ehsas_evaluation.models.Pregnancy;
 import edu.aku.wasimabbas.ehsas_evaluation.models.SyncModel;
 import edu.aku.wasimabbas.ehsas_evaluation.sync.GetAllData;
 import edu.aku.wasimabbas.ehsas_evaluation.sync.SyncAllData;
@@ -154,7 +157,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     this,
                     "Form",
                     "updateSyncedHHInformation",
-                    FormsContract.class,
+                    Form.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     FormsContract.FormsTable.TABLE_NAME,
                     db.getUnsyncedHHInformation(), 0, uploadListAdapter, uploadlist
@@ -169,7 +172,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     this,
                     "Member",
                     "updateSyncedHHMembers",
-                    MembersContract.class,
+                    Member.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     MembersContract.MembersTable.TABLE_NAME,
                     db.getUnsyncedHHMembers(), 1, uploadListAdapter, uploadlist
@@ -184,7 +187,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     this,
                     "Pregnancy",
                     "updateSyncedMemberPregnancies",
-                    PregnanciesContract.class,
+                    Pregnancy.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     PregnanciesContract.PregnanciesTable.TABLE_NAME,
                     db.getUnsyncedMemberPregnancies(), 2, uploadListAdapter, uploadlist
