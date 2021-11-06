@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/ehsas_evaluation/app/src/main/res/drawable/app_bg.xml" value="0.40625" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/ehsas_evaluation/app/src/main/res/drawable/ic_app_bg_gray.xml" value="0.40625" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/ehsas_evaluation/app/src/main/res/layout/activity_login.xml" value="0.536" />
+        <entry key="..\:/Users/abdul.sajid/Desktop/ANDROID APPS/Android/ehsas_evaluation/app/src/main/res/layout/activity_main.xml" value="0.536" />
         <entry key="..\:/Users/wasim.abbas/AppData/Local/Android/Sdk/platforms/android-30/data/res/drawable/list_selector_background.xml" value="0.5828125" />
         <entry key="..\:/Users/wasim.abbas/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/select_dialog_item.xml" value="0.55859375" />
         <entry key="..\:/Users/wasim.abbas/OneDrive - Aga Khan University/Desktop/Android Work/ehsas_evaluation/app/src/main/res/drawable/bottom.xml" value="0.33515625" />

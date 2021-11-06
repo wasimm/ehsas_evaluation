@@ -67,6 +67,7 @@
 
         <activity
             android:name="edu.aku.wasimabbas.ehsas_evaluation.ui.other.MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
 
         <activity

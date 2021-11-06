@@ -48,6 +48,8 @@ import edu.aku.wasimabbas.ehsas_evaluation.contracts.PregnanciesContract;
 import edu.aku.wasimabbas.ehsas_evaluation.core.DatabaseHelper;
 import edu.aku.wasimabbas.ehsas_evaluation.core.MainApp;
 import edu.aku.wasimabbas.ehsas_evaluation.databinding.ActivitySyncBinding;
+import edu.aku.wasimabbas.ehsas_evaluation.models.EligibleChild;
+import edu.aku.wasimabbas.ehsas_evaluation.models.EligibleMWRA;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Form;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Member;
 import edu.aku.wasimabbas.ehsas_evaluation.models.Pregnancy;
@@ -155,7 +157,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Form",
+                    "HHInformation",
                     "updateSyncedHHInformation",
                     Form.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
@@ -170,7 +172,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Member",
+                    "HHMembers",
                     "updateSyncedHHMembers",
                     Member.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
@@ -185,7 +187,7 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Pregnancy",
+                    "MemberPregnancies",
                     "updateSyncedMemberPregnancies",
                     Pregnancy.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
@@ -200,9 +202,9 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "EligibleMWRA",
+                    "MWRAs",
                     "updateSyncedMWRAs",
-                    EligibleMWRAsContract.class,
+                    EligibleMWRA.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     EligibleMWRAsContract.MWRAsTable.TABLE_NAME,
                     db.getUnsyncedMWRAs(), 3, uploadListAdapter, uploadlist
@@ -215,9 +217,9 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "EligibleChild",
+                    "Children",
                     "updateSyncedChildren",
-                    EligibleChildrenContract.class,
+                    EligibleChild.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     EligibleChildrenContract.ChildrenTable.TABLE_NAME,
                     db.getUnsyncedChildren(), 4, uploadListAdapter, uploadlist
